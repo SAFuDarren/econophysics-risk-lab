@@ -5,7 +5,7 @@
 [![Research checks](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml)
 [![Website deployment](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml)
 
-A computational PC5253 research project connecting herding, finite-network moments,
+A computational research project connecting herding, finite-network moments,
 conditional parameter inference, identification limits and historical risk applications.
 
 ![Interactive research homepage](web/assets/social-preview.jpg)
@@ -40,6 +40,10 @@ locally.
 | What do forecasts add? | HAR+All reduces historical log-MSE by 31.20% relative to persistence; its additional 2.26% reduction over HAR has an interval crossing zero. | All 183 test dates and paired comparisons |
 | What can covariance analysis show? | Shared movements account for much of the same-window sector basket variance; similar strategy variants can repeat exposure. | Fixed ETF covariance and daily P&L diagnostics |
 
+## Research outlook
+
+Future work may explore quantum models and quantum machine learning in relation to collective dynamics, price–volume information and risk. Whether, how and when to pursue these directions will depend on their suitability for the research questions, the availability of a testable formulation and the value of comparison with classical methods. No implementation schedule has been set.
+
 ## Run the checks
 
 The core model and exact theory verification use only the Python standard library.
@@ -67,14 +71,13 @@ python scripts/reproduce.py --profile forecast --destination /tmp/forecast-rerun
 
 See the [validation record](docs/VALIDATION.md) for the executed checks and fresh forecast reconstruction.
 
-## Learn through the project
+## Explore the research
 
 1. [Groups, moments and finite-size networks](notebooks/01_model_and_moments.ipynb)
 2. [Inversion and identification limits](notebooks/02_inference_and_identity.ipynb)
 3. [Market tests and historical forecasting](notebooks/03_market_and_forecasting.ipynb)
 
-The notebooks call the shared implementation and frozen source tables. The course
-mean-degree symbol `c` maps to `rho` in the original Python API; activity `q` maps
+The notebooks call the shared implementation and frozen source tables. The expected mean-degree symbol `c` maps to `rho` in the original Python API; activity `q` maps
 to twice the directional action probability `a`.
 
 ## Repository map
@@ -93,10 +96,10 @@ and the subsequent control studies.
 
 ## Credits and reuse
 
-Scientific work is credited to the **PC5253 Project Team**. Website and repository
+Scientific work is credited to the **Econophysics Risk Lab contributors**. Website and repository
 maintained by **Darren Fu Shiang**. See [AUTHORS.md](AUTHORS.md).
 
 Code, original research materials, dataset-derived results and third-party web
 assets have separate terms. See [LICENSE.md](LICENSE.md) and
 [DATA_LICENSES.md](DATA_LICENSES.md). Full raw market archives, complete supplier
-price histories and course lecture PDFs are excluded from this public snapshot.
+price histories and unrelated reference materials are excluded from this public snapshot.

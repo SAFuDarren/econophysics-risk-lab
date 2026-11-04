@@ -5,5 +5,5 @@ type: software
 version: 1.0.0
 date-released: 2026-11-05
 authors:
-  - name: "PC5253 Project Team"
-abstract: "A computational course-research project connecting group coordination, finite-network moments, conditional inversion, identification limits and historical risk applications."
+  - name: "Econophysics Risk Lab contributors"
+abstract: "A computational research project connecting group coordination, finite-network moments, conditional inversion, identification limits and historical risk applications."

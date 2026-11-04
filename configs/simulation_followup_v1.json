@@ -1,5 +1,5 @@
 {
-  "protocol_id":"PC5253-ABCD-1.4",
+  "protocol_id":"ERL-1.4",
   "primary_run":"simulation_study_v1",
   "status":"post-primary diagnostic; locked before these followup outcomes",
   "reason":"Separate price-scale sensitivity of fitted estimators from information in volume; check interpolation beyond seen rho grid labels.",

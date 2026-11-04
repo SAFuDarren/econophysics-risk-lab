@@ -2,7 +2,7 @@
 
 ## Project simulation results
 
-Model-generated tables, exact examples and figures are credited to the PC5253
+Model-generated tables, exact examples and figures are credited to the Econophysics Risk Lab
 Project Team. Research code and original materials retain the terms in LICENSE.md.
 
 ## Binance Vision

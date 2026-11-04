@@ -1,6 +1,6 @@
 ---
 title: "羊群—渗流量价模型：理论基础与可识别性"
-subtitle: "PC5253 · Theory foundations v1 · 2026-10-27"
+subtitle: "Econophysics Risk Lab · Theory foundations v1 · 2026-10-27"
 author: "AB 理论工作稿 · 待成员独立复核"
 lang: zh-CN
 ---
@@ -9,7 +9,7 @@ lang: zh-CN
 
 **我们的科学问题是：在明确的群体协调机制下，量价观测保留了多少关于连接程度和群体结构的信息？** 正向部分解释网络怎样产生集体波动；逆向部分区分可恢复的模型参数与已经丢失的结构信息。
 
-本稿给出一般证明、与课程生成函数／渗流理论的连接，以及可复跑的精确核验。数学推导是本项目接口下的论证，未经独立成员复核，不作为文献新颖性声明。
+本稿给出一般证明、与网络生成函数／渗流理论的连接，以及可复跑的精确核验。数学推导是本项目接口下的论证，未经独立成员复核，不作为文献新颖性声明。
 
 | 已有结论 | 前提与含义 |
 |---|---|
@@ -43,7 +43,7 @@ $r$ 是资产价格的区间 log 收益，$V$ 是本接口下单边计数的成�
 
 **与 Cont–Bouchaud 的关系。**借用群体协调和聚合需求的机制；成交量、单位订单混排和 OHLC 执行器是本项目的补充。原文使用 $p=c/N$，故有限规模下对应 $\rho=c(N-1)/N$。原文价格响应记号为 $1/\lambda_{\rm paper}$，本项目为 $\lambda/N$，不可直接混抄参数。[R1，Section 4、Appendix 4](https://arxiv.org/html/cond-mat/9712318v2)
 
-**本模型研究集体协调导致的涌现波动。**泡沫积累、策略适应、流动性危机和崩盘反馈需要其他动态机制；课程中的这些应用通过文献综述说明。
+**本模型研究集体协调导致的涌现波动。**泡沫积累、策略适应、流动性危机和崩盘反馈需要其他动态机制；研究中的这些应用通过文献综述说明。
 
 # 2. 精确联合分布与有限支持
 
@@ -129,7 +129,7 @@ $$\operatorname{Cov}(|Q|,M\mid H)
 
 \newpage
 
-# 5. 课程主线：生成函数怎样给出渗流阈值
+# 5. 研究主线：生成函数怎样给出渗流阈值
 
 有限 ER 图的度数是 Binomial$(N-1,p)$；当 $N\to\infty$、$\rho$ 固定时趋向 Poisson$(\rho)$。在局部树状的稀疏极限中，度生成函数和沿边到达节点的超额度生成函数为
 
@@ -139,7 +139,7 @@ $$G_0(z)=G_1(z)=e^{\rho(z-1)}.$$
 
 $$H_1(z)=zG_1(H_1(z)),\qquad H_0(z)=zG_0(H_1(z)).$$
 
-这是分支过程的递归：当前节点贡献 $z$，每条后续分支贡献一个独立副本。这是无穷稀疏极限的关系，不能当成每张有限有环图的精确恒等式。课程讲义 PGF 第 9–11 页及渗流第 7 页给出同一框架；原始论文可见 [R2，II.3–II.4](https://arxiv.org/html/cond-mat/0007235v2)。
+这是分支过程的递归：当前节点贡献 $z$，每条后续分支贡献一个独立副本。这是无穷稀疏极限的关系，不能当成每张有限有环图的精确恒等式。原始论文可见 [R2，II.3–II.4](https://arxiv.org/html/cond-mat/0007235v2)。
 
 亚临界时 $\rho<1$，$H_0=H_1=H$，$H(1)=1$。对 $H=ze^{\rho(H-1)}$ 求导：
 
@@ -174,7 +174,7 @@ $$\pi_s\sim\frac{1}{\rho\sqrt{2\pi}}s^{-3/2}e^{-sI(\rho)},\qquad
 n_s\sim\frac{1}{\rho\sqrt{2\pi}}s^{-5/2}e^{-sI(\rho)},$$
 $$I(\rho)=\rho-1-\log\rho\ge0.$$
 
-在临界点指数截断消失。$\rho\to1$ 时 $I(\rho)\sim(\rho-1)^2/2$，因此截断规模 $s_*\sim2/(\rho-1)^2$。这里的 $3/2$ 与 $5/2$ 来自两种抽样权重；不能把它们当成互相矛盾的理论。课程渗流第 9 页列出均场 $\tau=5/2,\sigma=1/2$；[R2，II.5](https://arxiv.org/html/cond-mat/0007235v2)讨论生成函数奇点对应的群体尾部。
+在临界点指数截断消失。$\rho\to1$ 时 $I(\rho)\sim(\rho-1)^2/2$，因此截断规模 $s_*\sim2/(\rho-1)^2$。这里的 $3/2$ 与 $5/2$ 来自两种抽样权重；不能把它们当成互相矛盾的理论。[R2，II.5](https://arxiv.org/html/cond-mat/0007235v2)讨论生成函数奇点对应的群体尾部。
 
 若 PMF 的尾指数为 $\alpha>1$，在没有截断干扰的渐近范围内，CCDF 指数为 $\alpha-1$；因此群体计数和节点抽样分别对应 $3/2$ 与 $1/2$ 的 CCDF 指数。有限支持或临近截断时不能直接套用直线斜率换算。
 
@@ -366,7 +366,7 @@ $$\operatorname{Var}R_k=k\operatorname{Var}r,
 
 **真实数据阶段的正确问题是模型相容性。**检查量价统计、时间记忆、尾部与尺度是否与基线相容；真实 $N,u$ 和羊群网络没有真值标签，不能把模型中的唯一识别直接搬到行情上。特别是本模型 $V\le uN$、均匀单位订单和全成交的假设，不能当作真实市场约束。
 
-模型不符合某些市场事实可以定位需要增加的机制。课程中的泡沫／崩盘应用综述仍需 CD 完成；本次理论补强不替代该项工作。
+模型不符合某些市场事实可以定位需要增加的机制。泡沫与崩盘等动态机制在模型文献中讨论。
 
 \newpage
 
@@ -381,16 +381,16 @@ $$\operatorname{Var}R_k=k\operatorname{Var}r,
 | T4 | 固定图的完整量分布识别大小多重集 | 生成函数首个不同系数证明 |
 | T5 | 一般图混合在 $N\ge10$ 不可识别 | 维数证明；11 分拆精确证书；公共卷积推广 |
 | T6 | 已知尺度下 OHLC 无额外结构信息 | 随机排列条件核证明 |
-| L1 | ER 阈值、群体尾部、临界窗口 | 课程／原始理论；明确有限规模与极限区别 |
+| L1 | ER 阈值、群体尾部、临界窗口 | 研究／原始理论；明确有限规模与极限区别 |
 | C1 | 临界方差 $N^{-2/3}$ | 条件于 $\mathbb E S_2\asymp N^{4/3}$，本稿未补证该矩输入 |
 | O1 | 主网格收益完整分布对未知活动率的识别 | 开放；不能用相同方差或分类失败替代证明 |
 | O2 | 物理矩估计的实际精度与稳定性 | 尚未运行；不能虚填优于 RBF |
 | O3 | 真实市场／量子效益 | 尚未建立 |
 
-精确检查入口（在 PC5253 根目录）：
+精确检查入口（在仓库根目录）：
 
 ```sh
-project/.venv/bin/python project/scripts/check_theory_foundations.py
+python scripts/check_theory_foundations.py
 ```
 
 输出 `results/checks/theory_foundations_v1/` 包含：`checks.json`、`mixture_certificate.csv`、`mixture_identical_pmf.csv`。480 项检查覆盖 $N=2,3,4$、多个边概率与活动率、四阶矩、幅度量关系、ER 单调性、显式混淆、核证书及序列化后重算。核矩阵使用精确分数消元，没有用浮点“近零”宣布等价。
@@ -403,15 +403,7 @@ project/.venv/bin/python project/scripts/check_theory_foundations.py
 
 # 15. 来源核对与协作使用
 
-**课程材料。**已直接读取原始讲义并对照公式，页码均按 PDF 页计。
-
-| 文件 | 页码 | 本稿用途 |
-|---|---|---|
-| PC5253 6 Probablility Generating Functions for complex networks.pdf | 5、9–11 | 超额度、递归生成函数、平均群体大小与阈值 |
-| PC5253 7 Percolation theory on networks.pdf | 7–9 | 渗流条件、序参量、均场临界指数及有限规模区别 |
-| PC5253 2 Scale free distribuitons.pdf | 分布章节 | 区分幂律密度、抽样权重与累计尾部；具体指数由本文推导 |
-
-课程材料仅供本地核验，不随公开 GitHub 或交接证书分发。
+**原始研究文献。**
 
 **R1.** Cont, R. & Bouchaud, J.-P. *Herd behavior and aggregate fluctuations in financial markets*. Macroeconomic Dynamics 4, 170–196 (2000)；核对版本为 arXiv cond-mat/9712318v2（1998-01-06）。[公开原文](https://arxiv.org/html/cond-mat/9712318v2)。Section 4 对应协调机制；Appendix 4 对应 $2aN$ 有限的活动率设置。本文补充的成交量、执行器与识别证明不能归给原文。
 

@@ -1,6 +1,6 @@
 ---
 title: "从参数恢复到机制检验：量价逆问题的深化研究"
-author: "PC5253 · AB · 2026-10-27 · 待成员科学复核"
+author: "Econophysics Risk Lab · AB · 2026-10-27 · 待成员科学复核"
 lang: zh-CN
 ---
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Acquire only the frozen new-asset/new-time archives; verify every byte/grid."""
 from pathlib import Path
+from publication_integrity import matches_recorded_digest
 from concurrent.futures import ThreadPoolExecutor
 import calendar,csv,datetime,hashlib,io,json,math,shutil,sys,zipfile
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
@@ -12,7 +13,7 @@ def main():
     cfgpath=ROOT/'configs/state_forecast_v2.json';cfg=json.loads(cfgpath.read_text());contract=ROOT/'docs/AB/state_forecast_v2_contract.md';freeze=ROOT/'data/manifests/state_forecast_v2_pre_download.json'
     datasets={'BTCUSDT':cfg['source_btc_new'],'ETHUSDT':cfg['source_eth_new']};initial={s:len(list((ROOT/'data/raw'/d).glob('*.zip'))) for s,d in datasets.items()}
     j={'config_sha256':hashlib.sha256(cfgpath.read_bytes()).hexdigest(),'contract_sha256':hashlib.sha256(contract.read_bytes()).hexdigest(),'initial_archive_counts':initial,'utc':datetime.datetime.now(datetime.timezone.utc).isoformat()}
-    if freeze.exists():assert json.loads(freeze.read_text())['config_sha256']==j['config_sha256']
+    if freeze.exists():assert matches_recorded_digest(cfgpath,json.loads(freeze.read_text())['config_sha256'],ROOT)
     else:
         assert not any(initial.values());freeze.write_text(json.dumps(j,indent=2)+'\n')
     requests=[]

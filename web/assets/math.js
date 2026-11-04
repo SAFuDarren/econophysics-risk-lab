@@ -1,5 +1,5 @@
-/* Mathematical engine. Parameters follow the frozen PC5253 model.
-   c is the course notation for the original Python parameter rho; q = 2a. */
+/* Mathematical engine. Parameters follow the frozen Econophysics Risk Lab model.
+   c is the research notation for the original Python parameter rho; q = 2a. */
 (function(root){
 'use strict';
 function rng(seed){let z=(seed>>>0)||1;return function(){z^=z<<13;z^=z>>>17;z^=z<<5;return(z>>>0)/4294967296;};}

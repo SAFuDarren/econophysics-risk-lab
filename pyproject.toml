@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Herding models, price-volume identification and reproducible risk analysis"
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [{name = "PC5253 Project Team"}]
+authors = [{name = "Econophysics Risk Lab contributors"}]
 maintainers = [{name = "Darren Fu Shiang"}]
 license = {file = "LICENSE.md"}
 dependencies = []

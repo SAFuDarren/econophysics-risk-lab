@@ -146,7 +146,7 @@ def main():
     primary = next(r for r in summaries if r["allocation"] == cfg["primary_allocation"] and r["depth_multiplier"] == 1)
     gate = {"primary_materiality_passed": primary["material_years"] >= 2,
             "primary_summary": primary, "rule": cfg["primary_materiality_gate"],
-            "decision": "review_only_no_real_world_advantage_claim" if primary["material_years"] >= 2 else "stop_application_expansion_keep_course_mainline",
+            "decision": "review_only_no_real_world_advantage_claim" if primary["material_years"] >= 2 else "stop_application_expansion_keep_research_mainline",
             "real_world_utility_validated": False, "member_scientific_review": "not_run"}
     tables = {"snapshot_inputs": source, "capacities": caps, "paired_capacity": paired, "summary_metrics": summaries,
               "case_metrics": [r for r in caps if r["date"] in cfg["case_dates"]], "volume_replay": replay,

@@ -87,7 +87,7 @@ def main():
     test("Missing final future volume retained as censored", sum(r["future_available"]=="False" for r in replay)==16 and all(r["future_max_daily_load"]==r["future_volume_breach"]=="" for r in replay if r["future_available"]=="False"))
     test("Replay future windows have 189 dates per book/method", len([r for r in replay if r["future_available"]=="True"])==189*4*4)
     gate=json.loads((out/"gate.json").read_text())
-    test("Failed gate records stop without market-advantage claim", gate["decision"]=="stop_application_expansion_keep_course_mainline" and gate["real_world_utility_validated"] is False)
+    test("Failed gate records stop without market-advantage claim", gate["decision"]=="stop_application_expansion_keep_research_mainline" and gate["real_world_utility_validated"] is False)
     result={"status":"pass" if all(c["status"]=="pass" for c in checks) else "fail",
             "scope":"Implementation, frozen design, signed ledger and arithmetic. Synthetic canary is not an application result; no market impact validation.",
             "checks":checks,"synthetic_canary":{"volume_cap":av,"one_round_cap":a1,"feedback_cap":af,"feedback_q":rf["q"]}}

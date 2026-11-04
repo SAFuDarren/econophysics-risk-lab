@@ -1,6 +1,118 @@
 {
-  "scope": "Publication formatting and removal of internal handoff/status references; scientific content retained",
+  "scope": "Recorded publication adaptations; historical experimental digests are preserved",
   "files": [
+    {
+      "path": "AUTHORS.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "3f444def316542891ecfb54d0037489398d00899278bf0d80489df35409ec628",
+      "prior_publication_sha256": "3f444def316542891ecfb54d0037489398d00899278bf0d80489df35409ec628",
+      "published_sha256": "1516c03bbe6f2fc85352c050ffab70635f1a98571c8dd490c5bfefabec53a38c"
+    },
+    {
+      "path": "CITATION.cff",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "39ff5aeac3fc592d9954bbce55794f3336cfce809a78c305979feea362bb0127",
+      "prior_publication_sha256": "39ff5aeac3fc592d9954bbce55794f3336cfce809a78c305979feea362bb0127",
+      "published_sha256": "6b7731fe1887056640f334e01f33522d255639371a40a94297a28a58a1e9b093"
+    },
+    {
+      "path": "DATA_LICENSES.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "15bdb8bfb94d9025b1db4c4bedc90c7abdcb6ee679f81f418f25060d17fdd95c",
+      "prior_publication_sha256": "15bdb8bfb94d9025b1db4c4bedc90c7abdcb6ee679f81f418f25060d17fdd95c",
+      "published_sha256": "4df8457eb0889a691bbb048ff26c15102f66d476754bad546ff9713a4774187e"
+    },
+    {
+      "path": "LICENSE.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "1806e44377bb5a16c5f62cd91a91ad918a47f857669424ea8a6bdd1b4c8b316c",
+      "prior_publication_sha256": "1806e44377bb5a16c5f62cd91a91ad918a47f857669424ea8a6bdd1b4c8b316c",
+      "published_sha256": "db92c847566cce4f4ff5e07acbba330901ad75de492ec4358fc02dff6bda7466"
+    },
+    {
+      "path": "README.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "5997b90d512039f259417e241175a1e70e3e7be55bfb9792480267056531b48b",
+      "prior_publication_sha256": "5997b90d512039f259417e241175a1e70e3e7be55bfb9792480267056531b48b",
+      "published_sha256": "af9b6fbfca7ee2fe5aa4ca365546626f38deb379a63a167a4b14803582abc028"
+    },
+    {
+      "path": "apps/risk_lab_v1/src/template.html",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "8dd329069917a3f2568abf2d16658c06aaedc2500e8302adf87d2079da1e49b4",
+      "prior_publication_sha256": "8dd329069917a3f2568abf2d16658c06aaedc2500e8302adf87d2079da1e49b4",
+      "published_sha256": "cb5f764f685be9b0f967278a137a3d7278622fa17635aba59528f2c3066ab664"
+    },
+    {
+      "path": "configs/crowded_exit_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "e14fbdbd87514d5aabd6a8d63ac56fdd5131f2dba4bde5c446a37659db260f08",
+      "prior_publication_sha256": "e14fbdbd87514d5aabd6a8d63ac56fdd5131f2dba4bde5c446a37659db260f08",
+      "published_sha256": "9d367251f9aa6f6facb3619644900d76aeb396887f89108f1682b2984ee2dd8e"
+    },
+    {
+      "path": "configs/depth_study_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "642696503d2f7aa58580e06cb956987369d5221faee605c6484def855798567c",
+      "prior_publication_sha256": "642696503d2f7aa58580e06cb956987369d5221faee605c6484def855798567c",
+      "published_sha256": "6ca9491d1aa9686402454696720adf6b2598b35ada8d9f1ccbd5335d1885e1b9"
+    },
+    {
+      "path": "configs/forecast_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "a8827aaaf9d852edf5c9e72c2f8d7020922a53d715d337df0f706788f0d44673",
+      "prior_publication_sha256": "a8827aaaf9d852edf5c9e72c2f8d7020922a53d715d337df0f706788f0d44673",
+      "published_sha256": "9dac19f79e2659117833c06722eed8db75770c4b7abf4894ef0a20bcc8ae7b38"
+    },
+    {
+      "path": "configs/foundation_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "af43e2a7f28f3d9c26522181ff5c6acbeb88967688fb1d79534d979d2c9b565c",
+      "prior_publication_sha256": "af43e2a7f28f3d9c26522181ff5c6acbeb88967688fb1d79534d979d2c9b565c",
+      "published_sha256": "c27a409837f698dd0d5f0c115634b26f04de15611a5a6b675e65b6b10b908273"
+    },
+    {
+      "path": "configs/real_market_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "e8405321e035e6c21e3b916fca22aa9e0ec82bab2e22401656b5a33a6c20a41b",
+      "prior_publication_sha256": "e8405321e035e6c21e3b916fca22aa9e0ec82bab2e22401656b5a33a6c20a41b",
+      "published_sha256": "cc2b3b8189e126c3e432e207dff4889bae8d47442ad4197d01a7a5cf2ffda910"
+    },
+    {
+      "path": "configs/simulation_followup_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "ad4ad5a0cab41d50c4c1c707c74c929eab5245865cf3d3e0c009ac1c29241994",
+      "prior_publication_sha256": "ad4ad5a0cab41d50c4c1c707c74c929eab5245865cf3d3e0c009ac1c29241994",
+      "published_sha256": "48bd5d941a70a842069ef7f8dc6ded4922fb6881fbff0f486cd877637f116abf"
+    },
+    {
+      "path": "configs/simulation_study_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "d1a26e7b292cd6ac3e867a851e0219fd16180d37e636e621512c259eb6bd2065",
+      "prior_publication_sha256": "d1a26e7b292cd6ac3e867a851e0219fd16180d37e636e621512c259eb6bd2065",
+      "published_sha256": "07bbe0ec75e537918733d00bfa2b76cc94fcafd297ffbfb4dd2546ba9be9acb5"
+    },
+    {
+      "path": "configs/state_forecast_v2.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "7d9e60b4bcb819dc108e6bfdfa154af71000e9d5779cc11445770dc46ea2d6ea",
+      "prior_publication_sha256": "7d9e60b4bcb819dc108e6bfdfa154af71000e9d5779cc11445770dc46ea2d6ea",
+      "published_sha256": "27f513f224f1418e71a4401f907398098da5ca0b2620eda46c6db0865c0a6557"
+    },
+    {
+      "path": "configs/tail_increment_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "d541c142549ce0bafe6918fd5a09d91229671602aa8aeebda8b7e4c8adab9ef0",
+      "prior_publication_sha256": "d541c142549ce0bafe6918fd5a09d91229671602aa8aeebda8b7e4c8adab9ef0",
+      "published_sha256": "5bb48562922f6c25aa20b558ca6fe757ade91c01a66555cbe0c70f5f9687266d"
+    },
+    {
+      "path": "configs/us_equity_v1.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "919ab7196273c8b803db2d5a2d258b3f7b936ce82ced76da13ecf823c0e8dd9c",
+      "prior_publication_sha256": "919ab7196273c8b803db2d5a2d258b3f7b936ce82ced76da13ecf823c0e8dd9c",
+      "published_sha256": "856e47098b22b0401cdedbc2a240b67408b79da7fda6f93b565799417cae1788"
+    },
     {
       "path": "data/manifests/binance_btcusdt_2025_5m_v1/README.md",
       "change": "Relative links adjusted to the public snapshot; scientific text retained.",
@@ -32,34 +144,178 @@
       "published_sha256": "347071601e455fd67fc3c81e926fc75c08dd07ee6c88048b1444b591fe9d55c4"
     },
     {
+      "path": "docs/AB/RISK_LAB_DESIGN_v1.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "a8f0466a7e04fcaa398ab02f53e89304e7c5550d9d136e6f5f63a73e371ee3c3",
+      "prior_publication_sha256": "a8f0466a7e04fcaa398ab02f53e89304e7c5550d9d136e6f5f63a73e371ee3c3",
+      "published_sha256": "424bfbfbdbfc851af470f64a051a6931dd3decab3457496c81ed697913e7f1ce"
+    },
+    {
+      "path": "docs/AB/RISK_LAB_GUIDE_v1.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "68933d60d50f3a090164bf400cd455a48bdbf459f137ef6717e26f23942fb8dc",
+      "prior_publication_sha256": "68933d60d50f3a090164bf400cd455a48bdbf459f137ef6717e26f23942fb8dc",
+      "published_sha256": "9c095b92cb48a55e50eeba26e8be52388d74ee78a377f39fe003ee4bbfa5e6ae"
+    },
+    {
+      "path": "docs/AB/crowded_exit_figure_contract_v1.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "c6d8f646399dd455e038de7e9f4739d13f591aa4d66d61dd3ac7c12920569958",
+      "prior_publication_sha256": "c6d8f646399dd455e038de7e9f4739d13f591aa4d66d61dd3ac7c12920569958",
+      "published_sha256": "fe7b79b9f9314002d0be762ace2a2b7d673a7a46191f3d35f9f10b0b49bf741d"
+    },
+    {
+      "path": "docs/AB/forecast_contract.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "c8c85f6a4758417c11bb8c1b9ae2493c137beace46fbad02c6df1b4116459e8b",
+      "prior_publication_sha256": "c8c85f6a4758417c11bb8c1b9ae2493c137beace46fbad02c6df1b4116459e8b",
+      "published_sha256": "9f4beb34deae47c617f902cb265b0cf5adfbf39ca22f42ab1c9859e4f5879e1b"
+    },
+    {
+      "path": "docs/AB/foundation_figure_contract.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "e05f0ee9434a6bfdc26b2d0dec9b99926a514bb97c76f2d0d81ce09859744ae6",
+      "prior_publication_sha256": "e05f0ee9434a6bfdc26b2d0dec9b99926a514bb97c76f2d0d81ce09859744ae6",
+      "published_sha256": "354dd2327a1b748b652d5e40a8565e576e9f1f63068e32a2dd7590e57503f228"
+    },
+    {
+      "path": "docs/AB/literature_synthesis.md",
+      "change": "Removed internal status and team-handoff paragraphs; retained the cited literature-to-method mapping.",
+      "original_sha256": "c9ea3f7f46e41f25deba0a9403d6e17f02258beb1c1528cafc91cb450e67caf4",
+      "published_sha256": "ecda612a6727c3f6f551fb1507f12cf06e5c748e5d3c8fcb97f9f6f75257e183"
+    },
+    {
+      "path": "docs/AB/market_data_provenance.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "e4be9cca1ac9440abdb714ee49d3cb617ee128eadd35b726cd7d54066aafaf8b",
+      "prior_publication_sha256": "e4be9cca1ac9440abdb714ee49d3cb617ee128eadd35b726cd7d54066aafaf8b",
+      "published_sha256": "3e185d573f98a3d292d92f98ddfdce03563992764fece3677523e84d1fa51747"
+    },
+    {
+      "path": "docs/AB/model_spec.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "12d1ccafe950832011e14339338958e85533b9e4c8478cd70225e265deacc209",
+      "prior_publication_sha256": "12d1ccafe950832011e14339338958e85533b9e4c8478cd70225e265deacc209",
+      "published_sha256": "e45e2fc9d87349d62609697438170ab909389d363a1971732a0861a8dfcba0f8"
+    },
+    {
+      "path": "docs/AB/simulation_figure_contract.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "299aa33ec688698d78ccaf3bafb13d326b0787b8305076e6b7aea6b1df14655e",
+      "prior_publication_sha256": "299aa33ec688698d78ccaf3bafb13d326b0787b8305076e6b7aea6b1df14655e",
+      "published_sha256": "3954570e0578dcbb0dd238ec9d5aeabfa3396a07a8e70ce055d6326f0d7b214c"
+    },
+    {
+      "path": "docs/AB/tail_increment_figure_contract.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "783c0a1138fd3834ed17dd1b415b6d083d06706fdf3ce26cf35dae87325e57d3",
+      "prior_publication_sha256": "783c0a1138fd3834ed17dd1b415b6d083d06706fdf3ce26cf35dae87325e57d3",
+      "published_sha256": "df6fd0691db5b89854df944d433548dbf23d731bcee59d738096a644111d97cb"
+    },
+    {
+      "path": "docs/AB/us_equity_v1_contract.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "de687464913f9658492463dff3c9a241a2cbbb2d4e0eb60fa5af4623af2c9a91",
+      "prior_publication_sha256": "de687464913f9658492463dff3c9a241a2cbbb2d4e0eb60fa5af4623af2c9a91",
+      "published_sha256": "273803695bb0127da86116bf5ceb1f6bde6c15319d10472bea17a995880c1d9f"
+    },
+    {
+      "path": "docs/README.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "188e7a41db67ae02a438e3fb980ed33ff834c690b909c0cb20a480298205eb67",
+      "prior_publication_sha256": "188e7a41db67ae02a438e3fb980ed33ff834c690b909c0cb20a480298205eb67",
+      "published_sha256": "548a0bbd6b5580e53bbc31041ac33e5ae4030bdd7027a9fb0f822b371fcd0ace"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "1b05c66c6f53aa933421b906bc2d5a463bced58b90396507a9fe3947fe90ac3e",
+      "prior_publication_sha256": "1b05c66c6f53aa933421b906bc2d5a463bced58b90396507a9fe3947fe90ac3e",
+      "published_sha256": "e53e4e42ffc6e9342da21845ac41d54be4731048d18e2fb538a8de5e7050c4f3"
+    },
+    {
+      "path": "docs/theory/DEPTH_ADDENDUM.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "f649b2d8896edcf945e397a6a3333f8c2c694e85c74addd15f0bca9fe7dc96e5",
+      "prior_publication_sha256": "f649b2d8896edcf945e397a6a3333f8c2c694e85c74addd15f0bca9fe7dc96e5",
+      "published_sha256": "205071486d8b1d09578c3111322584456a6d72db0453e3f6ebdae81324dd8836"
+    },
+    {
+      "path": "docs/theory/FOUNDATIONS.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "7440bebfe4b26594f83dbf9d327409c3eb06beb28ea89b6a1b70798b89573a29",
+      "prior_publication_sha256": "7440bebfe4b26594f83dbf9d327409c3eb06beb28ea89b6a1b70798b89573a29",
+      "published_sha256": "6dc98c670e2d5a3113f317dfcba3ab40d88e34206a973b5bcf57b236a005746c"
+    },
+    {
+      "path": "notebooks/01_model_and_moments.ipynb",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "e4116171021af0f4fc08045fcea4e3e9fcf2d5f2a86be0625c4726d75e0ef74f",
+      "prior_publication_sha256": "e4116171021af0f4fc08045fcea4e3e9fcf2d5f2a86be0625c4726d75e0ef74f",
+      "published_sha256": "043f7a37a5e97c24cbebf7e3971f9dbefc68f6ae72ffd1dec5d3f478425850a4"
+    },
+    {
+      "path": "notebooks/02_inference_and_identity.ipynb",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "426539b855eecdd421f472b2c4635088713b56164ff09b97cc934a30b0c54c6d",
+      "prior_publication_sha256": "426539b855eecdd421f472b2c4635088713b56164ff09b97cc934a30b0c54c6d",
+      "published_sha256": "8cf05aad3e42944d3e7be5e9e525b5ca45d5207f26c89e6d3cf16c2147cf7fb0"
+    },
+    {
+      "path": "notebooks/03_market_and_forecasting.ipynb",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "442f2c968b929fd1b17b5d15b95be67ed978619539b6a4f7b9813ffedccb5cb9",
+      "prior_publication_sha256": "442f2c968b929fd1b17b5d15b95be67ed978619539b6a4f7b9813ffedccb5cb9",
+      "published_sha256": "16c904d886ad2a2c656486a7694c17a502e0cc2227e31b232472a5b7704d1cb2"
+    },
+    {
+      "path": "pyproject.toml",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "5011d85ac82576de2f04dbe37679a6c86406276d799b7cae615c69d734c910a2",
+      "prior_publication_sha256": "5011d85ac82576de2f04dbe37679a6c86406276d799b7cae615c69d734c910a2",
+      "published_sha256": "50127c8480a75fc285ff53933e23d6aa0fc269cca80d5434e8e213d7e1f5d312"
+    },
+    {
       "path": "results/analysis/crowded_exit_v1/analysis-report.md",
-      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
       "original_sha256": "95404b3eb51e2dfd07a67a41129be4d6efdb56b412679b7c6239145fda60bbf6",
-      "published_sha256": "e1a0ecd496fa228845e72198fe645e7383a104b880e67abfee6a001111b1bf3f"
+      "prior_publication_sha256": "e1a0ecd496fa228845e72198fe645e7383a104b880e67abfee6a001111b1bf3f",
+      "published_sha256": "f40d618e5b466caed3ae2939a031ad6cca810b4a1795237369f2f0862f897e48"
     },
     {
       "path": "results/analysis/depth_study_v1/analysis-report.md",
-      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
       "original_sha256": "b14d67c1c61af3d114ee4dfb83550d74c9737339864350392331b0664dc1ae32",
-      "published_sha256": "7c30898817cf3767f7a8a0665d3c64153eb9b518f317a53aa63d901101204f05"
+      "prior_publication_sha256": "7c30898817cf3767f7a8a0665d3c64153eb9b518f317a53aa63d901101204f05",
+      "published_sha256": "1d424c574490a4bce7f901db15eda8d3de707f9420ca0a7ffd1f725aa3710429"
     },
     {
       "path": "results/analysis/forecast_v1/analysis-report.md",
-      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
       "original_sha256": "e024c2038ebf443e3635eb2705546f62e67ebba467ef4b60ef41e8e85e355972",
-      "published_sha256": "a9bbf2bd5b64e8524ceb906436f03ff379c8af69b765ada8b12b731e355f58da"
+      "prior_publication_sha256": "a9bbf2bd5b64e8524ceb906436f03ff379c8af69b765ada8b12b731e355f58da",
+      "published_sha256": "34b35cfb37111b35d2453561033afa5df3f14375c67bfd3a5a83999b484049a3"
+    },
+    {
+      "path": "results/analysis/predictive_utility_v1/analysis-report.md",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "7a5472a843c0fe9f1643e59b90393a40a831fbc3790b0e399334946a5aae3be9",
+      "prior_publication_sha256": "7a5472a843c0fe9f1643e59b90393a40a831fbc3790b0e399334946a5aae3be9",
+      "published_sha256": "aa1c7963dc16c02ca39414b7d0abf9aef17af76dbedf2e18a2a5895bd52988c3"
     },
     {
       "path": "results/analysis/real_market_v1/analysis-report.md",
-      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
       "original_sha256": "6ba5330ef290d87b843bf76a639c9e6e77a3d5ceb20b45df26d0df5a8f9c29f7",
-      "published_sha256": "a026325ee23b7aba3b209d7fcdf2e41f9895a84a56bf7b48f58473e80bf56d36"
+      "prior_publication_sha256": "a026325ee23b7aba3b209d7fcdf2e41f9895a84a56bf7b48f58473e80bf56d36",
+      "published_sha256": "a2f3be396f5d366d0196bdf838d0142e3f1674d1dcb32fb82fa65b440fdf4e55"
     },
     {
       "path": "results/analysis/state_forecast_v2/analysis-report.md",
-      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
       "original_sha256": "eeeee00585225e1c3b6639b2942ca63f66c935f07113a2f374a782c479a795cc",
-      "published_sha256": "9ecba82d52aa4d116646f35f644b27e46497c08aacf59b68738698ffa5c931b1"
+      "prior_publication_sha256": "9ecba82d52aa4d116646f35f644b27e46497c08aacf59b68738698ffa5c931b1",
+      "published_sha256": "79fbffcf466614fa60ce85662509e78c4b0ae31a314f1e9ff1fc7ef727cc5e68"
     },
     {
       "path": "results/analysis/tail_increment_v1/analysis-report.md",
@@ -69,15 +325,227 @@
     },
     {
       "path": "results/analysis/us_equity_v1/analysis-report.md",
-      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
       "original_sha256": "35542785a1cd0af47660bd27ad2e0e97a14d45cd2ba14bc52c23a3703111f634",
-      "published_sha256": "c3f1bb69ec9ec27f596fd5634498ea05cdc606660262d26d24f42cdf76b04c56"
+      "prior_publication_sha256": "c3f1bb69ec9ec27f596fd5634498ea05cdc606660262d26d24f42cdf76b04c56",
+      "published_sha256": "3c8e4727233234af59c130e13d74bc0ff9f9b6dc5d08f2ad082e213a99501046"
     },
     {
-      "path": "docs/AB/literature_synthesis.md",
-      "change": "Removed internal status and team-handoff paragraphs; retained the cited literature-to-method mapping.",
-      "original_sha256": "c9ea3f7f46e41f25deba0a9403d6e17f02258beb1c1528cafc91cb450e67caf4",
-      "published_sha256": "ecda612a6727c3f6f551fb1507f12cf06e5c748e5d3c8fcb97f9f6f75257e183"
+      "path": "results/checks/us_equity_v1/collective_pnl_theory.json",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "ce61232e7a1cbe42eb74f4b5b684e5d7496934292b5b5f37fc7da5feb9169b67",
+      "prior_publication_sha256": "ce61232e7a1cbe42eb74f4b5b684e5d7496934292b5b5f37fc7da5feb9169b67",
+      "published_sha256": "18435bb0cdc7a980c57de0fe12367472bca3d19026a1ba5b072995fb963349ce"
+    },
+    {
+      "path": "scripts/check_crowded_exit.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "299aaa8162fadccbaac544628d9de68e566de027fb1d99a1344fd87fd38d40e3",
+      "prior_publication_sha256": "299aaa8162fadccbaac544628d9de68e566de027fb1d99a1344fd87fd38d40e3",
+      "published_sha256": "0e458f16cbb347e468dc0828b47c2f107bcd6a7d24f05743f0a829038f24904a"
+    },
+    {
+      "path": "scripts/check_risk_lab.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "9057e46a051e1b8275ddbc127946f0867d6daa78392dc7132ca5794aacba7158",
+      "prior_publication_sha256": "9057e46a051e1b8275ddbc127946f0867d6daa78392dc7132ca5794aacba7158",
+      "published_sha256": "c60386faf12e9b2c6e7264baca81c0dec276f6c37471eb8a29dcd5c37e655efb"
+    },
+    {
+      "path": "scripts/check_tail_increment.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "c3120b35fafed12ea768b8647d8c2a5a4141916d8f3ea385854706a598e324c4",
+      "prior_publication_sha256": "c3120b35fafed12ea768b8647d8c2a5a4141916d8f3ea385854706a598e324c4",
+      "published_sha256": "4c64cef84a52b88fdaf4a7a70c4a20e74c30a3ec045d493969c9e3f32eadb2b6"
+    },
+    {
+      "path": "scripts/fetch_forecast_data.py",
+      "original_sha256": "cb556e03ee699b8f5fc37c15d62c8e838853246f25ec22092dac1f1299d244e4",
+      "change": "Project naming, presentation wording and corresponding provenance validation; numerical definitions and data retained.",
+      "prior_publication_sha256": "cb556e03ee699b8f5fc37c15d62c8e838853246f25ec22092dac1f1299d244e4",
+      "published_sha256": "b04aa193038cbacf3f534efd3d95e338ad11e54954173c758396b5de32ba94cb"
+    },
+    {
+      "path": "scripts/fetch_state_forecast_v2_data.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "0bdb58256510b7a81aa3faa06cfdc57c804ff7d6ceb35b206cde07ffaa38c1b1",
+      "prior_publication_sha256": "0bdb58256510b7a81aa3faa06cfdc57c804ff7d6ceb35b206cde07ffaa38c1b1",
+      "published_sha256": "7c96174f974c76b379ca9b0e667a29fde0a39cff20a38f7b3f6e364eceb8a664"
+    },
+    {
+      "path": "scripts/fetch_tail_increment.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "b67f65469bfb60abec3235a5f1a2d09676440b7141721ace7ce11aedeea87ba9",
+      "prior_publication_sha256": "b67f65469bfb60abec3235a5f1a2d09676440b7141721ace7ce11aedeea87ba9",
+      "published_sha256": "28566edfa28970fb65847377ef1942f006eba6cededd7964d1e54a9e9c8c3c45"
+    },
+    {
+      "path": "scripts/fetch_us_equity.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "82a2a7974a00f07cbc08d906dacad42fe8bdab32310ea26daed2e6a0919ab1a3",
+      "prior_publication_sha256": "82a2a7974a00f07cbc08d906dacad42fe8bdab32310ea26daed2e6a0919ab1a3",
+      "published_sha256": "b0c7e1a4ce6509d460d4c767122a099d6f79059a7aeced89422c69b2f146aacb"
+    },
+    {
+      "path": "scripts/plot_project_mainline_v2.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "15290d08a5e8578130c6e21d801112f7ce4dc3414197784bf4101a41bba53dfa",
+      "prior_publication_sha256": "15290d08a5e8578130c6e21d801112f7ce4dc3414197784bf4101a41bba53dfa",
+      "published_sha256": "705bc90e680e73a39e32ab9c3025d006f0db220921429d277cf0d8dc725cb8f3"
+    },
+    {
+      "path": "scripts/reproduce_forecast_study.py",
+      "original_sha256": "484dd208cec094c32224f8ef07b4b6485579227a35652e87e16816303343676d",
+      "change": "Project naming, presentation wording and corresponding provenance validation; numerical definitions and data retained.",
+      "prior_publication_sha256": "484dd208cec094c32224f8ef07b4b6485579227a35652e87e16816303343676d",
+      "published_sha256": "62b753c689024bc2a5dccee1318e8bddf7f1c8e1bb18f6d0104f6ad89ed84585"
+    },
+    {
+      "path": "scripts/reproduce_state_forecast_v2.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "4d07eadeb4e43742999d1fd32490e611d57f10e28d5bcb82efda6c1fc7d93c28",
+      "prior_publication_sha256": "4d07eadeb4e43742999d1fd32490e611d57f10e28d5bcb82efda6c1fc7d93c28",
+      "published_sha256": "21d05bb737a1156867dfe69befc7da6f4fbb2d6fc4b6a0e0770f3159d1a4f666"
+    },
+    {
+      "path": "scripts/reproduce_tail_increment.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "4ef9701ae02f375bb09f173c91ad3a31a273b0d43e496ed291a49ce2daa1f97e",
+      "prior_publication_sha256": "4ef9701ae02f375bb09f173c91ad3a31a273b0d43e496ed291a49ce2daa1f97e",
+      "published_sha256": "3cef446d04e9b9b82ba834416ca449c6a071b567b406e02846f5d41046a22a56"
+    },
+    {
+      "path": "scripts/run_crowded_exit.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "d993f6329c24e0336a7bf8e5aa701f1f93cc16c6ba1266adebaac8ed07d15a0b",
+      "prior_publication_sha256": "d993f6329c24e0336a7bf8e5aa701f1f93cc16c6ba1266adebaac8ed07d15a0b",
+      "published_sha256": "c974ac0d88fd588159139d7477a7881fdef245adf16869c9bd110a916a2d7901"
+    },
+    {
+      "path": "scripts/run_state_forecast_v2.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "d5c49e753c219b1e1062de8c6dcb797b4338e0d63f464d612188d2d3333512a8",
+      "prior_publication_sha256": "d5c49e753c219b1e1062de8c6dcb797b4338e0d63f464d612188d2d3333512a8",
+      "published_sha256": "2b55e126be438a6b1b80ef572a6d832ec0cdace3a0810b36a27164568d6a5cd8"
+    },
+    {
+      "path": "scripts/summarize_crowded_exit.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "dd0f787f1b06b1aed21bce19b2864b8b8ec034b9c4ef2b9c956cb5cbc0b56cf9",
+      "prior_publication_sha256": "dd0f787f1b06b1aed21bce19b2864b8b8ec034b9c4ef2b9c956cb5cbc0b56cf9",
+      "published_sha256": "80d861e20526ab220e6808c318cf78f0d6d3390b003fcd97f8fe5273c6637981"
+    },
+    {
+      "path": "scripts/summarize_simulation_study.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "682dd3f654902fd28af4a7cfc6a7fb3163d4528e4394edf89e804ebb747af3ad",
+      "prior_publication_sha256": "682dd3f654902fd28af4a7cfc6a7fb3163d4528e4394edf89e804ebb747af3ad",
+      "published_sha256": "359a5903b2f6e52f8682315e13dfac12896ccf43158549d61a81a636b7d63c13"
+    },
+    {
+      "path": "scripts/summarize_us_equity.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "accb668b1e16f24b3f4897c2f90954077a1d4566ffd9c2ed9890ec79833634f7",
+      "prior_publication_sha256": "accb668b1e16f24b3f4897c2f90954077a1d4566ffd9c2ed9890ec79833634f7",
+      "published_sha256": "0d1011647ff908e3f1cb64118aeeac71e9fb3ecdbf95ad2add4f891f467ea588"
+    },
+    {
+      "path": "scripts/supplement_us_equity.py",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "ac385236c2718c7c6b5719377b76cf92648cbebba9ed7e618b064fb511de7224",
+      "prior_publication_sha256": "ac385236c2718c7c6b5719377b76cf92648cbebba9ed7e618b064fb511de7224",
+      "published_sha256": "2a3e94dd84af8620c41393e13dc476bf20b4264b14ccc5c4526bb98dced1ddee"
+    },
+    {
+      "path": "web/advanced/index.html",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "5bb5b775a6e40a344384f65cd22ec4be146c7e2b535df03a104afc55befd41c4",
+      "prior_publication_sha256": "5bb5b775a6e40a344384f65cd22ec4be146c7e2b535df03a104afc55befd41c4",
+      "published_sha256": "7e10ad955bb9ea6fa40226c304b758bab513f000b6d3d17aa11dfefe110b9cf5"
+    },
+    {
+      "path": "web/assets/math.js",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "d5d06f4677767c54457727ca37dcaff41c1aa1e5ff8c98543923c090dd386c53",
+      "prior_publication_sha256": "d5d06f4677767c54457727ca37dcaff41c1aa1e5ff8c98543923c090dd386c53",
+      "published_sha256": "a1766934ab091a54664a752e5891230f978fc7fbbdf3dbfd95a2800f8e6847a0"
+    },
+    {
+      "path": "web/assets/site.js",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "f250edfaf2587597e4808e1c0464c12f37f08d76f96acb7388b1073a6806ac91",
+      "prior_publication_sha256": "f250edfaf2587597e4808e1c0464c12f37f08d76f96acb7388b1073a6806ac91",
+      "published_sha256": "09e19943fc9b722b86c635a533844697b74e63b8229c9065f0e7d1b0a9c2e9af"
+    },
+    {
+      "path": "web/downloads/01_model_and_moments.ipynb",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "e4116171021af0f4fc08045fcea4e3e9fcf2d5f2a86be0625c4726d75e0ef74f",
+      "prior_publication_sha256": "e4116171021af0f4fc08045fcea4e3e9fcf2d5f2a86be0625c4726d75e0ef74f",
+      "published_sha256": "043f7a37a5e97c24cbebf7e3971f9dbefc68f6ae72ffd1dec5d3f478425850a4"
+    },
+    {
+      "path": "web/downloads/02_inference_and_identity.ipynb",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "426539b855eecdd421f472b2c4635088713b56164ff09b97cc934a30b0c54c6d",
+      "prior_publication_sha256": "426539b855eecdd421f472b2c4635088713b56164ff09b97cc934a30b0c54c6d",
+      "published_sha256": "8cf05aad3e42944d3e7be5e9e525b5ca45d5207f26c89e6d3cf16c2147cf7fb0"
+    },
+    {
+      "path": "web/downloads/03_market_and_forecasting.ipynb",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "442f2c968b929fd1b17b5d15b95be67ed978619539b6a4f7b9813ffedccb5cb9",
+      "prior_publication_sha256": "442f2c968b929fd1b17b5d15b95be67ed978619539b6a4f7b9813ffedccb5cb9",
+      "published_sha256": "16c904d886ad2a2c656486a7694c17a502e0cc2227e31b232472a5b7704d1cb2"
+    },
+    {
+      "path": "web/downloads/research-report-en.pdf",
+      "original_sha256": "5064203c26cd9e23f7b1cafe476fd2d11c833888bbb0a6b5f5954a62ee30dd3e",
+      "change": "Project framing, conditional research outlook and publication wording; scientific results retained.",
+      "prior_publication_sha256": "5064203c26cd9e23f7b1cafe476fd2d11c833888bbb0a6b5f5954a62ee30dd3e",
+      "published_sha256": "700db37d728ac51731cd8ad495986d5b086ba97a562b9e2b8997acf87746e4b5"
+    },
+    {
+      "path": "web/downloads/research-report-zh.pdf",
+      "original_sha256": "c61578a1c9b415fcb7a9a951382dfa224b4b76713cc40b4c5590c8685283b26e",
+      "change": "Project framing, conditional research outlook and publication wording; scientific results retained.",
+      "prior_publication_sha256": "c61578a1c9b415fcb7a9a951382dfa224b4b76713cc40b4c5590c8685283b26e",
+      "published_sha256": "6c5d7229db12c62c593478b0615e28468a732e3018a568c54d90f250ce5858b6"
+    },
+    {
+      "path": "web/findings.html",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "67fb3ab2369749f5d5161ccebabfd317e094823aa2de46316435fcfe2922b6d7",
+      "prior_publication_sha256": "67fb3ab2369749f5d5161ccebabfd317e094823aa2de46316435fcfe2922b6d7",
+      "published_sha256": "0fae98fa82088a23669b742a45db0a72df4f1228f12fecf37587d338a618ce78"
+    },
+    {
+      "path": "web/index.html",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "26b57688e491d87e5ea0478d46761de42015d0e73c79e528e2f5c87a8d828d52",
+      "prior_publication_sha256": "26b57688e491d87e5ea0478d46761de42015d0e73c79e528e2f5c87a8d828d52",
+      "published_sha256": "bafc0f2a501f8778232367dea4731cbce106251c0f814392c9f59bbf65cde1b8"
+    },
+    {
+      "path": "web/lab.html",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "9dadfeb9217b50aa378749be13fe205f02bac220fbe1dde123707df05b2a1459",
+      "prior_publication_sha256": "9dadfeb9217b50aa378749be13fe205f02bac220fbe1dde123707df05b2a1459",
+      "published_sha256": "5c08eacdaeede74682b77cea5826d6d5c7e389e6d974305f1497ec65eb0d84cf"
+    },
+    {
+      "path": "web/methods.html",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "179537f340bf2f42c5ae8324c3c6bb54ba929ec0aa3328837e010b6533c5cb54",
+      "prior_publication_sha256": "179537f340bf2f42c5ae8324c3c6bb54ba929ec0aa3328837e010b6533c5cb54",
+      "published_sha256": "f02bb1169913f11c1a8d3c7b903b128ec2e479e148ad311bc6b87c4ab9b86e4a"
+    },
+    {
+      "path": "web/reproduce.html",
+      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "original_sha256": "aa0d17c5db118cbfcebd25ff0a7a7fd1714c0dba1e4bddb7c4c1e52520c740e9",
+      "prior_publication_sha256": "aa0d17c5db118cbfcebd25ff0a7a7fd1714c0dba1e4bddb7c4c1e52520c740e9",
+      "published_sha256": "db7c12f23109de440de7b60a5486e62280cae0a83057c86125e54fcf95d081c5"
     }
   ]
 }

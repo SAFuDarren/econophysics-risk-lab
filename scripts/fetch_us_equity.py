@@ -35,7 +35,7 @@ def main():
         if not path.exists():
             for attempt in range(3):
                 try:
-                    req=urllib.request.Request(url,headers={'User-Agent':'PC5253-academic-research/1.0'})
+                    req=urllib.request.Request(url,headers={'User-Agent':'Econophysics-Risk-Lab/1.0'})
                     with urllib.request.urlopen(req,timeout=30) as r:data=r.read()
                     json.loads(data);path.write_bytes(data);break
                 except Exception:

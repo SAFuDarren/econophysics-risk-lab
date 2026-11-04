@@ -1,5 +1,5 @@
 {
-  "protocol_id":"PC5253-ABCD-1.4",
+  "protocol_id":"ERL-1.4",
   "dataset":"binance_btcusdt_2025_5m_v1",
   "seed":2026102704,
   "scope":"First real-market comparison; fixed before inferential analysis; old simulation packages unchanged",

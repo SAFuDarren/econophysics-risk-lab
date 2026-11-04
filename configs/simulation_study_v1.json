@@ -1,5 +1,5 @@
 {
-  "protocol_id": "PC5253-ABCD-1.4",
+  "protocol_id": "ERL-1.4",
   "status": "locked_before_study_outcomes",
   "scope": "simulation-only finite-grid study; one independent training split",
   "seed": 52531001,

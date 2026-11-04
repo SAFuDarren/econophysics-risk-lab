@@ -1,6 +1,6 @@
 # 状态机制与新留出：量价增益能否变得稳定？
 
-PC5253 · state_forecast_v2 · 2026-10-27 · REAL_DATA / SIMULATION / CONCEPTUAL · 待成员科学复核
+Econophysics Risk Lab · state_forecast_v2 · 2026-10-27 · REAL_DATA / SIMULATION / CONCEPTUAL · 待成员科学复核
 
 ## 1. 结论：完成改进检验，仍未获得稳定的大幅量价增益
 
@@ -152,7 +152,7 @@ $$\mathbb E[r_{t+1}^2\mid\mathcal F_t]=(\lambda_0/N)^2\bar q A.$$
 | 动态状态与响应补偿改变联合约束 | 已识别真实市场的活动/流动性机制 |
 | 一些预测损失或预算诊断改善 | 实盘收益、成本后效益或风险资本已验证 |
 
-当前应保留简单HAR和return-only参照，不将复杂量价方案默认升级为实用赢家。课程展示可突出机制可检验性、严格新数据边界、完整控制和阴性结果；不再在当前留出上反复调参追逐显著性。若继续，应先明确更短时间尺度或盘口信息的新机制问题，重新冻结并准备未用检验。
+当前应保留简单HAR和return-only参照，不将复杂量价方案默认升级为实用赢家。研究展示可突出机制可检验性、严格新数据边界、完整控制和阴性结果；不再在当前留出上反复调参追逐显著性。若继续，应先明确更短时间尺度或盘口信息的新机制问题，重新冻结并准备未用检验。
 
 方法与材料：[统计附录](stats-appendix.md)、[图表目录](figure-catalog.md)、[主张账本](claim-candidates.md)、AB/CD交接（原内部交接记录）、[配置](../../../configs/state_forecast_v2.json)。
 

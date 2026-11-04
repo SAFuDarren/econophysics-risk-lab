@@ -1,5 +1,5 @@
 {
-  "protocol_id": "PC5253-ABCD-1.4",
+  "protocol_id": "ERL-1.4",
   "status": "method_frozen_before_external_asset_download_not_before_known_historical_events",
   "seed": 2026102712,
   "old_panel": ["XLB","XLE","XLF","XLI","XLK","XLP","XLU","XLV","XLY"],

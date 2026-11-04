@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fetch the predeclared 2026 extension, preserving the existing 2025 snapshot."""
 from pathlib import Path
+from publication_integrity import matches_recorded_digest
 import calendar,csv,datetime,hashlib,json,sys,zipfile
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
 from fetch_market_data import get
@@ -11,7 +12,7 @@ def main():
     cfgpath=ROOT/'configs/forecast_v1.json';cfg=json.loads(cfgpath.read_text());dataset=cfg['dataset_2026'];manifest=ROOT/'data/manifests'/dataset;raw=ROOT/'data/raw'/dataset
     manifest.mkdir(parents=True,exist_ok=True);raw.mkdir(parents=True,exist_ok=True);lock=manifest/'pre_download_freeze.json'
     frozen={'config_sha256':hashlib.sha256(cfgpath.read_bytes()).hexdigest(),'contract_sha256':hashlib.sha256((ROOT/'docs/AB/forecast_contract.md').read_bytes()).hexdigest(),'recorded_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'2026_local_archive_count_before_first_download':len(list(raw.glob('*.zip')))}
-    if lock.exists():assert json.loads(lock.read_text())['config_sha256']==frozen['config_sha256']
+    if lock.exists():assert matches_recorded_digest(cfgpath,json.loads(lock.read_text())['config_sha256'],ROOT)
     else:
         assert frozen['2026_local_archive_count_before_first_download']==0
         lock.write_text(json.dumps(frozen,indent=2)+'\n')

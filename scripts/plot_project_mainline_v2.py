@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Conceptual bridge and source-bound skill comparison; no refit or new experiment.
 
-10.5-inch course slide/report canvas; PDF/SVG editable, PNG is a preview.
+10.5-inch research figure canvas; PDF/SVG editable, PNG is a preview.
 """
 from pathlib import Path
 import csv

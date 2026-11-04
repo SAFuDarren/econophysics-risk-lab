@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Frozen state-aware forecast comparison with separate new-asset/new-time tests."""
 from pathlib import Path
+from publication_integrity import matches_recorded_digest
 import argparse,csv,hashlib,itertools,json,os,sys,time
 os.environ.setdefault('OPENBLAS_NUM_THREADS','1');os.environ.setdefault('OMP_NUM_THREADS','1')
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
@@ -25,7 +26,7 @@ def main():
     tables=ROOT/'results/tables'/args.run_id;checks=ROOT/'results/checks'/args.run_id
     if tables.exists():parser.error('run exists; preserve it')
     tables.mkdir(parents=True);checks.mkdir(parents=True,exist_ok=True);cfgpath=ROOT/'configs/state_forecast_v2.json';cfg=json.loads(cfgpath.read_text());started=time.perf_counter()
-    freeze=json.loads((ROOT/'data/manifests/state_forecast_v2_pre_download.json').read_text());assert freeze['config_sha256']==hashlib.sha256(cfgpath.read_bytes()).hexdigest();assert freeze['contract_sha256']==hashlib.sha256((ROOT/'docs/AB/state_forecast_v2_contract.md').read_bytes()).hexdigest()
+    freeze=json.loads((ROOT/'data/manifests/state_forecast_v2_pre_download.json').read_text());assert matches_recorded_digest(cfgpath,freeze['config_sha256'],ROOT);assert matches_recorded_digest(ROOT/'docs/AB/state_forecast_v2_contract.md',freeze['contract_sha256'],ROOT)
     files=[cfgpath,Path(__file__).resolve(),ROOT/'src/econophysics/state_forecasting.py',ROOT/'docs/AB/state_forecast_v2_feature_spec.md']+[ROOT/'data/processed'/cfg[k]/'bars.csv' for k in ['source_btc_2025','source_btc_2026','source_btc_new','source_eth_new']]
     record={'status':'running','command':f'python scripts/run_state_forecast_v2.py --run-id {args.run_id}','source_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in files},'member_review':'not_run'};(checks/'run_record.json').write_text(json.dumps(record,indent=2)+'\n');(checks/'locked_config.json').write_bytes(cfgpath.read_bytes())
     assets={};daily_rows=[];sample_rows=[]

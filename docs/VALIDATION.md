@@ -9,8 +9,8 @@ Checked on 5 November 2026 (Singapore time).
 | Browser mathematics against Python fixtures | 82 passed | `node tests/test_web_math.cjs` |
 | Main website resources and anchors | 5 pages, 149 local links passed | `python scripts/reproduce.py --profile site` |
 | Research Markdown links | 99 local links resolved | Public snapshot packaging check |
-| Retained original research artifacts | 385 SHA-256 hashes matched | `data/frozen_source_manifest.json` |
-| Teaching notebooks | 3 executed, 16 code cells, 4 plot outputs, zero errors | `python scripts/reproduce.py --profile notebooks` |
+| Retained original research artifacts | 341 SHA-256 hashes matched | `data/frozen_source_manifest.json` |
+| Research notebooks | 3 executed, 16 code cells, 4 plot outputs, zero errors | `python scripts/reproduce.py --profile notebooks` |
 | Fresh forecast reconstruction | 699 method checks passed; all 16 CSV tables byte-identical | `python scripts/reproduce.py --profile forecast --destination /tmp/forecast-rerun` |
 
 The numerical reconstruction used Python 3.14.4 and the versions recorded in

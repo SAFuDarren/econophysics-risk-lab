@@ -14,56 +14,16 @@
       "sha256": "42835e078bc1a6b2b30503f16218c1dd4a54d2a549cf34c8173b6f3b47a1cb7b"
     },
     {
-      "path": "configs/crowded_exit_v1.json",
-      "sha256": "e14fbdbd87514d5aabd6a8d63ac56fdd5131f2dba4bde5c446a37659db260f08"
-    },
-    {
-      "path": "configs/depth_study_v1.json",
-      "sha256": "642696503d2f7aa58580e06cb956987369d5221faee605c6484def855798567c"
-    },
-    {
       "path": "configs/figure_backend.json",
       "sha256": "7a050fee710b1e9965f9a12c3323f0b88bc0be8758a8045a4ad5378f0c2e2c2c"
-    },
-    {
-      "path": "configs/forecast_v1.json",
-      "sha256": "a8827aaaf9d852edf5c9e72c2f8d7020922a53d715d337df0f706788f0d44673"
-    },
-    {
-      "path": "configs/foundation_v1.json",
-      "sha256": "af43e2a7f28f3d9c26522181ff5c6acbeb88967688fb1d79534d979d2c9b565c"
-    },
-    {
-      "path": "configs/real_market_v1.json",
-      "sha256": "e8405321e035e6c21e3b916fca22aa9e0ec82bab2e22401656b5a33a6c20a41b"
     },
     {
       "path": "configs/risk_lab_v1.json",
       "sha256": "465fec617c0289d2d4bc88570b828e2e3fc3dbb8c697e43ff2f4e60fe05c0ef4"
     },
     {
-      "path": "configs/simulation_followup_v1.json",
-      "sha256": "ad4ad5a0cab41d50c4c1c707c74c929eab5245865cf3d3e0c009ac1c29241994"
-    },
-    {
-      "path": "configs/simulation_study_v1.json",
-      "sha256": "d1a26e7b292cd6ac3e867a851e0219fd16180d37e636e621512c259eb6bd2065"
-    },
-    {
-      "path": "configs/state_forecast_v2.json",
-      "sha256": "7d9e60b4bcb819dc108e6bfdfa154af71000e9d5779cc11445770dc46ea2d6ea"
-    },
-    {
-      "path": "configs/tail_increment_v1.json",
-      "sha256": "d541c142549ce0bafe6918fd5a09d91229671602aa8aeebda8b7e4c8adab9ef0"
-    },
-    {
       "path": "configs/us_equity_research_direction_v1.json",
       "sha256": "c2c48ab8978d3b85877bd36a92256975d7b76e659a01276a4a95496bf2bd9eee"
-    },
-    {
-      "path": "configs/us_equity_v1.json",
-      "sha256": "919ab7196273c8b803db2d5a2d258b3f7b936ce82ced76da13ecf823c0e8dd9c"
     },
     {
       "path": "data/manifests/binance_btcusdt_2025_5m_v1/TERMS_AND_CONDITIONS.md",
@@ -158,18 +118,6 @@
       "sha256": "0979572ff730e532272247bb91fa64bbf2c755679851eae7e4b395231557c0e5"
     },
     {
-      "path": "docs/AB/RISK_LAB_DESIGN_v1.md",
-      "sha256": "a8f0466a7e04fcaa398ab02f53e89304e7c5550d9d136e6f5f63a73e371ee3c3"
-    },
-    {
-      "path": "docs/AB/RISK_LAB_GUIDE_v1.md",
-      "sha256": "68933d60d50f3a090164bf400cd455a48bdbf459f137ef6717e26f23942fb8dc"
-    },
-    {
-      "path": "docs/AB/crowded_exit_figure_contract_v1.md",
-      "sha256": "c6d8f646399dd455e038de7e9f4739d13f591aa4d66d61dd3ac7c12920569958"
-    },
-    {
       "path": "docs/AB/crowded_exit_v1_contract.md",
       "sha256": "c0f6b121f29518f5439ac71c496f618b8b7c3977e5464b32466782ac378edab6"
     },
@@ -186,28 +134,8 @@
       "sha256": "3c5213211daa8a3affd03e4a56f67a2767fdb7c8fa61738a8e3f407eb7c2a613"
     },
     {
-      "path": "docs/AB/forecast_contract.md",
-      "sha256": "c8c85f6a4758417c11bb8c1b9ae2493c137beace46fbad02c6df1b4116459e8b"
-    },
-    {
-      "path": "docs/AB/foundation_figure_contract.md",
-      "sha256": "e05f0ee9434a6bfdc26b2d0dec9b99926a514bb97c76f2d0d81ce09859744ae6"
-    },
-    {
-      "path": "docs/AB/market_data_provenance.md",
-      "sha256": "e4be9cca1ac9440abdb714ee49d3cb617ee128eadd35b726cd7d54066aafaf8b"
-    },
-    {
-      "path": "docs/AB/model_spec.md",
-      "sha256": "12d1ccafe950832011e14339338958e85533b9e4c8478cd70225e265deacc209"
-    },
-    {
       "path": "docs/AB/real_market_contract.md",
       "sha256": "dc165f92cc1c4e12651bb31f81929114c17a52483a8f562f16a145e4cb51671d"
-    },
-    {
-      "path": "docs/AB/simulation_figure_contract.md",
-      "sha256": "299aa33ec688698d78ccaf3bafb13d326b0787b8305076e6b7aea6b1df14655e"
     },
     {
       "path": "docs/AB/state_forecast_v2_contract.md",
@@ -222,10 +150,6 @@
       "sha256": "9a79aa02a85915166a864a8a106517a95d09f9c08c0641fa75b659d6a69226de"
     },
     {
-      "path": "docs/AB/tail_increment_figure_contract.md",
-      "sha256": "783c0a1138fd3834ed17dd1b415b6d083d06706fdf3ce26cf35dae87325e57d3"
-    },
-    {
       "path": "docs/AB/tail_increment_v1_contract.md",
       "sha256": "944d026de37012f4eae3b5aeebac57bf145eaf672579777350509623e7b07cf1"
     },
@@ -234,24 +158,12 @@
       "sha256": "f917f075ebe1594a46e203a362aa8a0e22519b2d661226bf7849ec9066a16926"
     },
     {
-      "path": "docs/AB/us_equity_v1_contract.md",
-      "sha256": "de687464913f9658492463dff3c9a241a2cbbb2d4e0eb60fa5af4623af2c9a91"
-    },
-    {
       "path": "docs/theory/COLLECTIVE_PNL_v1.md",
       "sha256": "c7e6b15a3aa5bd40524cb023cd5923771eb10e7fe11c5695b1c6b0c47166b5c1"
     },
     {
       "path": "docs/theory/CROWDED_EXIT_v1.md",
       "sha256": "c60c62e60edeef73e9d8c47d0cccaf17345653da42120d3ca7ec8600f55103a0"
-    },
-    {
-      "path": "docs/theory/DEPTH_ADDENDUM.md",
-      "sha256": "f649b2d8896edcf945e397a6a3333f8c2c694e85c74addd15f0bca9fe7dc96e5"
-    },
-    {
-      "path": "docs/theory/FOUNDATIONS.md",
-      "sha256": "7440bebfe4b26594f83dbf9d327409c3eb06beb28ea89b6a1b70798b89573a29"
     },
     {
       "path": "docs/theory/REAL_MARKET_BOUND.md",
@@ -438,10 +350,6 @@
       "sha256": "c84eede218bbb1c5409d151952822e59c9bc02fe8910eb90d3d2f577517a3423"
     },
     {
-      "path": "results/analysis/predictive_utility_v1/analysis-report.md",
-      "sha256": "7a5472a843c0fe9f1643e59b90393a40a831fbc3790b0e399334946a5aae3be9"
-    },
-    {
       "path": "results/analysis/predictive_utility_v1/figure-catalog.md",
       "sha256": "fe4342ee5daefe188478d3a1bdf4838765b30a604e3402692ea166e1baf13569"
     },
@@ -512,10 +420,6 @@
     {
       "path": "results/checks/theory_foundations_v1/checks.json",
       "sha256": "536fe028fe2d23334c3271be7026bfef66c623cb50052cb8aa6030327130c489"
-    },
-    {
-      "path": "results/checks/us_equity_v1/collective_pnl_theory.json",
-      "sha256": "ce61232e7a1cbe42eb74f4b5b684e5d7496934292b5b5f37fc7da5feb9169b67"
     },
     {
       "path": "results/tables/crowded_exit_v1/capacities.csv",
@@ -1194,10 +1098,6 @@
       "sha256": "67e0cd700fbcc5f112804630face096cd544cedc83eafc24ddb6c45ccdc37c83"
     },
     {
-      "path": "scripts/check_crowded_exit.py",
-      "sha256": "299aaa8162fadccbaac544628d9de68e566de027fb1d99a1344fd87fd38d40e3"
-    },
-    {
       "path": "scripts/check_depth_methods.py",
       "sha256": "47066709c903b4a10e8d69edeaed4467216241023fa5cbde5d33c2f53be80d4a"
     },
@@ -1210,20 +1110,12 @@
       "sha256": "1798a6dabe48706a6af25d5094ead75e777a4f9b64d79372fa273ff23d87ebd2"
     },
     {
-      "path": "scripts/check_risk_lab.py",
-      "sha256": "9057e46a051e1b8275ddbc127946f0867d6daa78392dc7132ca5794aacba7158"
-    },
-    {
       "path": "scripts/check_risk_lab_js.cjs",
       "sha256": "806442d8616ee89ec5b408a2c996a7c6b771388965e8a5af48fbd1e958de68ba"
     },
     {
       "path": "scripts/check_state_forecast_v2.py",
       "sha256": "95767919089e5b9a28d2881cdaaaa70abd5d6f8da15e236b8005db8c893aa4d8"
-    },
-    {
-      "path": "scripts/check_tail_increment.py",
-      "sha256": "c3120b35fafed12ea768b8647d8c2a5a4141916d8f3ea385854706a598e324c4"
     },
     {
       "path": "scripts/check_theory_foundations.py",
@@ -1234,24 +1126,8 @@
       "sha256": "8e84d4659ce9f5a9a3b980eed49edfafd33c9386fcbcc01e9045ea059fd8407b"
     },
     {
-      "path": "scripts/fetch_forecast_data.py",
-      "sha256": "cb556e03ee699b8f5fc37c15d62c8e838853246f25ec22092dac1f1299d244e4"
-    },
-    {
       "path": "scripts/fetch_market_data.py",
       "sha256": "0cfa27b053b9419f3c6d3573c3225829cdb6ad172cf768c0529da3a79eac6ef3"
-    },
-    {
-      "path": "scripts/fetch_state_forecast_v2_data.py",
-      "sha256": "0bdb58256510b7a81aa3faa06cfdc57c804ff7d6ceb35b206cde07ffaa38c1b1"
-    },
-    {
-      "path": "scripts/fetch_tail_increment.py",
-      "sha256": "b67f65469bfb60abec3235a5f1a2d09676440b7141721ace7ce11aedeea87ba9"
-    },
-    {
-      "path": "scripts/fetch_us_equity.py",
-      "sha256": "82a2a7974a00f07cbc08d906dacad42fe8bdab32310ea26daed2e6a0919ab1a3"
     },
     {
       "path": "scripts/generate_market_models.py",
@@ -1272,10 +1148,6 @@
     {
       "path": "scripts/plot_foundation.py",
       "sha256": "81b1e0d85116eadb8dca56dd8c712aaa91fd73081b5d2396adfbc8c234400c00"
-    },
-    {
-      "path": "scripts/plot_project_mainline_v2.py",
-      "sha256": "15290d08a5e8578130c6e21d801112f7ce4dc3414197784bf4101a41bba53dfa"
     },
     {
       "path": "scripts/plot_real_market.py",
@@ -1306,28 +1178,12 @@
       "sha256": "0bf9d85e517f6f656dffc70eb695dc6b13db98d908f694152c2ad4bd08da649c"
     },
     {
-      "path": "scripts/reproduce_forecast_study.py",
-      "sha256": "484dd208cec094c32224f8ef07b4b6485579227a35652e87e16816303343676d"
-    },
-    {
       "path": "scripts/reproduce_real_market.py",
       "sha256": "13474978336bd8de92e56bd341449be8f986390dbd4aa46d1c978770bcb39a19"
     },
     {
-      "path": "scripts/reproduce_state_forecast_v2.py",
-      "sha256": "4d07eadeb4e43742999d1fd32490e611d57f10e28d5bcb82efda6c1fc7d93c28"
-    },
-    {
-      "path": "scripts/reproduce_tail_increment.py",
-      "sha256": "4ef9701ae02f375bb09f173c91ad3a31a273b0d43e496ed291a49ce2daa1f97e"
-    },
-    {
       "path": "scripts/reproduce_us_equity.py",
       "sha256": "d61a8765d35128bb96dde6cff2ebe7d277c0db5224fbf164afe98fe74205b557"
-    },
-    {
-      "path": "scripts/run_crowded_exit.py",
-      "sha256": "d993f6329c24e0336a7bf8e5aa701f1f93cc16c6ba1266adebaac8ed07d15a0b"
     },
     {
       "path": "scripts/run_depth_study.py",
@@ -1354,10 +1210,6 @@
       "sha256": "1b228aa2d8f1e6203df1d2826104b40c9eb9b7db64054e870385e8ae102b3bef"
     },
     {
-      "path": "scripts/run_state_forecast_v2.py",
-      "sha256": "d5c49e753c219b1e1062de8c6dcb797b4338e0d63f464d612188d2d3333512a8"
-    },
-    {
       "path": "scripts/run_state_mechanism_v2.py",
       "sha256": "82b2869256f7166914b57716ae710501535a4b8168dae483dc46e2090ea5f61e"
     },
@@ -1378,10 +1230,6 @@
       "sha256": "05ea737dc0690673c69e3c118847353af412aea1ea9cceb4e751f8c476c537b1"
     },
     {
-      "path": "scripts/summarize_crowded_exit.py",
-      "sha256": "dd0f787f1b06b1aed21bce19b2864b8b8ec034b9c4ef2b9c956cb5cbc0b56cf9"
-    },
-    {
       "path": "scripts/summarize_depth_study.py",
       "sha256": "a18398de9d2fe78c2adc8c436f944f90d42ca1b52cbfdd8510180ef6dfc639a2"
     },
@@ -1394,24 +1242,12 @@
       "sha256": "fe444d44b0f048b1c72215814ad0cd0414109bf05bc222178bce2d1c30226cca"
     },
     {
-      "path": "scripts/summarize_simulation_study.py",
-      "sha256": "682dd3f654902fd28af4a7cfc6a7fb3163d4528e4394edf89e804ebb747af3ad"
-    },
-    {
       "path": "scripts/summarize_state_forecast_v2.py",
       "sha256": "0ab094b05cb93745cc5dbe7e4bfe6e7d97568ce239b2722eb3df9e82730c4f89"
     },
     {
-      "path": "scripts/summarize_us_equity.py",
-      "sha256": "accb668b1e16f24b3f4897c2f90954077a1d4566ffd9c2ed9890ec79833634f7"
-    },
-    {
       "path": "scripts/supplement_tail_scores.py",
       "sha256": "d001de3d63a4c80018ca748a25e0a8aad31850e0098a6eef17c227a24e099dae"
-    },
-    {
-      "path": "scripts/supplement_us_equity.py",
-      "sha256": "ac385236c2718c7c6b5719377b76cf92648cbebba9ed7e618b064fb511de7224"
     },
     {
       "path": "scripts/verify_mixture_certificate.py",
@@ -1482,10 +1318,6 @@
       "sha256": "f5bddd00b3d1a67368a0a505444a2ca51d8cc6ccf772b6f81c44a77e68925ebd"
     },
     {
-      "path": "web/advanced/index.html",
-      "sha256": "5bb5b775a6e40a344384f65cd22ec4be146c7e2b535df03a104afc55befd41c4"
-    },
-    {
       "path": "web/assets/figures/D01.svg",
       "sha256": "74982c61fe2bcb5dc83aadc531caf1a3f28a58aabad45444f47266e786ff2d57"
     },
@@ -1532,14 +1364,6 @@
     {
       "path": "web/assets/figures/U05.svg",
       "sha256": "db7784447a50115622b01f4d744145b761b4f4b6e3da3f288aac91b88777da2e"
-    },
-    {
-      "path": "web/downloads/research-report-en.pdf",
-      "sha256": "5064203c26cd9e23f7b1cafe476fd2d11c833888bbb0a6b5f5954a62ee30dd3e"
-    },
-    {
-      "path": "web/downloads/research-report-zh.pdf",
-      "sha256": "c61578a1c9b415fcb7a9a951382dfa224b4b76713cc40b4c5590c8685283b26e"
     }
   ]
 }

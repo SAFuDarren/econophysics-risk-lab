@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="用美股行业与策略盈亏检查风险遗漏、因子冗余和组合权衡，连接羊群与渗流机制。离线研究工具。">
-<title>联动风险实验室 · PC5253</title><style>__STYLE__</style></head>
+<title>联动风险实验室 · Econophysics Risk Lab</title><style>__STYLE__</style></head>
 <body>
-<header class="masthead"><div><p class="project-label">PC5253 经济物理学研究</p><h1>联动风险实验室</h1><p class="intro">看见资产和策略之间重复的风险。</p></div><div class="header-actions"><span class="source-label">美股实际样本 / 羊群条件模型</span><button type="button" id="export">保存本次对照</button></div></header>
+<header class="masthead"><div><p class="project-label">Econophysics Risk Lab 经济物理学研究</p><h1>联动风险实验室</h1><p class="intro">看见资产和策略之间重复的风险。</p></div><div class="header-actions"><span class="source-label">美股实际样本 / 羊群条件模型</span><button type="button" id="export">保存本次对照</button></div></header>
 <nav role="tablist" aria-label="实验模块" class="tabs"><button role="tab" type="button" id="tab-risk" aria-controls="panel-risk" aria-selected="true" data-tab="risk">风险遗漏</button><button role="tab" type="button" id="tab-factors" aria-controls="panel-factors" aria-selected="false" data-tab="factors">因子筛查</button><button role="tab" type="button" id="tab-allocation" aria-controls="panel-allocation" aria-selected="false" data-tab="allocation">组合配置</button><button role="tab" type="button" id="tab-physics" aria-controls="panel-physics" aria-selected="false" data-tab="physics">物理机制</button></nav>
 <main>
 <section id="panel-risk" role="tabpanel" aria-labelledby="tab-risk">
@@ -30,7 +30,7 @@
  <div class="analysis"><div class="number-strip" id="physics-numbers" aria-live="polite"></div><div class="two-plots"><figure><figcaption>当前单图的协调群体</figcaption><div class="chart" id="physics-network"></div><p class="chart-note">分离的小团表示群体，蓝色突出最大群体；位置只为显示。模拟观测时，蓝/金/灰分别表示买/卖/不交易。</p></figure><figure><figcaption>既有有限规模相变结果</figcaption><div class="chart" id="physics-phase"></div><p class="chart-note">每个N/ρ点40张图；最大群体面板阴影为既有逐点95%区间。黑点为当前单图，不是总体均值。</p></figure></div><div class="mechanism-chain"><span>连接与协调</span><span>群体平方和 S₂</span><span>共同模式 K</span><span>策略风险投影 WΣWᵀ</span></div><div id="physics-mapping" class="decision-line"></div><details open><summary>模型和真实市场，联系成立到哪里？</summary><div class="formula">Var(r | 图) = q(λ/N)² S₂， S₂ = Σ<sub>C</sub>s<sub>C</sub>²</div><div class="formula">Σ<sub>Z</sub> = Kvvᵀ + D， K = q(λ/N)² E[S₂]； Σ<sub>P&amp;L</sub> = WΣ<sub>Z</sub>Wᵀ</div><p>这是共同载荷、独立对称群体动作和独立噪声等假设下的观测扩展。真实市场中的共同新闻、持仓与异方差也能产生相似相关；我们没有唯一识别羊群机制。</p><div id="physics-equivalence"></div><p>群体/收益幂律、有限规模与时间标度仍由原模拟/真实数据研究检验，不能从九个行业节点或这张示意图直接证明。</p></details></div></div>
 </section>
 <section class="bottom-evidence"><h2>这项研究现在支持什么？</h2><div class="evidence-columns"><p><strong>支持风险诊断与冗余筛查。</strong> 原等权行业篮子中，历史期联动方差占比均值78.14%；两个低波动参数版本的每日净P&amp;L相关约0.92，不能按名字算成两份独立风险来源。</p><p><strong>没有建立新增预测或盈利优势。</strong> 网络特征的留出QLIKE更差；原四种配置在声明成本下净P&amp;L均为负。这里的筛查收益比较也是已看数据上的探索。</p></div><details><summary>数据来源、证据范围和原始成果</summary><p>Yahoo Finance日线，11只ETF、2010年至2026-10-23，共46,530条原始记录；行业计算使用其中9只。风险与策略指标均来自固定数据快照；重新下载的复权值可能有微小差异。原始完整价格不随页面分发。</p><p>2011—2017年用于本页筛查，2018—2019年用于风险缩放；2020—2025年及2026年为原研究的评价期，现已查看。图表显示可抽样累计点，所有指标使用全部交易日。理论核验与市场结果分别报告。</p><p>方法参照：Mantegna相关网络、Ledoit–Wolf收缩、López de Prado HRP、回测过拟合与因子多重检验研究。本工具没有提出新配置算法或证明alpha。</p></details></section>
-</main><footer><span>PC5253 研究工具 · 本地离线版本</span><span>源批次 us_equity_v1 / 交互诊断 risk_lab_v1</span></footer>
+</main><footer><span>Econophysics Risk Lab 研究工具 · 本地离线版本</span><span>源批次 us_equity_v1 / 交互诊断 risk_lab_v1</span></footer>
 <dialog id="export-dialog" aria-labelledby="export-title"><h2 id="export-title">本次对照记录</h2><p class="small muted">可直接选取文字；或下载Markdown留作汇报和复核记录。记录保留当前设置与证据范围。</p><textarea id="export-text" readonly aria-label="本次对照记录文本"></textarea><div class="button-row"><a id="export-download" class="download-link">下载Markdown</a><button type="button" id="export-close">关闭</button></div></dialog>
 <script type="application/json" id="lab-data">__DATA__</script><script>__SCRIPT__</script>
 </body></html>

@@ -1,6 +1,6 @@
 # Code and original materials
 
-Copyright © 2026 PC5253 Project Team and the respective contributors.
+Copyright © 2026 Econophysics Risk Lab contributors and the respective contributors.
 
 The research code and original project materials retain their existing copyright.
 No additional blanket license is granted by this public research snapshot.

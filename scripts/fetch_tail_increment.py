@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Download the external asset holdout only after method and reference freeze."""
 from pathlib import Path
+from publication_integrity import matches_recorded_digest
 import csv,datetime as dt,hashlib,json,time,urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from zoneinfo import ZoneInfo
@@ -13,7 +14,7 @@ def main():
     cfg=json.loads((ROOT/'configs/tail_increment_v1.json').read_text());man=ROOT/'data/manifests/tail_increment_v1';selection=ROOT/'results/checks/tail_increment_v1/selection_freeze.json'
     if not selection.exists():raise SystemExit('Complete sector-validation reference selection before external download')
     record=json.loads(selection.read_text())
-    for path,digest in {**record['method_sha256'],**record['source_sha256']}.items():assert sha(ROOT/path)==digest,('Pre-download version drift',path)
+    for path,digest in {**record['method_sha256'],**record['source_sha256']}.items():assert matches_recorded_digest(ROOT/path,digest,ROOT),('Pre-download version drift',path)
     raw=ROOT/'data/raw/tail_increment_v1';processed=ROOT/'data/processed/tail_increment_v1';processed.mkdir(parents=True,exist_ok=True);output=processed/'external.csv'
     if output.exists():raise SystemExit('Preserve external data snapshot; use an isolated root to reproduce')
     before=man/'external_before_download.json'
@@ -27,7 +28,7 @@ def main():
         if not path.exists():
             for attempt in range(3):
                 try:
-                    request=urllib.request.Request(url,headers={'User-Agent':'PC5253-academic-research/1.0'})
+                    request=urllib.request.Request(url,headers={'User-Agent':'Econophysics-Risk-Lab/1.0'})
                     with urllib.request.urlopen(request,timeout=30) as response:payload=response.read()
                     json.loads(payload);path.write_bytes(payload);break
                 except Exception:

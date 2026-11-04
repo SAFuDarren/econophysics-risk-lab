@@ -9,9 +9,10 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--destination',type=Path,required=True);parser.add_argument('--use-local-data',action='store_true');args=parser.parse_args();dest=args.destination.resolve()
     if dest.exists():parser.error('destination must not exist')
     dest.mkdir(parents=True);start=time.perf_counter();cfg=json.loads((ROOT/'configs/forecast_v1.json').read_text());shutil.copytree(ROOT/'src',dest/'src',ignore=shutil.ignore_patterns('__pycache__'));(dest/'scripts').mkdir();(dest/'configs').mkdir();(dest/'docs/AB').mkdir(parents=True)
-    for name in ['fetch_market_data.py','prepare_market_data.py','fetch_forecast_data.py','run_forecast_study.py','summarize_forecast_study.py','check_forecast_study.py']:shutil.copyfile(ROOT/'scripts'/name,dest/'scripts'/name)
+    for name in ['publication_integrity.py','fetch_market_data.py','prepare_market_data.py','fetch_forecast_data.py','run_forecast_study.py','summarize_forecast_study.py','check_forecast_study.py']:shutil.copyfile(ROOT/'scripts'/name,dest/'scripts'/name)
     shutil.copyfile(ROOT/'configs/forecast_v1.json',dest/'configs/forecast_v1.json');shutil.copyfile(ROOT/'docs/AB/forecast_contract.md',dest/'docs/AB/forecast_contract.md')
     for key in ['dataset_2025','dataset_2026']:shutil.copytree(ROOT/'data/manifests'/cfg[key],dest/'data/manifests'/cfg[key])
+    if (ROOT/'data/publication_adaptations.json').exists():shutil.copyfile(ROOT/'data/publication_adaptations.json',dest/'data/publication_adaptations.json')
     commands=[]
     def call(name):
         command=[sys.executable,str(dest/'scripts'/name)];commands.append(command);subprocess.run(command,cwd=dest,check=True)

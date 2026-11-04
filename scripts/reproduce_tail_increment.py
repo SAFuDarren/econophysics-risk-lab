@@ -11,7 +11,7 @@ def main():
     start=time.perf_counter();check=ROOT/'results/checks/tail_increment_v1';source=ROOT/'results/tables/tail_increment_v1';commands=[];log=[]
     files=['configs/tail_increment_v1.json','configs/us_equity_v1.json','docs/AB/tail_increment_v1_contract.md','docs/decisions/2026-10-27-tail-increment.md','data/manifests/tail_increment_v1/method_before_external_download.json','src/econophysics/model.py','src/econophysics/us_equity.py','src/econophysics/tail_increment.py','data/processed/us_equity_v1/historical.csv','data/processed/us_equity_v1/confirmation.csv']
     scripts=['run_tail_increment.py','run_tail_synthetic.py','analyze_tail_increment.py','run_tail_mc_full.py','audit_tail_analytic.py','supplement_tail_scores.py']
-    with tempfile.TemporaryDirectory(prefix='pc5253-tail-reproduce-') as folder:
+    with tempfile.TemporaryDirectory(prefix='erl-tail-reproduce-') as folder:
         fresh=Path(folder).resolve()
         for name in files+['scripts/'+s for s in scripts]:
             target=fresh/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/name,target)

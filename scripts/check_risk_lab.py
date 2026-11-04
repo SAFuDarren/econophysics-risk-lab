@@ -23,7 +23,7 @@ def main():
     frozen = json.loads((ROOT / 'results/checks/risk_lab_v1/input_snapshot.json').read_text())
     check('Frozen input hashes unchanged', all(hashlib.sha256((ROOT/p).read_bytes()).hexdigest() == sha for p,sha in frozen['sha256'].items()))
     old = json.loads((ROOT / 'results/checks/us_equity_v1/delivery_verification.json').read_text())
-    check('Prior delivered US package unchanged', hashlib.sha256((ROOT/'handoff/AB_to_CD/PC5253_US_Equity_PnL_v1.zip').read_bytes()).hexdigest() == old['zip_sha256'])
+    check('Prior delivered US package unchanged', hashlib.sha256((ROOT/'handoff/AB_to_CD/Econophysics_US_Equity_PnL_v1.zip').read_bytes()).hexdigest() == old['zip_sha256'])
     check('Original 19 numeric tables unchanged', all(hashlib.sha256((ROOT/'results/tables/us_equity_v1'/r['table']).read_bytes()).hexdigest() == r['sha256'] for r in old['extracted_package_fixed_snapshot_reproduction']['tables']))
     dates, returns, price, names = load_panel(ROOT, oldcfg)
     price = price[:,:9] / price[0,:9]

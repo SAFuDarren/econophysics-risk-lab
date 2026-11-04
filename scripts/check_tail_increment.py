@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Mathematical, causal, scoring and version-boundary checks for the tail study."""
 from pathlib import Path
+from publication_integrity import matches_recorded_digest
 import csv,datetime as dt,hashlib,json,sys
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'src'))
 import numpy as np
@@ -12,10 +13,10 @@ def main():
     def read(path):return list(csv.DictReader(path.open()))
     def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
     freeze=json.loads((ROOT/'data/manifests/tail_increment_v1/method_before_external_download.json').read_text());selection=json.loads((checkdir/'selection_freeze.json').read_text());download=json.loads((ROOT/'data/manifests/tail_increment_v1/external_before_download.json').read_text())
-    test('Method and selected-reference files unchanged since external freeze',all(sha(ROOT/p)==digest for p,digest in {**selection['method_sha256'],**selection['source_sha256']}.items()))
+    test('Method and selected-reference files match documented source/publication versions',all(matches_recorded_digest(ROOT/p,digest,ROOT) for p,digest in {**selection['method_sha256'],**selection['source_sha256']}.items()))
     test('Method then selection then external download, all with no new raw before freeze',freeze['recorded_utc']<selection['recorded_utc']<download['recorded_utc'] and selection['external_raw_count']==download['raw_count_before_download']==0)
     for folder,expected in [('us_equity_v1','9df828d60014521dd24e90f6431f943e6eb447239b58521be7e1a4cc1b0c4839'),('risk_lab_v1','fc5b299639f8954927b9fdf0bb6250ca44534986c3cf612fe1340cdeb51b364d')]:
-        filename='PC5253_US_Equity_PnL_v1.zip' if folder=='us_equity_v1' else 'PC5253_Risk_Lab_v1.zip';test('Prior delivered '+folder+' unchanged',sha(ROOT/'handoff/AB_to_CD'/filename)==expected)
+        filename='Econophysics_US_Equity_PnL_v1.zip' if folder=='us_equity_v1' else 'Econophysics_Risk_Lab_v1.zip';test('Prior delivered '+folder+' unchanged',sha(ROOT/'handoff/AB_to_CD'/filename)==expected)
     laws,grid,diagnostics,_=build_laws(cfg);test('Equal 24 non-Gaussian candidates for herding/factor-t/mixture',all(sum(l.family==f for l in laws)==24 for f in ['Herding','FactorT','FactorMixture']))
     for law in laws:
         test('Innovation covariance identity '+law.name,np.allclose(law.z.T@law.z/len(law.z),np.eye(9),atol=1e-11))

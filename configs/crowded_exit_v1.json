@@ -1,5 +1,5 @@
 {
-  "protocol_id": "PC5253-ABCD-1.4",
+  "protocol_id": "ERL-1.4",
   "batch": "crowded_exit_v1",
   "status": "fixed_before_new_capacity_results",
   "initial_liquidation_fraction": 0.25,
@@ -31,6 +31,6 @@
   "capacity_definition": "max reference capital with total q*|A*z_i|<=H*alpha*ADV_i for all assets and marked NAV loss<=5%; Feedback must converge",
   "primary_materiality_gate": "Feedback capacity haircut versus OneRound >=10% in at least two distinct calendar years among primary Equal/d=1 snapshots; descriptive feasibility criterion, not a p-value or empirical trading advantage",
   "sensitivity_policy": "report all four existing allocations and all three fixed depths; sensitivity cannot rescue a failed primary gate; no new parameter tuning",
-  "stop_policy": "If primary materiality gate fails, stop application expansion; retain conditional results and course mainline. Passing only warrants review, never real-world utility acceptance.",
+  "stop_policy": "If primary materiality gate fails, stop application expansion; retain conditional results and research mainline. Passing only warrants review, never real-world utility acceptance.",
   "evidence_limit": "Retrospective real holdings proxies and OHLCV condition an uncalibrated impact/controller scenario. No new holdout, observed market-wide crowding, execution data, causal impact identification, alpha or trading-profit claim. No exogenous news shock or external-fund liquidation is invented."
 }

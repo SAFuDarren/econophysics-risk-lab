@@ -1,5 +1,5 @@
 {
-  "protocol_id":"PC5253-ABCD-1.4",
+  "protocol_id":"ERL-1.4",
   "status":"frozen_before_full_US_price_download",
   "seed":2026102709,
   "network_assets":["XLB","XLE","XLF","XLI","XLK","XLP","XLU","XLV","XLY"],
@@ -20,7 +20,7 @@
   "allocation":{"methods":["Equal","InverseVol","LW-MinVariance","HRP"],"lookback":126,"rebalance":"Same close and one-session signal delay as strategy library; use past completed net PnL increments only.","minvar_cap":0.35,"hrp":"Single linkage on sqrt((1-corr)/2), quasi-diagonal leaf order, recursive bisection with inverse-variance cluster risk. Independently implemented existing baseline; no claim of a new allocator.","validation_reference":"Lowest net PnL standard deviation among Equal/InverseVol/LW-MinVariance selects strong allocation comparator; return, drawdown, actual underlying gross exposure and turnover must all be shown.","netting":"Allocate strategy sleeves, aggregate underlying total-return-index units before transaction/borrow costs, so offsetting positions are netted. No double charging sleeve and aggregate cost.","comparison":"HRP vs selected strong allocation reference, historical and confirmation. All four retained; volatility reduction alone is not economic benefit if exposure/return also fall. Fixed-capital additive PnL, Sharpe descriptive zero-cash-return proxy, no CAGR claim."},
   "pnl_diagnostic":"Daily gross/net PnL increments used for dependence/allocation. Cumulative PnL correlations only a labelled warning contrast. Explain gross covariance via known holdings W Sigma W^T, separating diagonal overlap and off-diagonal co-movement algebraically, not causally.",
   "snapshots":["2019-12-31","2020-03-31","2022-09-30"],
-  "science_limits":"Observed return networks are not latent trader/causal/contagion graphs; n=9 cannot establish empirical thermodynamic criticality. Keep herding/percolation/criticality theory and simulation as course spine. Confirm period shares historical market context with prior crypto work; not independent of every earlier observation.",
+  "science_limits":"Observed return networks are not latent trader/causal/contagion graphs; n=9 cannot establish empirical thermodynamic criticality. Keep herding/percolation/criticality theory and simulation as research spine. Confirm period shares historical market context with prior crypto work; not independent of every earlier observation.",
   "historical_events_known":true,
   "full_US_evaluation_prices_previously_downloaded":false
 }

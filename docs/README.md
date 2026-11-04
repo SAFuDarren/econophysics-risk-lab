@@ -9,4 +9,4 @@
 
 These research notes preserve the original study dates and scope. Current website,
 notebook and reproduction entry points are in the repository README. Team handoff
-packages, lecture files and planning history remain outside the public snapshot.
+packages, private reference files and planning history remain outside the public snapshot.

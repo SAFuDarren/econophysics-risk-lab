@@ -19,7 +19,7 @@ def main():
     a0=next(r for r in ac if r['split']=='historical_test' and r['block_sessions']=='20');a1=next(r for r in ac if r['split']=='confirmation' and r['block_sessions']=='20');d0=diagnostic['historical_test'];d1=diagnostic['confirmation'];rr0,rr1=redundancy
     report=rf'''# 群体波动、行业联动与策略P&L
 
-PC5253 · 2026-10-27 · AB · 美股应用分析，待成员科学复核
+Econophysics Risk Lab · 2026-10-27 · AB · 美股应用分析，待成员科学复核
 
 ## 1. 结论：量化了遗漏与冗余，未得到新预测或盈利优势
 
@@ -41,7 +41,7 @@ PC5253 · 2026-10-27 · AB · 美股应用分析，待成员科学复核
 
 ![既有F03：羊群网络的有限规模连通过渡](../../../figures/simulation_study_v2/F03.png)
 
-上图为既有模拟证据，并非本批美股估计。课程主体仍是羊群交互、群体连通、渗流/临界、收益尾部和时间标度；泡沫/崩盘与适应机制由原始文献综述说明，不把静态基线称为已实现的适应市场。
+上图为既有模拟证据，并非本批美股估计。研究主体仍是羊群交互、群体连通、渗流/临界、收益尾部和时间标度；泡沫/崩盘与适应机制由原始文献综述说明，不把静态基线称为已实现的适应市场。
 
 原模型群体二阶矩控制波动：
 
@@ -167,7 +167,7 @@ HRP相对强参照的波动下降为历史{f(a0,'sigma_reduction_pct'):.2f}%（�
 - [Moskowitz–Grinblatt：行业动量](https://www.aqr.com/insights/research/journal-article/do-industries-explain-momentum)：经济背景，本六条ETF规则不是该论文的严格复制。
 - [Bailey等：回测过拟合](https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf)、[Harvey等：因子多重检验](https://people.duke.edu/~charvey/Research/Published_Papers/P118_and_the_cross.PDF)：固定候选、保留试验范围与不事后筛赢家的依据；没有声称已执行其PBO或发现新alpha。
 
-本批可用于汇报的贡献：保留课程物理机制，量化哪些风险会被简化假设遗漏，展示如何筛查冗余因子，并用新确认期检验应用边界。成员科学签收、最终PPT、交互诊断器和公开GitHub仍待完成。
+本批可用于汇报的贡献：保留物理机制机制，量化哪些风险会被简化假设遗漏，展示如何筛查冗余因子，并用新确认期检验应用边界。成员科学签收、最终PPT、交互诊断器和公开GitHub仍待完成。
 '''
     (out/'analysis-report.md').write_text(report)
     (out/'stats-appendix.md').write_text('''# 统计与执行附录

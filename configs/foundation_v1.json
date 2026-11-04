@@ -1,5 +1,5 @@
 {
-  "protocol_id": "PC5253-ABCD-1.4",
+  "protocol_id": "ERL-1.4",
   "purpose": "implementation and moment checks; not a formal phase or learning experiment",
   "parameters": {"n": 128, "rho": 1.0, "a": 0.1, "lambda_impact": 0.02, "unit_order": 1.0, "initial_price": 100.0},
   "window_length": 128,
