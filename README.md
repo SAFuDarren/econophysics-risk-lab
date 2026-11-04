@@ -1,59 +1,94 @@
 # Econophysics Risk Lab
 
-**How do shared decisions change market fluctuations, and what can price and volume reveal about the hidden structure?**
+Finite-network herding models, price–volume inference and historical risk analysis.
+
+We study how coordinated trading enters market fluctuations, which model
+parameters aggregate price and volume can identify, and whether the resulting
+restrictions are compatible with observed markets. The project combines exact
+moment calculations and finite random graphs with controlled simulations,
+Bitcoin observations and sector-ETF risk diagnostics.
+
+[Research website](https://safudarren.github.io/econophysics-risk-lab/) ·
+[Interactive experiments](https://safudarren.github.io/econophysics-risk-lab/lab.html) ·
+[Full research report](web/downloads/research-report-en.pdf)
 
 [![Research checks](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml)
 [![Website deployment](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml)
 
-A computational research project connecting herding, finite-network moments,
-conditional parameter inference, identification limits and historical risk applications.
+## Research results
 
-![Interactive research homepage](web/assets/social-preview.jpg)
+- **Exact moment relations and parameter recovery.** In the finite Erdős–Rényi
+  (ER) model, price–volume moments identify activity, connectivity and positive
+  price response when population size and unit order size are known. At fixed
+  population size and price scale, finite-ER inversion and joint radial-basis
+  regression achieve mean absolute errors of **0.0271** and **0.0269** on unseen
+  connectivity values across ten studies.
+  [Recovery source table](results/tables/depth_study_v1/summary_metrics.csv).
+- **A structural identification limit.** The complete joint observation law
+  depends on connected-group sizes. A four-node chain and star have identical
+  price–volume laws, making their internal edges indistinguishable through these
+  observations. [Mathematical foundations](docs/theory/FOUNDATIONS.md).
+- **Bitcoin observations violate the fixed model’s joint-moment restriction.** The fixed group-action
+  model requires a positive statistic Δ. BTCUSDT 2025 H2 gives **−8.181**, with
+  an estimated 95% seven-day-block interval **[−11.998, −4.712]**.
+  [Market test](https://safudarren.github.io/econophysics-risk-lab/findings.html#market).
+- **An explicit historical forecast benchmark.** On **183 held-out dates**,
+  HAR+All reduces log-MSE by **31.20%** relative to persistence. Its incremental
+  reduction relative to HAR is **2.26%**, with an estimated 95% block interval
+  **[−0.11%, 4.56%]**.
+  [Forecast results and comparisons](https://safudarren.github.io/econophysics-risk-lab/findings.html#forecast).
+- **Shared-risk and strategy-overlap diagnostics.** For the same nine-sector
+  basket and 63-session window ending 31 March 2020, full and diagonal covariance
+  estimates give annualized volatility of **57.73%** and **20.62%**. Two
+  low-volatility strategy variants have daily net P&L correlations of **0.921**
+  in 2020–2025 and **0.795** in the 2026 confirmation period.
+  [Portfolio and strategy results](https://safudarren.github.io/econophysics-risk-lab/findings.html#applications).
 
-## Explore
+![Parameter recovery across ten independent studies](web/assets/figures/D01.svg)
 
-[**Open the research website →**](https://safudarren.github.io/econophysics-risk-lab/) · [Research repository](https://github.com/SAFuDarren/econophysics-risk-lab)
+*Parameter-recovery benchmark (D01), generated from the project’s controlled
+simulation studies. Method comparisons are in the source table above; settings are in the [study configuration](configs/depth_study_v1.json).*
 
-Run a local preview:
+## Model and methods
 
-```bash
-python -m http.server 8000 --directory web
-```
+Each observation period independently redraws a finite ER network of traders.
+Every connected group shares a buy, sell or inactive action, independently of
+other groups. The parameters satisfy $0<q<1$ and $\lambda>0$.
+For the displayed graph $H$,
 
-Open **http://localhost:8000**. The five-page website is available in English and
-Chinese. Its fonts, mathematical typesetting, figures and numerical data load
-locally.
+$$
+\operatorname{Var}(r\mid H)=q(\lambda/N)^2S_2,
+\qquad S_2=\sum_C s_C^2.
+$$
 
-- **Coordination:** inspect group contributions to squared-size risk and simulate a shared action.
-- **Inference:** compare population inversion with finite-window estimates, then switch a four-node chain into a star while its observation law remains fixed.
-- **Portfolio risk:** compare full covariance, retained co-movement and diagonal variances for the same historical holdings.
-- **Forecast record:** inspect every one of the original 183 held-out dates and change the displayed baseline.
-- **Extended laboratory:** the original Chinese four-module workspace retains strategy screening, all 63 nonempty subsets and transaction-cost comparisons.
+Here $r$ is log return, $q$ the group activity probability, $\lambda$ the price
+response, $N$ the population size and $s_C$ the size of group $C$.
+The squared-size sum links microscopic coordination to aggregate fluctuations.
 
-## Research findings
+- **Forward model:** exact group moments, finite-ER connectedness recurrences and
+  1,080 graph draws across $N=128,256,512$.
+- **Inverse problem:** finite-size moment inversion, radial-basis regression,
+  scale controls and characteristic-function equivalence arguments.
+- **Market analysis:** price–volume compatibility tests, paired block comparisons
+  for volatility forecasts, and matched-window covariance and daily P&L diagnostics.
 
-| Question | Finding | Evidence |
-|---|---|---|
-| How does coordination enter risk? | Group-size power sums connect local shared actions to aggregate price–volume moments. | Exact identities and 1,080 finite-size graph draws |
-| What can observations recover? | Selected ER parameters are identifiable under the stated interface; internal edges can remain observationally identical. | Finite-ER inversion, ten independent studies and an exact chain–star example |
-| Does the fixed interface fit market data? | The BTC H2 joint-moment statistic lies outside the model's necessary positive range. | Original market tables and block intervals |
-| What do forecasts add? | HAR+All reduces historical log-MSE by 31.20% relative to persistence; its additional 2.26% reduction over HAR has an interval crossing zero. | All 183 test dates and paired comparisons |
-| What can covariance analysis show? | Shared movements account for much of the same-window sector basket variance; similar strategy variants can repeat exposure. | Fixed ETF covariance and daily P&L diagnostics |
+[Full mathematical derivations](https://safudarren.github.io/econophysics-risk-lab/methods.html) ·
+[Model specification](docs/AB/model_spec.md) ·
+[Forecast protocol](docs/AB/forecast_contract.md)
 
-## Research outlook
+## Code and reproduction
 
-Future work may explore quantum models and quantum machine learning in relation to collective dynamics, price–volume information and risk. Whether, how and when to pursue these directions will depend on their suitability for the research questions, the availability of a testable formulation and the value of comparison with classical methods. No implementation schedule has been set.
-
-## Run the checks
-
-The core model and exact theory verification use only the Python standard library.
+The core model and exact theory checks use the Python standard library:
 
 ```bash
 python scripts/reproduce.py --profile quick
 ```
 
-The numerical studies use the tested versions in `requirements-study.txt`.
-The notebook environment can be installed with:
+Three executable notebooks connect the implementation to the numerical results:
+
+1. [Groups, moments and finite-size networks](notebooks/01_model_and_moments.ipynb)
+2. [Inversion and identification limits](notebooks/02_inference_and_identity.ipynb)
+3. [Market tests and historical forecasting](notebooks/03_market_and_forecasting.ipynb)
 
 ```bash
 python -m pip install -e ".[analysis,notebooks]"
@@ -61,45 +96,52 @@ python scripts/reproduce.py --profile notebooks
 python scripts/reproduce.py --profile site
 ```
 
-The full forecast reconstruction downloads the documented archives into a fresh
-location, repeats the frozen experiment and compares its CSVs with the saved tables:
+The complete forecast reconstruction downloads the documented archives into a
+fresh directory and compares rebuilt CSVs with the saved study tables:
 
 ```bash
 python -m pip install -r requirements-study.txt
 python scripts/reproduce.py --profile forecast --destination /tmp/forecast-rerun
 ```
 
-See the [validation record](docs/VALIDATION.md) for the executed checks and fresh forecast reconstruction.
+The [validation record](docs/VALIDATION.md) documents the executed checks and
+byte-identical reconstruction of all 16 forecast tables.
 
-## Explore the research
+To preview the bilingual website locally:
 
-1. [Groups, moments and finite-size networks](notebooks/01_model_and_moments.ipynb)
-2. [Inversion and identification limits](notebooks/02_inference_and_identity.ipynb)
-3. [Market tests and historical forecasting](notebooks/03_market_and_forecasting.ipynb)
+```bash
+python -m http.server 8000 --directory web
+```
 
-The notebooks call the shared implementation and frozen source tables. The expected mean-degree symbol `c` maps to `rho` in the original Python API; activity `q` maps
-to twice the directional action probability `a`.
+Open **http://localhost:8000**. The extended laboratory includes strategy screening,
+all 63 nonempty strategy subsets and transaction-cost comparisons.
 
-## Repository map
+## Research outlook
 
-- [`src/econophysics/`](src/econophysics/): shared model, inference, statistics and application code.
-- [`configs/`](configs/): frozen research configurations.
-- [`results/tables/`](results/tables/): compact source tables and complete original forecast outputs.
-- [`data/manifests/`](data/manifests/): archive locations, checksums, provenance and retained source terms.
-- [`web/`](web/): website, interactive experiments and original scientific figures.
-- [`docs/theory/FOUNDATIONS.md`](docs/theory/FOUNDATIONS.md): theory and identification arguments.
-- [`tests/`](tests/): cross-language fixtures, exact enumeration and evidence checks.
+Quantum models and quantum machine learning are possible extensions for collective
+dynamics and risk inference. The choice of approach and timing will depend on
+problem fit and a testable comparison with classical methods.
 
-The complete [English report](web/downloads/research-report-en.pdf) and
-[Chinese report](web/downloads/research-report-zh.pdf) retain 19 figures, eight tables
-and the subsequent control studies.
+## Research materials
+
+- [`src/econophysics/`](src/econophysics/): shared model, inference and analysis code.
+- [`configs/`](configs/): study configurations.
+- [`results/tables/`](results/tables/): numerical source tables and complete forecast outputs.
+- [`data/manifests/`](data/manifests/): archive locations, checksums and provenance.
+- [`docs/theory/`](docs/theory/): mathematical foundations and identification arguments.
+- [`web/`](web/): bilingual website, experiments and scientific figures.
+
+The [English report](web/downloads/research-report-en.pdf) and
+[Chinese report](web/downloads/research-report-zh.pdf) contain 19 scientific
+figures, eight tables and the subsequent control studies.
+The notation $c$ corresponds to `rho` in the Python implementation;
+activity $q$ equals twice the directional action probability `a`.
 
 ## Credits and reuse
 
-Scientific work is credited to the **Econophysics Risk Lab contributors**. Website and repository
-maintained by **Darren Fu Shiang**. See [AUTHORS.md](AUTHORS.md).
+Research is credited to the **Econophysics Risk Lab contributors**. Website and
+repository maintained by **Darren Fu Shiang**. See [AUTHORS.md](AUTHORS.md).
 
-Code, original research materials, dataset-derived results and third-party web
-assets have separate terms. See [LICENSE.md](LICENSE.md) and
-[DATA_LICENSES.md](DATA_LICENSES.md). Full raw market archives, complete supplier
-price histories and unrelated reference materials are excluded from this public snapshot.
+Code, research materials, dataset-derived results and third-party assets have
+separate terms. See [LICENSE.md](LICENSE.md) and [DATA_LICENSES.md](DATA_LICENSES.md).
+Data-source manifests document the routes for acquiring the full price histories.

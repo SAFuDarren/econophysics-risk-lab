@@ -10,3 +10,25 @@
 .group-picker{display:flex;align-items:center;gap:15px;margin-top:12px;font-size:15px;color:var(--muted)}.group-picker select{max-width:300px;width:auto;flex:1}
 .lab-grid>*{min-width:0}.group-picker select{min-width:0}.controls{min-width:0}
 @media(max-width:850px){.lab-grid{grid-template-columns:minmax(0,1fr)}.controls{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+
+/* Research entry: subject, method and findings precede navigation into the studies. */
+.hero{padding-top:44px;padding-bottom:58px;gap:46px}
+.hero .research-title{font-size:clamp(38px,3.7vw,54px);line-height:1.08;max-width:none}
+.hero .hero-intro{font-size:20px;line-height:1.55;margin-top:23px}
+.hero-methods,.hero-result{font-size:16px;line-height:1.65;max-width:62ch;margin-top:16px}
+.hero-methods{color:var(--muted)}
+.hero-result{color:var(--ink)}
+.hero-copy>.actions{margin-top:25px}
+.method-rows article{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:35px;align-items:start;padding:27px 0;border-top:1px solid var(--line)}
+.method-rows p{margin-top:9px;color:var(--muted);max-width:80ch}
+.method-rows article>a{text-align:right;align-self:center;font-size:16px}
+.market-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px}
+.market-results h3{font-size:25px;line-height:1.25}
+.market-results p{margin-top:16px;font-size:17px;line-height:1.65}
+.market-results .text-link{display:inline-block;margin-top:19px;font-size:16px}
+.closing h2{max-width:22ch}
+@media(max-width:900px){.hero{padding-top:30px;padding-bottom:44px}.hero .research-title{font-size:48px}.method-rows article{grid-template-columns:minmax(0,1fr);gap:14px}.method-rows article>a{text-align:left;justify-self:start}.market-results{grid-template-columns:minmax(0,1fr);gap:33px}}
+@media(max-width:520px){.hero .research-title{font-size:39px}.hero .hero-intro{font-size:18px;margin-top:20px}.hero-methods,.hero-result{font-size:16px;margin-top:14px}.method-rows h3{font-size:23px}.market-results h3{font-size:24px}.closing h2{font-size:32px}}
+
+html[lang^="zh"] .hero .research-title{font-size:clamp(32px,3.55vw,48px)}
+@media(max-width:520px){html[lang^="zh"] .hero .research-title{font-size:clamp(27px,8.3vw,34px)}}

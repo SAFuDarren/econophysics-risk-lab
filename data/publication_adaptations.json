@@ -31,10 +31,10 @@
     },
     {
       "path": "README.md",
-      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "change": "Research-entry narrative, presentation and linked-resource count updated; mathematical model, numerical tables and scientific figures retained.",
       "original_sha256": "5997b90d512039f259417e241175a1e70e3e7be55bfb9792480267056531b48b",
-      "prior_publication_sha256": "5997b90d512039f259417e241175a1e70e3e7be55bfb9792480267056531b48b",
-      "published_sha256": "af9b6fbfca7ee2fe5aa4ca365546626f38deb379a63a167a4b14803582abc028"
+      "prior_publication_sha256": "af9b6fbfca7ee2fe5aa4ca365546626f38deb379a63a167a4b14803582abc028",
+      "published_sha256": "5cef732c8c8fa89f125167379dcf5ed1ec7b85be41233d7df994acc0851622c7"
     },
     {
       "path": "apps/risk_lab_v1/src/template.html",
@@ -228,10 +228,10 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "change": "Research-entry narrative, presentation and linked-resource count updated; mathematical model, numerical tables and scientific figures retained.",
       "original_sha256": "1b05c66c6f53aa933421b906bc2d5a463bced58b90396507a9fe3947fe90ac3e",
-      "prior_publication_sha256": "1b05c66c6f53aa933421b906bc2d5a463bced58b90396507a9fe3947fe90ac3e",
-      "published_sha256": "e53e4e42ffc6e9342da21845ac41d54be4731048d18e2fb538a8de5e7050c4f3"
+      "prior_publication_sha256": "e53e4e42ffc6e9342da21845ac41d54be4731048d18e2fb538a8de5e7050c4f3",
+      "published_sha256": "f61ff5d8e9d9e5df15889d385ab3e45005b22c76831a8386ccd68653a30fbb8e"
     },
     {
       "path": "docs/theory/DEPTH_ADDENDUM.md",
@@ -478,6 +478,20 @@
       "published_sha256": "09e19943fc9b722b86c635a533844697b74e63b8229c9065f0e7d1b0a9c2e9af"
     },
     {
+      "path": "web/assets/social-preview.jpg",
+      "original_sha256": "99be82ed19012b6da2c34e8b1cdb550fc0248012e44769aad667f8182ede8ddb",
+      "prior_publication_sha256": "99be82ed19012b6da2c34e8b1cdb550fc0248012e44769aad667f8182ede8ddb",
+      "published_sha256": "3645bf56ac3a0d4b0dfb517a5c8d64e3de9b86056e7c203ba155f73698bf1e80",
+      "change": "Research-entry narrative, presentation and linked-resource count updated; mathematical model, numerical tables and scientific figures retained."
+    },
+    {
+      "path": "web/assets/style.css",
+      "original_sha256": "20f1fba34e56218ee6a862e19ba922fbf291ab5cf12a173ce6121fd13eb7d7bb",
+      "prior_publication_sha256": "20f1fba34e56218ee6a862e19ba922fbf291ab5cf12a173ce6121fd13eb7d7bb",
+      "published_sha256": "9b103de615a4e6da5a6c56286d3249aa5125e72e2bb83f1dd6ab18d9a65d3746",
+      "change": "Research-entry narrative, presentation and linked-resource count updated; mathematical model, numerical tables and scientific figures retained."
+    },
+    {
       "path": "web/downloads/01_model_and_moments.ipynb",
       "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
       "original_sha256": "e4116171021af0f4fc08045fcea4e3e9fcf2d5f2a86be0625c4726d75e0ef74f",
@@ -521,10 +535,10 @@
     },
     {
       "path": "web/index.html",
-      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "change": "Research-entry narrative, presentation and linked-resource count updated; mathematical model, numerical tables and scientific figures retained.",
       "original_sha256": "26b57688e491d87e5ea0478d46761de42015d0e73c79e528e2f5c87a8d828d52",
-      "prior_publication_sha256": "26b57688e491d87e5ea0478d46761de42015d0e73c79e528e2f5c87a8d828d52",
-      "published_sha256": "bafc0f2a501f8778232367dea4731cbce106251c0f814392c9f59bbf65cde1b8"
+      "prior_publication_sha256": "bafc0f2a501f8778232367dea4731cbce106251c0f814392c9f59bbf65cde1b8",
+      "published_sha256": "15e61e4c03f47fe663ceb7917cdde003a391a80ddbb0704ca8b14d990f590968"
     },
     {
       "path": "web/lab.html",
