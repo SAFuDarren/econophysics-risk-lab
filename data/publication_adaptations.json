@@ -34,7 +34,7 @@
       "change": "Research-entry narrative and GitHub-compatible mathematical typesetting; mathematical content and numerical results retained.",
       "original_sha256": "5997b90d512039f259417e241175a1e70e3e7be55bfb9792480267056531b48b",
       "prior_publication_sha256": "af9b6fbfca7ee2fe5aa4ca365546626f38deb379a63a167a4b14803582abc028",
-      "published_sha256": "a9de71f53f1f8e8793ffac3c1601492c23d9f85a9a894c5a20e9da583c003685"
+      "published_sha256": "1dc64c76e03c96c15d2622af7e246b5498c3ccc51a6b517e2d18a7f6088d2399"
     },
     {
       "path": "apps/risk_lab_v1/src/template.html",

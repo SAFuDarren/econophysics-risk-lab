@@ -15,6 +15,10 @@ Bitcoin observations and sector-ETF risk diagnostics.
 [![Research checks](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml)
 [![Website deployment](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml)
 
+[![Interactive research website preview](web/assets/social-preview.jpg)](https://safudarren.github.io/econophysics-risk-lab/)
+
+[**Explore the interactive research website →**](https://safudarren.github.io/econophysics-risk-lab/)
+
 ## Research results
 
 - **Exact moment relations and parameter recovery.** In the finite Erdős–Rényi
