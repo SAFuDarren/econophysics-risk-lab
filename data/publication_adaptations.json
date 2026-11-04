@@ -31,10 +31,10 @@
     },
     {
       "path": "README.md",
-      "change": "Research-entry narrative, presentation and linked-resource count updated; mathematical model, numerical tables and scientific figures retained.",
+      "change": "Research-entry narrative and GitHub-compatible mathematical typesetting; mathematical content and numerical results retained.",
       "original_sha256": "5997b90d512039f259417e241175a1e70e3e7be55bfb9792480267056531b48b",
       "prior_publication_sha256": "af9b6fbfca7ee2fe5aa4ca365546626f38deb379a63a167a4b14803582abc028",
-      "published_sha256": "5cef732c8c8fa89f125167379dcf5ed1ec7b85be41233d7df994acc0851622c7"
+      "published_sha256": "a9de71f53f1f8e8793ffac3c1601492c23d9f85a9a894c5a20e9da583c003685"
     },
     {
       "path": "apps/risk_lab_v1/src/template.html",

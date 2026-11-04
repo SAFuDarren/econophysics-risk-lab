@@ -57,7 +57,7 @@ other groups. The parameters satisfy $0<q<1$ and $\lambda>0$.
 For the displayed graph $H$,
 
 $$
-\operatorname{Var}(r\mid H)=q(\lambda/N)^2S_2,
+\mathrm{Var}(r\mid H)=q(\lambda/N)^2S_2,
 \qquad S_2=\sum_C s_C^2.
 $$
 
