@@ -2,6 +2,9 @@
 
 **How do shared decisions change market fluctuations, and what can price and volume reveal about the hidden structure?**
 
+[![Research checks](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml)
+[![Website deployment](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml)
+
 A computational PC5253 research project connecting herding, finite-network moments,
 conditional parameter inference, identification limits and historical risk applications.
 
@@ -9,7 +12,7 @@ conditional parameter inference, identification limits and historical risk appli
 
 ## Explore
 
-[Research repository](https://github.com/SAFuDarren/econophysics-risk-lab)
+[**Open the research website →**](https://safudarren.github.io/econophysics-risk-lab/) · [Research repository](https://github.com/SAFuDarren/econophysics-risk-lab)
 
 Run a local preview:
 
