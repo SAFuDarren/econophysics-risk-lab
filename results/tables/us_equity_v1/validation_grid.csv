@@ -1,0 +1,20 @@
+kind,name,validation_qlike,return_alpha
+Risk control,Diagonal-63,4.405215624379289,
+Risk control,FixedCorrelation-63,0.7272120275982138,
+Risk control,Sample-63,0.9508526887711858,
+Risk control,LedoitWolf-63,1.0526012316581057,
+Risk control,EWMA-63-0.94,0.7746510420230828,
+Risk control,EWMA-63-0.97,0.8137468793231555,
+Risk control,Diagonal-126,5.174504491979576,
+Risk control,FixedCorrelation-126,0.8586231039978018,
+Risk control,Sample-126,1.126056317349036,
+Risk control,LedoitWolf-126,1.194448034768684,
+Risk control,EWMA-126-0.94,0.7732363581506507,
+Risk control,EWMA-126-0.97,0.8334138728748719,
+Return Gamma,1,0.8690226551727804,
+Return Gamma,10,0.8596836052075274,
+Return Gamma,100,0.8061356800325098,
+Network Gamma,1,0.6980696971271358,100
+Network Gamma,10,0.7094849310203627,100
+Network Gamma,100,0.7005021951003296,100
+Network Gamma,off,0.8061356800325098,100

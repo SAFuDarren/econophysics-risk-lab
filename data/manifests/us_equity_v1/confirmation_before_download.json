@@ -1,0 +1,15 @@
+{
+  "recorded_utc": "2026-10-27T11:26:56.188949+00:00",
+  "stage": "confirmation",
+  "range": {
+    "start": "2026-01-01",
+    "end_exclusive": "2026-10-24"
+  },
+  "sha256": {
+    "configs/us_equity_v1.json": "919ab7196273c8b803db2d5a2d258b3f7b936ce82ced76da13ecf823c0e8dd9c",
+    "docs/AB/us_equity_v1_contract.md": "de687464913f9658492463dff3c9a241a2cbbb2d4e0eb60fa5af4623af2c9a91",
+    "scripts/fetch_us_equity.py": "82a2a7974a00f07cbc08d906dacad42fe8bdab32310ea26daed2e6a0919ab1a3",
+    "results/checks/us_equity_v1/selection_freeze.json": "78bbdcbdfd17ec8795f2f9a9b7ac4240745c3360826ecf0e7cb509e95221b5c3"
+  },
+  "raw_count_before_download": 0
+}

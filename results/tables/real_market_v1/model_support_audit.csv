@@ -1,0 +1,4 @@
+rho,fixed_model_return_bound,holdout_max_abs_return,holdout_events_outside_model_support,holdout_bars,interpretation
+0.6,0.1207301404904023,0.07621342584207424,0,52992,"Post-analysis deterministic support check at fixed H1 calibration, not a new fitted rho or a global exclusion of all calibrations"
+1.0,0.03545876284833633,0.07621342584207424,2,52992,"Post-analysis deterministic support check at fixed H1 calibration, not a new fitted rho or a global exclusion of all calibrations"
+1.4,0.009130064894280056,0.07621342584207424,39,52992,"Post-analysis deterministic support check at fixed H1 calibration, not a new fitted rho or a global exclusion of all calibrations"

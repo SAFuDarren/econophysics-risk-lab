@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "scope": "Sufficient model condition, conditional on fixed z/D and no exogenous shock; not market validation",
+  "states": 2280,
+  "max_initial_loss_fraction": 0.017915795408467727,
+  "response_buffer": 0.02,
+  "loss_budget": 0.05,
+  "source_sha256": "4e5e81a87bcae1a1a1e4f4dd43dd0ea885573e99c03ba1ed93946c88bc22f5e7",
+  "all_volume_equal_one_round_equal_feedback": true,
+  "derivation": "docs/theory/CROWDED_EXIT_v1.md; monotone L(A,f) and L(A_V,f)<buffer imply q_k=f below the volume ceiling"
+}

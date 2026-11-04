@@ -1,0 +1,7 @@
+split,model,baseline,block_sessions,days,sigma_reduction_pct,sigma_ci_low,sigma_ci_high,annual_mean_pnl_difference_pp,mean_difference_ci_low,mean_difference_ci_high,scope
+historical_test,HRP,LW-MinVariance,5,1508,-4.056792445340385,-7.463946827319808,-0.4071594526433356,0.5735338122925102,-0.5724832110077673,1.7660628076582294,Exploratory allocation comparison; exposure and mean must accompany risk
+historical_test,HRP,LW-MinVariance,20,1508,-4.056792445340385,-8.594163987862082,1.0541157663348473,0.5735338122925102,-0.6623443979430201,1.8251016803112912,Exploratory allocation comparison; exposure and mean must accompany risk
+historical_test,HRP,LW-MinVariance,63,1508,-4.056792445340385,-9.910278548446465,2.7070471756148646,0.5735338122925102,-0.5363922187214534,1.7655788563221706,Exploratory allocation comparison; exposure and mean must accompany risk
+confirmation,HRP,LW-MinVariance,5,204,1.5311241589155866,-1.7907061528515422,5.204075419884972,-0.30165702722683957,-1.8065265221165399,1.3418411172634463,Exploratory allocation comparison; exposure and mean must accompany risk
+confirmation,HRP,LW-MinVariance,20,204,1.5311241589155866,-1.224075156729424,4.052628868357499,-0.30165702722683957,-1.6780630833301258,1.1701322745438805,Exploratory allocation comparison; exposure and mean must accompany risk
+confirmation,HRP,LW-MinVariance,63,204,1.5311241589155866,-0.9070618592258828,4.162939828152024,-0.30165702722683957,-1.7629205223206528,1.339167158250948,Exploratory allocation comparison; exposure and mean must accompany risk

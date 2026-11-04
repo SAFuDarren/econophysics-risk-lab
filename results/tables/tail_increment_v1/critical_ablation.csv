@@ -1,0 +1,9 @@
+panel,period,model,baseline,metric,improvement_pct,ci_low,ci_high,scope
+sector,historical_test,HerdingCritical,HerdingSubcritical,pinball05,-0.3407979218379875,-0.9843054987127609,0.21175941972153903,Exploratory same-budget rho=1 vs rho=.6; not real criticality identification
+sector,historical_test,HerdingCritical,HerdingSubcritical,brier,-0.05546026546940919,-0.23852763800018106,0.11339717080485591,Exploratory same-budget rho=1 vs rho=.6; not real criticality identification
+sector,confirmation,HerdingCritical,HerdingSubcritical,pinball05,-0.18689246134622195,-2.2222525831078466,1.5551123588950744,Exploratory same-budget rho=1 vs rho=.6; not real criticality identification
+sector,confirmation,HerdingCritical,HerdingSubcritical,brier,0.129783642931236,-17.018896421291398,0.32614678886171644,Exploratory same-budget rho=1 vs rho=.6; not real criticality identification
+external,historical_test,HerdingCritical,HerdingSubcritical,pinball05,0.6222902568356448,0.18809698894146853,1.0788376433008806,Exploratory same-budget rho=1 vs rho=.6; not real criticality identification
+external,historical_test,HerdingCritical,HerdingSubcritical,brier,0.23509765024181117,-0.06389860859467578,0.4550758230552726,Exploratory same-budget rho=1 vs rho=.6; not real criticality identification
+external,confirmation,HerdingCritical,HerdingSubcritical,pinball05,-1.3192365047407506,-3.516330270872113,0.366177474579268,Exploratory same-budget rho=1 vs rho=.6; not real criticality identification
+external,confirmation,HerdingCritical,HerdingSubcritical,brier,-59.12462065660024,-96.61745591179232,-31.084069885757067,Exploratory same-budget rho=1 vs rho=.6; not real criticality identification

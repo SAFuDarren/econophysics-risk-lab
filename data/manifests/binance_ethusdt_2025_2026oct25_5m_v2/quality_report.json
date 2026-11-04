@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "symbol": "ETHUSDT",
+  "rows": 190944,
+  "days": 663,
+  "first_utc": "2025-01-01T00:00:00Z",
+  "last_utc": "2026-10-25T23:55:00Z",
+  "missing": 0,
+  "duplicates": 0,
+  "rows_dropped": 0,
+  "gaps_filled": 0,
+  "processed_sha256": "0a1e1b4e1512ebec811bbec198d7c96bc55219d74579f0aa5f65e54b6ec21601",
+  "member_review": "not_run"
+}

@@ -1,0 +1,13 @@
+allocation,depth_multiplier,snapshots,mean_haircut_pct,sd_across_states_pct,median_haircut_pct,p95_haircut_pct,max_haircut_pct,material_snapshots,material_years,active_at_capacity
+Equal,0.5,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+Equal,1.0,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+Equal,2.0,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+InverseVol,0.5,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+InverseVol,1.0,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+InverseVol,2.0,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+LW-MinVariance,0.5,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+LW-MinVariance,1.0,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+LW-MinVariance,2.0,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+HRP,0.5,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+HRP,1.0,190,0.0,0.0,0.0,0.0,0.0,0,0,0
+HRP,2.0,190,0.0,0.0,0.0,0.0,0.0,0,0,0

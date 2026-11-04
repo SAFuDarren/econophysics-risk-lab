@@ -1,0 +1,86 @@
+{
+  "risk_cases": [
+    {
+      "date": "2020-03-31",
+      "lookback": 63,
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "eta": 1.0,
+      "expected": {
+        "normalized_weights": [
+          0.111111111111,
+          0.111111111111,
+          0.111111111111,
+          0.111111111111,
+          0.111111111111,
+          0.111111111111,
+          0.111111111111,
+          0.111111111111,
+          0.111111111111
+        ],
+        "variance_self": 0.000168787878894,
+        "variance_full_observed": 0.0013225283605,
+        "variance_counterfactual": 0.0013225283605,
+        "annual_vol_diagonal_pct": 20.6239049361,
+        "annual_vol_observed_pct": 57.7301608213,
+        "annual_vol_counterfactual_pct": 57.7301608213,
+        "volatility_ratio": 2.79918672047,
+        "collective_share": 0.872374851129
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "lookback": 126,
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "eta": 0.5,
+      "expected": {
+        "normalized_weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.333333333333,
+          0.333333333333,
+          0.333333333333,
+          0.0
+        ],
+        "variance_self": 3.76148954725e-05,
+        "variance_full_observed": 6.7369488865e-05,
+        "variance_counterfactual": 5.24921921688e-05,
+        "annual_vol_diagonal_pct": 9.7359918134,
+        "annual_vol_observed_pct": 13.0296243975,
+        "annual_vol_counterfactual_pct": 11.5013183707,
+        "volatility_ratio": 1.18131964274,
+        "collective_share": 0.283419230205
+      }
+    }
+  ],
+  "default_mask": 47,
+  "default_members": [
+    "Momentum-63",
+    "Momentum-126",
+    "Reversal-5",
+    "Reversal-21",
+    "LowVol-63"
+  ]
+}

@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.cache/
+.runs/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+data/raw/
+data/processed/
+*.aux
+*.log
+*.out

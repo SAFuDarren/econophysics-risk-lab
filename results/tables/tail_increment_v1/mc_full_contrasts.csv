@@ -1,0 +1,5 @@
+period,metric,baseline,improvement_pct,ci_low,ci_high,scope
+historical_test,pinball05,Gaussian,0.43533856767554724,-0.17748293439724283,1.1547897624821948,"16384-draw numerical sensitivity, not replacement primary result"
+historical_test,brier,FHS,0.12797217581527187,-1.1626032445332346,2.1057781319343984,"16384-draw numerical sensitivity, not replacement primary result"
+confirmation,pinball05,Gaussian,-1.6649650542893246,-4.731191860098326,1.2309797102487612,"16384-draw numerical sensitivity, not replacement primary result"
+confirmation,brier,FHS,33.52779783545081,18.289512459400427,52.329287982531575,"16384-draw numerical sensitivity, not replacement primary result"

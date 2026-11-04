@@ -1,0 +1,29 @@
+source,metric,estimate,ci_low,ci_high,day_block_length,days,interval_note
+Market H2,mean_return,-3.7904920323707127e-06,-1.2674518610907796e-05,5.84659319488629e-06,1,184,Pointwise circular date-block bootstrap
+Market H2,mean_return,-3.7904920323707127e-06,-1.3430816498851995e-05,5.618977153298763e-06,7,184,Pointwise circular date-block bootstrap
+Market H2,return_std,0.0012862652389777616,0.0011540852717724101,0.0014479073954685197,1,184,Pointwise circular date-block bootstrap
+Market H2,return_std,0.0012862652389777616,0.00110826967666733,0.0014774155081555328,7,184,Pointwise circular date-block bootstrap
+Market H2,mean_volume,62.77311450009437,57.78270108948995,67.93638852448014,1,184,Pointwise circular date-block bootstrap
+Market H2,mean_volume,62.77311450009437,55.02623162931011,71.64999182231188,7,184,Pointwise circular date-block bootstrap
+Market H2,volume_cv,1.4963579227787627,1.300120269378523,1.7155313066812676,1,184,Pointwise circular date-block bootstrap
+Market H2,volume_cv,1.4963579227787627,1.313004421232642,1.69519325342763,7,184,Pointwise circular date-block bootstrap
+Market H2,excess_kurtosis,269.24811994069387,12.460875776631763,577.1268664333151,1,184,Pointwise circular date-block bootstrap
+Market H2,excess_kurtosis,269.24811994069387,13.230147243536122,575.8029058462339,7,184,Pointwise circular date-block bootstrap
+Market H2,pearson_signed_return_volume,-0.06880643137714948,-0.14756595545435228,0.016012577969896028,1,184,Pointwise circular date-block bootstrap
+Market H2,pearson_signed_return_volume,-0.06880643137714948,-0.1422860724976322,0.02158061626772536,7,184,Pointwise circular date-block bootstrap
+Market H2,normalized_squared_coupling,9.782947573227164,2.576155801385863,20.38559934371357,1,184,Pointwise circular date-block bootstrap
+Market H2,normalized_squared_coupling,9.782947573227164,2.751116782376125,19.659636101108486,7,184,Pointwise circular date-block bootstrap
+Market H2,normalized_volume_third,17.964431039976123,8.022429144462489,26.115952029498683,1,184,Pointwise circular date-block bootstrap
+Market H2,normalized_volume_third,17.964431039976123,8.50133916771215,25.62712985029586,7,184,Pointwise circular date-block bootstrap
+Market H2,delta,-8.18148346674896,-12.301951738726476,-4.667942792872153,1,184,Pointwise circular date-block bootstrap
+Market H2,delta,-8.18148346674896,-11.997991393062946,-4.712038681758051,7,184,Pointwise circular date-block bootstrap
+Market H2,q_joint_implied,-5.108752318365063,-23.827388078955433,14.014740583429528,1,184,Pointwise circular date-block bootstrap
+Market H2,q_joint_implied,-5.108752318365063,-21.037402567412176,20.851651571001067,7,184,Pointwise circular date-block bootstrap
+Market H2,zero_volume_fraction,0.0,,,1,184,Observed zero count; bootstrap interval suppressed
+Market H2,zero_volume_fraction,0.0,,,7,184,Observed zero count; bootstrap interval suppressed
+Market H2,zero_return_fraction,0.003528834541062802,0.002489998490338164,0.004679951690821256,1,184,Pointwise circular date-block bootstrap
+Market H2,zero_return_fraction,0.003528834541062802,0.0022446784420289854,0.004868659420289855,7,184,Pointwise circular date-block bootstrap
+Market H2,spearman_abs_return_volume,0.49807847350718343,0.47836702436617273,0.5166106370623594,1,184,Ranks recomputed under integer date-block weights
+Market H2,spearman_abs_return_volume,0.49807847350718343,0.4713070400707257,0.5209773540863869,7,184,Ranks recomputed under integer date-block weights
+Market H2,spearman_season_adjusted_abs_volume,0.4809525793523471,0.4588366867511928,0.5020541920660636,1,184,Ranks recomputed under integer date-block weights
+Market H2,spearman_season_adjusted_abs_volume,0.4809525793523471,0.4528623909872575,0.5051452827757784,7,184,Ranks recomputed under integer date-block weights

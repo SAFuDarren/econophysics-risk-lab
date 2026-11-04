@@ -1,0 +1,138 @@
+{
+  "status": "pass",
+  "kind": "REAL_DATA",
+  "dataset": "binance_btcusdt_2025_5m_v1",
+  "rows": 105120,
+  "expected_rows": 105120,
+  "calibration_rows": 52128,
+  "holdout_rows": 52992,
+  "first_open_utc": "2025-01-01T00:00:00Z",
+  "last_open_utc": "2025-12-31T23:55:00Z",
+  "reference_close": 93576.0,
+  "reference_open_utc": "2024-12-31T23:55:00Z",
+  "missing": 0,
+  "duplicates": 0,
+  "out_of_order": 0,
+  "nonfinite": 0,
+  "invalid_OHLC": 0,
+  "invalid_volume_or_taker": 0,
+  "rows_dropped": 0,
+  "gaps_filled": 0,
+  "zero_volume_bars": 0,
+  "zero_return_bars": 288,
+  "timestamp_rule": "2024 ms and 2025 us per official archive README; canonical open_time_us/close_time_us",
+  "source_files": [
+    {
+      "period": "2025-01",
+      "rows": 8928,
+      "expected_rows": 8928,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-01-01T00:00:00Z",
+      "last_utc": "2025-01-31T23:55:00Z",
+      "source_sha256": "4ed2edba26630a98b6ac6102b41dad00e1542640336f0d571c5a7394b39df983"
+    },
+    {
+      "period": "2025-02",
+      "rows": 8064,
+      "expected_rows": 8064,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-02-01T00:00:00Z",
+      "last_utc": "2025-02-28T23:55:00Z",
+      "source_sha256": "a4859a5b4ad31f41f3ffad1d9a044154ff529c41983b76432ef3f10981b32415"
+    },
+    {
+      "period": "2025-03",
+      "rows": 8928,
+      "expected_rows": 8928,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-03-01T00:00:00Z",
+      "last_utc": "2025-03-31T23:55:00Z",
+      "source_sha256": "1eb1fb0c76a0e8302abdec42d54b844bd3c3d6d7e6e69ae434aaa1dea445d54d"
+    },
+    {
+      "period": "2025-04",
+      "rows": 8640,
+      "expected_rows": 8640,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-04-01T00:00:00Z",
+      "last_utc": "2025-04-30T23:55:00Z",
+      "source_sha256": "3ba9f1fd519bad5f190dfe0acda0dd57f904ad5eb848378be329b43cf69b5041"
+    },
+    {
+      "period": "2025-05",
+      "rows": 8928,
+      "expected_rows": 8928,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-05-01T00:00:00Z",
+      "last_utc": "2025-05-31T23:55:00Z",
+      "source_sha256": "a1f4381240c422cda18464a054b34f75bb32bc5bb9137306e6c9d412e1b160aa"
+    },
+    {
+      "period": "2025-06",
+      "rows": 8640,
+      "expected_rows": 8640,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-06-01T00:00:00Z",
+      "last_utc": "2025-06-30T23:55:00Z",
+      "source_sha256": "7c005bb32458cc9c797244c49d2be734f626561fb40031fba4b86831e95f06d9"
+    },
+    {
+      "period": "2025-07",
+      "rows": 8928,
+      "expected_rows": 8928,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-07-01T00:00:00Z",
+      "last_utc": "2025-07-31T23:55:00Z",
+      "source_sha256": "8e4890be772dee102d3f5051fc9da5786f1f5203fd5bf251f47d5d8abcf79209"
+    },
+    {
+      "period": "2025-08",
+      "rows": 8928,
+      "expected_rows": 8928,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-08-01T00:00:00Z",
+      "last_utc": "2025-08-31T23:55:00Z",
+      "source_sha256": "532cd96e6dad9950b359f43bd308dc7e72b36c236875002b594d1eb5dc4d7639"
+    },
+    {
+      "period": "2025-09",
+      "rows": 8640,
+      "expected_rows": 8640,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-09-01T00:00:00Z",
+      "last_utc": "2025-09-30T23:55:00Z",
+      "source_sha256": "5ff19de79c102825f41d85810660c2ea339c6c6ef407bae5991870741b975fd8"
+    },
+    {
+      "period": "2025-10",
+      "rows": 8928,
+      "expected_rows": 8928,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-10-01T00:00:00Z",
+      "last_utc": "2025-10-31T23:55:00Z",
+      "source_sha256": "079e33529c01dfd219ce79428d3c5ff5ef9814005be6ccd091ffe73580607fd2"
+    },
+    {
+      "period": "2025-11",
+      "rows": 8640,
+      "expected_rows": 8640,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-11-01T00:00:00Z",
+      "last_utc": "2025-11-30T23:55:00Z",
+      "source_sha256": "470e5eecf5c2fb18390f5234897f71d9cec61e2bf31d0152948ce985e0ae583d"
+    },
+    {
+      "period": "2025-12",
+      "rows": 8928,
+      "expected_rows": 8928,
+      "missing_or_duplicate_or_out_of_order": false,
+      "first_utc": "2025-12-01T00:00:00Z",
+      "last_utc": "2025-12-31T23:55:00Z",
+      "source_sha256": "5f1f3ad19c8f79fe1f5f8e009bf55fcef306c60990a18d0a75d3b568628c2083"
+    }
+  ],
+  "processed_path": "data/processed/binance_btcusdt_2025_5m_v1/bars.csv",
+  "processed_sha256": "5718874da29affeebdd47c95519607b228011037c5ab061b58ef9a71c8775d55",
+  "license": "CC BY-NC-SA 4.0; Binance Vision attribution; terms snapshot in manifest folder",
+  "member_review": "not_run"
+}

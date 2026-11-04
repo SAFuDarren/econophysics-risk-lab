@@ -1,0 +1,2256 @@
+{
+  "status": "pass",
+  "checks": 562,
+  "failures": [],
+  "scope": "Pure numeric JavaScript/Python agreement; browser behavior checked separately",
+  "details": [
+    {
+      "name": "Python/JS risk fixture 2020-03-31",
+      "pass": true
+    },
+    {
+      "name": "Eta zero preserves marginal risk 2020-03-31",
+      "pass": true
+    },
+    {
+      "name": "Python/JS risk fixture 2026-10-23",
+      "pass": true
+    },
+    {
+      "name": "Eta zero preserves marginal risk 2026-10-23",
+      "pass": true
+    },
+    {
+      "name": "Zero portfolio rejected",
+      "pass": true
+    },
+    {
+      "name": "Default training screen agrees with Python",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 50",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 51",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 52",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 53",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 54",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 55",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 56",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 57",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 58",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 59",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 60",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 61",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 62",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 63",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 64",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 65",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 66",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 67",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 68",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 69",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 70",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 71",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 72",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 73",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 74",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 75",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 76",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 77",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 78",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 79",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 80",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 81",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 82",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 83",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 84",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 85",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 86",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 87",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 88",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 89",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 90",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 91",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 92",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 93",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 94",
+      "pass": true
+    },
+    {
+      "name": "Valid greedy training representatives 95",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 1/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 1/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 1/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 1/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 1/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 1/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 1/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 1/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 2/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 2/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 2/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 2/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 2/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 2/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 2/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 2/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 3/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 3/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 3/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 3/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 3/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 3/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 3/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 3/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 4/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 4/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 4/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 4/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 4/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 4/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 4/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 4/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 5/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 5/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 5/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 5/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 5/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 5/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 5/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 5/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 6/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 6/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 6/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 6/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 6/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 6/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 6/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 6/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 7/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 7/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 7/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 7/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 7/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 7/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 7/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 7/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 8/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 8/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 8/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 8/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 8/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 8/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 8/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 8/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 9/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 9/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 9/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 9/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 9/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 9/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 9/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 9/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 10/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 10/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 10/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 10/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 10/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 10/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 10/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 10/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 11/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 11/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 11/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 11/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 11/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 11/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 11/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 11/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 12/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 12/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 12/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 12/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 12/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 12/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 12/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 12/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 13/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 13/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 13/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 13/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 13/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 13/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 13/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 13/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 14/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 14/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 14/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 14/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 14/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 14/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 14/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 14/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 15/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 15/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 15/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 15/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 15/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 15/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 15/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 15/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 16/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 16/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 16/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 16/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 16/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 16/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 16/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 16/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 17/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 17/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 17/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 17/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 17/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 17/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 17/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 17/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 18/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 18/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 18/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 18/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 18/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 18/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 18/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 18/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 19/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 19/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 19/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 19/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 19/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 19/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 19/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 19/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 20/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 20/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 20/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 20/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 20/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 20/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 20/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 20/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 21/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 21/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 21/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 21/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 21/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 21/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 21/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 21/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 22/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 22/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 22/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 22/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 22/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 22/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 22/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 22/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 23/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 23/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 23/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 23/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 23/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 23/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 23/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 23/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 24/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 24/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 24/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 24/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 24/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 24/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 24/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 24/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 25/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 25/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 25/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 25/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 25/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 25/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 25/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 25/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 26/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 26/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 26/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 26/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 26/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 26/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 26/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 26/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 27/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 27/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 27/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 27/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 27/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 27/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 27/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 27/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 28/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 28/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 28/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 28/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 28/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 28/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 28/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 28/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 29/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 29/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 29/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 29/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 29/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 29/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 29/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 29/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 30/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 30/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 30/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 30/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 30/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 30/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 30/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 30/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 31/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 31/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 31/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 31/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 31/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 31/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 31/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 31/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 32/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 32/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 32/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 32/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 32/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 32/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 32/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 32/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 33/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 33/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 33/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 33/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 33/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 33/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 33/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 33/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 34/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 34/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 34/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 34/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 34/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 34/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 34/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 34/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 35/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 35/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 35/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 35/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 35/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 35/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 35/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 35/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 36/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 36/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 36/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 36/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 36/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 36/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 36/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 36/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 37/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 37/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 37/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 37/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 37/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 37/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 37/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 37/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 38/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 38/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 38/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 38/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 38/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 38/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 38/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 38/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 39/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 39/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 39/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 39/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 39/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 39/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 39/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 39/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 40/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 40/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 40/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 40/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 40/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 40/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 40/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 40/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 41/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 41/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 41/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 41/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 41/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 41/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 41/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 41/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 42/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 42/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 42/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 42/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 42/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 42/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 42/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 42/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 43/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 43/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 43/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 43/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 43/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 43/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 43/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 43/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 44/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 44/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 44/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 44/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 44/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 44/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 44/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 44/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 45/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 45/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 45/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 45/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 45/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 45/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 45/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 45/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 46/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 46/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 46/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 46/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 46/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 46/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 46/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 46/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 47/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 47/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 47/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 47/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 47/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 47/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 47/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 47/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 48/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 48/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 48/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 48/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 48/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 48/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 48/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 48/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 49/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 49/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 49/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 49/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 49/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 49/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 49/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 49/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 50/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 50/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 50/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 50/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 50/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 50/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 50/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 50/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 51/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 51/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 51/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 51/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 51/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 51/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 51/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 51/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 52/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 52/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 52/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 52/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 52/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 52/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 52/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 52/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 53/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 53/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 53/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 53/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 53/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 53/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 53/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 53/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 54/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 54/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 54/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 54/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 54/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 54/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 54/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 54/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 55/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 55/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 55/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 55/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 55/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 55/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 55/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 55/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 56/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 56/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 56/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 56/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 56/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 56/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 56/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 56/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 57/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 57/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 57/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 57/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 57/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 57/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 57/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 57/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 58/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 58/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 58/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 58/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 58/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 58/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 58/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 58/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 59/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 59/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 59/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 59/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 59/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 59/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 59/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 59/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 60/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 60/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 60/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 60/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 60/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 60/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 60/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 60/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 61/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 61/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 61/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 61/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 61/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 61/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 61/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 61/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 62/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 62/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 62/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 62/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 62/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 62/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 62/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 62/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 63/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 63/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 63/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 63/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 63/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 63/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 63/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Browser risk scale 63/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Deterministic seeded ER graph",
+      "pass": true
+    },
+    {
+      "name": "Nested edge uniforms preserve lower-rho edges",
+      "pass": true
+    },
+    {
+      "name": "Cluster partition covers each of 128 nodes once",
+      "pass": true
+    },
+    {
+      "name": "S2 uses entire cluster squared sum",
+      "pass": true
+    },
+    {
+      "name": "Equal-loadings covariance example preserves q lambda squared",
+      "pass": true
+    },
+    {
+      "name": "Live graph extreme range finite",
+      "pass": true
+    }
+  ]
+}

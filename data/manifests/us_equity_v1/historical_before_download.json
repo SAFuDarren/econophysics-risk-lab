@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-10-27T11:22:12.133570+00:00",
+  "stage": "historical",
+  "range": {
+    "start": "2009-12-30",
+    "end_exclusive": "2026-01-01"
+  },
+  "sha256": {
+    "configs/us_equity_v1.json": "919ab7196273c8b803db2d5a2d258b3f7b936ce82ced76da13ecf823c0e8dd9c",
+    "docs/AB/us_equity_v1_contract.md": "de687464913f9658492463dff3c9a241a2cbbb2d4e0eb60fa5af4623af2c9a91",
+    "scripts/fetch_us_equity.py": "4b5b7472f6b909d2ebb7fb3f16e95f9cfd60a9ed06539d705937242d38416a69"
+  },
+  "raw_count_before_download": 0
+}

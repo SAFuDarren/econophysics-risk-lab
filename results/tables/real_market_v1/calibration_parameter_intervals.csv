@@ -1,0 +1,19 @@
+rho,parameter,estimate,ci_low,ci_high,day_block_length,scope
+0.6,q,0.008448378362607365,0.007405655858429484,0.00993350046858763,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+0.6,unit_order,77.77140909388949,62.73866499923059,93.3256932217819,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+0.6,lambda_impact,0.1207301404904023,0.10465575167683158,0.13667343263733625,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.0,q,0.028473130989315577,0.025021264694390383,0.03335992981647053,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.0,unit_order,23.075870724046965,18.677585998505702,27.623973596212025,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.0,lambda_impact,0.03545876284833633,0.030776306306267362,0.0401061037016797,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.4,q,0.10607385496075626,0.09412572667001294,0.12259846358960738,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.4,unit_order,6.194196393271321,5.072508131101019,7.348682955814799,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.4,lambda_impact,0.009130064894280056,0.007975165519504513,0.010283922142622142,1,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+0.6,q,0.008448378362607365,0.00763832567242786,0.009863623915800344,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+0.6,unit_order,77.77140909388949,58.80352732153708,94.07445956987993,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+0.6,lambda_impact,0.1207301404904023,0.09723946264100179,0.14052882721816584,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.0,q,0.028473130989315577,0.025792997639711202,0.03313077602874887,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.0,unit_order,23.075870724046965,17.499136636104197,27.844038429711176,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.0,lambda_impact,0.03545876284833633,0.028581989846014056,0.04126784147117471,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.4,q,0.10607385496075626,0.09681720290748284,0.12183357854811816,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.4,unit_order,6.194196393271321,4.74867185773763,7.426726134210963,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration
+1.4,lambda_impact,0.009130064894280056,0.007401500835293623,0.010595337426056037,7,H1 date-block sensitivity; trajectory bands remain conditional on point calibration

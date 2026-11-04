@@ -1,0 +1,1092 @@
+{
+  "status": "pass",
+  "scope": "Implementation, frozen design, signed ledger and arithmetic. Synthetic canary is not an application result; no market impact validation.",
+  "checks": [
+    {
+      "check": "Frozen input/source configs/crowded_exit_v1.json",
+      "status": "pass"
+    },
+    {
+      "check": "Frozen input/source docs/AB/crowded_exit_v1_contract.md",
+      "status": "pass"
+    },
+    {
+      "check": "Frozen input/source src/econophysics/crowded_exit.py",
+      "status": "pass"
+    },
+    {
+      "check": "Frozen input/source scripts/run_crowded_exit.py",
+      "status": "pass"
+    },
+    {
+      "check": "Frozen input/source results/tables/us_equity_v1/positions.npz",
+      "status": "pass"
+    },
+    {
+      "check": "Frozen input/source data/processed/us_equity_v1/historical.csv",
+      "status": "pass"
+    },
+    {
+      "check": "Frozen input/source data/processed/us_equity_v1/confirmation.csv",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 0",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 0",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 0",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 0",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 0",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 0",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 0",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 1",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 1",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 1",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 1",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 1",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 1",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 1",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 2",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 2",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 2",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 2",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 2",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 2",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 2",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 3",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 3",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 3",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 3",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 3",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 3",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 3",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 4",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 4",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 4",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 4",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 4",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 4",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 4",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 5",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 5",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 5",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 5",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 5",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 5",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 5",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 6",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 6",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 6",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 6",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 6",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 6",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 6",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 7",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 7",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 7",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 7",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 7",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 7",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 7",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 8",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 8",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 8",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 8",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 8",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 8",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 8",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 9",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 9",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 9",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 9",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 9",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 9",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 9",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 10",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 10",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 10",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 10",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 10",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 10",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 10",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 11",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 11",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 11",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 11",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 11",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 11",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 11",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 12",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 12",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 12",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 12",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 12",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 12",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 12",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 13",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 13",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 13",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 13",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 13",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 13",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 13",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 14",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 14",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 14",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 14",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 14",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 14",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 14",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 15",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 15",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 15",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 15",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 15",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 15",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 15",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 16",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 16",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 16",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 16",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 16",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 16",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 16",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 17",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 17",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 17",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 17",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 17",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 17",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 17",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 18",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 18",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 18",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 18",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 18",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 18",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 18",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 19",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 19",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 19",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 19",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 19",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 19",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 19",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 20",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 20",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 20",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 20",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 20",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 20",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 20",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 21",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 21",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 21",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 21",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 21",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 21",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 21",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 22",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 22",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 22",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 22",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 22",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 22",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 22",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 23",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 23",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 23",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 23",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 23",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 23",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 23",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 24",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 24",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 24",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 24",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 24",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 24",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 24",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 25",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 25",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 25",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 25",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 25",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 25",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 25",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 26",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 26",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 26",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 26",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 26",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 26",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 26",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 27",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 27",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 27",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 27",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 27",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 27",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 27",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 28",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 28",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 28",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 28",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 28",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 28",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 28",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 29",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 29",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 29",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 29",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 29",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 29",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 29",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 30",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 30",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 30",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 30",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 30",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 30",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 30",
+      "status": "pass"
+    },
+    {
+      "check": "Independent signed cash quadrature 31",
+      "status": "pass"
+    },
+    {
+      "check": "Independent NAV loss 31",
+      "status": "pass"
+    },
+    {
+      "check": "No trade preserves NAV 31",
+      "status": "pass"
+    },
+    {
+      "check": "No impact only exact fees 31",
+      "status": "pass"
+    },
+    {
+      "check": "Local derivative agrees with finite difference 31",
+      "status": "pass"
+    },
+    {
+      "check": "Fixed-fraction loss monotone in capital 31",
+      "status": "pass"
+    },
+    {
+      "check": "Disabled feedback exactly equals one round 31",
+      "status": "pass"
+    },
+    {
+      "check": "Long sale down, short covering up",
+      "status": "pass"
+    },
+    {
+      "check": "Opposite sleeve positions net to no impact or cost",
+      "status": "pass"
+    },
+    {
+      "check": "Synthetic feedback canary activates and tightens capacity",
+      "status": "pass"
+    },
+    {
+      "check": "Canary feedback does not reset total volume budget",
+      "status": "pass"
+    },
+    {
+      "check": "Canary capacity reaches a volume or common loss boundary",
+      "status": "pass"
+    },
+    {
+      "check": "Canary capacity bracket OneRound",
+      "status": "pass"
+    },
+    {
+      "check": "Canary capacity bracket Feedback",
+      "status": "pass"
+    },
+    {
+      "check": "Complete three methods x four books x three depths x 190 states",
+      "status": "pass"
+    },
+    {
+      "check": "All saved capacity states converge and satisfy volume/loss constraints",
+      "status": "pass"
+    },
+    {
+      "check": "Nested capacity sets",
+      "status": "pass"
+    },
+    {
+      "check": "All initial losses below fixed response buffer",
+      "status": "pass"
+    },
+    {
+      "check": "Strictly preceding ADV 2019-12-31",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2019-12-31Equal",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2019-12-31InverseVol",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2019-12-31LW-MinVariance",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2019-12-31HRP",
+      "status": "pass"
+    },
+    {
+      "check": "Strictly preceding ADV 2020-02-28",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2020-02-28Equal",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2020-02-28InverseVol",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2020-02-28LW-MinVariance",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2020-02-28HRP",
+      "status": "pass"
+    },
+    {
+      "check": "Strictly preceding ADV 2020-03-31",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2020-03-31Equal",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2020-03-31InverseVol",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2020-03-31LW-MinVariance",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2020-03-31HRP",
+      "status": "pass"
+    },
+    {
+      "check": "Strictly preceding ADV 2022-12-30",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2022-12-30Equal",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2022-12-30InverseVol",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2022-12-30LW-MinVariance",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2022-12-30HRP",
+      "status": "pass"
+    },
+    {
+      "check": "Strictly preceding ADV 2026-10-23",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2026-10-23Equal",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2026-10-23InverseVol",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2026-10-23LW-MinVariance",
+      "status": "pass"
+    },
+    {
+      "check": "Analytic volume ceiling 2026-10-23HRP",
+      "status": "pass"
+    },
+    {
+      "check": "Missing final future volume retained as censored",
+      "status": "pass"
+    },
+    {
+      "check": "Replay future windows have 189 dates per book/method",
+      "status": "pass"
+    },
+    {
+      "check": "Failed gate records stop without market-advantage claim",
+      "status": "pass"
+    }
+  ],
+  "synthetic_canary": {
+    "volume_cap": 1200000.0000000002,
+    "one_round_cap": 1172182.4186847382,
+    "feedback_cap": 776358.8285387559,
+    "feedback_q": 0.38641925486266787
+  }
+}

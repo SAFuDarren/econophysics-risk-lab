@@ -1,0 +1,3 @@
+kappa_H1,holdout_r_squared,r_squared_ci_low,r_squared_ci_high,day_block_length,calibration_rows,holdout_rows,interpretation
+2.0834140912764476e-05,0.2821872789144543,0.2646303590294179,0.2995087826572462,1,52128,52992,Same-bar relation; non-causal; no trading signal
+2.0834140912764476e-05,0.2821872789144543,0.25759776479916724,0.3059307483016463,7,52128,52992,Same-bar relation; non-causal; no trading signal

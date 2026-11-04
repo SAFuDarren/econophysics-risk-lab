@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "rows": 78624,
+  "days": 273,
+  "expected_rows": 78624,
+  "validation_days": 90,
+  "test_days": 183,
+  "missing": 0,
+  "duplicates": 0,
+  "rows_dropped": 0,
+  "gaps_filled": 0,
+  "zero_volume_bars": 0,
+  "first_utc": "2026-01-01T00:00:00Z",
+  "last_utc": "2026-09-30T23:55:00Z",
+  "processed_sha256": "9c36b0b32c1032b4621c67eb4878620d1f98400f30802db4305aca2ceba92fbe",
+  "previous_close_from_2025": 87648.22,
+  "member_review": "not_run"
+}

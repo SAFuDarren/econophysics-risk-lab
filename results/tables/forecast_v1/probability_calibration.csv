@@ -1,0 +1,16 @@
+model,bin,lower,upper,days,events,mean_probability,event_frequency,interpretation
+Climatology,0,0.0,0.05,0,0,,,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Climatology,1,0.05,0.1,0,0,,,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Climatology,2,0.1,0.2,183,8,0.12412177985948475,0.04371584699453552,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Climatology,3,0.2,0.4,0,0,,,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Climatology,4,0.4,1.0,0,0,,,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-HAR,0,0.0,0.05,116,0,0.018169168655623857,0.0,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-HAR,1,0.05,0.1,42,2,0.07039030285203977,0.047619047619047616,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-HAR,2,0.1,0.2,13,2,0.12756538606040954,0.15384615384615385,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-HAR,3,0.2,0.4,9,2,0.2553223453745597,0.2222222222222222,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-HAR,4,0.4,1.0,3,2,0.4657215588257666,0.6666666666666666,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-All,0,0.0,0.05,133,0,0.018206124167232312,0.0,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-All,1,0.05,0.1,28,1,0.06899907142693638,0.03571428571428571,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-All,2,0.1,0.2,16,4,0.1343434324636837,0.25,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-All,3,0.2,0.4,4,1,0.26694817841528734,0.25,Descriptive fixed bins; dependence and sparse counts preclude a precision claim
+Logit-All,4,0.4,1.0,2,2,0.5374279032225711,1.0,Descriptive fixed bins; dependence and sparse counts preclude a precision claim

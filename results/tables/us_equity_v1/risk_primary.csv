@@ -1,0 +1,3 @@
+split,model,baseline,metric,block_length,improvement_pct,ci_low,ci_high,p_bootstrap_approx,loss_difference,n,family,p_holm
+historical_test,NetworkGamma,ReturnGamma,QLIKE,4,-4.8025298571002795,-18.73250409101992,7.89051031422742,0.4376875375075015,0.027250253291370163,301,primary two periods,0.4376875375075015
+confirmation,NetworkGamma,ReturnGamma,QLIKE,4,-38.7311373262037,-70.00851023319062,-18.022771765064164,0.0,0.12450231855515206,40,primary two periods,0

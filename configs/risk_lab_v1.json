@@ -1,0 +1,20 @@
+{
+  "status": "post_analysis_interactive_diagnostic_not_new_blind_test",
+  "source_batch": "us_equity_v1",
+  "seed": 2026102711,
+  "train": ["2011-01-01", "2018-01-01"],
+  "validation": ["2018-01-01", "2020-01-01"],
+  "evaluations": {"historical_test": ["2020-01-01", "2026-01-01"], "confirmation": ["2026-01-01", "2026-10-24"]},
+  "screen": {"default_correlation_threshold": 0.8, "ranking": "Ascending 2011-2017 mean daily turnover, then fixed recipe name; no return ranking", "rule": "Greedily retain each strategy unless its positive daily-net-PnL correlation with an already retained representative reaches threshold. Mark only; users may inspect rather than discard.", "scope": "Training-only statistics determine the rule; rule designed after prior evaluation results were viewed. All subsequent comparisons remain exploratory."},
+  "subsets": "All 63 nonempty subsets of the fixed six strategies, equal sleeve capital, same original execution dates and underlying netting. Complete enumeration for an interactive calculator, not a search for a winning factor set.",
+  "cost_bps": [0, 5, 10, 25],
+  "borrow_bps_annual": 100,
+  "normalization": "Optional fixed scale = validation annual PnL sigma of all-six / validation sigma of chosen subset, estimated only on 2018-2019, applied uniformly to PnL/underlying exposure/turnover. It does not guarantee equal future risk or practical leverage feasibility.",
+  "reconstruction": "For each flagged strategy, fit intercept plus OLS on retained strategy net PnL using 2011-2017 only. Evaluate squared residual against deviation from training mean; statistical span diagnostic, not an executable hedge or independent alpha test.",
+  "risk_snapshots": "Last available exchange session per month from 2019 through 2026-10-23, windows63/126. Exact covariance of each selected window, all original daily observations used; snapshot sampling is UI navigation only.",
+  "counterfactual": "Sigma_eta=(1-eta)*diag(Sigma)+eta*Sigma, eta in [0,1]. Labelled counterfactual. Displayed correlation-edge threshold never alters numeric covariance.",
+  "uncertainty": {"replicates": 4999, "block_sessions": [5, 20, 63], "primary_block_sessions": 20, "scope": "Paired circular daily blocks for the one default screened-vs-all comparison. Approximate exploratory intervals, no p-values or claims of a new untouched validation."},
+  "physics": "Live ER N128, p=rho/127, nested graphs from fixed seeded edge uniforms; cluster moments conditional on the current graph. Existing phase_summary is 40 graphs per N/rho. Common-mode mapping K=q*(lambda/N)^2*S2 is a stated observation model, not a real-market rho estimator.",
+  "offline": "One self-contained HTML, embedded derived data, no runtime network or credentials; public hosting not performed.",
+  "outputs": "Numerical sources, interactive browser tool, readable formula/interpretation guide, screenshots, math/UI checks, portable package. Previous delivered evidence immutable."
+}

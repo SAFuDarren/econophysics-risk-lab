@@ -1,0 +1,7889 @@
+{
+  "status": "pass",
+  "checks": 1969,
+  "failures": [],
+  "classification": "Numerical implementation audit; not scientific signoff or fresh holdout validation",
+  "details": [
+    {
+      "name": "Frozen input hashes unchanged",
+      "pass": true
+    },
+    {
+      "name": "Prior delivered US package unchanged",
+      "pass": true
+    },
+    {
+      "name": "Original 19 numeric tables unchanged",
+      "pass": true
+    },
+    {
+      "name": "Archived position dates align with full source",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-03-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-03-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-03-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-03-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-05-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-05-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-05-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-05-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-06-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-06-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-06-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-06-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-08-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-08-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-08-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-08-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-11-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-11-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-11-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-11-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2019-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2019-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-05-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-05-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-05-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-05-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-10-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-10-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-10-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-10-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-11-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-11-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-11-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-11-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2020-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2020-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-01-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-01-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-01-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-01-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-02-26/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-02-26/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-02-26/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-02-26/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-05-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-05-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-05-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-05-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-07-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-07-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-07-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-07-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-10-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-10-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-10-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-10-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-11-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-11-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-11-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-11-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2021-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2021-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-04-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-04-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-04-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-04-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-05-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-05-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-05-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-05-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-07-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-07-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-07-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-07-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-11-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-11-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-11-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-11-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-12-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-12-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2022-12-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2022-12-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-04-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-04-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-04-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-04-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-05-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-05-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-05-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-05-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-09-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-09-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-09-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-09-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-11-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-11-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-11-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-11-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-12-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-12-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2023-12-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2023-12-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-02-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-02-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-02-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-02-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-03-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-03-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-03-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-03-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-05-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-05-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-05-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-05-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-06-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-06-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-06-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-06-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-08-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-08-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-08-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-08-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-11-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-11-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-11-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-11-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2024-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2024-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-01-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-01-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-02-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-02-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-05-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-05-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-05-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-05-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-08-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-08-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-08-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-08-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-10-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-10-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-11-28/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-11-28/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-11-28/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-11-28/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-12-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2025-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2025-12-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-01-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-01-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-01-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-01-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-02-27/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-02-27/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-02-27/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-02-27/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-03-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-03-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-04-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-04-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-05-29/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-05-29/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-05-29/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-05-29/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-06-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-06-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-07-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-07-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-08-31/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-08-31/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-09-30/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-09-30/126",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-10-23/63",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-10-23/63",
+      "pass": true
+    },
+    {
+      "name": "Window covariance 2026-10-23/126",
+      "pass": true
+    },
+    {
+      "name": "Counterfactual PSD and marginal variance 2026-10-23/126",
+      "pass": true
+    },
+    {
+      "name": "Risk fixture 2020-03-31",
+      "pass": true
+    },
+    {
+      "name": "Risk fixture 2026-10-23",
+      "pass": true
+    },
+    {
+      "name": "Screen correlations and ranking use training rows only",
+      "pass": true
+    },
+    {
+      "name": "Training screen marks LowVol-21 and keeps five representatives",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 1/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 1/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 1/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 1/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 1/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 1/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 1/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 1/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 1/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 1/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 1/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 1/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 1/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 2/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 2/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 2/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 2/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 2/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 2/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 2/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 2/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 2/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 2/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 2/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 2/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 2/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 3/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 3/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 3/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 3/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 3/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 3/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 3/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 3/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 3/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 3/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 3/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 3/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 3/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 4/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 4/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 4/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 4/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 4/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 4/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 4/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 4/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 4/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 4/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 4/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 4/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 4/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 5/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 5/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 5/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 5/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 5/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 5/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 5/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 5/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 5/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 5/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 5/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 5/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 5/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 6/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 6/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 6/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 6/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 6/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 6/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 6/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 6/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 6/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 6/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 6/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 6/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 6/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 7/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 7/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 7/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 7/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 7/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 7/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 7/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 7/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 7/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 7/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 7/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 7/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 7/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 8/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 8/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 8/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 8/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 8/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 8/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 8/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 8/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 8/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 8/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 8/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 8/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 8/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 9/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 9/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 9/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 9/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 9/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 9/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 9/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 9/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 9/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 9/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 9/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 9/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 9/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 10/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 10/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 10/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 10/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 10/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 10/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 10/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 10/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 10/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 10/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 10/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 10/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 10/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 11/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 11/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 11/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 11/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 11/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 11/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 11/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 11/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 11/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 11/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 11/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 11/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 11/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 12/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 12/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 12/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 12/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 12/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 12/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 12/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 12/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 12/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 12/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 12/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 12/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 12/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 13/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 13/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 13/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 13/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 13/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 13/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 13/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 13/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 13/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 13/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 13/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 13/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 13/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 14/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 14/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 14/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 14/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 14/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 14/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 14/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 14/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 14/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 14/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 14/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 14/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 14/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 15/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 15/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 15/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 15/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 15/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 15/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 15/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 15/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 15/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 15/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 15/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 15/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 15/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 16/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 16/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 16/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 16/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 16/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 16/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 16/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 16/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 16/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 16/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 16/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 16/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 16/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 17/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 17/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 17/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 17/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 17/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 17/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 17/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 17/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 17/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 17/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 17/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 17/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 17/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 18/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 18/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 18/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 18/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 18/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 18/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 18/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 18/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 18/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 18/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 18/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 18/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 18/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 19/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 19/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 19/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 19/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 19/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 19/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 19/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 19/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 19/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 19/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 19/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 19/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 19/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 20/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 20/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 20/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 20/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 20/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 20/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 20/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 20/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 20/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 20/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 20/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 20/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 20/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 21/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 21/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 21/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 21/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 21/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 21/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 21/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 21/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 21/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 21/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 21/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 21/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 21/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 22/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 22/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 22/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 22/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 22/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 22/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 22/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 22/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 22/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 22/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 22/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 22/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 22/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 23/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 23/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 23/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 23/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 23/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 23/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 23/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 23/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 23/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 23/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 23/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 23/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 23/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 24/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 24/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 24/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 24/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 24/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 24/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 24/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 24/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 24/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 24/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 24/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 24/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 24/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 25/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 25/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 25/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 25/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 25/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 25/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 25/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 25/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 25/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 25/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 25/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 25/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 25/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 26/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 26/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 26/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 26/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 26/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 26/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 26/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 26/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 26/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 26/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 26/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 26/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 26/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 27/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 27/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 27/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 27/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 27/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 27/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 27/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 27/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 27/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 27/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 27/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 27/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 27/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 28/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 28/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 28/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 28/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 28/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 28/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 28/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 28/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 28/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 28/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 28/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 28/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 28/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 29/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 29/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 29/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 29/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 29/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 29/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 29/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 29/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 29/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 29/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 29/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 29/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 29/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 30/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 30/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 30/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 30/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 30/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 30/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 30/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 30/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 30/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 30/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 30/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 30/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 30/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 31/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 31/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 31/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 31/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 31/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 31/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 31/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 31/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 31/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 31/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 31/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 31/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 31/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 32/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 32/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 32/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 32/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 32/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 32/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 32/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 32/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 32/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 32/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 32/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 32/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 32/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 33/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 33/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 33/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 33/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 33/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 33/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 33/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 33/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 33/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 33/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 33/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 33/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 33/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 34/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 34/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 34/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 34/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 34/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 34/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 34/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 34/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 34/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 34/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 34/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 34/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 34/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 35/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 35/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 35/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 35/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 35/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 35/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 35/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 35/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 35/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 35/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 35/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 35/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 35/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 36/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 36/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 36/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 36/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 36/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 36/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 36/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 36/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 36/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 36/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 36/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 36/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 36/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 37/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 37/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 37/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 37/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 37/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 37/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 37/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 37/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 37/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 37/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 37/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 37/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 37/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 38/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 38/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 38/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 38/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 38/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 38/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 38/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 38/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 38/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 38/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 38/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 38/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 38/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 39/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 39/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 39/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 39/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 39/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 39/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 39/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 39/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 39/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 39/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 39/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 39/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 39/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 40/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 40/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 40/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 40/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 40/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 40/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 40/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 40/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 40/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 40/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 40/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 40/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 40/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 41/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 41/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 41/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 41/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 41/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 41/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 41/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 41/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 41/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 41/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 41/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 41/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 41/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 42/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 42/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 42/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 42/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 42/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 42/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 42/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 42/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 42/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 42/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 42/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 42/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 42/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 43/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 43/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 43/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 43/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 43/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 43/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 43/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 43/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 43/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 43/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 43/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 43/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 43/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 44/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 44/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 44/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 44/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 44/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 44/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 44/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 44/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 44/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 44/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 44/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 44/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 44/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 45/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 45/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 45/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 45/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 45/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 45/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 45/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 45/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 45/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 45/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 45/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 45/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 45/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 46/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 46/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 46/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 46/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 46/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 46/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 46/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 46/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 46/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 46/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 46/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 46/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 46/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 47/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 47/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 47/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 47/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 47/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 47/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 47/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 47/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 47/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 47/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 47/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 47/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 47/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 48/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 48/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 48/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 48/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 48/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 48/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 48/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 48/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 48/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 48/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 48/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 48/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 48/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 49/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 49/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 49/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 49/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 49/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 49/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 49/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 49/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 49/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 49/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 49/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 49/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 49/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 50/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 50/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 50/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 50/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 50/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 50/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 50/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 50/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 50/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 50/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 50/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 50/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 50/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 51/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 51/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 51/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 51/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 51/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 51/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 51/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 51/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 51/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 51/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 51/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 51/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 51/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 52/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 52/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 52/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 52/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 52/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 52/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 52/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 52/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 52/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 52/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 52/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 52/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 52/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 53/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 53/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 53/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 53/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 53/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 53/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 53/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 53/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 53/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 53/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 53/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 53/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 53/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 54/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 54/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 54/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 54/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 54/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 54/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 54/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 54/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 54/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 54/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 54/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 54/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 54/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 55/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 55/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 55/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 55/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 55/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 55/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 55/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 55/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 55/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 55/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 55/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 55/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 55/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 56/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 56/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 56/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 56/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 56/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 56/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 56/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 56/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 56/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 56/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 56/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 56/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 56/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 57/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 57/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 57/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 57/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 57/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 57/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 57/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 57/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 57/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 57/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 57/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 57/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 57/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 58/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 58/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 58/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 58/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 58/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 58/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 58/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 58/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 58/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 58/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 58/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 58/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 58/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 59/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 59/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 59/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 59/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 59/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 59/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 59/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 59/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 59/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 59/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 59/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 59/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 59/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 60/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 60/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 60/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 60/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 60/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 60/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 60/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 60/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 60/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 60/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 60/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 60/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 60/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 61/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 61/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 61/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 61/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 61/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 61/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 61/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 61/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 61/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 61/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 61/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 61/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 61/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 62/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 62/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 62/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 62/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 62/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 62/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 62/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 62/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 62/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 62/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 62/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 62/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 62/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 63/0",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/0/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 63/0/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 63/0/confirmation",
+      "pass": true
+    },
+    {
+      "name": "All-six exact legacy Equal accounting / 0bp",
+      "pass": true,
+      "maximum_absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 63/5",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/5/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 63/5/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 63/5/confirmation",
+      "pass": true
+    },
+    {
+      "name": "All-six exact legacy Equal accounting / 5bp",
+      "pass": true,
+      "maximum_absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 63/10",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/10/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 63/10/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 63/10/confirmation",
+      "pass": true
+    },
+    {
+      "name": "All-six exact legacy Equal accounting / 10bp",
+      "pass": true,
+      "maximum_absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "name": "Nonincreasing net P&L with cost / subset 63/25",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/25/validation",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 63/25/historical_test",
+      "pass": true
+    },
+    {
+      "name": "Full-day subset metrics 63/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "Curve endpoints and sampled path 63/25/confirmation",
+      "pass": true
+    },
+    {
+      "name": "All-six exact legacy Equal accounting / 25bp",
+      "pass": true,
+      "maximum_absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "name": "Validation-only risk normalization 1",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 2",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 3",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 4",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 5",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 6",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 7",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 8",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 9",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 10",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 11",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 12",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 13",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 14",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 15",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 16",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 17",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 18",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 19",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 20",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 21",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 22",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 23",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 24",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 25",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 26",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 27",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 28",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 29",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 30",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 31",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 32",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 33",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 34",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 35",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 36",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 37",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 38",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 39",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 40",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 41",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 42",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 43",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 44",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 45",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 46",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 47",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 48",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 49",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 50",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 51",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 52",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 53",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 54",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 55",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 56",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 57",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 58",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 59",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 60",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 61",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 62",
+      "pass": true
+    },
+    {
+      "name": "Validation-only risk normalization 63",
+      "pass": true
+    },
+    {
+      "name": "Training-only OLS and evaluation R2 historical_test",
+      "pass": true
+    },
+    {
+      "name": "Default paired contrast point estimates historical_test",
+      "pass": true
+    },
+    {
+      "name": "Primary intervals report lack of stable improvement historical_test",
+      "pass": true
+    },
+    {
+      "name": "Training-only OLS and evaluation R2 confirmation",
+      "pass": true
+    },
+    {
+      "name": "Default paired contrast point estimates confirmation",
+      "pass": true
+    },
+    {
+      "name": "Primary intervals report lack of stable improvement confirmation",
+      "pass": true
+    }
+  ],
+  "member_scientific_review": "not_run"
+}

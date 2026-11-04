@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-10-27T13:29:52.253183+00:00",
+  "raw_count_before_download": 0,
+  "selection_sha256": "92e5057e46f2f0d99c9769ecee9da416ce8b5dbec36c30716ed3533754870fd4",
+  "method_freeze_sha256": "8ca2609560321f9fbe0d43e1b168f2c2466b56f5401d91eadbc349b0a3012535",
+  "fetch_source_sha256": "b67f65469bfb60abec3235a5f1a2d09676440b7141721ace7ce11aedeea87ba9",
+  "scope": "External assets; same known historical market dates, not new future time"
+}

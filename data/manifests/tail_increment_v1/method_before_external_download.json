@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-27T13:25:24.497621+00:00",
+  "external_raw_count_before_download": 0,
+  "historical_market_events_known": true,
+  "external_selection_freeze_pending": true,
+  "sha256": {
+    "configs/tail_increment_v1.json": "d541c142549ce0bafe6918fd5a09d91229671602aa8aeebda8b7e4c8adab9ef0",
+    "docs/AB/tail_increment_v1_contract.md": "944d026de37012f4eae3b5aeebac57bf145eaf672579777350509623e7b07cf1",
+    "docs/decisions/2026-10-27-tail-increment.md": "cbbbde4b966c466d1b6a6da1dc2a9aaae79e85171e532e7575f2f3b680290e4a"
+  }
+}

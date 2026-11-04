@@ -1,0 +1,83 @@
+{
+  "scope": "Publication formatting and removal of internal handoff/status references; scientific content retained",
+  "files": [
+    {
+      "path": "data/manifests/binance_btcusdt_2025_5m_v1/README.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "2e133d9945a9263a02781369078e72805eff074680f305cd5460016471c6caad",
+      "published_sha256": "45a877979564f6bbe58a05596411fe3765b69692ffec02c8a9507d17f9a5b91f"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026jansep_5m_v1/README.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "2e133d9945a9263a02781369078e72805eff074680f305cd5460016471c6caad",
+      "published_sha256": "45a877979564f6bbe58a05596411fe3765b69692ffec02c8a9507d17f9a5b91f"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026oct_5m_v2/README.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "2e133d9945a9263a02781369078e72805eff074680f305cd5460016471c6caad",
+      "published_sha256": "45a877979564f6bbe58a05596411fe3765b69692ffec02c8a9507d17f9a5b91f"
+    },
+    {
+      "path": "data/manifests/binance_ethusdt_2025_2026oct25_5m_v2/README.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "2e133d9945a9263a02781369078e72805eff074680f305cd5460016471c6caad",
+      "published_sha256": "45a877979564f6bbe58a05596411fe3765b69692ffec02c8a9507d17f9a5b91f"
+    },
+    {
+      "path": "docs/AB/METHODS_FORMULAE_v2.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "5e45dc04507dc6e3ea81fbeb15dee9fedca46cabea16ae8051ad1dd9465302e4",
+      "published_sha256": "347071601e455fd67fc3c81e926fc75c08dd07ee6c88048b1444b591fe9d55c4"
+    },
+    {
+      "path": "results/analysis/crowded_exit_v1/analysis-report.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "95404b3eb51e2dfd07a67a41129be4d6efdb56b412679b7c6239145fda60bbf6",
+      "published_sha256": "e1a0ecd496fa228845e72198fe645e7383a104b880e67abfee6a001111b1bf3f"
+    },
+    {
+      "path": "results/analysis/depth_study_v1/analysis-report.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "b14d67c1c61af3d114ee4dfb83550d74c9737339864350392331b0664dc1ae32",
+      "published_sha256": "7c30898817cf3767f7a8a0665d3c64153eb9b518f317a53aa63d901101204f05"
+    },
+    {
+      "path": "results/analysis/forecast_v1/analysis-report.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "e024c2038ebf443e3635eb2705546f62e67ebba467ef4b60ef41e8e85e355972",
+      "published_sha256": "a9bbf2bd5b64e8524ceb906436f03ff379c8af69b765ada8b12b731e355f58da"
+    },
+    {
+      "path": "results/analysis/real_market_v1/analysis-report.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "6ba5330ef290d87b843bf76a639c9e6e77a3d5ceb20b45df26d0df5a8f9c29f7",
+      "published_sha256": "a026325ee23b7aba3b209d7fcdf2e41f9895a84a56bf7b48f58473e80bf56d36"
+    },
+    {
+      "path": "results/analysis/state_forecast_v2/analysis-report.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "eeeee00585225e1c3b6639b2942ca63f66c935f07113a2f374a782c479a795cc",
+      "published_sha256": "9ecba82d52aa4d116646f35f644b27e46497c08aacf59b68738698ffa5c931b1"
+    },
+    {
+      "path": "results/analysis/tail_increment_v1/analysis-report.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "e3f0fe741e1a03a0680574472b62ae84c8ac2cafbaf7fa7b2a9bca224e5a4148",
+      "published_sha256": "209794721420170b655fffef1af72d0a401af88b1c54ee448f4b254c1b4fb2ad"
+    },
+    {
+      "path": "results/analysis/us_equity_v1/analysis-report.md",
+      "change": "Relative links adjusted to the public snapshot; scientific text retained.",
+      "original_sha256": "35542785a1cd0af47660bd27ad2e0e97a14d45cd2ba14bc52c23a3703111f634",
+      "published_sha256": "c3f1bb69ec9ec27f596fd5634498ea05cdc606660262d26d24f42cdf76b04c56"
+    },
+    {
+      "path": "docs/AB/literature_synthesis.md",
+      "change": "Removed internal status and team-handoff paragraphs; retained the cited literature-to-method mapping.",
+      "original_sha256": "c9ea3f7f46e41f25deba0a9403d6e17f02258beb1c1528cafc91cb450e67caf4",
+      "published_sha256": "ecda612a6727c3f6f551fb1507f12cf06e5c748e5d3c8fcb97f9f6f75257e183"
+    }
+  ]
+}

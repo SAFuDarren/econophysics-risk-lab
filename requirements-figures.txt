@@ -1,0 +1,4 @@
+# Tested plotting/QA environment uses Python 3.14.4. Core simulation has no third-party dependencies.
+matplotlib==3.11.2
+networkx==3.7
+PyMuPDF==2.0

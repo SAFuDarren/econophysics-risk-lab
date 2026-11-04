@@ -1,0 +1,11 @@
+{
+  "protocol_id": "PC5253-ABCD-1.4",
+  "purpose": "implementation and moment checks; not a formal phase or learning experiment",
+  "parameters": {"n": 128, "rho": 1.0, "a": 0.1, "lambda_impact": 0.02, "unit_order": 1.0, "initial_price": 100.0},
+  "window_length": 128,
+  "seed": 5253001,
+  "fixed_graph_draws": 50000,
+  "small_er_graph_draws": 20000,
+  "snapshot_n": 48,
+  "snapshot_rho": [0.4, 1.0, 1.6]
+}

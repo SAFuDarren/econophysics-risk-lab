@@ -1,0 +1,1545 @@
+{
+  "scope": "Retained original research artifacts, unchanged bytes",
+  "files": [
+    {
+      "path": "apps/risk_lab_v1/data.json",
+      "sha256": "779836d8396a6e777d3ee484dadfa22318daccb7d75307c2c09ff5d478529da6"
+    },
+    {
+      "path": "apps/risk_lab_v1/src/app.js",
+      "sha256": "63bef9f0403ea5735f908e1c4313f600dd090c70ef806a5c7b52ae6f664b4121"
+    },
+    {
+      "path": "configs/README.md",
+      "sha256": "42835e078bc1a6b2b30503f16218c1dd4a54d2a549cf34c8173b6f3b47a1cb7b"
+    },
+    {
+      "path": "configs/crowded_exit_v1.json",
+      "sha256": "e14fbdbd87514d5aabd6a8d63ac56fdd5131f2dba4bde5c446a37659db260f08"
+    },
+    {
+      "path": "configs/depth_study_v1.json",
+      "sha256": "642696503d2f7aa58580e06cb956987369d5221faee605c6484def855798567c"
+    },
+    {
+      "path": "configs/figure_backend.json",
+      "sha256": "7a050fee710b1e9965f9a12c3323f0b88bc0be8758a8045a4ad5378f0c2e2c2c"
+    },
+    {
+      "path": "configs/forecast_v1.json",
+      "sha256": "a8827aaaf9d852edf5c9e72c2f8d7020922a53d715d337df0f706788f0d44673"
+    },
+    {
+      "path": "configs/foundation_v1.json",
+      "sha256": "af43e2a7f28f3d9c26522181ff5c6acbeb88967688fb1d79534d979d2c9b565c"
+    },
+    {
+      "path": "configs/real_market_v1.json",
+      "sha256": "e8405321e035e6c21e3b916fca22aa9e0ec82bab2e22401656b5a33a6c20a41b"
+    },
+    {
+      "path": "configs/risk_lab_v1.json",
+      "sha256": "465fec617c0289d2d4bc88570b828e2e3fc3dbb8c697e43ff2f4e60fe05c0ef4"
+    },
+    {
+      "path": "configs/simulation_followup_v1.json",
+      "sha256": "ad4ad5a0cab41d50c4c1c707c74c929eab5245865cf3d3e0c009ac1c29241994"
+    },
+    {
+      "path": "configs/simulation_study_v1.json",
+      "sha256": "d1a26e7b292cd6ac3e867a851e0219fd16180d37e636e621512c259eb6bd2065"
+    },
+    {
+      "path": "configs/state_forecast_v2.json",
+      "sha256": "7d9e60b4bcb819dc108e6bfdfa154af71000e9d5779cc11445770dc46ea2d6ea"
+    },
+    {
+      "path": "configs/tail_increment_v1.json",
+      "sha256": "d541c142549ce0bafe6918fd5a09d91229671602aa8aeebda8b7e4c8adab9ef0"
+    },
+    {
+      "path": "configs/us_equity_research_direction_v1.json",
+      "sha256": "c2c48ab8978d3b85877bd36a92256975d7b76e659a01276a4a95496bf2bd9eee"
+    },
+    {
+      "path": "configs/us_equity_v1.json",
+      "sha256": "919ab7196273c8b803db2d5a2d258b3f7b936ce82ced76da13ecf823c0e8dd9c"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2025_5m_v1/TERMS_AND_CONDITIONS.md",
+      "sha256": "99c4921dbe023cd68c1a447775707d621453cc78aec6ac0bfe2e6c06a5114ee0"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2025_5m_v1/download_manifest.json",
+      "sha256": "c82ad7e011353d26c703886f1e59327dc6c967803a1eb8b46523e17385ee2c6d"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2025_5m_v1/quality_report.json",
+      "sha256": "03a2bf633190559c932e0e641db15042e3932f50a1e6df3631c53230bbfb5e5a"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026jansep_5m_v1/TERMS_AND_CONDITIONS.md",
+      "sha256": "99c4921dbe023cd68c1a447775707d621453cc78aec6ac0bfe2e6c06a5114ee0"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026jansep_5m_v1/download_manifest.json",
+      "sha256": "46e6012781f3dc128abbcee9e11c97f813476757f0e2cadf1bbcf624f9faa157"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026jansep_5m_v1/pre_download_freeze.json",
+      "sha256": "09f12599d69104873518b69221008ee05a348bd460c53bb00d0754a9f54ba75b"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026jansep_5m_v1/quality_report.json",
+      "sha256": "dff23af1405194be82816a3ed942a85a6da4b183edc62a0e0b52199ef453d304"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026oct_5m_v2/TERMS_AND_CONDITIONS.md",
+      "sha256": "99c4921dbe023cd68c1a447775707d621453cc78aec6ac0bfe2e6c06a5114ee0"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026oct_5m_v2/download_manifest.json",
+      "sha256": "e8df045b9367dcc55b3e5067e4a84927cb4a0b2182daa7e4e71bbe3562d2954e"
+    },
+    {
+      "path": "data/manifests/binance_btcusdt_2026oct_5m_v2/quality_report.json",
+      "sha256": "78970f4aecfcbb103671ed2c540a1c25ef57f97cafcc364a467d026e8fc3b136"
+    },
+    {
+      "path": "data/manifests/binance_ethusdt_2025_2026oct25_5m_v2/TERMS_AND_CONDITIONS.md",
+      "sha256": "99c4921dbe023cd68c1a447775707d621453cc78aec6ac0bfe2e6c06a5114ee0"
+    },
+    {
+      "path": "data/manifests/binance_ethusdt_2025_2026oct25_5m_v2/download_manifest.json",
+      "sha256": "f542e0a3b1a9bc5d2712233c25d674ed2d3afa517bbcf15229ff694f48ce0e01"
+    },
+    {
+      "path": "data/manifests/binance_ethusdt_2025_2026oct25_5m_v2/quality_report.json",
+      "sha256": "9e64c34f176ef6a3d136ffd6b4b296b3c18f52be11e490d844585cc294f8824a"
+    },
+    {
+      "path": "data/manifests/state_forecast_v2_pre_download.json",
+      "sha256": "b6a0a3346f7a74849af440ada78c31c2ed1d39d9e54e936a7c0a051ac8545fdf"
+    },
+    {
+      "path": "data/manifests/tail_increment_v1/external_before_download.json",
+      "sha256": "b9f228c8d4913480d1b1c42d825a95d51bd4a1ce2963201c8b51649b7e344845"
+    },
+    {
+      "path": "data/manifests/tail_increment_v1/external_manifest.json",
+      "sha256": "9ae5dc4660d6412dce1c2fba71ce473be41ec729f598eb5a97d2c2d97c2c92d1"
+    },
+    {
+      "path": "data/manifests/tail_increment_v1/method_before_external_download.json",
+      "sha256": "8ca2609560321f9fbe0d43e1b168f2c2466b56f5401d91eadbc349b0a3012535"
+    },
+    {
+      "path": "data/manifests/us_equity_feasibility_v1/before_probe.json",
+      "sha256": "cf63ed14008fc58fedb50f7f5eb5c1c0414985f2bebfb6d75796d23d0156f2ac"
+    },
+    {
+      "path": "data/manifests/us_equity_feasibility_v1/probe.json",
+      "sha256": "256a7b2e0b13b2c0247b178a32db3508224fa7d5dbb8fddb85afec638eb5888d"
+    },
+    {
+      "path": "data/manifests/us_equity_v1/confirmation_before_download.json",
+      "sha256": "efa08d77ffe335a3e6495f6dd153fc2c9287882f192a4ae7edecf769694be7dc"
+    },
+    {
+      "path": "data/manifests/us_equity_v1/confirmation_manifest.json",
+      "sha256": "9ef8d8e3e22d4ce0c31739c679face572ffd920bd9089e28fcdafd17eda2e596"
+    },
+    {
+      "path": "data/manifests/us_equity_v1/historical_before_download.json",
+      "sha256": "fbdbce9f086b8fc2c2216524147fb648a8df78c007ad852b6289fc58560b5622"
+    },
+    {
+      "path": "data/manifests/us_equity_v1/historical_manifest.json",
+      "sha256": "0979572ff730e532272247bb91fa64bbf2c755679851eae7e4b395231557c0e5"
+    },
+    {
+      "path": "docs/AB/RISK_LAB_DESIGN_v1.md",
+      "sha256": "a8f0466a7e04fcaa398ab02f53e89304e7c5550d9d136e6f5f63a73e371ee3c3"
+    },
+    {
+      "path": "docs/AB/RISK_LAB_GUIDE_v1.md",
+      "sha256": "68933d60d50f3a090164bf400cd455a48bdbf459f137ef6717e26f23942fb8dc"
+    },
+    {
+      "path": "docs/AB/crowded_exit_figure_contract_v1.md",
+      "sha256": "c6d8f646399dd455e038de7e9f4739d13f591aa4d66d61dd3ac7c12920569958"
+    },
+    {
+      "path": "docs/AB/crowded_exit_v1_contract.md",
+      "sha256": "c0f6b121f29518f5439ac71c496f618b8b7c3977e5464b32466782ac378edab6"
+    },
+    {
+      "path": "docs/AB/data_dictionary.md",
+      "sha256": "9bda46ff03b716c44255f23d3028f85c5f66515667ea33fb59b0db52539ac4cb"
+    },
+    {
+      "path": "docs/AB/depth_study_contract.md",
+      "sha256": "b9e644c17793489892796d818777733c082122650cefec0763676ee1e4f03bc4"
+    },
+    {
+      "path": "docs/AB/experiment_contract.md",
+      "sha256": "3c5213211daa8a3affd03e4a56f67a2767fdb7c8fa61738a8e3f407eb7c2a613"
+    },
+    {
+      "path": "docs/AB/forecast_contract.md",
+      "sha256": "c8c85f6a4758417c11bb8c1b9ae2493c137beace46fbad02c6df1b4116459e8b"
+    },
+    {
+      "path": "docs/AB/foundation_figure_contract.md",
+      "sha256": "e05f0ee9434a6bfdc26b2d0dec9b99926a514bb97c76f2d0d81ce09859744ae6"
+    },
+    {
+      "path": "docs/AB/market_data_provenance.md",
+      "sha256": "e4be9cca1ac9440abdb714ee49d3cb617ee128eadd35b726cd7d54066aafaf8b"
+    },
+    {
+      "path": "docs/AB/model_spec.md",
+      "sha256": "12d1ccafe950832011e14339338958e85533b9e4c8478cd70225e265deacc209"
+    },
+    {
+      "path": "docs/AB/real_market_contract.md",
+      "sha256": "dc165f92cc1c4e12651bb31f81929114c17a52483a8f562f16a145e4cb51671d"
+    },
+    {
+      "path": "docs/AB/simulation_figure_contract.md",
+      "sha256": "299aa33ec688698d78ccaf3bafb13d326b0787b8305076e6b7aea6b1df14655e"
+    },
+    {
+      "path": "docs/AB/state_forecast_v2_contract.md",
+      "sha256": "51606d0aad21ddb62925d49be6cc27782254038e7d354015b5f7ae78e099bc8c"
+    },
+    {
+      "path": "docs/AB/state_forecast_v2_feature_spec.md",
+      "sha256": "d059f3c2baa633cd2929a80b37c4459bc002d562033851c38c19832e560428ec"
+    },
+    {
+      "path": "docs/AB/tail_increment_data_dictionary.md",
+      "sha256": "9a79aa02a85915166a864a8a106517a95d09f9c08c0641fa75b659d6a69226de"
+    },
+    {
+      "path": "docs/AB/tail_increment_figure_contract.md",
+      "sha256": "783c0a1138fd3834ed17dd1b415b6d083d06706fdf3ce26cf35dae87325e57d3"
+    },
+    {
+      "path": "docs/AB/tail_increment_v1_contract.md",
+      "sha256": "944d026de37012f4eae3b5aeebac57bf145eaf672579777350509623e7b07cf1"
+    },
+    {
+      "path": "docs/AB/us_equity_figure_contract.md",
+      "sha256": "f917f075ebe1594a46e203a362aa8a0e22519b2d661226bf7849ec9066a16926"
+    },
+    {
+      "path": "docs/AB/us_equity_v1_contract.md",
+      "sha256": "de687464913f9658492463dff3c9a241a2cbbb2d4e0eb60fa5af4623af2c9a91"
+    },
+    {
+      "path": "docs/theory/COLLECTIVE_PNL_v1.md",
+      "sha256": "c7e6b15a3aa5bd40524cb023cd5923771eb10e7fe11c5695b1c6b0c47166b5c1"
+    },
+    {
+      "path": "docs/theory/CROWDED_EXIT_v1.md",
+      "sha256": "c60c62e60edeef73e9d8c47d0cccaf17345653da42120d3ca7ec8600f55103a0"
+    },
+    {
+      "path": "docs/theory/DEPTH_ADDENDUM.md",
+      "sha256": "f649b2d8896edcf945e397a6a3333f8c2c694e85c74addd15f0bca9fe7dc96e5"
+    },
+    {
+      "path": "docs/theory/FOUNDATIONS.md",
+      "sha256": "7440bebfe4b26594f83dbf9d327409c3eb06beb28ea89b6a1b70798b89573a29"
+    },
+    {
+      "path": "docs/theory/REAL_MARKET_BOUND.md",
+      "sha256": "51016f7065284db96d583fb97c67ea735929b647aa71bcfab5a1fb4e8ffa5f4a"
+    },
+    {
+      "path": "docs/theory/STATE_MECHANISM_v2.md",
+      "sha256": "457016037e5d9815eb33fbb6d48b3a48e2e7f9f3df6ff533ff3142b7cb795bb1"
+    },
+    {
+      "path": "docs/theory/TAIL_INCREMENT_v1.md",
+      "sha256": "6800d2e1f376aca6cc6459979d4d9bc40b8f3ab08fa345c80ce6d0fa06ce06d4"
+    },
+    {
+      "path": "figures/crowded_exit_v1/C01_capacity.svg",
+      "sha256": "dbcc5fbf57fecc8fe3962fe44a3d3cd2c8fb340f356d73505a086a6f6a1ed607"
+    },
+    {
+      "path": "figures/crowded_exit_v1/C02_activation.svg",
+      "sha256": "bd0abf6206468c5829eaf5ddaf72a1b494d80d2d6b54f7ed926f7e17e5e5b00d"
+    },
+    {
+      "path": "figures/crowded_exit_v1/C03_volume_replay.svg",
+      "sha256": "747bdf1651281ef2a431fe66e7bd82a39c8cf2f57699816a9c89ec8b12564bda"
+    },
+    {
+      "path": "figures/depth_study_v1/D01.svg",
+      "sha256": "74982c61fe2bcb5dc83aadc531caf1a3f28a58aabad45444f47266e786ff2d57"
+    },
+    {
+      "path": "figures/depth_study_v1/D02.svg",
+      "sha256": "87b78864678db27dd02638beda86b5ace56440a9b7da9023626d7337d44638e3"
+    },
+    {
+      "path": "figures/depth_study_v1/D03.svg",
+      "sha256": "c9d8ea13c51e19b071ef74a94890339291c263b3358dbac42eef5371a494f165"
+    },
+    {
+      "path": "figures/forecast_v1/P01.svg",
+      "sha256": "669b69d798c2972650478182842c73cca8b112c0af32e70aa78500a9065ae0de"
+    },
+    {
+      "path": "figures/forecast_v1/P02.svg",
+      "sha256": "4feadd03cd9f6b5255827500ee2dfc5ea7c8188cea4894cdd185440888c72d66"
+    },
+    {
+      "path": "figures/forecast_v1/P03.svg",
+      "sha256": "92a57b197fe89f32c9f27d7f19a5a1fdb3059103e4b5a08ca76ed854c8ad5371"
+    },
+    {
+      "path": "figures/forecast_v1/P04.svg",
+      "sha256": "2a6ab224b8947cd172a70082e2e6ad6bf39d43eaab64cd279d3fe7898b952d81"
+    },
+    {
+      "path": "figures/forecast_v1/P05.svg",
+      "sha256": "6bfca2f9ee92c41a1ed076a3d79a79d9e65ac33cc506a8ff32cd3b2b77e5617f"
+    },
+    {
+      "path": "figures/real_market_v1/F08.svg",
+      "sha256": "526e57230c4c2cd64dc29cd88fd95cc58d84678cb0cae8945e97857765894296"
+    },
+    {
+      "path": "figures/real_market_v1/R01.svg",
+      "sha256": "1b4c03c574818f76c804dce8033ed7feb2aaab7aa39815b997bcb40910c8821e"
+    },
+    {
+      "path": "figures/real_market_v1/R02.svg",
+      "sha256": "2c45f8493904302e6ad6fd2ad7c315d1f2a0c0e80f22f98957458c03a080f4e8"
+    },
+    {
+      "path": "figures/real_market_v1/R03.svg",
+      "sha256": "90f9d33d674213ceb5c2ba05ad3542ba7badbfa16d46a0944730aae2301e5aa9"
+    },
+    {
+      "path": "figures/real_market_v1/R04.svg",
+      "sha256": "1461e98a1dc4d050b8f349412d9203fb194951c19935d076baa1f19cdfe47f9a"
+    },
+    {
+      "path": "figures/simulation_study_v2/F03.svg",
+      "sha256": "fa2cacd6240d1a3ec57f914d41a9cc1ee8e5114fab0171be684ed1060fa3c857"
+    },
+    {
+      "path": "figures/state_forecast_v2/V01.svg",
+      "sha256": "48262307a10888f790ffe282ea241ead529ab0e65da9b61c2203da776fcecd09"
+    },
+    {
+      "path": "figures/state_forecast_v2/V02.svg",
+      "sha256": "07b19fdb6d88cf754ca5f36d02048fb1ff753bdff8127531a6951ecf9a93dfab"
+    },
+    {
+      "path": "figures/state_forecast_v2/V03.svg",
+      "sha256": "35c9758c9c0255cca872e7e91c9196c11157c54b442398ad9717207af888da4c"
+    },
+    {
+      "path": "figures/state_forecast_v2/V04.svg",
+      "sha256": "7abe677e5878077c28fdd22603f990386cb39385b24b9c3b9c303217300bb9e6"
+    },
+    {
+      "path": "figures/tail_increment_v1/T01_same_covariance.svg",
+      "sha256": "beb3154e49d44d35f107a8f659b09dd24c7fc83808bf451c6dee5a4eb770a15e"
+    },
+    {
+      "path": "figures/tail_increment_v1/T02_synthetic_increment.svg",
+      "sha256": "183a415a147896dace509a3b0dd82cb16925867bac049c56533be51c86444316"
+    },
+    {
+      "path": "figures/tail_increment_v1/T03_market_increment.svg",
+      "sha256": "06c01c06b319aae2703bbb0dc12bf3e3baee97893d20eab5c190a8a68cb1088a"
+    },
+    {
+      "path": "figures/tail_increment_v1/T04_robustness_and_criticality.svg",
+      "sha256": "010397b27996750214fe3b94248fd687cfbb414c4de00cb0daa8fd7a83e9ea19"
+    },
+    {
+      "path": "figures/tail_increment_v1/T05_actual_probability_paths.svg",
+      "sha256": "7a65e18d526d69dcabdb6021631bcdbb1578748f0c3058f283247111e24cd102"
+    },
+    {
+      "path": "figures/us_equity_v1/U01.svg",
+      "sha256": "728c17305af8945f53118ca08a4b4ea1332ab6e75346fee940b7c7662156d750"
+    },
+    {
+      "path": "figures/us_equity_v1/U02.svg",
+      "sha256": "6fb1dc85cb7a59cfcb9f9d49541219b9ee873e99c72caf336978ff121548f5ff"
+    },
+    {
+      "path": "figures/us_equity_v1/U03.svg",
+      "sha256": "47c3574081225088702a68dba817c7694a4c75b347146788eb9254b95e836c72"
+    },
+    {
+      "path": "figures/us_equity_v1/U04.svg",
+      "sha256": "ee011ac51c08b6a9b58a8cf4cfde58140563f1e7e29e39340e4b0218d959653a"
+    },
+    {
+      "path": "figures/us_equity_v1/U05.svg",
+      "sha256": "db7784447a50115622b01f4d744145b761b4f4b6e3da3f288aac91b88777da2e"
+    },
+    {
+      "path": "figures/us_equity_v1/U06.svg",
+      "sha256": "8f6706e3f3de64f3a9db9ff2ddb8c9541a07a6a8992f212ce1e4336126481dc3"
+    },
+    {
+      "path": "figures/us_equity_v1/U07.svg",
+      "sha256": "9fffb2da850e66640bea3208a7719e091ffdb1c5a815ae6346d0432a6bab675d"
+    },
+    {
+      "path": "requirements-figures.txt",
+      "sha256": "d46c6fc004baca6b98562e5e2d7be1e8b4bf1ab9fb5e30c20fa126207cc064a8"
+    },
+    {
+      "path": "requirements-study.txt",
+      "sha256": "c205ea5ffe0a39d0a881b6a70b4ff9490c554bd2bd7f3cd2d4466f70bbd0655d"
+    },
+    {
+      "path": "requirements-us-equity.txt",
+      "sha256": "09ca6cb40228196a97e7f4f2f33dde6f295ffcef16ade4412061888c6c9518e6"
+    },
+    {
+      "path": "results/analysis/crowded_exit_v1/figure-catalog.md",
+      "sha256": "f6e0970c49a3bddd6abffa1542a1fe29279ada27434b4dd8a4766c94323fd055"
+    },
+    {
+      "path": "results/analysis/crowded_exit_v1/stats-appendix.md",
+      "sha256": "cd30803a1fcef926a7d19eb9a5cb8659a4681ad0db6914f732041adb6d1ee318"
+    },
+    {
+      "path": "results/analysis/depth_study_v1/figure-catalog.md",
+      "sha256": "09764bac7c4c2188bb5e0a883706a0aea49c2c61a0ef10382dc879349eb653af"
+    },
+    {
+      "path": "results/analysis/depth_study_v1/stats-appendix.md",
+      "sha256": "9c7935b35302d01098cdb6d7f476928781dd69ea14b212ee996e2d310076b7cb"
+    },
+    {
+      "path": "results/analysis/forecast_v1/claim-candidates.md",
+      "sha256": "f5553fe5c46b523ef84324983fbc0d22c1024f4266333950337846f40f24a81d"
+    },
+    {
+      "path": "results/analysis/forecast_v1/figure-catalog.md",
+      "sha256": "f478ef87bb90c8788c46f2faf7d1dd58a0f81b30673a73569bcba7a67a3fcd72"
+    },
+    {
+      "path": "results/analysis/forecast_v1/stats-appendix.md",
+      "sha256": "c84eede218bbb1c5409d151952822e59c9bc02fe8910eb90d3d2f577517a3423"
+    },
+    {
+      "path": "results/analysis/predictive_utility_v1/analysis-report.md",
+      "sha256": "7a5472a843c0fe9f1643e59b90393a40a831fbc3790b0e399334946a5aae3be9"
+    },
+    {
+      "path": "results/analysis/predictive_utility_v1/figure-catalog.md",
+      "sha256": "fe4342ee5daefe188478d3a1bdf4838765b30a604e3402692ea166e1baf13569"
+    },
+    {
+      "path": "results/analysis/predictive_utility_v1/stats-appendix.md",
+      "sha256": "5f2f6e4f422a678d3a028248ddd8dbdf1453d6a16a152439988b6034b3e7f1f9"
+    },
+    {
+      "path": "results/analysis/real_market_v1/figure-catalog.md",
+      "sha256": "ce37f3a4bd66a27c39847885e1c00944fc5f4a0ee12da7e02a25f5439a9d294a"
+    },
+    {
+      "path": "results/analysis/real_market_v1/stats-appendix.md",
+      "sha256": "021a6d339346ebba7c57b0659612c912edb5851375ef6e29b78b7d5729bd129a"
+    },
+    {
+      "path": "results/analysis/state_forecast_v2/claim-candidates.md",
+      "sha256": "d47f4e09d74c2674a9397a2b7f38a2fcb9d6ce885f5dc757df2e0a375b839c1b"
+    },
+    {
+      "path": "results/analysis/state_forecast_v2/figure-catalog.md",
+      "sha256": "62984d11c8a828dc4b70d9fcaa1c0b870f5a0ab650e318133a8524570d8ffb09"
+    },
+    {
+      "path": "results/analysis/state_forecast_v2/stats-appendix.md",
+      "sha256": "8c77d55b53848cb33b7a667ac64d4561816d1834fc8847c356dfee66fd6b7ef4"
+    },
+    {
+      "path": "results/analysis/tail_increment_v1/figure-catalog.md",
+      "sha256": "32547ec28db576ca4aeea5b832695dd6619d5473d22532cf2b6dcc2a10bf3095"
+    },
+    {
+      "path": "results/analysis/tail_increment_v1/stats-appendix.md",
+      "sha256": "2eb0385b9097c54c64b30bf082080603303efb181f7fe888d11e12398382a183"
+    },
+    {
+      "path": "results/analysis/us_equity_v1/claim-candidates.md",
+      "sha256": "ba75d08a087d98f522be39c1b7917d3addc7feeb5129d563a8911fa413857d27"
+    },
+    {
+      "path": "results/analysis/us_equity_v1/figure-catalog.md",
+      "sha256": "c49c79f66d91d1b243c9a57128dd37f8992c370d0314bffbb3058e61cfb734bf"
+    },
+    {
+      "path": "results/analysis/us_equity_v1/stats-appendix.md",
+      "sha256": "037661b4d1540384096bcab45be04051fff3e79ffd8280aa106b7fea33e8c719"
+    },
+    {
+      "path": "results/checks/crowded_exit_v1/capacity_certificate.json",
+      "sha256": "57f4cf2ef2ac790e0b07dcbb507e35982463f9a1688ab11922f27f60d2644697"
+    },
+    {
+      "path": "results/checks/crowded_exit_v1/method_checks.json",
+      "sha256": "5cc97cb9b61ca73f598dc7be60001942b04c8c4cadf04ec5623f9587b854fd43"
+    },
+    {
+      "path": "results/checks/risk_lab_v1/browser_fixtures.json",
+      "sha256": "fcd5d354e3cb71acf5ec9a76a32090db18d4f804fc45034bfe360822b0fbc8aa"
+    },
+    {
+      "path": "results/checks/risk_lab_v1/javascript_audit.json",
+      "sha256": "669a94a74b5912e58968520e5cea355c6cb99c224b7e886776ba1a968f641fe3"
+    },
+    {
+      "path": "results/checks/risk_lab_v1/method_audit.json",
+      "sha256": "714a4bc60c1fd2d3089294683113b4f72de967fd196dd94f42484ade47fdcc67"
+    },
+    {
+      "path": "results/checks/theory_foundations_v1/checks.json",
+      "sha256": "536fe028fe2d23334c3271be7026bfef66c623cb50052cb8aa6030327130c489"
+    },
+    {
+      "path": "results/checks/us_equity_v1/collective_pnl_theory.json",
+      "sha256": "ce61232e7a1cbe42eb74f4b5b684e5d7496934292b5b5f37fc7da5feb9169b67"
+    },
+    {
+      "path": "results/tables/crowded_exit_v1/capacities.csv",
+      "sha256": "4e5e81a87bcae1a1a1e4f4dd43dd0ea885573e99c03ba1ed93946c88bc22f5e7"
+    },
+    {
+      "path": "results/tables/crowded_exit_v1/capital_grid.csv",
+      "sha256": "d117888b3e38163a907a7500ecf5216cc54557e72a9085d76b480d33db6ad2c1"
+    },
+    {
+      "path": "results/tables/crowded_exit_v1/case_metrics.csv",
+      "sha256": "df33e43d99e0586efa74d67da184f24ec6516bcaab86a92408e580c8168aee51"
+    },
+    {
+      "path": "results/tables/crowded_exit_v1/feedback_paths.csv",
+      "sha256": "9bdffed4ad4d0f265431e612103cc7e99d8e424b21df8bc392671c5943a9a847"
+    },
+    {
+      "path": "results/tables/crowded_exit_v1/paired_capacity.csv",
+      "sha256": "77b3adefc030dcf829ea73b55f4e23954b87e7a9b062ff2a9dd500c9da81868d"
+    },
+    {
+      "path": "results/tables/crowded_exit_v1/summary_metrics.csv",
+      "sha256": "937d9f493d62bd0cd23b8d0f4a1919142fd04f95fc3314c88afd4ad62402b2f1"
+    },
+    {
+      "path": "results/tables/crowded_exit_v1/volume_replay.csv",
+      "sha256": "b108ac07ce063adaf6a874352119362b5867a6234dd7ed0776b1ecf4870ce123"
+    },
+    {
+      "path": "results/tables/crowded_exit_v1/volume_replay_summary.csv",
+      "sha256": "af7600a99e3501ec9349a71f38a5cebd635bca9eef1870cf1b74c037206b596d"
+    },
+    {
+      "path": "results/tables/depth_study_v1/curve_interpolation_checks.csv",
+      "sha256": "94b96058e05bc0b848f1a04806e25c8f37778bc41e518228c8d375d3fdec4c4d"
+    },
+    {
+      "path": "results/tables/depth_study_v1/finite_er_curve.csv",
+      "sha256": "c2020a0ed979f5d35675f4285801ac25a8be58743eea1cf751d550c307135324"
+    },
+    {
+      "path": "results/tables/depth_study_v1/finite_er_curve.csv",
+      "sha256": "c2020a0ed979f5d35675f4285801ac25a8be58743eea1cf751d550c307135324"
+    },
+    {
+      "path": "results/tables/depth_study_v1/fresh_joint_constraint_runs.csv",
+      "sha256": "54c46c0e46b6849e385e24ec59a425e6590e77b376ed1ad45397b47f912dbe4e"
+    },
+    {
+      "path": "results/tables/depth_study_v1/mechanism_bootstrap.csv",
+      "sha256": "fb12d10594e588c36e72eb97dec7bd355c0cd4d0dc3bd739fbabb7b5c4770399"
+    },
+    {
+      "path": "results/tables/depth_study_v1/mechanism_diagnostics.csv",
+      "sha256": "7dd21b2f1148e0fa0a8956c7abc364a71abd7a012ddafe1cb008aaef40294f1d"
+    },
+    {
+      "path": "results/tables/depth_study_v1/mechanism_null_distribution.csv",
+      "sha256": "7ff0c46e0d3843e5b7846369f38f917d301d389a70ee5e00e75a473499a2c031"
+    },
+    {
+      "path": "results/tables/depth_study_v1/physical_estimates.csv",
+      "sha256": "ccfdc87938a24426b3718280ed45ebb88a8a0df61a6b64afc88a116251cff92b"
+    },
+    {
+      "path": "results/tables/depth_study_v1/run_contrasts.csv",
+      "sha256": "c68ec0ceb40727823a50aa4b8e3d17ff70188ddd4c8d2a3a7b79af6be64ef9d1"
+    },
+    {
+      "path": "results/tables/depth_study_v1/run_metrics.csv",
+      "sha256": "a0d472df41b48762397865de77342620b346d89d071479028337afe3a30603bf"
+    },
+    {
+      "path": "results/tables/depth_study_v1/run_metrics.csv",
+      "sha256": "a0d472df41b48762397865de77342620b346d89d071479028337afe3a30603bf"
+    },
+    {
+      "path": "results/tables/depth_study_v1/summary_metrics.csv",
+      "sha256": "cfb09a39a28d06e9c90778e3518adcb7ab0d638d5a60f205b14c7b0cd68ecb55"
+    },
+    {
+      "path": "results/tables/depth_study_v1/summary_metrics.csv",
+      "sha256": "cfb09a39a28d06e9c90778e3518adcb7ab0d638d5a60f205b14c7b0cd68ecb55"
+    },
+    {
+      "path": "results/tables/forecast_v1/daily_features.csv",
+      "sha256": "49295c35938cf73d75c6d317f86a13cb0a9f816a7d77c1921c1ab529a306177a"
+    },
+    {
+      "path": "results/tables/forecast_v1/daily_features.csv",
+      "sha256": "49295c35938cf73d75c6d317f86a13cb0a9f816a7d77c1921c1ab529a306177a"
+    },
+    {
+      "path": "results/tables/forecast_v1/forecast_samples.csv",
+      "sha256": "7153c15fe7d549390dec06693565124b11bf3b7a8510602d9e10ff1caec14ebc"
+    },
+    {
+      "path": "results/tables/forecast_v1/forecast_samples.csv",
+      "sha256": "7153c15fe7d549390dec06693565124b11bf3b7a8510602d9e10ff1caec14ebc"
+    },
+    {
+      "path": "results/tables/forecast_v1/linear_coefficients.csv",
+      "sha256": "7e0ec10fb35eb1a102341ea91a9b307114ab9f8cd75f19aeeb7cfa3f0c20be1b"
+    },
+    {
+      "path": "results/tables/forecast_v1/linear_coefficients.csv",
+      "sha256": "7e0ec10fb35eb1a102341ea91a9b307114ab9f8cd75f19aeeb7cfa3f0c20be1b"
+    },
+    {
+      "path": "results/tables/forecast_v1/monthly_metrics.csv",
+      "sha256": "62d01fa4bd4d76bf6b964b1953a0b2a2985f67728ab3759e8db12f9ed2694e25"
+    },
+    {
+      "path": "results/tables/forecast_v1/monthly_metrics.csv",
+      "sha256": "62d01fa4bd4d76bf6b964b1953a0b2a2985f67728ab3759e8db12f9ed2694e25"
+    },
+    {
+      "path": "results/tables/forecast_v1/post_analysis_contrasts.csv",
+      "sha256": "092bd3d5e279ab159d6914c261df3dbacce2c978e01f2adfe0d9cff770ccacb9"
+    },
+    {
+      "path": "results/tables/forecast_v1/post_analysis_contrasts.csv",
+      "sha256": "092bd3d5e279ab159d6914c261df3dbacce2c978e01f2adfe0d9cff770ccacb9"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_calibration.csv",
+      "sha256": "8c7b5b6ed8853675e7125eebd24521418ddc4608080acc51102ad8aef01bcdbb"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_calibration.csv",
+      "sha256": "8c7b5b6ed8853675e7125eebd24521418ddc4608080acc51102ad8aef01bcdbb"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_contrasts.csv",
+      "sha256": "6e5179ccee345356d4aa78a58a92ff47a7287e408fe5b23c434b5c2b3ad1de5d"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_contrasts.csv",
+      "sha256": "6e5179ccee345356d4aa78a58a92ff47a7287e408fe5b23c434b5c2b3ad1de5d"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_metrics.csv",
+      "sha256": "8be29a4512b9e1d196f5e1ff689ec58fec104e6f3237396c8dd3fe56b82cfcd6"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_metrics.csv",
+      "sha256": "8be29a4512b9e1d196f5e1ff689ec58fec104e6f3237396c8dd3fe56b82cfcd6"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_predictions.csv",
+      "sha256": "f052fa87a578c73463cf4949ef51f1be1a764a4d4414025675a780dbc3a3bb91"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_predictions.csv",
+      "sha256": "f052fa87a578c73463cf4949ef51f1be1a764a4d4414025675a780dbc3a3bb91"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_validation_grid.csv",
+      "sha256": "7483cf272c6ee09207e0e5c9f673478f0eafae514291d9b8f7a7a90264f302e5"
+    },
+    {
+      "path": "results/tables/forecast_v1/probability_validation_grid.csv",
+      "sha256": "7483cf272c6ee09207e0e5c9f673478f0eafae514291d9b8f7a7a90264f302e5"
+    },
+    {
+      "path": "results/tables/forecast_v1/regime_metrics.csv",
+      "sha256": "58a3c3d187cc4752e16acaa72122cc5a68ad66471a961bd3c60682b1ba88a5f0"
+    },
+    {
+      "path": "results/tables/forecast_v1/regime_metrics.csv",
+      "sha256": "58a3c3d187cc4752e16acaa72122cc5a68ad66471a961bd3c60682b1ba88a5f0"
+    },
+    {
+      "path": "results/tables/forecast_v1/regression_contrasts.csv",
+      "sha256": "51f2d5acc5e692cedeb5c8f2b9ce015b882b7ec00e15d461a6a7bf51395d0b64"
+    },
+    {
+      "path": "results/tables/forecast_v1/regression_contrasts.csv",
+      "sha256": "51f2d5acc5e692cedeb5c8f2b9ce015b882b7ec00e15d461a6a7bf51395d0b64"
+    },
+    {
+      "path": "results/tables/forecast_v1/regression_metrics.csv",
+      "sha256": "942205f156c310326a5fb3b9c8b55de0f1e1bb0c7bcd022d9298b2dd09063245"
+    },
+    {
+      "path": "results/tables/forecast_v1/regression_metrics.csv",
+      "sha256": "942205f156c310326a5fb3b9c8b55de0f1e1bb0c7bcd022d9298b2dd09063245"
+    },
+    {
+      "path": "results/tables/forecast_v1/test_predictions.csv",
+      "sha256": "1a0f865ea03ba578c64c02ef57980335e8f52abf9d95972582d5e597f80da911"
+    },
+    {
+      "path": "results/tables/forecast_v1/test_predictions.csv",
+      "sha256": "1a0f865ea03ba578c64c02ef57980335e8f52abf9d95972582d5e597f80da911"
+    },
+    {
+      "path": "results/tables/forecast_v1/validation_grid.csv",
+      "sha256": "8801f7aa6a5301bc2528f2a3c295de06b1a5ba5e2cae1181910cb42344ce1373"
+    },
+    {
+      "path": "results/tables/forecast_v1/validation_grid.csv",
+      "sha256": "8801f7aa6a5301bc2528f2a3c295de06b1a5ba5e2cae1181910cb42344ce1373"
+    },
+    {
+      "path": "results/tables/forecast_v1/validation_predictions.csv",
+      "sha256": "8bb01d85be357fa270ee0a1dca71ca2e8ca1debc110912d6ae4c38453462b6a4"
+    },
+    {
+      "path": "results/tables/forecast_v1/validation_predictions.csv",
+      "sha256": "8bb01d85be357fa270ee0a1dca71ca2e8ca1debc110912d6ae4c38453462b6a4"
+    },
+    {
+      "path": "results/tables/foundation_after_study/latent_graphs_NOT_FEATURES.csv",
+      "sha256": "8e2cfc55c705f56c48820a720f613d2f5308fe7370d5955cf634d580d171684a"
+    },
+    {
+      "path": "results/tables/foundation_after_study/market_observations.csv",
+      "sha256": "28a2b2e36df5f90bb5c0d7fa878d1e4a5e0cb441de37ceb0e8af13ee7921539c"
+    },
+    {
+      "path": "results/tables/foundation_after_study/moment_checks.csv",
+      "sha256": "82fd01743ac7e84e808ba645f61ab0f0c83696f22934d08602a80b044dadb868"
+    },
+    {
+      "path": "results/tables/foundation_v1/latent_graphs_NOT_FEATURES.csv",
+      "sha256": "8e2cfc55c705f56c48820a720f613d2f5308fe7370d5955cf634d580d171684a"
+    },
+    {
+      "path": "results/tables/foundation_v1/market_observations.csv",
+      "sha256": "28a2b2e36df5f90bb5c0d7fa878d1e4a5e0cb441de37ceb0e8af13ee7921539c"
+    },
+    {
+      "path": "results/tables/foundation_v1/moment_checks.csv",
+      "sha256": "82fd01743ac7e84e808ba645f61ab0f0c83696f22934d08602a80b044dadb868"
+    },
+    {
+      "path": "results/tables/foundation_v2/latent_graphs_NOT_FEATURES.csv",
+      "sha256": "8e2cfc55c705f56c48820a720f613d2f5308fe7370d5955cf634d580d171684a"
+    },
+    {
+      "path": "results/tables/foundation_v2/market_observations.csv",
+      "sha256": "28a2b2e36df5f90bb5c0d7fa878d1e4a5e0cb441de37ceb0e8af13ee7921539c"
+    },
+    {
+      "path": "results/tables/foundation_v2/moment_checks.csv",
+      "sha256": "82fd01743ac7e84e808ba645f61ab0f0c83696f22934d08602a80b044dadb868"
+    },
+    {
+      "path": "results/tables/predictive_utility_v1/contrasts.csv",
+      "sha256": "2b0222c49582cbd50938663cb0dfdf9e355f25e74a98f209fdce1260977587f4"
+    },
+    {
+      "path": "results/tables/predictive_utility_v1/scores.csv",
+      "sha256": "332772a842930e33e7252a7dc8c0ca566a3b5492ce265c6652252029d418300c"
+    },
+    {
+      "path": "results/tables/real_market_v1/calibration_parameter_intervals.csv",
+      "sha256": "b93e08d92020663979b9981a8b480250990741ca37ac4e19d13205749b8b7c5a"
+    },
+    {
+      "path": "results/tables/real_market_v1/calibration_parameters.csv",
+      "sha256": "e12c3cae883cde83b8bf88d4f670cebb070787951819bcd8e0606e18587db2a1"
+    },
+    {
+      "path": "results/tables/real_market_v1/ccdf_comparison.csv",
+      "sha256": "f88ef195b85b6b2150bfaef8374e11ee9a85cb1463fcebb3da7ecf1827048b24"
+    },
+    {
+      "path": "results/tables/real_market_v1/coupling_bins.csv",
+      "sha256": "4ea9b48306e0a6ac302ba8f00874ae639cace1fb763c1e1877520eab131e04b2"
+    },
+    {
+      "path": "results/tables/real_market_v1/daily_overview.csv",
+      "sha256": "18dfa1864282dea6b026589978e62a25707b799bca2c6a1b9778787bab10bb2d"
+    },
+    {
+      "path": "results/tables/real_market_v1/impact_association.csv",
+      "sha256": "8132e9fa0700250d75132e59fa57f18a8e54b7b719c1820638fcd733b13eef58"
+    },
+    {
+      "path": "results/tables/real_market_v1/impact_bins.csv",
+      "sha256": "89b3832459a64e226a7020f00859a6e6c5821b55a1ff882d8f265483bf7c9300"
+    },
+    {
+      "path": "results/tables/real_market_v1/joint_constraint_sensitivity.csv",
+      "sha256": "bc28edeb4d56c1aac27563b8f4cfee8dd281593ad7f53dc41ee3b8004025530f"
+    },
+    {
+      "path": "results/tables/real_market_v1/market_acf.csv",
+      "sha256": "f5a4b3ac126c3afc69eb5e72f68ae78d4a75a682ae494b7f55a1bccbbe0b7991"
+    },
+    {
+      "path": "results/tables/real_market_v1/market_metrics.csv",
+      "sha256": "ed7dd2a48679fe16729f539d5d43bb42b35a37b79ce4eccbcc9c4b98f8fdb217"
+    },
+    {
+      "path": "results/tables/real_market_v1/market_scaling.csv",
+      "sha256": "fd98604146eea1ef51bf5bc923ecbbad49f8c4ce7fd18815ad4be63f621ed496"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_acf_summary.csv",
+      "sha256": "0dbacdd989eaa6dd8a3ea53505d3672f7b5557e60d29c645bf0c312381b8a9c5"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_metrics_summary.csv",
+      "sha256": "59e34243c5432686aa2b62f2851df9f8fbe70ccf7eea3b84b8bb460079da3268"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_path_acf.csv",
+      "sha256": "953131aa8ff3abf6aadba202664c7446844715a8dc438001164ad423ab3fcf8b"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_path_ccdf.csv",
+      "sha256": "24f5a2e6498a89507fdd07c31d75538c06c9e81e4a4c93a2b65de5af2f127cfb"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_path_coupling_bins.csv",
+      "sha256": "bc77b409947cc583e03a09e63700e16ae30f7c09384efdf8db669f80c666146d"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_path_metrics.csv",
+      "sha256": "6b939856c098058e5b7b7fe42bbcfdb8164cfbd6894ab3cb63c335f257fa501a"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_path_scaling.csv",
+      "sha256": "d446506596f28234e0f43706fd290b6e07ddc84a4061519ad7db94923d07fc2c"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_scaling_summary.csv",
+      "sha256": "70aa655a97e9b3d2f9e4807a2304740e2b5d4cbdd4c9f0b95269b799e56b8ca9"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_seeds_NOT_OBSERVATIONS.csv",
+      "sha256": "d473626a92798ec0e2dabbd9ca41148df1a28a6cae4ca5c6b968d9fc1eba9c4b"
+    },
+    {
+      "path": "results/tables/real_market_v1/model_support_audit.csv",
+      "sha256": "505d2a94af60d8270867f6c0e34876036b3bea7c28061ef733785a3e0ecd0c30"
+    },
+    {
+      "path": "results/tables/real_market_v1/real_conditional_tail_ccdf.csv",
+      "sha256": "abb6fb8a90a5fbeac40da166adba7faa22cd860fe253001b49e4c326208f69c3"
+    },
+    {
+      "path": "results/tables/real_market_v1/seasonality_profiles.csv",
+      "sha256": "5ba47566f8ac28cbdadaeb098b1b76a24816804fb187a266ae4432f9697df331"
+    },
+    {
+      "path": "results/tables/real_market_v1/tail_exponents.csv",
+      "sha256": "6836b0b87045a58dd5879e065139befa7346abcb15d7534be9fa0e07ca0eef6f"
+    },
+    {
+      "path": "results/tables/real_market_v1/tail_fitted_curves.csv",
+      "sha256": "38a5affa135bcabb55ae78ebe84ccf6e629b4a444b697d7458b0f9b17a2a6358"
+    },
+    {
+      "path": "results/tables/real_market_v1/tail_fixed_calibration.csv",
+      "sha256": "c9a454c3ca5c6c8f0a2b3e46a4ef9839f2580e1ec967074eeb143fc5b78e4684"
+    },
+    {
+      "path": "results/tables/real_market_v1/tail_log_scores.csv",
+      "sha256": "7d1f908ff0a403b76af86d50d6737d18d066d8922ad798e5daf8b51ae49cfa63"
+    },
+    {
+      "path": "results/tables/real_market_v1/tail_score_contrasts.csv",
+      "sha256": "8f8ce0583cff350c3c165ddb10e2bb590c1cf37f567fa889a563ba314f24b28f"
+    },
+    {
+      "path": "results/tables/risk_lab_v1/default_comparison.csv",
+      "sha256": "72fd40be2325915976543982fc43200bd9efc5a95c535267bf7378a7ac5e96d9"
+    },
+    {
+      "path": "results/tables/risk_lab_v1/reconstruction.csv",
+      "sha256": "e3c8bf4bc1a12758374d451add86d363df99a63dc352d44f26e5df6deced5575"
+    },
+    {
+      "path": "results/tables/risk_lab_v1/risk_snapshots.csv",
+      "sha256": "d0489501ebfdd36ab33cfa1cf12994f5ab3b39e21896b86a0d09c727dc8a0553"
+    },
+    {
+      "path": "results/tables/risk_lab_v1/screen_selection.csv",
+      "sha256": "8af2da7298baf48e500f8f7b3fcb82c6c407b7614a07d2bed48d6108835ca426"
+    },
+    {
+      "path": "results/tables/risk_lab_v1/subset_metrics.csv",
+      "sha256": "fb988e953ab67e86482dfe8fc5dfa42c6ae39e27b58f3486c070383bb3948280"
+    },
+    {
+      "path": "results/tables/simulation_followup_v1/control_validation.csv",
+      "sha256": "426c5eeb05fd6cb5a7bf5b703eeed1ee6bf2bf6b8d0a000433b121d6b978e65b"
+    },
+    {
+      "path": "results/tables/simulation_followup_v1/stress_control_metrics.csv",
+      "sha256": "bfc2cbe85a58d87aa31f4fe55aef04f3fbf9dc7f9b2d1eece53674b23012b63e"
+    },
+    {
+      "path": "results/tables/simulation_followup_v1/unseen_rho_labels_NOT_FEATURES.csv",
+      "sha256": "6b2fa04a83fb044d7103cd8ac0ec114f9bbe05282b8f6cc23f23d686b86724ed"
+    },
+    {
+      "path": "results/tables/simulation_followup_v1/unseen_rho_metrics.csv",
+      "sha256": "1cdceedd8bfbfe08a9fe51037c1dd5f6b066593e93c4efb8a442b9a960d1b391"
+    },
+    {
+      "path": "results/tables/simulation_followup_v1/unseen_rho_observations.csv",
+      "sha256": "14e116c4a9d2723d6363879ee4180aab8f117baaeb65b1558d5115d2a7d2bd80"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/aggregation_variance.csv",
+      "sha256": "7ed1856cecb038dc51255e8e6b832b95c3e6a28d9e8e45a8ce37d12486ab8190"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/cluster_density_plot.csv",
+      "sha256": "612ece35ef750b514e4b6c0ce3681c3b74c0e22b7b1cd1fc405f935c04b66e0b"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/learning_labels_NOT_FEATURES.csv",
+      "sha256": "88b19d1e6f4076e5bdca13131fb02375c31b02e0d28ff472d19a758b1ef9cc4d"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/learning_metrics.csv",
+      "sha256": "625ee9cabcebeb414bf9d559f88aa7215da85418f762b4fcd40b069162c29929"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/phase_graphs.csv",
+      "sha256": "86df6bc65ba0244a3a3f4f0aecc8f0fcb7551ebb3d0a72aaf4b886cdc3200d87"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/phase_summary.csv",
+      "sha256": "22b64ea18a46df7fa9c300b02832ca43150f6d127b69bbfb13aa5bddbe0c8de1"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/rbf_group_errors.csv",
+      "sha256": "49f7684bcf36f3bcbb399da857cf1cedd7606f40ca92ed42c4750335bbd56be2"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/scale_ccdf_plot.csv",
+      "sha256": "46834d96f06dde4fb9a8a50c1b65080ed10feffd2d0d6319b9527a6f1230f056"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/stress_metrics.csv",
+      "sha256": "18ac2d8c9ce43d47fc2620b210481ff7e955b1f38c20536052c730277a12c016"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/tail_diagnostics.csv",
+      "sha256": "c19407f0ea88cb4c37b91fe5a8b82883ee3be251938f2a71d0eb8899fad6972a"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/tail_probabilities.csv",
+      "sha256": "3f0aa94ebebd7351046abf35da8ae0a80d19545504d33dd0252443b51b6f089e"
+    },
+    {
+      "path": "results/tables/simulation_study_v1/view_contrasts.csv",
+      "sha256": "0e46298fab7ef1b3d676560b1ad688d0e391db6708a7196a580a78e49ba5135c"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/contrasts.csv",
+      "sha256": "3840158dae13a913ff107500f1d30016faf44885608f1f4d1627453fdb12bd03"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/daily_features.csv",
+      "sha256": "4081651f382bde632905d6d7adf9a4cf5b79fabeb90784a6e3c6607f448c4054"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/forecast_samples.csv",
+      "sha256": "e2872d8477ec3d573622163ef751df5851bfcce7618f1c3c5e28b0dcbf7fc419"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/legacy_control_summary.csv",
+      "sha256": "3e4afe6586a750ef3b42db3f2d4a9fac587b287debe967532f8c1ebbf8a650fa"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/metrics.csv",
+      "sha256": "4d60c191d077a29ff63b613654842e6cb8fb146c4deae0d21959a676c0adbd54"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/monthly_metrics.csv",
+      "sha256": "7f3847856e7e7b128b1e5e947fca78b75434243df01e42982122999e9936e23a"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/primary_contrasts.csv",
+      "sha256": "4fa40a4163850d3bb3ef55a00034dbec5d6ae4c9d12ac05127ccccc27a47fe05"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/refit_records.csv",
+      "sha256": "5ecf1e551178252b7925a3da937f2a440e72941e77598e6c60709c612e8537b3"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/risk_budget_diagnostic.csv",
+      "sha256": "d9682b6024dfc47c9e12bbd50fc18afdf51aaf5e92fd0c0d8be0044f6a6cf74b"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/validation_grid.csv",
+      "sha256": "2bfd2eff9c0ff354b1b0a04ecc2ddbf8b816c1e61026be027cea3c0162fdc02b"
+    },
+    {
+      "path": "results/tables/state_forecast_v2/validation_predictions.csv",
+      "sha256": "a7705eb74641682142e8933515930e707bc09d56908d4cafeb7844e627920568"
+    },
+    {
+      "path": "results/tables/state_mechanism_v2/path_acf.csv",
+      "sha256": "9d219eb296da6067bbd771ab0a2c4a4e438ac4e43e62b4cc0e8bf21658a69eae"
+    },
+    {
+      "path": "results/tables/state_mechanism_v2/path_metrics.csv",
+      "sha256": "5df9a2b21b66dba5316f66613c43c708676a917cbea8fa41dcff847a14ebadc7"
+    },
+    {
+      "path": "results/tables/state_mechanism_v2/seeds.csv",
+      "sha256": "d08af423dde7e1b0af6bbdd954e1a719e9e162972372a1065915e591b02d11ca"
+    },
+    {
+      "path": "results/tables/state_mechanism_v2/summary.csv",
+      "sha256": "a7108c5f078af2ba26d45a7c4848779f4cef026e2d63c07a20ebdb178e14efce"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/analytic_tail_contrasts.csv",
+      "sha256": "db0cc66551602f45809a502fd07c9ff4220a2a71cd527c90cb877317f6e8d498"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/contrasts.csv",
+      "sha256": "974745f2296923c615010d9f99b85021e824e3aff2f5c76037824c4e7b0bd71e"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/critical_ablation.csv",
+      "sha256": "72d130eee7ebdaad5d913fe1063193ceaba7de3f2e7139436aec91b9ed8d9641"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/external_law_choices.csv",
+      "sha256": "11eb18efa6bf12c84b9f64f6b4a1a134e1c7a22a0e166e82d9185b5afdcfc2cf"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/law_bank_diagnostics.csv",
+      "sha256": "4d1adfb739e3553497d2d88cd074d348470d19efb11ea8f210881f28d6bbb4fb"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/mc_daily.csv",
+      "sha256": "bcee5020e0a90d3ab8c29581eb3e750f33a4a0bcf443e2d0ef313a2daacacae6"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/mc_full_contrasts.csv",
+      "sha256": "b5b14885e222ed0fdae5e0301e571a9b6fa22364f3f85fc1de342b78634dd7d1"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/mc_law_choices.csv",
+      "sha256": "3913f304836e7862fe1914d3391df6880eecbcfc40e8b7181b752a2bc7f8c34d"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/mc_sensitivity.csv",
+      "sha256": "0c5afff2862fc89c334ac89d3521bfb50a44cd8c34672ce15d5f57d0183e3d4b"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/metrics.csv",
+      "sha256": "d436cb0babad3fb834e7fff6c521f106f547fc48bd8289de0f52ff5280d3456f"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/reliability.csv",
+      "sha256": "6f42a2b55e635dd8159eb5b087831e38f5ff1153605517b3400f50d344d8f08f"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/secondary_contrasts.csv",
+      "sha256": "f64dd48401745e1d1b1533a24b778dbdb0939a015cf594633edf5db35c1c0273"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/secondary_metrics.csv",
+      "sha256": "bf7b74a989de2f8d254952f8c110749b9d3e9230f24496ca2368af299ef2b23a"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/sector_law_choices.csv",
+      "sha256": "708f28f55f1f294f217cd7e07e0cf226466a2090e324750ef1a2e13a913d3f4c"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/select_law_choices.csv",
+      "sha256": "a3cb5dff4a519b31ff0443338a6e03fff695f4514d3baa9692d88b8e3596c59d"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/synthetic_ccdf.csv",
+      "sha256": "6049b3d8bc22be7af26d502f5873ff8c933e85161c01c5ae8a2fd79af7016a6a"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/synthetic_metrics.csv",
+      "sha256": "00327871791ce59725cf49c6c7da534ca57299fe1df4b611e6eb4fd30debbdb5"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/synthetic_paired_effects.csv",
+      "sha256": "4bca82e3a6d49c68b24b762a0dd14b805ed9862ab9193e4a9c990393c5933576"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/synthetic_repetitions.csv",
+      "sha256": "65cb0229a7777d9c1c4358076dacc554ca7a6d79cd075e0d7eba79e5fde2e950"
+    },
+    {
+      "path": "results/tables/tail_increment_v1/synthetic_truth.csv",
+      "sha256": "131d09583798608a61f01a70e9fe0e4d969c916780bcc8d111e3ee66177d5ca3"
+    },
+    {
+      "path": "results/tables/us_equity_v1/allocation_contrasts.csv",
+      "sha256": "f956feaa43d4fbe3503cad4213240861494058ccbffc8e00664ee8d026a4ae2f"
+    },
+    {
+      "path": "results/tables/us_equity_v1/allocation_metrics.csv",
+      "sha256": "953f055be91f48ced2a64d5ed2a7d4d301bca8d9060862057b89361fe2acdf8f"
+    },
+    {
+      "path": "results/tables/us_equity_v1/exposure_decomposition.csv",
+      "sha256": "672d39e1ffb66032c45c1b5ff6cad52af2426648be028b472f10d7d64804fe8f"
+    },
+    {
+      "path": "results/tables/us_equity_v1/redundancy_diagnostic.csv",
+      "sha256": "86af736ca4a50c87af14b35813a128677b68942a88df997a60fa9aa9a91b3546"
+    },
+    {
+      "path": "results/tables/us_equity_v1/risk_contrasts.csv",
+      "sha256": "15eb4011bb4d782f3fc571ecd7615ca82d7253a1be33fce51ec0a6203b359e99"
+    },
+    {
+      "path": "results/tables/us_equity_v1/risk_forecasts.csv",
+      "sha256": "1167848adec03ea86e3f5a2429465a56fd405ffdd77b582e1ec8e2e33ade609d"
+    },
+    {
+      "path": "results/tables/us_equity_v1/risk_metrics.csv",
+      "sha256": "c104904dff6d30eda39df6ab02ef9ae409c8cfe3a759366a64868a94e35e2a1a"
+    },
+    {
+      "path": "results/tables/us_equity_v1/risk_primary.csv",
+      "sha256": "2fa0cf3a3a6efb7b6b40b9f54e80f1f6488c6a9b1e87e9812f6f551bf0ffa7e7"
+    },
+    {
+      "path": "results/tables/us_equity_v1/risk_samples.csv",
+      "sha256": "7ce22f1f6356f4c2581b93af9955361f69e30cb4c13233ea2cc0cb79cd131925"
+    },
+    {
+      "path": "results/tables/us_equity_v1/risk_yearly.csv",
+      "sha256": "cbbc27079a9ef120ec6ab82f967a2131990682be141c978a0cc6cf80fef2b99c"
+    },
+    {
+      "path": "results/tables/us_equity_v1/snapshot_correlations.csv",
+      "sha256": "7c177ade7db0dd7d16055bd320e33541878a99e3a1ca5d75ccde484e9b4369cf"
+    },
+    {
+      "path": "results/tables/us_equity_v1/strategy_metrics.csv",
+      "sha256": "89a97ecd55809a903ea354493faecaffbea0fcd797d736c9fcd74e31b7ee18eb"
+    },
+    {
+      "path": "results/tables/us_equity_v1/strategy_pairs.csv",
+      "sha256": "21381dde9da62ec9a6cf20800c4151152c1b749acdfb3b4a00c9d76707a3679c"
+    },
+    {
+      "path": "results/tables/us_equity_v1/surrogate_draws.csv",
+      "sha256": "2cf76ee43d9365e3168306a170e6120e2fee8b7132b073bb8dedf75c480261e0"
+    },
+    {
+      "path": "results/tables/us_equity_v1/surrogate_summary.csv",
+      "sha256": "af0aa1fab0967ad053999e6d513ed9b5ae154cdeca35dda74d89680beae37b7e"
+    },
+    {
+      "path": "results/tables/us_equity_v1/validation_grid.csv",
+      "sha256": "3f9d51b83c489c45793b5b365d3e1e9bedf7dbb86e2e7d48373f7642384d21d1"
+    },
+    {
+      "path": "scripts/analyze_real_market.py",
+      "sha256": "f20d02c8a64a2c6e8fb2a3eb2d8239ce475e1981a20e4077e38552b97a6d2a87"
+    },
+    {
+      "path": "scripts/analyze_tail_increment.py",
+      "sha256": "0608569cae9ad304ad76721cabd9b24f7429241678334c75fc97e925f5593dda"
+    },
+    {
+      "path": "scripts/audit_depth_study.py",
+      "sha256": "033dc3c2d17cc58be77b702977bb30d3d45798b06e069c4a61625f8053df7cda"
+    },
+    {
+      "path": "scripts/audit_real_market.py",
+      "sha256": "67e0cd700fbcc5f112804630face096cd544cedc83eafc24ddb6c45ccdc37c83"
+    },
+    {
+      "path": "scripts/check_crowded_exit.py",
+      "sha256": "299aaa8162fadccbaac544628d9de68e566de027fb1d99a1344fd87fd38d40e3"
+    },
+    {
+      "path": "scripts/check_depth_methods.py",
+      "sha256": "47066709c903b4a10e8d69edeaed4467216241023fa5cbde5d33c2f53be80d4a"
+    },
+    {
+      "path": "scripts/check_forecast_study.py",
+      "sha256": "2a6a18ac4dfe4c571663a66187adeae34232aad0fc2124407f1b1faac44357b7"
+    },
+    {
+      "path": "scripts/check_real_market_methods.py",
+      "sha256": "1798a6dabe48706a6af25d5094ead75e777a4f9b64d79372fa273ff23d87ebd2"
+    },
+    {
+      "path": "scripts/check_risk_lab.py",
+      "sha256": "9057e46a051e1b8275ddbc127946f0867d6daa78392dc7132ca5794aacba7158"
+    },
+    {
+      "path": "scripts/check_risk_lab_js.cjs",
+      "sha256": "806442d8616ee89ec5b408a2c996a7c6b771388965e8a5af48fbd1e958de68ba"
+    },
+    {
+      "path": "scripts/check_state_forecast_v2.py",
+      "sha256": "95767919089e5b9a28d2881cdaaaa70abd5d6f8da15e236b8005db8c893aa4d8"
+    },
+    {
+      "path": "scripts/check_tail_increment.py",
+      "sha256": "c3120b35fafed12ea768b8647d8c2a5a4141916d8f3ea385854706a598e324c4"
+    },
+    {
+      "path": "scripts/check_theory_foundations.py",
+      "sha256": "7cd231223635d7d2e5aaf083b61fef4a13b5cab9c1185fb4b0a60e682e42cacb"
+    },
+    {
+      "path": "scripts/check_us_equity.py",
+      "sha256": "8e84d4659ce9f5a9a3b980eed49edfafd33c9386fcbcc01e9045ea059fd8407b"
+    },
+    {
+      "path": "scripts/fetch_forecast_data.py",
+      "sha256": "cb556e03ee699b8f5fc37c15d62c8e838853246f25ec22092dac1f1299d244e4"
+    },
+    {
+      "path": "scripts/fetch_market_data.py",
+      "sha256": "0cfa27b053b9419f3c6d3573c3225829cdb6ad172cf768c0529da3a79eac6ef3"
+    },
+    {
+      "path": "scripts/fetch_state_forecast_v2_data.py",
+      "sha256": "0bdb58256510b7a81aa3faa06cfdc57c804ff7d6ceb35b206cde07ffaa38c1b1"
+    },
+    {
+      "path": "scripts/fetch_tail_increment.py",
+      "sha256": "b67f65469bfb60abec3235a5f1a2d09676440b7141721ace7ce11aedeea87ba9"
+    },
+    {
+      "path": "scripts/fetch_us_equity.py",
+      "sha256": "82a2a7974a00f07cbc08d906dacad42fe8bdab32310ea26daed2e6a0919ab1a3"
+    },
+    {
+      "path": "scripts/generate_market_models.py",
+      "sha256": "4a737f873cc5d190fa5dc3d798511695ad7ff3df7586bbdd2686e9ff25473146"
+    },
+    {
+      "path": "scripts/plot_crowded_exit.py",
+      "sha256": "ca462b588c4533da60e30aa9f0519e04c0d3773edcae8236fd186452e16c5645"
+    },
+    {
+      "path": "scripts/plot_depth_study.py",
+      "sha256": "df19fae29fe64c1cf2ed09dac6bd13eac4ecff82eb8610efed0eb3e0daaf0aaa"
+    },
+    {
+      "path": "scripts/plot_forecast_study.py",
+      "sha256": "787330a1270a8924e0e22e00da103824e219014895be9dad9b8bba028f4e75bd"
+    },
+    {
+      "path": "scripts/plot_foundation.py",
+      "sha256": "81b1e0d85116eadb8dca56dd8c712aaa91fd73081b5d2396adfbc8c234400c00"
+    },
+    {
+      "path": "scripts/plot_project_mainline_v2.py",
+      "sha256": "15290d08a5e8578130c6e21d801112f7ce4dc3414197784bf4101a41bba53dfa"
+    },
+    {
+      "path": "scripts/plot_real_market.py",
+      "sha256": "d5c6cea24693018cb5be2199f1fd8656575c0a705c626ad57ed4d387553a82f5"
+    },
+    {
+      "path": "scripts/plot_simulation_study.py",
+      "sha256": "161238c21e3a14a7eefc14ed2ab2f14a09ded32fc7161b0a2eb474dea0cf6752"
+    },
+    {
+      "path": "scripts/plot_state_forecast_v2.py",
+      "sha256": "8a2d61a14e7d6cc6cd7f272e53eda38a0dc3e6e8351316da346ca1d7f55f1f80"
+    },
+    {
+      "path": "scripts/plot_tail_increment.py",
+      "sha256": "a6c84dee523d11e79565cdb271f76fbde3272a46e06257baab78487116943629"
+    },
+    {
+      "path": "scripts/plot_us_equity.py",
+      "sha256": "1a94450dddc45d82fd31b288b6df63862bdecd883619f364a856aa05bc9bd062"
+    },
+    {
+      "path": "scripts/prepare_market_data.py",
+      "sha256": "b3b4f001fbc48a1aff04d78755855ebcb869ad1272f842cb885e34365838ddcb"
+    },
+    {
+      "path": "scripts/reassess_forecast_utility.py",
+      "sha256": "0bf9d85e517f6f656dffc70eb695dc6b13db98d908f694152c2ad4bd08da649c"
+    },
+    {
+      "path": "scripts/reproduce_forecast_study.py",
+      "sha256": "484dd208cec094c32224f8ef07b4b6485579227a35652e87e16816303343676d"
+    },
+    {
+      "path": "scripts/reproduce_real_market.py",
+      "sha256": "13474978336bd8de92e56bd341449be8f986390dbd4aa46d1c978770bcb39a19"
+    },
+    {
+      "path": "scripts/reproduce_state_forecast_v2.py",
+      "sha256": "4d07eadeb4e43742999d1fd32490e611d57f10e28d5bcb82efda6c1fc7d93c28"
+    },
+    {
+      "path": "scripts/reproduce_tail_increment.py",
+      "sha256": "4ef9701ae02f375bb09f173c91ad3a31a273b0d43e496ed291a49ce2daa1f97e"
+    },
+    {
+      "path": "scripts/reproduce_us_equity.py",
+      "sha256": "d61a8765d35128bb96dde6cff2ebe7d277c0db5224fbf164afe98fe74205b557"
+    },
+    {
+      "path": "scripts/run_crowded_exit.py",
+      "sha256": "d993f6329c24e0336a7bf8e5aa701f1f93cc16c6ba1266adebaac8ed07d15a0b"
+    },
+    {
+      "path": "scripts/run_depth_study.py",
+      "sha256": "93e3c72191d882631b991d0b11aa7db8e5f62ee2e88d10bfb1f96261ee0b5666"
+    },
+    {
+      "path": "scripts/run_forecast_study.py",
+      "sha256": "7ac0b7121942b98bab47424e56714551c39eb0ae4f5f52559177aec75f3a3989"
+    },
+    {
+      "path": "scripts/run_foundation.py",
+      "sha256": "cf3454d87590effb4fc4b435312bac5fe9173e823cf2669cee98562707605e77"
+    },
+    {
+      "path": "scripts/run_mechanism_checks.py",
+      "sha256": "ae9fb3a028173ffa42a92d85313f9af17f1e36e4ac95e2b901f0b195399a225d"
+    },
+    {
+      "path": "scripts/run_simulation_followup.py",
+      "sha256": "92bb88be5b171f179772c1305d36f68992be2245ca65da8c6cbaeacc0544a699"
+    },
+    {
+      "path": "scripts/run_simulation_study.py",
+      "sha256": "1b228aa2d8f1e6203df1d2826104b40c9eb9b7db64054e870385e8ae102b3bef"
+    },
+    {
+      "path": "scripts/run_state_forecast_v2.py",
+      "sha256": "d5c49e753c219b1e1062de8c6dcb797b4338e0d63f464d612188d2d3333512a8"
+    },
+    {
+      "path": "scripts/run_state_mechanism_v2.py",
+      "sha256": "82b2869256f7166914b57716ae710501535a4b8168dae483dc46e2090ea5f61e"
+    },
+    {
+      "path": "scripts/run_tail_increment.py",
+      "sha256": "cd469801fe273275a72c11e4106cba56aff86447bc310d67867b06b50eb4ca4a"
+    },
+    {
+      "path": "scripts/run_tail_mc_full.py",
+      "sha256": "c4f549693771e0b937ce2c61998f909bfee67aa80f87f6f5297dd4b36196940b"
+    },
+    {
+      "path": "scripts/run_tail_synthetic.py",
+      "sha256": "c8d45c60314c177d81ab52ddc8b4158152f8204a1f888ed5b3ff644e699461c8"
+    },
+    {
+      "path": "scripts/run_us_equity.py",
+      "sha256": "05ea737dc0690673c69e3c118847353af412aea1ea9cceb4e751f8c476c537b1"
+    },
+    {
+      "path": "scripts/summarize_crowded_exit.py",
+      "sha256": "dd0f787f1b06b1aed21bce19b2864b8b8ec034b9c4ef2b9c956cb5cbc0b56cf9"
+    },
+    {
+      "path": "scripts/summarize_depth_study.py",
+      "sha256": "a18398de9d2fe78c2adc8c436f944f90d42ca1b52cbfdd8510180ef6dfc639a2"
+    },
+    {
+      "path": "scripts/summarize_forecast_study.py",
+      "sha256": "2159ee9fe2bc0b9d1c478da4070f2f883a94302dd6c9cbfeee0c910d54c74bac"
+    },
+    {
+      "path": "scripts/summarize_real_market.py",
+      "sha256": "fe444d44b0f048b1c72215814ad0cd0414109bf05bc222178bce2d1c30226cca"
+    },
+    {
+      "path": "scripts/summarize_simulation_study.py",
+      "sha256": "682dd3f654902fd28af4a7cfc6a7fb3163d4528e4394edf89e804ebb747af3ad"
+    },
+    {
+      "path": "scripts/summarize_state_forecast_v2.py",
+      "sha256": "0ab094b05cb93745cc5dbe7e4bfe6e7d97568ce239b2722eb3df9e82730c4f89"
+    },
+    {
+      "path": "scripts/summarize_us_equity.py",
+      "sha256": "accb668b1e16f24b3f4897c2f90954077a1d4566ffd9c2ed9890ec79833634f7"
+    },
+    {
+      "path": "scripts/supplement_tail_scores.py",
+      "sha256": "d001de3d63a4c80018ca748a25e0a8aad31850e0098a6eef17c227a24e099dae"
+    },
+    {
+      "path": "scripts/supplement_us_equity.py",
+      "sha256": "ac385236c2718c7c6b5719377b76cf92648cbebba9ed7e618b064fb511de7224"
+    },
+    {
+      "path": "scripts/verify_mixture_certificate.py",
+      "sha256": "d3b94cf13ddf64e951677d74e23451fbb6d830ee7fc1a8cc66f9f7da29397c4c"
+    },
+    {
+      "path": "src/econophysics/README.md",
+      "sha256": "8446f389843ce5fa24e49dfb061c320daf39493eedf153e11d739371efd21eac"
+    },
+    {
+      "path": "src/econophysics/__init__.py",
+      "sha256": "c3e4ec7b6edee8e5e49ea88b73ab7cd53ce8fb898a4c0f2e470423d9b05b5382"
+    },
+    {
+      "path": "src/econophysics/crowded_exit.py",
+      "sha256": "9b4ca8f4a96036eac1113ff6a182b15b8bcaa0bd5e1e587125e1fc5bb68df2ff"
+    },
+    {
+      "path": "src/econophysics/features.py",
+      "sha256": "1faaba39608bc7472104c5f8488234d27dbe80674d77408285cb071be58f0cdd"
+    },
+    {
+      "path": "src/econophysics/forecasting.py",
+      "sha256": "a9ac212c6388e9dd14de9dd4584459bf2f701ac07462b96652a0223b6f09178c"
+    },
+    {
+      "path": "src/econophysics/inference.py",
+      "sha256": "07047ebeeb78188635935567202b623d3d5e28f3fc5386e2987e99b9aea79466"
+    },
+    {
+      "path": "src/econophysics/market_data.py",
+      "sha256": "b0e1c1807f03f4f6f709a752ace0cd929c96f070d21ca95a22afe234c4cf51da"
+    },
+    {
+      "path": "src/econophysics/mechanism_statistics.py",
+      "sha256": "d0d45bf63f59f40545b640e661392e6590981c000696ac366dc11c00130e513b"
+    },
+    {
+      "path": "src/econophysics/model.py",
+      "sha256": "74d964ff40973f5fff8ddcf82587688da70823226e01070a96242914a164a15a"
+    },
+    {
+      "path": "src/econophysics/physics_inference.py",
+      "sha256": "79b21fdd29e42f0fbe189c792ab2e0194bb13c9ce24b60f3787f4fcf9fbdba24"
+    },
+    {
+      "path": "src/econophysics/real_market_statistics.py",
+      "sha256": "c6ea08294b7272284c4f1d406c02569f5dec67f184c3fd674826dffea9a4e4a4"
+    },
+    {
+      "path": "src/econophysics/risk_lab.py",
+      "sha256": "fea562578b4ed2ab2c9486899ec6b72b3b32bc3ec83c2093585603301e44c950"
+    },
+    {
+      "path": "src/econophysics/state_forecasting.py",
+      "sha256": "f525f2a708e8b7ea0ab9a398219aa25d17bf4a5da339e13a4c4e36522685cf53"
+    },
+    {
+      "path": "src/econophysics/study_statistics.py",
+      "sha256": "73f4f5151428ad25eae9446967f5f87ae1cea568f8c893277c6d62de89e8fa9f"
+    },
+    {
+      "path": "src/econophysics/tail_increment.py",
+      "sha256": "dd6ef57c6e4bbcbb42c627c5dac350212d4236bd0f67a3bc684c59d6b2d62e72"
+    },
+    {
+      "path": "src/econophysics/us_equity.py",
+      "sha256": "f5bddd00b3d1a67368a0a505444a2ca51d8cc6ccf772b6f81c44a77e68925ebd"
+    },
+    {
+      "path": "web/advanced/index.html",
+      "sha256": "5bb5b775a6e40a344384f65cd22ec4be146c7e2b535df03a104afc55befd41c4"
+    },
+    {
+      "path": "web/assets/figures/D01.svg",
+      "sha256": "74982c61fe2bcb5dc83aadc531caf1a3f28a58aabad45444f47266e786ff2d57"
+    },
+    {
+      "path": "web/assets/figures/F01.svg",
+      "sha256": "301e2dd8d02a60351a961fd2f3279e97b214a53a8393588ad8d106226d02117f"
+    },
+    {
+      "path": "web/assets/figures/F03.svg",
+      "sha256": "fa2cacd6240d1a3ec57f914d41a9cc1ee8e5114fab0171be684ed1060fa3c857"
+    },
+    {
+      "path": "web/assets/figures/F05.svg",
+      "sha256": "a838433623437992a0e86c29a09bd393146aabcbcaec19dbcac6c0898cff8f22"
+    },
+    {
+      "path": "web/assets/figures/F07.svg",
+      "sha256": "053aefbe15df0c081f1d432d0b52bcf06a8cfb092004dfdbd0efeae060cdb389"
+    },
+    {
+      "path": "web/assets/figures/J02.svg",
+      "sha256": "f064dd8bc715a4c2dbd1d0c26be45d37b520c5007883e4f86b9203e816b80d11"
+    },
+    {
+      "path": "web/assets/figures/P01.svg",
+      "sha256": "669b69d798c2972650478182842c73cca8b112c0af32e70aa78500a9065ae0de"
+    },
+    {
+      "path": "web/assets/figures/P03.svg",
+      "sha256": "92a57b197fe89f32c9f27d7f19a5a1fdb3059103e4b5a08ca76ed854c8ad5371"
+    },
+    {
+      "path": "web/assets/figures/R03.svg",
+      "sha256": "90f9d33d674213ceb5c2ba05ad3542ba7badbfa16d46a0944730aae2301e5aa9"
+    },
+    {
+      "path": "web/assets/figures/R04.svg",
+      "sha256": "1461e98a1dc4d050b8f349412d9203fb194951c19935d076baa1f19cdfe47f9a"
+    },
+    {
+      "path": "web/assets/figures/U02.svg",
+      "sha256": "6fb1dc85cb7a59cfcb9f9d49541219b9ee873e99c72caf336978ff121548f5ff"
+    },
+    {
+      "path": "web/assets/figures/U05.svg",
+      "sha256": "db7784447a50115622b01f4d744145b761b4f4b6e3da3f288aac91b88777da2e"
+    },
+    {
+      "path": "web/downloads/research-report-en.pdf",
+      "sha256": "5064203c26cd9e23f7b1cafe476fd2d11c833888bbb0a6b5f5954a62ee30dd3e"
+    },
+    {
+      "path": "web/downloads/research-report-zh.pdf",
+      "sha256": "c61578a1c9b415fcb7a9a951382dfa224b4b76713cc40b4c5590c8685283b26e"
+    }
+  ]
+}

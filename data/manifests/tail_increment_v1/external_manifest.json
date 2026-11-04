@@ -1,0 +1,97 @@
+{
+  "status": "pass",
+  "recorded_utc": "2026-10-27T13:29:53.307167+00:00",
+  "sessions": 4230,
+  "rows": 38070,
+  "first": "2009-12-30",
+  "last": "2026-10-23",
+  "calendar": "XNYS community exchange_calendars, no fill/drop",
+  "missing": 0,
+  "duplicates": 0,
+  "records": [
+    {
+      "symbol": "APD",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/APD?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/APD.json",
+      "bytes": 461736,
+      "sha256": "50e97f1648926cb95c14da300c0b84e666c89d43ca8fd5593942d6b135c37e96",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    },
+    {
+      "symbol": "XOM",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/XOM.json",
+      "bytes": 460661,
+      "sha256": "809a364245ce55db8df96a04372f6be92aeb179cc158d3c345b800ef5e0c51d5",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    },
+    {
+      "symbol": "JPM",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/JPM.json",
+      "bytes": 463332,
+      "sha256": "4949d78980795108ae1861850722eea9a4110680b97ab1baf967383f326af881",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    },
+    {
+      "symbol": "CAT",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/CAT?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/CAT.json",
+      "bytes": 452681,
+      "sha256": "be83a2dda3d436a0da7ad735d2b8211c56f17482cb4bb0945c6ba40a776f263a",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    },
+    {
+      "symbol": "MSFT",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/MSFT.json",
+      "bytes": 464068,
+      "sha256": "da47236c5c803a3df54b68c2ff1fd1a5ef36d3f5efaec5bda689b394dcb4cf44",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    },
+    {
+      "symbol": "PG",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PG?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/PG.json",
+      "bytes": 459820,
+      "sha256": "dca0e5affc8dcec665b2eb23708181ffd676c57c86e4be0a27e09179f77b5595",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    },
+    {
+      "symbol": "NEE",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/NEE?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/NEE.json",
+      "bytes": 460227,
+      "sha256": "122996d0f13c93165f4779346a4272a0a3700fa28d6eef61da7c19e71c65a587",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    },
+    {
+      "symbol": "JNJ",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/JNJ?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/JNJ.json",
+      "bytes": 460402,
+      "sha256": "80d9031248f5679da8e89fac6a397e4f5ef74e2d5ae65c26ed7ce1fa7a2b8d59",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    },
+    {
+      "symbol": "HD",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HD?period1=1262131200&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/tail_increment_v1/HD.json",
+      "bytes": 457082,
+      "sha256": "38fd761191b010f63a293f9b458ea9f898e62777ede3a8a201ce330fd15f7c78",
+      "rows": 4230,
+      "source": "Provider adjusted-close current total-return proxy, not point-in-time vintage; full raw events preserved in JSON"
+    }
+  ],
+  "processed_sha256": "f9f576e9ae7fe7a552957766a51f7784a55f9813eba8d4111d2cd4017330db4f",
+  "source_freeze_sha256": "b9f228c8d4913480d1b1c42d825a95d51bd4a1ce2963201c8b51649b7e344845",
+  "scientific_member_review": "not_run"
+}

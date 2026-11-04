@@ -1,0 +1,151 @@
+{
+  "status": "pass",
+  "stage": "confirmation",
+  "symbols": [
+    "XLB",
+    "XLE",
+    "XLF",
+    "XLI",
+    "XLK",
+    "XLP",
+    "XLU",
+    "XLV",
+    "XLY",
+    "SPY",
+    "QQQ"
+  ],
+  "sessions": 204,
+  "rows": 2244,
+  "first": "2026-01-02",
+  "last": "2026-10-23",
+  "missing": 0,
+  "duplicates": 0,
+  "filled_or_deleted": 0,
+  "calendar": "exchange_calendars XNYS 4.13.2, community calendar rather than official exchange certification",
+  "processed_path": "data/processed/us_equity_v1/confirmation.csv",
+  "processed_sha256": "b16b27c42c7caa173e23471ba3bf10aae8c83dbc89e33b691f64b356c11b3cc2",
+  "records": [
+    {
+      "symbol": "XLB",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLB.json",
+      "bytes": 23514,
+      "sha256": "614a690c1cfe989a1e07f4ac1be429e8a66216926d477ae8c0febfcd6a4c4e11",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "XLE",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLE.json",
+      "bytes": 23455,
+      "sha256": "17b20fd5a744fa5544a49ca5a40ec3c1b65497c7b803e7e5c6a866b6edcce68f",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "XLF",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLF.json",
+      "bytes": 23672,
+      "sha256": "aa299ee6862295a6a4a3307b08c17296ebd742a88807a19dad19a773496381a3",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "XLI",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLI.json",
+      "bytes": 23887,
+      "sha256": "c91a39220106af1ba19771f0df942b640ebf3d0ff0323ac9fb8948f5f176e50c",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "XLK",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLK.json",
+      "bytes": 23837,
+      "sha256": "14ebf1d59f884b2883c617451be320ab0c584e5842aa38c494c475115a2a38be",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "XLP",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLP.json",
+      "bytes": 23283,
+      "sha256": "52e23d9596ab27180ab7c9b56af710eccbb0906b2d8a4b248d7841fb328d1fe7",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "XLU",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLU.json",
+      "bytes": 23582,
+      "sha256": "bf8ccbb18486cdbfddabb4bef45284f50151707615eb0d137a94ddfd7846724a",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "XLV",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLV.json",
+      "bytes": 23830,
+      "sha256": "b7330a183f0fe4af399967022be7c2e33a5084023bf6081bc9943fe0aca945d2",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "XLY",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/XLY.json",
+      "bytes": 24183,
+      "sha256": "22d18cbe8cc540e73d1c4b07434cfbab2091ccc67d3fcfc6d8ae3ada71de8c8b",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "SPY",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/SPY.json",
+      "bytes": 23080,
+      "sha256": "7a1ec3db32a2dcc1ac50749f178fff3439b5c0787428973c4a4ea907bce7f53e",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    },
+    {
+      "symbol": "QQQ",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=1767225600&period2=1792800000&interval=1d&events=div%2Csplits",
+      "path": "data/raw/us_equity_v1/confirmation/QQQ.json",
+      "bytes": 23024,
+      "sha256": "ffaf69fc8f5d0a69e81cae6ff0850e739f64d99ce87f2482b7abe508d9c95a31",
+      "rows": 204,
+      "dividend_records": 3,
+      "split_records": 0,
+      "volume_scope": "Provider-reported, consolidated-tape scope not independently verified"
+    }
+  ],
+  "member_review": "not_run"
+}

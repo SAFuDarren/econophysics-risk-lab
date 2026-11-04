@@ -1,0 +1,23 @@
+{
+  "status": "proposed_next_stage_not_an_executed_experiment",
+  "created": "2026-10-27",
+  "question": "Which observable dependence structures matter for diversification and risk-model adequacy, and do those observations improve held-out portfolio second-moment calibration?",
+  "network_assets": ["XLB", "XLE", "XLF", "XLI", "XLK", "XLP", "XLU", "XLV", "XLY"],
+  "context_only_assets": ["SPY", "QQQ"],
+  "data_frequency": "US exchange-local trading-day adjusted prices; raw prices, corporate actions and reported volume retained separately",
+  "development_period": ["2010-01-01", "2018-01-01"],
+  "validation_period": ["2018-01-01", "2020-01-01"],
+  "proposed_historical_evaluation": ["2020-01-01", "2026-01-01"],
+  "reserved_period": "2026 US equity price series not requested in the feasibility probe; decide its single confirmation use before fetching it",
+  "historical_holdout_limit": "Major historical events are already known. An uninspected series is not a genuinely future or event-blind test.",
+  "lookback_trading_days": {"primary": 63, "sensitivity": 126},
+  "portfolio": "Fixed equal exposure to the nine sector ETFs; daily rebalanced idealized arithmetic-return basket, no execution or PnL utility claim",
+  "proposed_future_target": "Mean of next five trading-day squared basket returns, using nonoverlapping five-day target blocks; not intraday realized variance or observed conditional variance",
+  "candidate_risk_controls": ["Diagonal covariance with matched per-asset variances", "Fixed development-period correlation with rolling variances", "Rolling sample covariance", "Exponentially weighted covariance", "Ledoit-Wolf scaled-identity shrinkage covariance"],
+  "baseline_note": "The sklearn LedoitWolf scaled-identity implementation is not the constant-correlation target in Honey, I Shrunk the Sample Covariance Matrix. Final executable definitions must be frozen before evaluation-price download.",
+  "primary_future_score": "QLIKE on positive portfolio second-moment forecasts; all controls and yearly results retained",
+  "uncertainty_plan": "Paired resampling of nonoverlapping target blocks with additional dependence blocks, block-length sensitivity and yearly descriptive stability; exact block lengths/selection/family fixed in execution contract before evaluation download",
+  "network_interpretation": "Correlation graph of observed ETF returns, not trader-interaction, ownership, causal or contagion network. Nine nodes cannot establish thermodynamic criticality or scale-free degree laws.",
+  "feasibility_probe": {"provider_candidate": "Yahoo chart endpoint", "start_inclusive": "2010-01-04", "end_exclusive": "2010-01-16", "scope": "Development dates only; schema and access check, not model selection or full data-quality acceptance"},
+  "results": "not_run"
+}

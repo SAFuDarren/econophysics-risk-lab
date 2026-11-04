@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "symbol": "BTCUSDT",
+  "rows": 7200,
+  "days": 25,
+  "first_utc": "2026-10-01T00:00:00Z",
+  "last_utc": "2026-10-25T23:55:00Z",
+  "missing": 0,
+  "duplicates": 0,
+  "rows_dropped": 0,
+  "gaps_filled": 0,
+  "processed_sha256": "1c09507fe4956d0fe50757b89379e2065a42cc29e7a9dbf5e5534a9b28c54abf",
+  "member_review": "not_run"
+}

@@ -1,0 +1,239 @@
+{
+  "status": "available",
+  "scope": "Early-development schema/access only, not full historical quality or redistribution clearance",
+  "provider_volume_scope": "Provider-reported volume; consolidated-tape coverage not verified",
+  "evaluation_prices_downloaded": false,
+  "records": [
+    {
+      "symbol": "XLB",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLB?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "68692e74c0f50bd0aabf530fdfb84f64bb233228574d7a2b8dc80c833ffa86c1",
+      "path": "data/raw/us_equity_feasibility_v1/XLB.json"
+    },
+    {
+      "symbol": "XLE",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "753531e22448d47a1217bda60db9c540b34d3d393cb4697fb26f3b7230b7b698",
+      "path": "data/raw/us_equity_feasibility_v1/XLE.json"
+    },
+    {
+      "symbol": "XLF",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLF?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "f7d36cee24ad52ec3477c13119b74072fe193f6f67d7d3a2805bd8984926d661",
+      "path": "data/raw/us_equity_feasibility_v1/XLF.json"
+    },
+    {
+      "symbol": "XLI",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLI?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "359fcf564527e8e1ea855aaea76024fc0f5c368629b8de565dbcb413078d2e04",
+      "path": "data/raw/us_equity_feasibility_v1/XLI.json"
+    },
+    {
+      "symbol": "XLK",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLK?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "a7e164e98a1dafe22b1b7cc27a7187b33195a45a3dfba5475202e068d21b091e",
+      "path": "data/raw/us_equity_feasibility_v1/XLK.json"
+    },
+    {
+      "symbol": "XLP",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLP?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "7eacac46ca6c57407d5c0212a0899531c1a3d1ed0de9f8821139523070a7bb6b",
+      "path": "data/raw/us_equity_feasibility_v1/XLP.json"
+    },
+    {
+      "symbol": "XLU",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "e2e5af9b96adbd21f64ba3cd16258f45842a90f294d24903e01f6b5ebcd9cd52",
+      "path": "data/raw/us_equity_feasibility_v1/XLU.json"
+    },
+    {
+      "symbol": "XLV",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "0095fc20245df7b4d79ec4172fb4b10b3a219b53bfad1250218ac996731cf667",
+      "path": "data/raw/us_equity_feasibility_v1/XLV.json"
+    },
+    {
+      "symbol": "XLY",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLY?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "88145acdbfcb68847bfd3dde1153a06c8bacb180d3cb863ec3c420a55b6c0d3b",
+      "path": "data/raw/us_equity_feasibility_v1/XLY.json"
+    },
+    {
+      "symbol": "SPY",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "ec4915ad9b9328b69ef9cab90d5308a7a9f0196eb8272dbb5288e984a28b5fb4",
+      "path": "data/raw/us_equity_feasibility_v1/SPY.json"
+    },
+    {
+      "symbol": "QQQ",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=1262563200&period2=1263600000&interval=1d&events=div%2Csplits",
+      "http_status": 200,
+      "status": "schema_available",
+      "rows": 10,
+      "fields": [
+        "close",
+        "high",
+        "low",
+        "open",
+        "volume"
+      ],
+      "adjusted_close_available": true,
+      "currency": "USD",
+      "exchange_timezone": "America/New_York",
+      "first_utc": "2010-01-04T14:30:00+00:00",
+      "last_utc": "2010-01-15T14:30:00+00:00",
+      "sha256": "b02c5c9a4b0c453421a5d6fd147266865fe7dcc95cf45e811788ec40ab0e8a94",
+      "path": "data/raw/us_equity_feasibility_v1/QQQ.json"
+    }
+  ]
+}

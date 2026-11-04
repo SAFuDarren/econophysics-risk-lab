@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "econophysics-risk-lab"
+version = "1.0.0"
+description = "Herding models, price-volume identification and reproducible risk analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "PC5253 Project Team"}]
+maintainers = [{name = "Darren Fu Shiang"}]
+license = {file = "LICENSE.md"}
+dependencies = []
+
+[project.optional-dependencies]
+analysis = ["numpy>=2,<3", "scipy>=1.13,<2", "scikit-learn>=1.5,<2", "matplotlib>=3.8,<4"]
+notebooks = ["jupyterlab>=4,<5", "nbclient>=0.10,<1", "nbformat>=5,<6", "ipykernel>=6,<8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

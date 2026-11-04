@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the project team and identify the release used."
+title: "Econophysics Risk Lab: Herding, Price–Volume Information and Risk"
+type: software
+version: 1.0.0
+date-released: 2026-11-05
+authors:
+  - name: "PC5253 Project Team"
+abstract: "A computational course-research project connecting group coordination, finite-network moments, conditional inversion, identification limits and historical risk applications."
