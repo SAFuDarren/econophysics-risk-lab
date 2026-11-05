@@ -135,9 +135,9 @@ problem fit and a testable comparison with classical methods.
 - [`docs/theory/`](docs/theory/): mathematical foundations and identification arguments.
 - [`web/`](web/): bilingual website, experiments and scientific figures.
 
-The [English report](web/downloads/research-report-en.pdf) and
-[Chinese report](web/downloads/research-report-zh.pdf) contain 19 scientific
-figures, eight tables and the subsequent control studies.
+The [research report](web/downloads/research-report-en.pdf) develops the model,
+parameter recovery, observational equivalence, market tests and temporal-state
+experiments, with 19 scientific figures, eight tables and subsequent controls.
 The notation $c$ corresponds to `rho` in the Python implementation;
 activity $q$ equals twice the directional action probability `a`.
 

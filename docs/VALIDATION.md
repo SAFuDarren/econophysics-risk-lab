@@ -7,8 +7,9 @@ Checked on 5 November 2026 (Singapore time).
 | Original exact theory checks | 480 passed | `python scripts/reproduce.py --profile quick` |
 | Model and frozen-evidence tests | 9 passed | Same quick profile |
 | Browser mathematics against Python fixtures | 82 passed | `node tests/test_web_math.cjs` |
-| Main website resources and anchors | 5 pages, 150 local links passed | `python scripts/reproduce.py --profile site` |
-| Research Markdown links | 99 local links resolved | Public snapshot packaging check |
+| Main website resources and anchors | 5 pages, 148 local links passed | `python scripts/reproduce.py --profile site` |
+| Original packaging Markdown links | 99 local links resolved | Original public snapshot packaging check |
+| English research report | 20 pages; 19 source figures; eight tables; all 16 original equation groups retained, with RBF and QLIKE definitions added; no overflow or unresolved references | LaTeX build, equation comparison and full-page visual review |
 | Retained original research artifacts | 341 SHA-256 hashes matched | `data/frozen_source_manifest.json` |
 | Research notebooks | 3 executed, 16 code cells, 4 plot outputs, zero errors | `python scripts/reproduce.py --profile notebooks` |
 | Fresh forecast reconstruction | 699 method checks passed; all 16 CSV tables byte-identical | `python scripts/reproduce.py --profile forecast --destination /tmp/forecast-rerun` |

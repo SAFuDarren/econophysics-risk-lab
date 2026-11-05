@@ -31,10 +31,10 @@
     },
     {
       "path": "README.md",
-      "change": "Research-entry narrative and GitHub-compatible mathematical typesetting; mathematical content and numerical results retained.",
+      "change": "English report narrative and layout revision; state and scale analyses integrated, statistical qualifications retained, and public distribution restricted to the English report. Scientific source tables and figure assets retained.",
       "original_sha256": "5997b90d512039f259417e241175a1e70e3e7be55bfb9792480267056531b48b",
       "prior_publication_sha256": "af9b6fbfca7ee2fe5aa4ca365546626f38deb379a63a167a4b14803582abc028",
-      "published_sha256": "1dc64c76e03c96c15d2622af7e246b5498c3ccc51a6b517e2d18a7f6088d2399"
+      "published_sha256": "500a6e645ee017ee2e4e44df89967aff14b62ff788442122a1602d8931e8afc7"
     },
     {
       "path": "apps/risk_lab_v1/src/template.html",
@@ -228,10 +228,10 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "change": "Research-entry narrative, presentation and linked-resource count updated; mathematical model, numerical tables and scientific figures retained.",
+      "change": "English report narrative and layout revision; state and scale analyses integrated, statistical qualifications retained, and public distribution restricted to the English report. Scientific source tables and figure assets retained.",
       "original_sha256": "1b05c66c6f53aa933421b906bc2d5a463bced58b90396507a9fe3947fe90ac3e",
       "prior_publication_sha256": "e53e4e42ffc6e9342da21845ac41d54be4731048d18e2fb538a8de5e7050c4f3",
-      "published_sha256": "f61ff5d8e9d9e5df15889d385ab3e45005b22c76831a8386ccd68653a30fbb8e"
+      "published_sha256": "d6e211b4c19b868ba066d1b1645f67cdcc1a312c0e9a1475a1fb5bbbc60e1713"
     },
     {
       "path": "docs/theory/DEPTH_ADDENDUM.md",
@@ -515,23 +515,16 @@
     {
       "path": "web/downloads/research-report-en.pdf",
       "original_sha256": "5064203c26cd9e23f7b1cafe476fd2d11c833888bbb0a6b5f5954a62ee30dd3e",
-      "change": "Project framing, conditional research outlook and publication wording; scientific results retained.",
+      "change": "English report narrative and layout revision; state and scale analyses integrated, statistical qualifications retained, and public distribution restricted to the English report. Scientific source tables and figure assets retained.",
       "prior_publication_sha256": "5064203c26cd9e23f7b1cafe476fd2d11c833888bbb0a6b5f5954a62ee30dd3e",
-      "published_sha256": "700db37d728ac51731cd8ad495986d5b086ba97a562b9e2b8997acf87746e4b5"
-    },
-    {
-      "path": "web/downloads/research-report-zh.pdf",
-      "original_sha256": "c61578a1c9b415fcb7a9a951382dfa224b4b76713cc40b4c5590c8685283b26e",
-      "change": "Project framing, conditional research outlook and publication wording; scientific results retained.",
-      "prior_publication_sha256": "c61578a1c9b415fcb7a9a951382dfa224b4b76713cc40b4c5590c8685283b26e",
-      "published_sha256": "6c5d7229db12c62c593478b0615e28468a732e3018a568c54d90f250ce5858b6"
+      "published_sha256": "50337d7482286b58e8accb379580c3e5243bb19ad36a7bd66d5f72bf0d1cd6e7"
     },
     {
       "path": "web/findings.html",
-      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "change": "English report narrative and layout revision; state and scale analyses integrated, statistical qualifications retained, and public distribution restricted to the English report. Scientific source tables and figure assets retained.",
       "original_sha256": "67fb3ab2369749f5d5161ccebabfd317e094823aa2de46316435fcfe2922b6d7",
       "prior_publication_sha256": "67fb3ab2369749f5d5161ccebabfd317e094823aa2de46316435fcfe2922b6d7",
-      "published_sha256": "0fae98fa82088a23669b742a45db0a72df4f1228f12fecf37587d338a618ce78"
+      "published_sha256": "9da562cb0ff530270191e0aa12d08a6a9260f0dee8b18be850bdce4961b7140e"
     },
     {
       "path": "web/index.html",
@@ -556,10 +549,17 @@
     },
     {
       "path": "web/reproduce.html",
-      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "change": "English report narrative and layout revision; state and scale analyses integrated, statistical qualifications retained, and public distribution restricted to the English report. Scientific source tables and figure assets retained.",
       "original_sha256": "aa0d17c5db118cbfcebd25ff0a7a7fd1714c0dba1e4bddb7c4c1e52520c740e9",
       "prior_publication_sha256": "aa0d17c5db118cbfcebd25ff0a7a7fd1714c0dba1e4bddb7c4c1e52520c740e9",
-      "published_sha256": "db7c12f23109de440de7b60a5486e62280cae0a83057c86125e54fcf95d081c5"
+      "published_sha256": "891fd6ffb0ca823fd52cbf76d2e9e8c1d6b057fe4039b8c69ee641007442dc39"
+    }
+  ],
+  "removed_public_artifacts": [
+    {
+      "path": "web/downloads/research-report-zh.pdf",
+      "last_published_sha256": "6c5d7229db12c62c593478b0615e28468a732e3018a568c54d90f250ce5858b6",
+      "reason": "English-only public report distribution, as requested by the project owner"
     }
   ]
 }
