@@ -8,7 +8,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const C={navy:'#173e60',teal:'#416b73',gray:'#a9b6be',line:'#d4dce2',red:'#92505c',ink:'#242b33'};
 const keys=['mechanism','network','inference','identity','memory','risk'];
 const names=[['Group actions & moments','共同动作与矩'],['Finite networks','有限规模网络'],['Parameter recovery','参数恢复'],['Identification limits','识别边界'],['Temporal memory','时间记忆'],['Shared portfolio risk','组合共同风险']];
-const state={networkSeed:20261105,networkGroup:0,history:[],historyKey:'',edges:[[0,1],[1,2],[2,3]],topology:'chain',memory:null,memoryPromise:null,memoryArm:'PersistentActivity',pairs:null,shuffled:false,shuffleSeed:20261105,shuffleCount:0,networkResult:null,identityResult:null,memoryResult:null};
+const state={networkSeed:20261105,networkGroup:0,history:[],historyKey:'',edges:[[0,1],[1,2],[2,3]],topology:'chain',memory:null,memoryReplication:0,memoryCache:new Map(),memoryPromises:new Map(),memoryPairKey:null,memoryArm:'PersistentActivity',pairs:null,shuffled:false,shuffleSeed:20261105,shuffleCount:0,networkResult:null,identityResult:null,memoryResult:null};
 const repo='https://github.com/SAFuDarren/econophysics-risk-lab/blob/main/';
 function math(el,tex){if(!el)return;if(window.katex)window.katex.render(tex,el,{displayMode:true,throwOnError:true});else el.textContent=tex;}
 function svg(w,h,title){return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}"><title>${esc(title)}</title>`;}
@@ -53,10 +53,10 @@ function inference(){
   [t('Finite-ER curve → connectivity','有限ER曲线 → 连接参数'),String.raw`\widehat c=A_N^{-1}(\widehat A)`,t(`The selected setting is c = ${fmt(r.truth.c,2)}; estimate ${fmt(e.c,3)}.`,`所选真值c=${fmt(r.truth.c,2)}，估计为${fmt(e.c,3)}。`)]
  ].map(([label,tex,note],i)=>`<div class="inversion-step"><small>${esc(label)}</small><div class="equation" id="inverse-math-${i}"></div><p>${esc(note)}</p></div>`).join('')+'</div>';
  const formulas=[String.raw`\widehat q=\frac{\overline V}{uN}`,String.raw`\widehat A=\frac{\widehat{\operatorname{Var}}(V)}{\widehat q(1-\widehat q)u^2}`,String.raw`\widehat c=A_N^{-1}(\widehat A)`];formulas.forEach((s,i)=>math($('inverse-math-'+i),s));
- const chart=$('sampling-chart'),w=width(chart),h=140,L=42,R=w-20,sx=x=>L+(R-L)*x/2.5;
+ const chart=$('sampling-chart'),w=width(chart),h=140,L=42,R=w-20,sx=x=>L+(R-L)*x/3;
  let out=svg(w,h,t('Connectivity estimates across sampled windows','不同抽样窗口的连接参数估计'));
  out+=line(L,95,R,95)+line(sx(r.truth.c),20,sx(r.truth.c),95,C.teal,1.5,'stroke-dasharray="4 4"');
- for(const x of [0,.5,1,1.5,2,2.5])out+=txt(sx(x),119,fmt(x,1));
+ for(const x of [0,.5,1,1.5,2,2.5,3])out+=txt(sx(x),119,fmt(x,1));
  state.history.forEach((v,i)=>out+=`<circle cx="${sx(v.c)}" cy="${42+(i%4)*13}" r="4" fill="${C.navy}"><title>${esc('ĉ = '+fmt(v.c,4)+', seed '+v.seed)}</title></circle>`);
  chart.innerHTML=out+txt(L,14,t('Estimated connectivity c','估计连接参数c'),'start','axis-title')+'</svg>';
  $('sampling-detail').textContent=state.history.length?t(`${state.history.length} sampled windows. Mean absolute connectivity error here: ${fmt(state.history.reduce((a,v)=>a+Math.abs(v.c-r.truth.c),0)/state.history.length,4)}. This is your live sample, separate from the ten-study research benchmark.`,`${state.history.length}个抽样窗口，当前连接参数平均绝对误差为${fmt(state.history.reduce((a,v)=>a+Math.abs(v.c-r.truth.c),0)/state.history.length,4)}。这是当前即时抽样结果；十组独立研究的基准见原始结果。`):t('Select a simulated window, then compare five draws. Population moments have no sampling error in this interpolated demonstration.','切换到模拟窗口后，可比较五次抽样。此插值演示中的总体矩没有抽样误差。');
@@ -78,10 +78,21 @@ function identity(){
  document.querySelectorAll('[data-topology]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.topology===state.topology)));
  state.identityResult={edges:state.edges.map(v=>v.slice()),sizes,law,sameAsConnectedFourNodeLaw:same,n:4,q:.2,lambda:.02,u:1};
 }
-async function loadMemory(){
- if(state.memory)return state.memory;
- if(!state.memoryPromise)state.memoryPromise=fetch('assets/data/memory-path.json').then(r=>{if(!r.ok)throw Error('Path replay could not load');return r.json();}).then(d=>{if(d.length!==8192||Object.values(d.arms).some(a=>a.length!==8192))throw Error('Incomplete saved path');state.memory=d;return d;}).catch(e=>{state.memoryPromise=null;throw e;});
- return state.memoryPromise;
+async function loadMemory(rep=state.memoryReplication){
+ if(state.memoryCache.has(rep)){const data=state.memoryCache.get(rep);if(rep===state.memoryReplication)state.memory=data;return data;}
+ if(!state.memoryPromises.has(rep)){
+  const url=rep===0?'assets/data/memory-path.json':`assets/data/memory/path-${String(rep).padStart(2,'0')}.json`;
+  const pending=fetch(url).then(r=>{if(!r.ok)throw Error('Path replay could not load');return r.json();}).then(data=>{
+   if(data.replication!==rep||data.length!==8192||Object.values(data.arms).some(a=>a.length!==8192))throw Error('Incomplete saved path');
+   state.memoryCache.set(rep,data);state.memoryPromises.delete(rep);if(rep===state.memoryReplication)state.memory=data;return data;
+  }).catch(error=>{state.memoryPromises.delete(rep);throw error;});state.memoryPromises.set(rep,pending);
+ }
+ return state.memoryPromises.get(rep);
+}
+async function changeMemoryPath(rep){
+ if(!Number.isInteger(rep)||rep<0||rep>9)throw Error('Invalid saved path');
+ state.memoryReplication=rep;state.memory=state.memoryCache.get(rep)||null;state.pairs=null;state.memoryPairKey=null;state.memoryResult=null;state.shuffled=false;state.shuffleCount=0;
+ $('memory-path').value=String(rep);return memory();
 }
 function memoryHeatmap(original,current){
  const e=$('memory-joint'),w=width(e,250),h=270,L=48,R=w-15,T=25,B=h-46,nx=22,ny=18;
@@ -117,17 +128,19 @@ function memoryTrace(original,current){
  e.innerHTML=out+'</svg>';
 }
 async function memory(){
- $('memory-status').textContent=state.memory?t('Saved simulation replay · path 1 of 10 · N = 128, c = 1 · 8,192 observations','已保存模拟回放 · 第1条路径，共10条 · N=128、c=1 · 8,192个观测'):t('Loading the saved research path…','正在加载已保存的研究路径…');
- try{await loadMemory();}catch(e){$('memory-status').innerHTML=esc(t('The saved path could not load. ','保存路径加载失败。'))+'<button class="button secondary" id="memory-retry">'+esc(t('Try again','重试'))+'</button>';$('memory-retry').addEventListener('click',memory);return;}
- if(A.state.lab!=='memory')return;
- const arm=$('memory-arm').value;if(arm!==state.memoryArm||!state.pairs){state.memoryArm=arm;state.pairs=state.memory.arms[arm];state.shuffled=false;state.shuffleCount=0;}
+ const requestedRep=state.memoryReplication,requestedArm=$('memory-arm').value;
+ $('memory-status').textContent=state.memory?t(`Saved simulation replay · path ${state.memoryReplication+1} of 10 · N = 128, c = 1 · 8,192 observations`,`已保存模拟回放 · 第${state.memoryReplication+1}条路径，共10条 · N=128、c=1 · 8,192个观测`):t('Loading the saved research path…','正在加载已保存的研究路径…');
+ try{await loadMemory(requestedRep);}catch(e){$('memory-status').innerHTML=esc(t('The saved path could not load. ','保存路径加载失败。'))+'<button class="button secondary" id="memory-retry">'+esc(t('Try again','重试'))+'</button>';$('memory-retry').addEventListener('click',memory);return;}
+ if(A.state.lab!=='memory'||requestedRep!==state.memoryReplication||requestedArm!==$('memory-arm').value)return;
+ const arm=$('memory-arm').value,pairKey=state.memoryReplication+'|'+arm;if(state.memoryPairKey!==pairKey||!state.pairs){state.memoryPairKey=pairKey;state.memoryArm=arm;state.pairs=state.memory.arms[arm];state.shuffled=false;state.shuffleCount=0;}
  const original=state.memory.arms[arm],current=state.pairs,before=M.pathStats(original),after=M.pathStats(current);
- $('memory-status').textContent=t('Saved simulation replay · path 1 of 10 · N = 128, c = 1 · 8,192 observations','已保存模拟回放 · 第1条路径，共10条 · N=128、c=1 · 8,192个观测');
+ $('memory-status').textContent=t(`Saved simulation replay · path ${state.memoryReplication+1} of 10 · N = 128, c = 1 · 8,192 observations`,`已保存模拟回放 · 第${state.memoryReplication+1}条路径，共10条 · N=128、c=1 · 8,192个观测`);
  $('memory-stats').innerHTML=metric(t('Mean V (current)','当前平均V'),fmt(after.meanV,3))+metric(t('Var(r) (current)','当前Var(r)'),after.varR.toExponential(3))+metric(t('Lag-one |r| correlation','|r|一期滞后相关'),fmt(after.magnitudeACF,3));
  const bins=memoryHeatmap(original,current);memoryACF(before,after);memoryTrace(original,current);
  const explanation=arm==='PersistentActivity'?t('Persistent activity can produce memory in both trading volume and return magnitude.','活动率持续变化可使成交量与收益幅度都出现记忆。'):arm==='PersistentImpact'?t('A persistent price response can produce magnitude memory while volume has little memory.','持续变化的价格响应可产生幅度记忆，而成交量的记忆很弱。'):t('The constant model independently redraws networks and actions, giving no population serial memory.','固定模型独立重采网络与动作，总体上没有序列记忆。');
  $('memory-conclusion').innerHTML='<strong>'+esc(state.shuffled?t('Same observations. A different time order.','相同观测，不同时间顺序。'):t('The order carries information.','时间顺序包含信息。'))+'</strong><p>'+esc(explanation+' '+t('Shuffle complete pairs: all single-period empirical joint moments stay fixed, while the correlations across time can change. The project separately evaluates ten independent paths; this replay shows one.','整对打乱会保留全部单期经验联合矩，而跨时间的相关可以改变。项目研究另对十条独立路径进行汇总，这里回放其中一条。'))+'</p>';
- state.memoryResult={arm,replication:0,length:8192,shuffled:state.shuffled,shuffleCount:state.shuffleCount,shuffleSeed:state.shuffleSeed,before,after,jointBinCounts:bins,source:state.memory.source,sourceSha256:state.memory.source_sha256};
+ state.memoryResult={arm,replication:state.memoryReplication,length:8192,shuffled:state.shuffled,shuffleCount:state.shuffleCount,shuffleSeed:state.shuffleSeed,before,after,jointBinCounts:bins,source:state.memory.source,sourceSha256:state.memory.source_sha256};
+ document.dispatchEvent(new CustomEvent('memorychange'));
 }
 function risk(){
  const result=A.state.riskResult;if(!result){$('risk-matrix').innerHTML='';$('risk-pair-detail').textContent='';return;}
@@ -171,7 +184,7 @@ function researchMap(){
 }
 researchMap();
 if(!$('physics-network'))return;
-window.LabModules={render,physics,inference,identity,risk,memory,exportExperiment,state};
+window.LabModules={render,physics,inference,identity,risk,memory,loadMemory,changeMemoryPath,exportExperiment,state};
 $('experiment-select').addEventListener('change',e=>{location.hash=e.target.value;A.showLab(e.target.value);});
 for(const[button,direction]of [['experiment-prev',-1],['experiment-next',1]])$(button).addEventListener('click',()=>{const i=keys.indexOf(A.state.lab)+direction;if(i>=0&&i<keys.length){location.hash=keys[i];A.showLab(keys[i]);$('experiment-location').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}});
 $('physics-layout').addEventListener('change',()=>{A.state.actions=null;A.state.selectedGroup=0;$('one-action-result').textContent='';A.renderPhysics();});
@@ -179,8 +192,20 @@ $('physics-layout').addEventListener('change',()=>{A.state.actions=null;A.state.
 $('infer-batch').addEventListener('click',async()=>{const b=$('infer-batch');b.disabled=true;if($('infer-mode').value==='population')$('infer-mode').value='256';state.history=[];try{for(let i=0;i<5;i++){A.state.inferSeed++;A.renderInference();await new Promise(requestAnimationFrame);}}finally{b.disabled=false;}});
 document.querySelectorAll('[data-predict]').forEach(box=>box.querySelectorAll('[data-choice]').forEach(b=>b.addEventListener('click',()=>{box.querySelectorAll('[data-choice]').forEach(v=>v.setAttribute('aria-pressed',String(v===b)));const group=box.dataset.predict==='groups',correct=b.dataset.choice==='correct';box.querySelector('.prediction-feedback').textContent=group?t((correct?'Yes. ':'')+'S₂ changes from 128 to 2,048. At fixed q, return and volume variances are sixteen times larger; mean volume stays q × 128.',(correct?'是的。':'')+'S₂从128变为2,048。固定q时，收益与成交量方差变为16倍，平均成交量仍是q×128。'):t((correct?'Yes. ':'')+'Every (r, V) pair stays intact. The empirical joint distribution is unchanged; neighboring pairs change, so time correlations can change.',(correct?'是的。':'')+'每对(r,V)保持完整，经验联合分布不变；相邻观测的组合改变，因此时间相关可以改变。');if(group){$('physics-layout').value='groups';A.state.actions=null;A.state.selectedGroup=0;A.renderPhysics();}})));
 $('memory-arm').addEventListener('change',memory);$('memory-offset').addEventListener('input',()=>{if(state.memory&&state.pairs)memoryTrace(state.memory.arms[state.memoryArm],state.pairs);});
-$('memory-shuffle').addEventListener('click',async()=>{const b=$('memory-shuffle');b.disabled=true;try{await loadMemory();const arm=$('memory-arm').value;if(state.memoryArm!==arm||!state.pairs){state.memoryArm=arm;state.shuffleCount=0;}state.shuffleCount++;state.shuffleSeed++;state.pairs=arm==='PersistentActivity'&&state.shuffleCount===1?state.memory.arms.ShuffledActivity:M.permutePairs(state.memory.arms[arm],state.shuffleSeed);state.shuffled=true;await memory();}finally{b.disabled=false;}});
-$('memory-reset').addEventListener('click',async()=>{await loadMemory();state.memoryArm=$('memory-arm').value;state.pairs=state.memory.arms[state.memoryArm];state.shuffled=false;state.shuffleCount=0;await memory();});
+$('memory-path').addEventListener('change',()=>changeMemoryPath(+$('memory-path').value));
+$('memory-shuffle').addEventListener('click',async()=>{
+ const button=$('memory-shuffle'),rep=state.memoryReplication,arm=$('memory-arm').value;button.disabled=true;
+ try{const data=await loadMemory(rep);if(rep!==state.memoryReplication||arm!==$('memory-arm').value)return;
+  const key=rep+'|'+arm;if(state.memoryPairKey!==key||!state.pairs)state.shuffleCount=0;
+  state.memoryPairKey=key;state.memoryArm=arm;state.shuffleCount++;state.shuffleSeed++;
+  state.pairs=arm==='PersistentActivity'&&state.shuffleCount===1?data.arms.ShuffledActivity:M.permutePairs(data.arms[arm],state.shuffleSeed);state.shuffled=true;await memory();
+ }catch(e){$('memory-status').textContent=t('The saved path could not load; select a path to retry.','保存路径未能加载，请重新选择路径。');}finally{button.disabled=false;}
+});
+$('memory-reset').addEventListener('click',async()=>{
+ const rep=state.memoryReplication,arm=$('memory-arm').value;
+ try{const data=await loadMemory(rep);if(rep!==state.memoryReplication||arm!==$('memory-arm').value)return;state.memoryArm=arm;state.memoryPairKey=rep+'|'+arm;state.pairs=data.arms[arm];state.shuffled=false;state.shuffleCount=0;await memory();}
+ catch(e){$('memory-status').textContent=t('The saved path could not load; select a path to retry.','保存路径未能加载，请重新选择路径。');}
+});
 ['risk-pair-a','risk-pair-b'].forEach(id=>$(id).addEventListener('change',risk));
 A.redraw();
 })();

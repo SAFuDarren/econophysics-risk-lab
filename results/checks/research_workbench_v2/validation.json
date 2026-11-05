@@ -1,0 +1,76 @@
+{
+  "status": "pass",
+  "date": "2026-11-05",
+  "scope": "Browser calculations and replay of saved research; original market studies and reports retained",
+  "numerical_checks": {
+    "independent_rational_graph_fixtures": 16,
+    "data_checks": 112,
+    "research_math_checks": 371,
+    "saved_state_pairs": 327680,
+    "existing_web_math_checks": 82,
+    "existing_interactive_math_checks": 69,
+    "core_theory_checks": 480,
+    "core_unit_tests": 9
+  },
+  "browser": {
+    "exploration": {
+      "status": "pass",
+      "checks": [
+        "Constructed groups update the graph, formula and invariant mean volume",
+        "Finite networks support all system sizes and coupled connectivity changes",
+        "Five independent seeded live windows populate the inversion comparison",
+        "Chain/star equivalence and edge edits change the exact law only with the size profile",
+        "The saved whole-pair shuffle preserves every histogram bin and changes temporal memory",
+        "Saved experiment exports contain source references and all replay pairs",
+        "Covariance selection and eta controls update paired variance contributions",
+        "All six experiments fit 320, 390, 768 and 1440 px in both interface languages, with synchronized navigation and no page overflow",
+        "Homepage research map opens the matching experiment, mathematics, code and source results",
+        "The established strategy laboratory returns directly to its parent risk experiment"
+      ],
+      "viewportLanguageExperimentCases": 48,
+      "errors": []
+    },
+    "research": {
+      "status": "pass",
+      "checks": [
+        "Finite-graph recurrence matches full enumeration at all supported sizes and edge-probability extremes",
+        "Scale comparison retains the saved ten paired studies and the specified moment-invariance control",
+        "All five graph classes expose their exact law and open the selected graph in the original editor",
+        "All ten paths load correctly, rapid selections retain the final path, and both permutation invariants remain distinct",
+        "Matched-covariance tails expose both confidence levels, zero-exceedance cases, valid SVG metadata and research JSON exports",
+        "Five research views fit four screen widths in both languages, with synchronized local navigation and no page overflow",
+        "All 16 saved market cases and five cancellation steps render correctly; primary intervals remain separate from point-only cases"
+      ],
+      "researchViewportLanguageCases": 40,
+      "marketViewportLanguageCases": 8,
+      "errors": []
+    },
+    "release_smoke": {
+      "status": "pass",
+      "mathCounts": {
+        "formulas": 22,
+        "rendered": 22
+      },
+      "checked": [
+        "All static equations rendered",
+        "Explicit invariant features and RBF definition",
+        "Covariance-matching explanation and saved tail values",
+        "Selected independent path and both permutations",
+        "All five market derivation steps"
+      ],
+      "errors": []
+    }
+  },
+  "source_sha256": {
+    "web/assets/experiments.js": "c9d186a26420d044f61ad00c4c8094eabd9d7a124f80787717123e8f16f6c43c",
+    "web/assets/research-math.js": "1cf4be88b3e18f975340b93ed3c8a833e73e8de6be44cbc12b3a93a67490df34",
+    "web/assets/research-workbench.js": "72ba81c98eb5577cb8d2b213c993048954a1646f1e2bd1bcb92501e906e2244f",
+    "web/assets/research-workbench.css": "de2f54e9d1499f84f7abb1aaf448ae375fbe321f1fe69f58acec5fa43a195a74",
+    "web/assets/data/research-depth.json": "444c08a501a458440a96b7b8d21db9d392a8c2a9fea0a4a42b7758aabd70c351",
+    "scripts/build_research_payload.py": "9735e3fa775676ae340d88d1a4b68866e6faf8a1845fd75970ee54aaa463fe14",
+    "scripts/check_research_depth.py": "65ccf64a95a753c5c16777f6a574421ed3ab111431660956e8d8e4089d01a89a",
+    "tests/fixtures/finite_graph_recurrence.json": "939c3a780948d9fd3b4a00c672dede927d84f1b402b82794ece2f4b9a3f3502c",
+    "web/lab.html": "acbdbc05d690a8860ae561961089a89591b7b81b6c8fa56144ff28835214b01d",
+    "web/findings.html": "5dcdccc7e74aae588d04f8e2a1a26fee0939cd44ad9b134ef2e9752828fd59df"
+  }
+}

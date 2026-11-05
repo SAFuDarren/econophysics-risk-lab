@@ -90,6 +90,8 @@ python scripts/reproduce.py --profile quick
 
 The [interactive laboratory](https://safudarren.github.io/econophysics-risk-lab/lab.html) connects six experiments: group moments, finite networks, parameter recovery, exact observation laws, temporal memory and shared portfolio risk. The temporal experiment replays a complete saved 8,192-observation path and supports whole-pair shuffling. Every experiment links its mathematics, implementation and source results.
 
+The local **Research detail** views expose finite-graph recurrences, all 64 four-node graphs, the ten-study scale controls, all ten saved temporal paths, two distinct permutations and covariance-matched tail comparisons. The findings page connects the Bitcoin model restriction to the saved monthly and exclusion checks. The [laboratory guide](docs/INTERACTIVE_LAB.md) describes the calculations, source payloads and exports.
+
 Three executable notebooks connect the implementation to the numerical results:
 
 1. [Groups, moments and finite-size networks](notebooks/01_model_and_moments.ipynb)

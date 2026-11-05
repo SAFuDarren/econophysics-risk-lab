@@ -18,6 +18,11 @@ The repository includes derived research tables, documented download routes and
 checksums. Complete raw and processed market archives are rebuilt locally by the
 research scripts rather than included in the public snapshot.
 
+The market fields in `web/assets/data/research-depth.json` replay the existing
+Binance-derived model-restriction tables and retain those attribution terms.
+The remaining simulation fields, the ten browser path payloads and
+`data/snapshots/state-mechanism-series.csv.gz` are project-generated model results.
+
 ## Yahoo Finance-derived ETF diagnostics
 
 The covariance and strategy results derive from the project's fixed Yahoo

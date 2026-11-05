@@ -1,0 +1,189 @@
+{
+  "source": "Independent Python breadth-first graph enumeration with exact Fraction weights",
+  "cases": [
+    {
+      "n": 2,
+      "p": 0.05,
+      "root_probabilities": [
+        0.95,
+        0.05
+      ],
+      "expected_s2": 2.1,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 2,
+      "p": 0.2,
+      "root_probabilities": [
+        0.8,
+        0.2
+      ],
+      "expected_s2": 2.4,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 2,
+      "p": 0.5,
+      "root_probabilities": [
+        0.5,
+        0.5
+      ],
+      "expected_s2": 3.0,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 2,
+      "p": 0.95,
+      "root_probabilities": [
+        0.05,
+        0.95
+      ],
+      "expected_s2": 3.9,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 3,
+      "p": 0.05,
+      "root_probabilities": [
+        0.9025,
+        0.09025,
+        0.00725
+      ],
+      "expected_s2": 3.31425,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 3,
+      "p": 0.2,
+      "root_probabilities": [
+        0.64,
+        0.256,
+        0.104
+      ],
+      "expected_s2": 4.392,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 3,
+      "p": 0.5,
+      "root_probabilities": [
+        0.25,
+        0.25,
+        0.5
+      ],
+      "expected_s2": 6.75,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 3,
+      "p": 0.95,
+      "root_probabilities": [
+        0.0025,
+        0.00475,
+        0.99275
+      ],
+      "expected_s2": 8.97075,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 4,
+      "p": 0.05,
+      "root_probabilities": [
+        0.857375,
+        0.1221759375,
+        0.01864790625,
+        0.00180115625
+      ],
+      "expected_s2": 4.659500875,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 4,
+      "p": 0.2,
+      "root_probabilities": [
+        0.512,
+        0.24576,
+        0.159744,
+        0.082496
+      ],
+      "expected_s2": 7.250944,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 4,
+      "p": 0.5,
+      "root_probabilities": [
+        0.125,
+        0.09375,
+        0.1875,
+        0.59375
+      ],
+      "expected_s2": 13.0,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 4,
+      "p": 0.95,
+      "root_probabilities": [
+        0.000125,
+        1.78125e-05,
+        0.00037228125,
+        0.99948490625
+      ],
+      "expected_s2": 15.996868375,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 5,
+      "p": 0.05,
+      "root_probabilities": [
+        0.81450625,
+        0.147018378125,
+        0.0319764972421875,
+        0.00586821209140625,
+        0.00063066254140625
+      ],
+      "expected_s2": 6.155493295246094,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 5,
+      "p": 0.2,
+      "root_probabilities": [
+        0.4096,
+        0.2097152,
+        0.163577856,
+        0.1351614464,
+        0.0819454976
+      ],
+      "expected_s2": 11.350686208,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 5,
+      "p": 0.5,
+      "root_probabilities": [
+        0.0625,
+        0.03125,
+        0.046875,
+        0.1484375,
+        0.7109375
+      ],
+      "expected_s2": 22.0703125,
+      "exact_probability_sum": "1"
+    },
+    {
+      "n": 5,
+      "p": 0.95,
+      "root_probabilities": [
+        6.25e-06,
+        5.9375e-08,
+        9.30703125e-08,
+        2.498712265625e-05,
+        0.9999686104320312
+      ],
+      "expected_s2": 24.999748243058594,
+      "exact_probability_sum": "1"
+    }
+  ]
+}

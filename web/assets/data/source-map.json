@@ -65,6 +65,43 @@
     "path_length": 8192,
     "payload": "web/assets/data/memory-path.json",
     "source": "data/snapshots/state-mechanism-series.csv.gz",
-    "config": "configs/state_forecast_v2.json"
+    "config": "configs/state_forecast_v2.json",
+    "replications": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "payloads": [
+      "web/assets/data/memory-path.json",
+      "web/assets/data/memory/path-01.json",
+      "web/assets/data/memory/path-02.json",
+      "web/assets/data/memory/path-03.json",
+      "web/assets/data/memory/path-04.json",
+      "web/assets/data/memory/path-05.json",
+      "web/assets/data/memory/path-06.json",
+      "web/assets/data/memory/path-07.json",
+      "web/assets/data/memory/path-08.json",
+      "web/assets/data/memory/path-09.json"
+    ]
+  },
+  "research_payload": {
+    "path": "web/assets/data/research-depth.json",
+    "builder": "scripts/build_research_payload.py",
+    "inputs": [
+      "results/tables/depth_study_v1/run_metrics.csv",
+      "results/tables/tail_increment_v1/synthetic_truth.csv",
+      "results/tables/tail_increment_v1/synthetic_ccdf.csv",
+      "results/tables/state_mechanism_v2/path_metrics.csv",
+      "results/tables/state_mechanism_v2/summary.csv",
+      "results/tables/real_market_v1/market_metrics.csv",
+      "results/tables/real_market_v1/joint_constraint_sensitivity.csv"
+    ]
   }
 }

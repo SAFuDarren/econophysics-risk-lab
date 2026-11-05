@@ -17,10 +17,13 @@
     },
     {
       "path": "DATA_LICENSES.md",
-      "change": "Independent project naming and presentation wording; mathematical definitions, numerical parameters and saved data retained. Historical digests remain separately recorded.",
+      "change": "Add organized research-detail views, complete saved path replay, mathematical explanations and verification records. Original model definitions, saved market studies, report downloads and website preview retained.",
       "original_sha256": "15bdb8bfb94d9025b1db4c4bedc90c7abdcb6ee679f81f418f25060d17fdd95c",
       "prior_publication_sha256": "15bdb8bfb94d9025b1db4c4bedc90c7abdcb6ee679f81f418f25060d17fdd95c",
-      "published_sha256": "4df8457eb0889a691bbb048ff26c15102f66d476754bad546ff9713a4774187e"
+      "published_sha256": "61809db112c0b43f7bc7b13e9d1937cf886cc14bf09eca5cf4a45a4fb8b7fd4e",
+      "publication_history_sha256": [
+        "4df8457eb0889a691bbb048ff26c15102f66d476754bad546ff9713a4774187e"
+      ]
     },
     {
       "path": "LICENSE.md",
@@ -31,12 +34,13 @@
     },
     {
       "path": "README.md",
-      "change": "Interactive research update: linked mathematics, source-backed experiment replay and organized research navigation. Existing analytical definitions, frozen study results and report data retained.",
+      "change": "Add organized research-detail views, complete saved path replay, mathematical explanations and verification records. Original model definitions, saved market studies, report downloads and website preview retained.",
       "original_sha256": "5997b90d512039f259417e241175a1e70e3e7be55bfb9792480267056531b48b",
       "prior_publication_sha256": "af9b6fbfca7ee2fe5aa4ca365546626f38deb379a63a167a4b14803582abc028",
-      "published_sha256": "af8a5a7b4ffe024af09ca49ff28694b06fcc145be31f860109bc5c73e8407dd1",
+      "published_sha256": "088210c4b5de00ec3b9e1ac8b2927ae50ec7c6a55dbbd4af04c07afdb80875b7",
       "publication_history_sha256": [
-        "500a6e645ee017ee2e4e44df89967aff14b62ff788442122a1602d8931e8afc7"
+        "500a6e645ee017ee2e4e44df89967aff14b62ff788442122a1602d8931e8afc7",
+        "af8a5a7b4ffe024af09ca49ff28694b06fcc145be31f860109bc5c73e8407dd1"
       ]
     },
     {
@@ -231,12 +235,13 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "change": "Add the source-parity and browser verification record for the six interactive experiments.",
+      "change": "Add organized research-detail views, complete saved path replay, mathematical explanations and verification records. Original model definitions, saved market studies, report downloads and website preview retained.",
       "original_sha256": "1b05c66c6f53aa933421b906bc2d5a463bced58b90396507a9fe3947fe90ac3e",
       "prior_publication_sha256": "e53e4e42ffc6e9342da21845ac41d54be4731048d18e2fb538a8de5e7050c4f3",
-      "published_sha256": "8f864ca9bdc730c8bf762ecbb342a93bdcfea5cbb83b7df98505b17a4706614e",
+      "published_sha256": "73e1d522a9fb2106f168d6bb3ebcb7f2ebd6da19bde142321b5eeb3358b1dc67",
       "publication_history_sha256": [
-        "d6e211b4c19b868ba066d1b1645f67cdcc1a312c0e9a1475a1fb5bbbc60e1713"
+        "d6e211b4c19b868ba066d1b1645f67cdcc1a312c0e9a1475a1fb5bbbc60e1713",
+        "8f864ca9bdc730c8bf762ecbb342a93bdcfea5cbb83b7df98505b17a4706614e"
       ]
     },
     {
@@ -536,56 +541,61 @@
     },
     {
       "path": "web/findings.html",
-      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
+      "change": "Add organized research-detail views, complete saved path replay, mathematical explanations and verification records. Original model definitions, saved market studies, report downloads and website preview retained.",
       "original_sha256": "67fb3ab2369749f5d5161ccebabfd317e094823aa2de46316435fcfe2922b6d7",
       "prior_publication_sha256": "67fb3ab2369749f5d5161ccebabfd317e094823aa2de46316435fcfe2922b6d7",
-      "published_sha256": "45dc49ea690f6c7b946a0cac555ebf8749c4edc72a5ce92ff2c7e8341687bab0",
+      "published_sha256": "5dcdccc7e74aae588d04f8e2a1a26fee0939cd44ad9b134ef2e9752828fd59df",
       "publication_history_sha256": [
         "9da562cb0ff530270191e0aa12d08a6a9260f0dee8b18be850bdce4961b7140e",
-        "d43436e5180e9b49a58ffe75722339406bb32a6ea1ca462b8a746636979b9490"
+        "d43436e5180e9b49a58ffe75722339406bb32a6ea1ca462b8a746636979b9490",
+        "45dc49ea690f6c7b946a0cac555ebf8749c4edc72a5ce92ff2c7e8341687bab0"
       ]
     },
     {
       "path": "web/index.html",
-      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
+      "change": "Add organized research-detail views, complete saved path replay, mathematical explanations and verification records. Original model definitions, saved market studies, report downloads and website preview retained.",
       "original_sha256": "26b57688e491d87e5ea0478d46761de42015d0e73c79e528e2f5c87a8d828d52",
       "prior_publication_sha256": "bafc0f2a501f8778232367dea4731cbce106251c0f814392c9f59bbf65cde1b8",
-      "published_sha256": "619c570ef693035a10b5f048bd76ffa561ccda456eff9e3db035435341ca9f9b",
+      "published_sha256": "8ee4da1ff3a483f04564d21703b704a672c462c592d78d7fd37e8b85231fdfff",
       "publication_history_sha256": [
         "15e61e4c03f47fe663ceb7917cdde003a391a80ddbb0704ca8b14d990f590968",
-        "355f332eeac39c55e9a200e4aafb957698b4cfaa683e24d8effbe9d2cd365b7e"
+        "355f332eeac39c55e9a200e4aafb957698b4cfaa683e24d8effbe9d2cd365b7e",
+        "619c570ef693035a10b5f048bd76ffa561ccda456eff9e3db035435341ca9f9b"
       ]
     },
     {
       "path": "web/lab.html",
-      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
+      "change": "Add organized research-detail views, complete saved path replay, mathematical explanations and verification records. Original model definitions, saved market studies, report downloads and website preview retained.",
       "original_sha256": "9dadfeb9217b50aa378749be13fe205f02bac220fbe1dde123707df05b2a1459",
       "prior_publication_sha256": "9dadfeb9217b50aa378749be13fe205f02bac220fbe1dde123707df05b2a1459",
-      "published_sha256": "ef39253f6771422ede4daeaf3c0db815a2f59ad1ffe196edf284b313edea2ded",
+      "published_sha256": "acbdbc05d690a8860ae561961089a89591b7b81b6c8fa56144ff28835214b01d",
       "publication_history_sha256": [
         "5c08eacdaeede74682b77cea5826d6d5c7e389e6d974305f1497ec65eb0d84cf",
-        "10d608a15cc9c8ec19ada866e1eb2c8bc91f362259b8dc09dad60d923e171038"
+        "10d608a15cc9c8ec19ada866e1eb2c8bc91f362259b8dc09dad60d923e171038",
+        "ef39253f6771422ede4daeaf3c0db815a2f59ad1ffe196edf284b313edea2ded"
       ]
     },
     {
       "path": "web/methods.html",
-      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
+      "change": "Add organized research-detail views, complete saved path replay, mathematical explanations and verification records. Original model definitions, saved market studies, report downloads and website preview retained.",
       "original_sha256": "179537f340bf2f42c5ae8324c3c6bb54ba929ec0aa3328837e010b6533c5cb54",
       "prior_publication_sha256": "179537f340bf2f42c5ae8324c3c6bb54ba929ec0aa3328837e010b6533c5cb54",
-      "published_sha256": "05b96903f80e6c9d3a975f3c0f84357926a46c87b16d7aae5df64ff97b1a33b3",
+      "published_sha256": "9572c98051b0833410016585589abb0d79837183e55fef99df07fd39af27e9a6",
       "publication_history_sha256": [
         "f02bb1169913f11c1a8d3c7b903b128ec2e479e148ad311bc6b87c4ab9b86e4a",
-        "4b489cc5175f4509a1e9ecd07e18c556708b23dba3b4e65c1357056602db26d7"
+        "4b489cc5175f4509a1e9ecd07e18c556708b23dba3b4e65c1357056602db26d7",
+        "05b96903f80e6c9d3a975f3c0f84357926a46c87b16d7aae5df64ff97b1a33b3"
       ]
     },
     {
       "path": "web/reproduce.html",
-      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
+      "change": "Add organized research-detail views, complete saved path replay, mathematical explanations and verification records. Original model definitions, saved market studies, report downloads and website preview retained.",
       "original_sha256": "aa0d17c5db118cbfcebd25ff0a7a7fd1714c0dba1e4bddb7c4c1e52520c740e9",
       "prior_publication_sha256": "aa0d17c5db118cbfcebd25ff0a7a7fd1714c0dba1e4bddb7c4c1e52520c740e9",
-      "published_sha256": "d74f1fb56197cb70dcb9d614519de85616784091a7186a988dc7f8b1472ddcf7",
+      "published_sha256": "3a7b126ff1f60fb356d0af84670450d75b414146c79305357e1b4ff654d43b17",
       "publication_history_sha256": [
-        "891fd6ffb0ca823fd52cbf76d2e9e8c1d6b057fe4039b8c69ee641007442dc39"
+        "891fd6ffb0ca823fd52cbf76d2e9e8c1d6b057fe4039b8c69ee641007442dc39",
+        "d74f1fb56197cb70dcb9d614519de85616784091a7186a988dc7f8b1472ddcf7"
       ]
     }
   ],

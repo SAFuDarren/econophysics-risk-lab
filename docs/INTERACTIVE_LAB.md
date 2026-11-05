@@ -19,12 +19,28 @@ The homepage research map connects each research question to its experiment, mat
 
 ## Saved temporal paths
 
-`data/snapshots/state-mechanism-series.csv.gz` preserves the original controlled-simulation series, including all ten paths and four arms. `web/assets/data/memory-path.json` contains the complete 8,192-pair replication 0 from each arm, the original mechanism configuration and the source SHA-256. It loads only when the temporal-memory experiment is opened.
+`data/snapshots/state-mechanism-series.csv.gz` preserves the original controlled-simulation series, including all ten paths and four arms. `web/assets/data/memory-path.json` contains replication 0; `web/assets/data/memory/path-01.json` through `path-09.json` contain the other nine complete 8,192-pair paths. Every payload retains the original mechanism configuration and source SHA-256. Paths load individually when selected. The existing replication-0 URL is retained.
 
 The first shuffle of persistent activity replays the original saved shuffle. Further shuffles, and shuffles of other arms, use a reproducible browser permutation of the original pairs. Every pair is retained exactly. Histograms and lag-one correlations use all 8,192 observations; the time trace shows a movable 512-observation segment. The report's ten-path summary remains a separate research result.
 
 Exports include settings, displayed results and source references. A temporal-memory export also includes the current ordered observation pairs. Calculations and exports stay in the visitor's browser.
 
+## Research detail
+
+Five experiments have a local Explore / Research detail switch. The six experiment routes and global navigation are unchanged. `lab.html?view=research#network` opens the research view directly; the corresponding fragments are `inference`, `identity`, `memory` and `risk`.
+
+| Experiment | Research interaction | Basis |
+| --- | --- | --- |
+| Finite networks | Vary N and edge probability p, select a rooted group size, and compare the finite-graph recurrence with complete enumeration | Exact browser sums for N = 2–5; independent Python Fraction/BFS fixtures |
+| Parameter recovery | Compare five methods at three return scales on the original and unseen parameter grids; retain all ten study pairs | All 300 rows of the original scale-control table; no additional fitting |
+| Identification | Filter all 64 labelled four-node graphs into five size profiles, inspect every observation probability and open a graph in the original editor | Complete finite enumeration and the existing observation-law argument |
+| Temporal memory | Inspect ten-path means and saved intervals; compare V-only and whole-pair permutations of a selected path | Saved path statistics and summaries; deterministic browser transformations |
+| Shared risk | Compare six fixed-portfolio, covariance-matched synthetic distributions, exceedance frequencies, VaR and ES | Original 50,000-scenario estimates and all 486 saved CCDF rows |
+
+The findings page adds a market-restriction workbench at `findings.html#market`: the primary BTC H2 estimate, both saved interval choices, twelve monthly estimates and three exclusion cases. Point-only cases retain that status. Five mathematical steps explain how the fixed-interface scales cancel from Delta. The positive envelope across finite N is shown separately from the tighter bound for a specified N.
+
+`scripts/build_research_payload.py` builds the shared research payload from the saved CSVs and extracts the remaining nine path payloads from the original compressed snapshot. It preserves the existing replication-0 payload. The shared JSON records each input table's SHA-256. SVG exports embed source metadata; JSON exports identify the research view and its selected settings.
+
 ## Validation
 
-Run `python scripts/reproduce.py --profile site`. It checks nested-page links and anchors, duplicate IDs, self-hosted resources, saved-path and source-figure parity, JavaScript syntax, exact enumeration against analytical moments, path correlations against the saved Python metrics, and pair-preserving deterministic shuffles. The laboratory supports both interface languages, narrow screens, keyboard navigation and reduced-motion preferences.
+Run `python scripts/reproduce.py --profile site`. It checks nested-page links and anchors, duplicate IDs, self-hosted resources, full table/path parity, source figures, JavaScript syntax, exact enumeration against independent rational fixtures, all ten paths against the saved Python correlations, scale controls and both permutation invariants. The laboratory supports both interface languages, narrow screens, keyboard navigation and reduced-motion preferences.
