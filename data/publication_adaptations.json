@@ -536,50 +536,57 @@
     },
     {
       "path": "web/findings.html",
-      "change": "Interactive research update: linked mathematics, source-backed experiment replay and organized research navigation. Existing analytical definitions, frozen study results and report data retained.",
+      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
       "original_sha256": "67fb3ab2369749f5d5161ccebabfd317e094823aa2de46316435fcfe2922b6d7",
       "prior_publication_sha256": "67fb3ab2369749f5d5161ccebabfd317e094823aa2de46316435fcfe2922b6d7",
-      "published_sha256": "d43436e5180e9b49a58ffe75722339406bb32a6ea1ca462b8a746636979b9490",
+      "published_sha256": "45dc49ea690f6c7b946a0cac555ebf8749c4edc72a5ce92ff2c7e8341687bab0",
       "publication_history_sha256": [
-        "9da562cb0ff530270191e0aa12d08a6a9260f0dee8b18be850bdce4961b7140e"
+        "9da562cb0ff530270191e0aa12d08a6a9260f0dee8b18be850bdce4961b7140e",
+        "d43436e5180e9b49a58ffe75722339406bb32a6ea1ca462b8a746636979b9490"
       ]
     },
     {
       "path": "web/index.html",
-      "change": "Interactive research update: linked mathematics, source-backed experiment replay and organized research navigation. Existing analytical definitions, frozen study results and report data retained.",
+      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
       "original_sha256": "26b57688e491d87e5ea0478d46761de42015d0e73c79e528e2f5c87a8d828d52",
       "prior_publication_sha256": "bafc0f2a501f8778232367dea4731cbce106251c0f814392c9f59bbf65cde1b8",
-      "published_sha256": "355f332eeac39c55e9a200e4aafb957698b4cfaa683e24d8effbe9d2cd365b7e",
+      "published_sha256": "619c570ef693035a10b5f048bd76ffa561ccda456eff9e3db035435341ca9f9b",
       "publication_history_sha256": [
-        "15e61e4c03f47fe663ceb7917cdde003a391a80ddbb0704ca8b14d990f590968"
+        "15e61e4c03f47fe663ceb7917cdde003a391a80ddbb0704ca8b14d990f590968",
+        "355f332eeac39c55e9a200e4aafb957698b4cfaa683e24d8effbe9d2cd365b7e"
       ]
     },
     {
       "path": "web/lab.html",
-      "change": "Interactive research update: linked mathematics, source-backed experiment replay and organized research navigation. Existing analytical definitions, frozen study results and report data retained.",
+      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
       "original_sha256": "9dadfeb9217b50aa378749be13fe205f02bac220fbe1dde123707df05b2a1459",
       "prior_publication_sha256": "9dadfeb9217b50aa378749be13fe205f02bac220fbe1dde123707df05b2a1459",
-      "published_sha256": "10d608a15cc9c8ec19ada866e1eb2c8bc91f362259b8dc09dad60d923e171038",
+      "published_sha256": "ef39253f6771422ede4daeaf3c0db815a2f59ad1ffe196edf284b313edea2ded",
       "publication_history_sha256": [
-        "5c08eacdaeede74682b77cea5826d6d5c7e389e6d974305f1497ec65eb0d84cf"
+        "5c08eacdaeede74682b77cea5826d6d5c7e389e6d974305f1497ec65eb0d84cf",
+        "10d608a15cc9c8ec19ada866e1eb2c8bc91f362259b8dc09dad60d923e171038"
       ]
     },
     {
       "path": "web/methods.html",
-      "change": "Interactive research update: linked mathematics, source-backed experiment replay and organized research navigation. Existing analytical definitions, frozen study results and report data retained.",
+      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
       "original_sha256": "179537f340bf2f42c5ae8324c3c6bb54ba929ec0aa3328837e010b6533c5cb54",
       "prior_publication_sha256": "179537f340bf2f42c5ae8324c3c6bb54ba929ec0aa3328837e010b6533c5cb54",
-      "published_sha256": "4b489cc5175f4509a1e9ecd07e18c556708b23dba3b4e65c1357056602db26d7",
+      "published_sha256": "05b96903f80e6c9d3a975f3c0f84357926a46c87b16d7aae5df64ff97b1a33b3",
       "publication_history_sha256": [
-        "f02bb1169913f11c1a8d3c7b903b128ec2e479e148ad311bc6b87c4ab9b86e4a"
+        "f02bb1169913f11c1a8d3c7b903b128ec2e479e148ad311bc6b87c4ab9b86e4a",
+        "4b489cc5175f4509a1e9ecd07e18c556708b23dba3b4e65c1357056602db26d7"
       ]
     },
     {
       "path": "web/reproduce.html",
-      "change": "English report narrative and layout revision; state and scale analyses integrated, statistical qualifications retained, and public distribution restricted to the English report. Scientific source tables and figure assets retained.",
+      "change": "Version browser assets for the interactive update, retaining existing page and experiment entry URLs.",
       "original_sha256": "aa0d17c5db118cbfcebd25ff0a7a7fd1714c0dba1e4bddb7c4c1e52520c740e9",
       "prior_publication_sha256": "aa0d17c5db118cbfcebd25ff0a7a7fd1714c0dba1e4bddb7c4c1e52520c740e9",
-      "published_sha256": "891fd6ffb0ca823fd52cbf76d2e9e8c1d6b057fe4039b8c69ee641007442dc39"
+      "published_sha256": "d74f1fb56197cb70dcb9d614519de85616784091a7186a988dc7f8b1472ddcf7",
+      "publication_history_sha256": [
+        "891fd6ffb0ca823fd52cbf76d2e9e8c1d6b057fe4039b8c69ee641007442dc39"
+      ]
     }
   ],
   "removed_public_artifacts": [
