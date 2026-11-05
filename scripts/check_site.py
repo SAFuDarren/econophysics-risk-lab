@@ -5,19 +5,22 @@ from urllib.parse import urlsplit,unquote
 import re,json,hashlib
 ROOT=Path(__file__).resolve().parents[1];WEB=ROOT/'web'
 class Page(HTMLParser):
- def __init__(self):super().__init__();self.ids=set();self.links=[];self.runtime=[]
+ def __init__(self):super().__init__();self.ids=set();self.duplicates=[];self.links=[];self.runtime=[]
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
-  if 'id' in a:self.ids.add(a['id'])
+  if 'id' in a:
+   if a['id'] in self.ids:self.duplicates.append(a['id'])
+   self.ids.add(a['id'])
   for k in ['href','src']:
    if k in a:self.links.append(a[k])
   if tag in ['script','img'] and 'src' in a:self.runtime.append(a['src'])
   if tag=='link' and a.get('rel')=='stylesheet':self.runtime.append(a.get('href',''))
 def main():
- pages={p:Page() for p in WEB.glob('*.html')}
+ pages={p:Page() for p in WEB.rglob('*.html')}
  for p,parser in pages.items():parser.feed(p.read_text())
  errors=[];links=0
  for p,parser in pages.items():
+  for duplicate in parser.duplicates:errors.append(f'{p.relative_to(WEB)}: duplicate id {duplicate}')
   for url in parser.links:
    u=urlsplit(url)
    if u.scheme or u.netloc:continue
@@ -35,7 +38,7 @@ def main():
  for p in (ROOT/'notebooks').glob('*.ipynb'):
   n=json.loads(p.read_text());assert n['nbformat']==4
   if not (WEB/'downloads'/p.name).exists():errors.append('Notebook download missing: '+p.name)
- assert len(pages)==5
+ assert len(pages)==6
  report={'status':'pass' if not errors else 'fail','pages':len(pages),'local_links':links,'errors':errors}
  print(json.dumps(report,indent=2))
  if errors:raise SystemExit(1)

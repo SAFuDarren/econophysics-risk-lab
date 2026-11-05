@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "date": "2026-11-05",
+  "scope": "Interactive presentation and browser calculation validation; no new market study",
+  "checks": {
+    "static_pages": 6,
+    "source_pair_comparisons": 32768,
+    "data_and_figure_checks": 21,
+    "existing_browser_math_checks": 82,
+    "interactive_math_checks": 69,
+    "core_theory_checks": 480,
+    "core_unit_tests": 9
+  },
+  "browser": {
+    "status": "pass",
+    "checks": [
+      "Constructed groups update the graph, formula and invariant mean volume",
+      "Finite networks support all system sizes and coupled connectivity changes",
+      "Five independent seeded live windows populate the inversion comparison",
+      "Chain/star equivalence and edge edits change the exact law only with the size profile",
+      "The saved whole-pair shuffle preserves every histogram bin and changes temporal memory",
+      "Saved experiment exports contain source references and all replay pairs",
+      "Covariance selection and eta controls update paired variance contributions",
+      "All six experiments fit 320, 390, 768 and 1440 px in both interface languages, with synchronized navigation and no page overflow",
+      "Homepage research map opens the matching experiment, mathematics, code and source results",
+      "The established strategy laboratory returns directly to its parent risk experiment"
+    ],
+    "viewportLanguageExperimentCases": 48,
+    "errors": []
+  },
+  "source_sha256": {
+    "web/assets/math.js": "44c782dcf45ba9a8671db02ddfde074903c9051a87d9948a648e40a0e171184b",
+    "web/assets/site.js": "eada2e9a6d01505e122cd1f15813eb2757422987ee9e57442fe1d913d3d3faa5",
+    "web/assets/experiments.js": "c1ec7aef08d773a5821db4ac6c4d1ad0e2e938b32d67bf80a9b0a2ff9a6ace74",
+    "web/assets/data/memory-path.json": "74234db7899df7c54594fae31836bf1ab276356dddee67f4d6123906958edf6a",
+    "data/snapshots/state-mechanism-series.csv.gz": "b761e73b8cd17293c892ed2fe2b87db6f37674b4d1f77cce8f4c5dc2406e2224"
+  }
+}

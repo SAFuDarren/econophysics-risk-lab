@@ -3,7 +3,8 @@
     "curve": "results/tables/depth_study_v1/finite_er_curve.csv",
     "phase": "results/tables/simulation_study_v1/phase_summary.csv",
     "forecast": "results/tables/forecast_v1/test_predictions.csv",
-    "risk": "apps/risk_lab_v1/data.json"
+    "risk": "apps/risk_lab_v1/data.json",
+    "memory": "data/snapshots/state-mechanism-series.csv.gz"
   },
   "figures": [
     {
@@ -53,6 +54,17 @@
     {
       "id": "U05",
       "source": "figures/us_equity_v1/U05.svg"
+    },
+    {
+      "id": "V01",
+      "source": "figures/state_forecast_v2/V01.svg"
     }
-  ]
+  ],
+  "memory_replay": {
+    "replication": 0,
+    "path_length": 8192,
+    "payload": "web/assets/data/memory-path.json",
+    "source": "data/snapshots/state-mechanism-series.csv.gz",
+    "config": "configs/state_forecast_v2.json"
+  }
 }

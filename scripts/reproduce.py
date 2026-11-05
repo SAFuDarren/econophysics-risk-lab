@@ -25,9 +25,12 @@ def main():
   else:print('JavaScript checks require Node.js; the Python checks completed.')
  if a.profile=='site':
   run([sys.executable,'scripts/check_site.py'])
+  run([sys.executable,'scripts/check_interactive_data.py'])
   node=shutil.which('node')
   if not node:raise RuntimeError('Node.js is required for the site profile')
-  run([node,'--check','web/assets/site.js']);run([node,'tests/test_web_math.cjs'])
+  for script in ['web/assets/math.js','web/assets/site.js','web/assets/experiments.js']:
+   run([node,'--check',script])
+  run([node,'tests/test_web_math.cjs']);run([node,'tests/test_interactive_math.cjs'])
  if a.profile=='forecast':
   dest=a.destination or out/'reconstructed-study'
   run([sys.executable,'scripts/reproduce_forecast_study.py','--destination',str(dest.resolve())])

@@ -47,6 +47,31 @@ function risk(flat,weights,eta=1){
 }
 function skill(model,baseline){if(!(baseline>0))throw Error('Positive baseline loss required');return 100*(1-model/baseline);}
 function chainLaw(q,lambda=.02,u=1){return[{action:-1,p:q/2,r:-lambda,v:4*u},{action:0,p:1-q,r:0,v:0},{action:1,p:q/2,r:lambda,v:4*u}];}
-root.EconoMath={rng,graph,moments,interp,infer,sample,risk,skill,chainLaw};
+function groupingGraph(n,size){
+ if(!Number.isInteger(n)||n<2||!Number.isInteger(size)||size<1)throw Error('Invalid grouping');
+ const groups=[],edges=[];for(let i=0;i<n;i+=size){const g=Array.from({length:Math.min(size,n-i)},(_,j)=>i+j);groups.push(g);for(let j=1;j<g.length;j++)edges.push([g[j-1],g[j]]);}
+ return{n,groups,edges,s2:groups.reduce((a,g)=>a+g.length**2,0),s3:groups.reduce((a,g)=>a+g.length**3,0),largest:Math.max(...groups.map(g=>g.length))};
+}
+function groupSizes(n,edges){
+ const parent=Array.from({length:n},(_,i)=>i);const find=i=>{while(parent[i]!==i)i=parent[i];return i;};
+ for(const[a,b]of edges){if(a<0||b<0||a>=n||b>=n||a===b)throw Error('Invalid edge');parent[find(a)]=find(b);}
+ const groups=new Map();for(let i=0;i<n;i++){const k=find(i);groups.set(k,(groups.get(k)||0)+1);}return[...groups.values()].sort((a,b)=>b-a);
+}
+function observationLaw(sizes,q,lambda=.02,u=1){
+ if(!(q>0&&q<1)||sizes.length>10||!sizes.length||sizes.some(s=>!Number.isInteger(s)||s<1))throw Error('Invalid exact enumeration');
+ const n=sizes.reduce((a,s)=>a+s,0);let values=new Map([['0,0',1]]);
+ for(const s of sizes){const next=new Map();for(const[key,p]of values){const[r,v]=key.split(',').map(Number);for(const[a,w]of [[-1,q/2],[0,1-q],[1,q/2]]){const k=[r+a*s,v+Math.abs(a)*s].join(',');next.set(k,(next.get(k)||0)+p*w);}}values=next;}
+ return[...values].map(([k,p])=>{const[r,v]=k.split(',').map(Number);return{signed:r,active:v,r:r*lambda/n,v:v*u,p};}).sort((a,b)=>a.r-b.r||a.v-b.v);
+}
+function permutePairs(pairs,seed){const out=pairs.map(p=>p.slice()),rand=rng(seed);for(let i=out.length-1;i>0;i--){const j=Math.floor(rand()*(i+1));[out[i],out[j]]=[out[j],out[i]];}return out;}
+function correlation(a,b){
+ if(a.length!==b.length||a.length<2)throw Error('Matched series required');const n=a.length,ma=a.reduce((s,x)=>s+x,0)/n,mb=b.reduce((s,x)=>s+x,0)/n;let aa=0,bb=0,ab=0;
+ for(let i=0;i<n;i++){const x=a[i]-ma,y=b[i]-mb;aa+=x*x;bb+=y*y;ab+=x*y;}return aa>0&&bb>0?ab/Math.sqrt(aa*bb):null;
+}
+function pathStats(pairs){
+ const n=pairs.length;if(n<2)throw Error('At least two pairs required');const r=pairs.map(p=>p[0]),v=pairs.map(p=>p[1]),a=r.map(Math.abs),mr=r.reduce((s,x)=>s+x,0)/n,mv=v.reduce((s,x)=>s+x,0)/n;
+ return{meanV:mv,varR:r.reduce((s,x)=>s+(x-mr)**2,0)/n,varV:v.reduce((s,x)=>s+(x-mv)**2,0)/n,magnitudeACF:correlation(a.slice(1),a.slice(0,-1)),volumeACF:correlation(v.slice(1),v.slice(0,-1))};
+}
+root.EconoMath={rng,graph,moments,interp,infer,sample,risk,skill,chainLaw,groupingGraph,groupSizes,observationLaw,permutePairs,correlation,pathStats};
 if(typeof module!=='undefined')module.exports=root.EconoMath;
 })(typeof window==='undefined'?globalThis:window);

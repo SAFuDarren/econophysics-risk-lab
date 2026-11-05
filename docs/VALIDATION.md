@@ -26,3 +26,8 @@ laboratory was also opened and its four tabs checked.
 
 The workflow definitions in `.github/workflows/` run the quick checks and website
 checks on subsequent repository changes.
+
+
+## Interactive laboratory
+
+The six-experiment update passed the site profile: six static pages, 160 local links, exact saved-path parity for 32,768 exposed pairs, 21 data/figure checks, 82 existing browser-math checks and 69 additional interactive-math checks. The core profile also passed its 480 theory checks and nine unit tests. Browser verification covered all six experiments at 320, 390, 768 and 1440 pixels in both interface languages, with no page overflow or runtime errors. The [validation record](../results/checks/interactive_lab_v1/validation.json) lists the tested interactions and source digests.

@@ -12,6 +12,7 @@ function applyLanguage(){
  document.documentElement.lang=language==='zh'?'zh-CN':'en';
  document.querySelectorAll('[data-en]').forEach(e=>e.hidden=language!=='en');document.querySelectorAll('[data-zh]').forEach(e=>e.hidden=language!=='zh');
  document.querySelectorAll('option[data-en-label]').forEach(e=>e.textContent=language==='zh'?e.dataset.zhLabel:e.dataset.enLabel);
+ document.querySelectorAll('optgroup[data-en-label]').forEach(e=>e.label=language==='zh'?e.dataset.zhLabel:e.dataset.enLabel);
  $('language').textContent=language==='zh'?'English':'中文';$('language').setAttribute('aria-label',language==='zh'?'Switch to English':'切换到中文');
  document.dispatchEvent(new CustomEvent('languagechange'));
 }
@@ -40,7 +41,7 @@ function hero(){
  document.querySelectorAll('[data-grouping]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.grouping===state.grouping)));
 }
 document.querySelectorAll('[data-grouping]').forEach(b=>b.addEventListener('click',()=>{state.grouping=b.dataset.grouping;hero();}));
-function packedNetwork(g,container,selected,actions){
+function packedNetwork(g,container,selected,actions,onSelect){
  const width=680,height=390,placed=[],positions={},golden=Math.PI*(3-Math.sqrt(5));
  g.groups.forEach((group,k)=>{
   const radius=group.length===1?6:6*Math.sqrt(group.length)+5;let cx=0,cy=0;
@@ -55,10 +56,10 @@ function packedNetwork(g,container,selected,actions){
   for(const node of group){const [x,y]=p(positions[node]);out+=`<circle cx="${x}" cy="${y}" r="9" fill="transparent"/><circle cx="${x}" cy="${y}" r="${k===selected?4:3.3}" fill="${col}"/>`;}
   out+='</g>';
  });container.innerHTML=out+'</svg>';
- container.querySelectorAll('[data-group]').forEach(el=>{const select=()=>{state.selectedGroup=+el.dataset.group;renderPhysics();};el.addEventListener('click',select);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}else if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();state.selectedGroup=(+el.dataset.group+(e.key==='ArrowRight'?1:-1)+g.groups.length)%g.groups.length;renderPhysics();container.querySelector('[data-group=\"'+state.selectedGroup+'\"]').focus();}});});
+ container.querySelectorAll('[data-group]').forEach(el=>{const select=()=>{if(onSelect)onSelect(+el.dataset.group);else{state.selectedGroup=+el.dataset.group;renderPhysics();}};el.addEventListener('click',select);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}else if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const next=(+el.dataset.group+(e.key==='ArrowRight'?1:-1)+g.groups.length)%g.groups.length;if(onSelect)onSelect(next);else{state.selectedGroup=next;renderPhysics();}container.querySelector('[data-group=\"'+next+'\"]').focus();}});});
 }
 function renderPhysics(){
- if(!$('physics-network'))return;const c=+$('physics-c').value,q=+$('physics-q').value,g=M.graph(128,c,state.seed);state.graph=g;
+ if(!$('physics-network'))return;const c=+$('physics-c').value,q=+$('physics-q').value,layout=$('physics-layout')?.value||'er',g=layout==='er'?M.graph(128,c,state.seed):M.groupingGraph(128,layout==='groups'?16:1);state.graph=g;
  if(state.selectedGroup>=g.groups.length)state.selectedGroup=0;
  $('physics-c-value').value=fmt(c);$('physics-q-value').value=fmt(q);
  const v=q*(.02/128)**2*g.s2;
@@ -67,17 +68,10 @@ function renderPhysics(){
  $('physics-group').innerHTML=g.groups.map((a,i)=>`<option value="${i}" ${i===state.selectedGroup?'selected':''}>${t('Group','群体')} ${i+1}: ${a.length} ${t(a.length===1?'trader':'traders','名交易者')}</option>`).join('');
  const size=g.groups[state.selectedGroup].length;
  $('group-contribution').textContent=t(`Selected group: ${size} ${size===1?'trader contributes':'traders contribute'} ${size}² = ${size*size} to S₂ (${fmt(100*size*size/g.s2,1)}%).`,`所选群体：${size}名交易者，对S₂贡献${size}²=${size*size}，占${fmt(100*size*size/g.s2,1)}%。`);
- state.physicsResult={c,q,n:128,seed:state.seed,s2:g.s2,largest:g.largest,conditionalReturnVariance:v,meanVolume:q*128,lambda:.02,u:1,selectedGroup:{index:state.selectedGroup,size,squaredSize:size*size,share:size*size/g.s2},period:state.actions?{return:.02/128*state.actions.reduce((s,a,i)=>s+a*g.groups[i].length,0),volume:state.actions.reduce((s,a,i)=>s+Math.abs(a)*g.groups[i].length,0),groupActions:state.actions}:null};
+ state.physicsResult={grouping:layout,c:layout==='er'?c:null,q,n:128,seed:state.seed,s2:g.s2,largest:g.largest,conditionalReturnVariance:v,meanVolume:q*128,lambda:.02,u:1,selectedGroup:{index:state.selectedGroup,size,squaredSize:size*size,share:size*size/g.s2},period:state.actions?{return:.02/128*state.actions.reduce((s,a,i)=>s+a*g.groups[i].length,0),volume:state.actions.reduce((s,a,i)=>s+Math.abs(a)*g.groups[i].length,0),groupActions:state.actions}:null};
+ if(window.LabModules)window.LabModules.physics();
 }
-function renderIdentity(){
- if(!$('identity-network'))return;const points=[[55,115],[145,40],[235,115],[325,190]],edges=state.topology==='chain'?[[0,1],[1,2],[2,3]]:[[0,1],[0,2],[0,3]];
- let out=svgStart(380,230,t('A connected four-trader '+state.topology,'四名交易者的连通'+(state.topology==='chain'?'链':'星')));
- for(const [a,b]of edges)out+=line(...points[a],...points[b],colors.teal,2);
- points.forEach(([x,y],i)=>{out+=`<circle cx="${x}" cy="${y}" r="12" fill="${colors.navy}"/><text x="${x}" y="${y+5}" fill="white" text-anchor="middle" font-size="14">${i+1}</text>`;});
- $('identity-network').innerHTML=out+'</svg>';
- $('identity-law').innerHTML='<div class="law-row header"><span>'+t('Return r','收益 r')+'</span><span>'+t('Volume V','成交量 V')+'</span><span>'+t('Probability','概率')+'</span></div>'+M.chainLaw(.2).map(a=>`<div class="law-row"><span>${fmt(a.r)}</span><span>${a.v}</span><span class="probability">${fmt(a.p,1)}</span></div>`).join('');
- document.querySelectorAll('[data-topology]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.topology===state.topology)));
-}
+function renderIdentity(){if(window.LabModules)window.LabModules.identity();}
 function chartAxes(w,h,xlabel,ylabel,xTicks,yTicks,sx,sy){
  const L=65,R=w-20,T=30,B=h-48;let out='';
  for(const y of yTicks){out+=line(L,sy(y),R,sy(y),colors.line,.7);out+=text(L-10,sy(y)+4,fmt(y,Number.isInteger(y)?0:1),'','end');}
@@ -100,6 +94,7 @@ function renderInference(){
  out+=line(sx(result.c),sy(0),sx(result.c),sy(result.s2),colors.teal,1,'stroke-dasharray="4 4"');out+=`<circle cx="${sx(result.c)}" cy="${sy(result.s2)}" r="5" fill="${colors.teal}"/>`;
  e.innerHTML=out+'</svg>';
  $('inference-detail').textContent=result.flag!=='interior'?t('The sample moment is outside the physical curve domain; the displayed estimate is at its boundary.','样本矩超出物理曲线范围；显示的是边界估计。'):mode==='population'?t('Population moments recover the selected parameters through the frozen interpolation curve.','总体矩通过既有插值曲线恢复所选参数。'):t(`A ${mode}-period model window gives connectivity error ${fmt(Math.abs(result.c-c),3)}. Draw another window to inspect sampling variation.`,`${mode}期模型窗口的连接参数误差为${fmt(Math.abs(result.c-c),3)}；可重采窗口观察抽样变化。`);
+ if(window.LabModules)window.LabModules.inference();
 }
 function initRisk(){
  if(!$('risk-date'))return;
@@ -115,7 +110,7 @@ function renderRisk(){
  document.querySelectorAll('.sector-name').forEach(e=>e.textContent=language==='zh'?D.asset_labels[+e.dataset.index]:state.sectorNames[+e.dataset.index]);
  const date=$('risk-date').value,lookback=$('risk-lookback').value,eta=+$('risk-eta').value,weights=D.assets.map((_,i)=>+$('weight-'+i).value);
  $('risk-eta-value').value=fmt(100*eta,0)+'%';let result;
- try{result=M.risk(D.risk.find(x=>x.date===date).cov[lookback],weights,eta);}catch(e){$('risk-stats').textContent=t('Use non-negative weights, with at least one positive value.','权重应为非负数，并至少保留一个正值。');$('risk-chart').innerHTML='';$('risk-detail').textContent='';state.riskResult=null;return;}
+ try{result=M.risk(D.risk.find(x=>x.date===date).cov[lookback],weights,eta);}catch(e){$('risk-stats').textContent=t('Use non-negative weights, with at least one positive value.','权重应为非负数，并至少保留一个正值。');$('risk-chart').innerHTML='';$('risk-detail').textContent='';state.riskResult=null;if(window.LabModules)window.LabModules.risk();return;}
  state.riskResult={date,lookback:+lookback,eta,weights,...result};
  $('risk-stats').innerHTML=stat(t('Full covariance','完整协方差'),fmt(result.fullVol)+'%')+stat(t('Diagonal only','仅个体方差'),fmt(result.diagonalVol)+'%')+stat(t('Retained co-movement','保留联动'),fmt(result.counterVol)+'%');
  const e=$('risk-chart'),w=Math.max(300,e.clientWidth),h=300,ymax=Math.ceil(Math.max(result.fullVol,result.diagonalVol,result.counterVol)*1.12/5)*5||5,sy=y=>h-48-(h-78)*y/ymax;
@@ -126,12 +121,13 @@ function renderRisk(){
  data.forEach((d,i)=>{out+=`<rect x="${sx(i)-bw/2}" y="${sy(d[1])}" width="${bw}" height="${sy(0)-sy(d[1])}" fill="${d[2]}"/>`+text(sx(i),sy(d[1])-10,fmt(d[1],2),'data-label');});
  e.innerHTML=out+'</svg>';
  $('risk-detail').textContent=t(`Co-movement contributes ${fmt(result.collectiveShare*100,1)}% of the retained covariance variance estimate.`, `当前保留联动的估计中，联动项占组合方差的${fmt(result.collectiveShare*100,1)}%。`);
+ if(window.LabModules)window.LabModules.risk();
 }
 function showLab(name){
- if(!['mechanism','inference','risk'].includes(name))name='mechanism';state.lab=name;
+ if(!['mechanism','network','inference','identity','memory','risk'].includes(name))name='mechanism';state.lab=name;
  document.querySelectorAll('[data-lab]').forEach(b=>{const selected=b.dataset.lab===name;b.setAttribute('aria-selected',selected);b.tabIndex=selected?0:-1;});
- ['mechanism','inference','risk'].forEach(k=>$(k).hidden=k!==name);
- if(name==='mechanism')renderPhysics();if(name==='inference'){renderInference();renderIdentity();}if(name==='risk')renderRisk();
+ ['mechanism','network','inference','identity','memory','risk'].forEach(k=>$(k).hidden=k!==name);
+ if(name==='mechanism')renderPhysics();if(name==='inference')renderInference();if(name==='identity')renderIdentity();if(name==='risk')renderRisk();if(window.LabModules)window.LabModules.render(name);
 }
 if($('physics-network')){
  $('physics-group').addEventListener('change',()=>{state.selectedGroup=+$('physics-group').value;renderPhysics();});
@@ -141,11 +137,9 @@ if($('physics-network')){
  ['infer-c','infer-q','infer-mode'].forEach(id=>$(id).addEventListener('input',renderInference));
  $('infer-resample').addEventListener('click',()=>{if($('infer-mode').value==='population')$('infer-mode').value='256';state.inferSeed++;renderInference();});
  document.querySelectorAll('[data-topology]').forEach(b=>b.addEventListener('click',()=>{state.topology=b.dataset.topology;renderIdentity();}));
- document.querySelectorAll('[data-lab]').forEach((b,i)=>{b.addEventListener('click',()=>{location.hash=b.dataset.lab;showLab(b.dataset.lab);});b.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const all=[...document.querySelectorAll('[data-lab]')],j=(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length;all[j].click();all[j].focus();}});});
+ document.querySelectorAll('[data-lab]').forEach((b,i)=>{b.addEventListener('click',()=>{location.hash=b.dataset.lab;showLab(b.dataset.lab);});b.addEventListener('keydown',e=>{if(['ArrowRight','ArrowLeft','ArrowDown','ArrowUp','Home','End'].includes(e.key)){e.preventDefault();const all=[...document.querySelectorAll('[data-lab]')],j=e.key==='Home'?0:e.key==='End'?all.length-1:(i+(['ArrowRight','ArrowDown'].includes(e.key)?1:-1)+all.length)%all.length;all[j].click();all[j].focus();}});});
  window.addEventListener('hashchange',()=>showLab(location.hash.slice(1)));initRisk();showLab(location.hash.slice(1)||'mechanism');
- $('export-experiment').addEventListener('click',()=>{const result=state.lab==='mechanism'?state.physicsResult:state.lab==='inference'?{...state.inferenceResult,identityExample:{topology:state.topology,q:.2,n:4,lambda:.02,u:1,law:M.chainLaw(.2)}}:state.riskResult;
-  const body=JSON.stringify({experiment:state.lab,recordedAt:new Date().toISOString(),result,sources:state.lab==='inference'?D.sources.curve:state.lab==='risk'?D.sources.risk:'src/econophysics/model.py',scope:state.lab==='risk'?'Historical covariance estimate':'Model calculation or model simulation'},null,2),url=URL.createObjectURL(new Blob([body],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='econophysics-'+state.lab+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
- });
+ $('export-experiment').addEventListener('click',()=>{if(window.LabModules)window.LabModules.exportExperiment();});
 }
 function forecastSelection(){
  if(!$('forecast-chart'))return;const d=D.forecast,i=state.forecastIndex,e=$('forecast-chart'),svg=e.querySelector('svg');
@@ -172,5 +166,5 @@ if($('forecast-date'))$('forecast-date').addEventListener('input',()=>{state.for
 const redraw=()=>{hero();if($('physics-network'))showLab(state.lab);renderForecast();};
 document.addEventListener('languagechange',redraw);applyLanguage();
 if(window.ResizeObserver){let width=0;new ResizeObserver(entries=>{const now=entries[0].contentRect.width;if(Math.abs(now-width)>2){width=now;redraw();}}).observe(document.body);}
-window.EconoApp={state,redraw,getLanguage:()=>language};
+window.EconoApp={state,redraw,showLab,renderPhysics,renderInference,renderRisk,drawNetwork:packedNetwork,getLanguage:()=>language};
 })();
