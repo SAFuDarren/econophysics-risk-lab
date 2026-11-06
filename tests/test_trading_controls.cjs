@@ -18,7 +18,7 @@ function check(value,label){assert.ok(value,label);checks.push(label);}
   await context.addInitScript(()=>localStorage.setItem('econo-language','zh'));
   const page=await context.newPage();await page.clock.install({time:new Date('2026-11-06T00:00:00Z')});await page.clock.pauseAt(new Date('2026-11-06T00:00:01Z'));
   page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});
-  await page.goto(new URL('trading.html',base).href);await page.waitForFunction(()=>window.TradingLab?.account);
+  await page.goto(new URL('trading.html?source=model',base).href);await page.waitForFunction(()=>window.TradingLab?.account);
   const snapshot=()=>page.evaluate(()=>TradingLab.snapshot());
   check(await page.locator('#trade-speed').inputValue()==='0.5','Default speed is 0.5×');
   check((await page.locator('#trade-speed-note').innerText()).includes('4'),'Default delay is visibly four seconds');

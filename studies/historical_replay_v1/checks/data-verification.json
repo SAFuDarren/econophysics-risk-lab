@@ -1,0 +1,92 @@
+{
+  "status": "pass",
+  "dates": 26,
+  "one_minute_bars": 37440,
+  "official_source_archives": 52,
+  "recorded_official_checksums": true,
+  "input_sha256": "8e1374dc0f45ed067f7c06fe6a57eb1774d96c5e0e10d7ca7b53b25babfb33b4",
+  "checks": [
+    {
+      "id": "history-01",
+      "bars": 161,
+      "alerts": 6,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 5.490151973263124,
+      "maximum_adverse_before_peak_pct": 1.0291220064730267,
+      "exact_original_raw_ohlc": true
+    },
+    {
+      "id": "history-02",
+      "bars": 161,
+      "alerts": 4,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 2.7109691104535316,
+      "maximum_adverse_before_peak_pct": 0.9084466906214228,
+      "exact_original_raw_ohlc": true
+    },
+    {
+      "id": "history-03",
+      "bars": 161,
+      "alerts": 5,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 4.831724361862122,
+      "maximum_adverse_before_peak_pct": 0.5928803854996278,
+      "exact_original_raw_ohlc": true
+    },
+    {
+      "id": "history-04",
+      "bars": 161,
+      "alerts": 6,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 2.293948281589653,
+      "maximum_adverse_before_peak_pct": 0.4157007604480345,
+      "exact_original_raw_ohlc": true
+    },
+    {
+      "id": "history-05",
+      "bars": 161,
+      "alerts": 6,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 2.1612482334016025,
+      "maximum_adverse_before_peak_pct": 0.32826102871215124,
+      "exact_original_raw_ohlc": true
+    },
+    {
+      "id": "history-06",
+      "bars": 161,
+      "alerts": 2,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 2.1224362958359166,
+      "maximum_adverse_before_peak_pct": 0.053726804581377685,
+      "exact_original_raw_ohlc": true
+    },
+    {
+      "id": "history-07",
+      "bars": 161,
+      "alerts": 5,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 6.523300630950124,
+      "maximum_adverse_before_peak_pct": 0.25568908207618257,
+      "exact_original_raw_ohlc": true
+    },
+    {
+      "id": "history-08",
+      "bars": 161,
+      "alerts": 5,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 2.3142993153756897,
+      "maximum_adverse_before_peak_pct": 0.0,
+      "exact_original_raw_ohlc": true
+    },
+    {
+      "id": "history-09",
+      "bars": 161,
+      "alerts": 6,
+      "signal_precedes_peak": true,
+      "future_close_move_pct": 2.088617331455167,
+      "maximum_adverse_before_peak_pct": 0.6327877661711057,
+      "exact_original_raw_ohlc": true
+    }
+  ],
+  "scope": "Every selected candle and alert checked against full minute pool; thresholds independently computed from past-only data. Optional raw Kline check compares every OHLC value exactly. Retrospective curation is not predictive validation."
+}

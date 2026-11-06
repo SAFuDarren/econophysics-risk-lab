@@ -65,7 +65,7 @@
   }
   function close(order){return trade({...order,side:'close',fraction:1});}
   function review(context={}){
-   const s=snapshot(),bars=(context.bars||[]).filter(b=>Number.isFinite(b.close)&&b.close>0&&b.tick<=lastTick);const p0=bars.length?(bars[0].open||bars[0].close):100,p1=s.lastPrice;
+   const s=snapshot(),bars=(context.bars||[]).filter(b=>Number.isFinite(b.close)&&b.close>0&&b.tick<=lastTick);const p0=Number.isFinite(context.initialPrice)&&context.initialPrice>0?context.initialPrice:bars.length?(bars[0].open||bars[0].close):100,p1=s.lastPrice;
    const passiveUnits=initialCash/(p0*(1+slip)*(1+fee)),passiveValue=passiveUnits*p1*(context.done===true?(1-slip)*(1-fee):1),passiveReturnPct=100*(passiveValue/initialCash-1);
    const score=Math.max(0,Math.min(100,Math.round(50+40*Math.tanh(s.returnPct/5)-20*Math.min(s.maxDrawdownPct/10,1))));
    const closed=trades.filter(t=>t.isClosing),winRate=closed.length?100*closed.filter(t=>t.roundTripPnl>0).length/closed.length:0;

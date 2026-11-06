@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "source_archives": 52,
+  "dates": 26,
+  "all_reaggregated_quote_volume_and_raw_fill_counts_match_official_klines": true,
+  "derived_pool_sha256": "8e1374dc0f45ed067f7c06fe6a57eb1774d96c5e0e10d7ca7b53b25babfb33b4",
+  "fresh_raw_reaggregation_byte_identical": true,
+  "scope": "All aggregate archives read again using portable acquisition script and official Kline checks; sources are cached official archives with verified recorded exchange SHA256."
+}

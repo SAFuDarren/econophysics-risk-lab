@@ -26,15 +26,16 @@ def main():
  if a.profile=='site':
   run([sys.executable,'scripts/check_site.py'])
   run([sys.executable,'scripts/check_collective_study.py'])
+  run([sys.executable,'scripts/check_historical_replays.py'])
   run([sys.executable,'scripts/check_interactive_data.py'])
   run([sys.executable,'scripts/check_research_depth.py'])
   node=shutil.which('node')
   if not node:raise RuntimeError('Node.js is required for the site profile')
-  for script in ['web/assets/math.js','web/assets/site.js','web/assets/experiments.js','web/assets/research-math.js','web/assets/research-workbench.js','web/assets/trading-engine.js','web/assets/trading-account.js','web/assets/trading-ui.js']:
+  for script in ['web/assets/math.js','web/assets/site.js','web/assets/experiments.js','web/assets/research-math.js','web/assets/research-workbench.js','web/assets/trading-engine.js','web/assets/trading-account.js','web/assets/trading-history.js','web/assets/trading-ui.js']:
    run([node,'--check',script])
   run([node,'tests/test_web_math.cjs']);run([node,'tests/test_interactive_math.cjs'])
   run([node,'tests/test_research_depth.cjs'])
-  run([node,'tests/test_trading_engine.cjs']);run([node,'tests/test_trading_account.cjs'])
+  run([node,'tests/test_trading_engine.cjs']);run([node,'tests/test_trading_account.cjs']);run([node,'tests/test_trading_history.cjs'])
  if a.profile=='forecast':
   dest=a.destination or out/'reconstructed-study'
   run([sys.executable,'scripts/reproduce_forecast_study.py','--destination',str(dest.resolve())])

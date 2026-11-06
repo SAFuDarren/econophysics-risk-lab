@@ -8,7 +8,7 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.PLAYWRIGHT_MODULE_PATH||'playwright');
 const base=process.env.TRADING_BASE_URL||'http://127.0.0.1:8765/';
-const url=new URL('trading.html',base.endsWith('/')?base:base+'/').href;
+const url=new URL('trading.html?source=model',base.endsWith('/')?base:base+'/').href;
 const out=path.resolve(process.env.TRADING_QA_OUTPUT||process.argv[2]||path.join(__dirname,'../.runs/trading-browser'));
 fs.mkdirSync(out,{recursive:true});
 let checks=0;

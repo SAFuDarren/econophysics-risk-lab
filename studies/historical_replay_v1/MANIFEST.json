@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "1cc5ae6cbc8fe8345e9f8b13cf78caf5b332248520f82762e7905ec1ec962bb7",
+      "bytes": 5640
+    },
+    {
+      "path": "checks/browser.json",
+      "sha256": "e977365beeecbfbbdf588d0dbf8ed25afb14064f6141a3786087687e19c53132",
+      "bytes": 95
+    },
+    {
+      "path": "checks/data-verification.json",
+      "sha256": "baeeb4999322f3e73cf7d5e40319b7ed307cf5e8f5486db25ade99ad626c376e",
+      "bytes": 2841
+    },
+    {
+      "path": "checks/raw-reproduction.json",
+      "sha256": "1ee8f2f9b2b7c754444dcf6804840f97a7dbeebb78787782b7abdf4983ff1181",
+      "bytes": 474
+    },
+    {
+      "path": "code/acquire.py",
+      "sha256": "35e0dbaa9b534f156464839afaf099cf0a28ec86f5a24722329712aae0384925",
+      "bytes": 4002
+    },
+    {
+      "path": "code/curate.py",
+      "sha256": "3db44b42c8b45fbd2a8bb05da15d6a08702aa4e10e33f13d453ddd94535b81cd",
+      "bytes": 5316
+    },
+    {
+      "path": "inputs/Binance_Vision_Terms_Snapshot.md",
+      "sha256": "99c4921dbe023cd68c1a447775707d621453cc78aec6ac0bfe2e6c06a5114ee0",
+      "bytes": 9807
+    },
+    {
+      "path": "inputs/minute-observables.csv.gz",
+      "sha256": "8e1374dc0f45ed067f7c06fe6a57eb1774d96c5e0e10d7ca7b53b25babfb33b4",
+      "bytes": 2272971
+    },
+    {
+      "path": "inputs/source-manifest.json",
+      "sha256": "d232004b11c9f812d9737a50b3aba1740763cc9279fa90459e1a73f3fc6fac39",
+      "bytes": 17530
+    },
+    {
+      "path": "reproduce.py",
+      "sha256": "4769278422d17ce03bb96cdfbc0bfb576b55fabb58e29c3710764d8c78230365",
+      "bytes": 1064
+    },
+    {
+      "path": "tables/all-alerts.csv",
+      "sha256": "d8d330a9a5067e02ec8db15afc2ec620a5ab9a8bd6ba9e5a28b2192cad1a856c",
+      "bytes": 60005
+    },
+    {
+      "path": "tables/eligible-candidates.csv",
+      "sha256": "f8b0bcca4573c69e8028545d5cf6973a2ffddf901be752642289520603997348",
+      "bytes": 3431
+    },
+    {
+      "path": "tables/selected-cases.csv",
+      "sha256": "b0a9fbd35921f8d42ea05936000563cffadd05b07dfc1205ca9aa9d62bf5f529",
+      "bytes": 1784
+    },
+    {
+      "path": "verify.py",
+      "sha256": "947a539d2faed4f6e4d730bb80c5618a41f016dcea9a874de98ed4601e7ee3f2",
+      "bytes": 3146
+    }
+  ],
+  "web_payload_sha256": "1030e090d2296c0f55670dfb0eb429d1e656caa02d89c47f0fe33faf0dd636c5",
+  "scope": "Official source provenance, complete derived pool and retrospective teaching-case selection; no strategy-performance inference."
+}

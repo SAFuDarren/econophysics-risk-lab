@@ -1,0 +1,446 @@
+{
+  "status": "pass",
+  "sources": [
+    {
+      "date": "2025-01-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-01-05.zip",
+      "sha256": "d00ebd8dcc79fd81a574de27e41a032ffc2d9336c1a668798af89415b1fb5b81",
+      "official_checksum_match": true,
+      "bytes": 8794593,
+      "units": 581580
+    },
+    {
+      "date": "2025-01-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-01-05.zip",
+      "sha256": "7773e9bbdef11a575de91fa8b36916c07abf7def85d2ddbdaec096fa09a7d440",
+      "official_checksum_match": true,
+      "bytes": 67255
+    },
+    {
+      "date": "2025-01-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-01-20.zip",
+      "sha256": "b2c1d5ee95b23cc024ccc7b1275ad048c9975646631e63ae5ef77d04310e4529",
+      "official_checksum_match": true,
+      "bytes": 70468274,
+      "units": 4717816
+    },
+    {
+      "date": "2025-01-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-01-20.zip",
+      "sha256": "bfeaf68fd5c33378eb2d7e03d3dc33ed3a8c35690eb588a26cf86394c39503c8",
+      "official_checksum_match": true,
+      "bytes": 77446
+    },
+    {
+      "date": "2025-02-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-02-05.zip",
+      "sha256": "3ed0bd77cad6261af9c5d067121639337a96045f7795e4e29526f268d02f3a29",
+      "official_checksum_match": true,
+      "bytes": 23681125,
+      "units": 1627532
+    },
+    {
+      "date": "2025-02-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-02-05.zip",
+      "sha256": "8801c838d6bc61c80a7c691ac3cab521679824f3c8424449e96a5a10b1ee77b1",
+      "official_checksum_match": true,
+      "bytes": 73095
+    },
+    {
+      "date": "2025-02-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-02-20.zip",
+      "sha256": "c9d788eb0d9535152daa2df6a9ee7c99b494d3b9ed8b3f6823de8f0d9ed98710",
+      "official_checksum_match": true,
+      "bytes": 14768781,
+      "units": 999038
+    },
+    {
+      "date": "2025-02-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-02-20.zip",
+      "sha256": "472f2089284826537b2e6fbd93a28c63e0971e38c030010d0fef0c7e7da05e85",
+      "official_checksum_match": true,
+      "bytes": 70342
+    },
+    {
+      "date": "2025-03-02",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-03-02.zip",
+      "sha256": "395f645a0187fd14b2cdc690c4c2a72393b831d591211a8626804a11010e6582",
+      "official_checksum_match": true,
+      "bytes": 46236308
+    },
+    {
+      "date": "2025-03-02",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-03-02.zip",
+      "sha256": "20c98993fe352900f4256d67fcb08e978a9f3f4c362de2e9c26723bf24948fef",
+      "official_checksum_match": true,
+      "bytes": 73344
+    },
+    {
+      "date": "2025-03-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-03-05.zip",
+      "sha256": "f63428f6c84a1b021d4461e65d1658b92ae74f3f95a3bf162eaf5853597e87ae",
+      "official_checksum_match": true,
+      "bytes": 45113462,
+      "units": 3157399
+    },
+    {
+      "date": "2025-03-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-03-05.zip",
+      "sha256": "333d617000060fe03af8119f1a1b434c914d5be4519413909c8e12d43a33d18b",
+      "official_checksum_match": true,
+      "bytes": 74360
+    },
+    {
+      "date": "2025-03-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-03-20.zip",
+      "sha256": "5b69f87d724f5b44745613b56d4ec26f35f8f08695bdbbd34a70334f13d57dc0",
+      "official_checksum_match": true,
+      "bytes": 19462764,
+      "units": 1321577
+    },
+    {
+      "date": "2025-03-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-03-20.zip",
+      "sha256": "67f89287e3886658b9db415982dc6afb2dd69a0dcae3c77c9cc974367b97c786",
+      "official_checksum_match": true,
+      "bytes": 72007
+    },
+    {
+      "date": "2025-04-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-04-05.zip",
+      "sha256": "56edbeda06571b3d94103419c56d24e2d15cbf7a478bdc41edb4a7ca8f20b2f4",
+      "official_checksum_match": true,
+      "bytes": 10777952,
+      "units": 742640
+    },
+    {
+      "date": "2025-04-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-04-05.zip",
+      "sha256": "f0d728a78ae347e7139078b51de42785cf85c7976eff869cb97a64004aee5902",
+      "official_checksum_match": true,
+      "bytes": 68341
+    },
+    {
+      "date": "2025-04-09",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-04-09.zip",
+      "sha256": "c78f758066ef2ae5ff5f0372cb4eac4125f1e8a16768922a3466320f3a68b6c8",
+      "official_checksum_match": true,
+      "bytes": 45717917
+    },
+    {
+      "date": "2025-04-09",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-04-09.zip",
+      "sha256": "798d1bd84f2f93664a62c6e8d6008b950a20159ac3adc859905faf1e539ec8a7",
+      "official_checksum_match": true,
+      "bytes": 75475
+    },
+    {
+      "date": "2025-04-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-04-20.zip",
+      "sha256": "edd37fa0527dfa6b506807930be5b0ad4051e8684736773daa5d9065f82162e2",
+      "official_checksum_match": true,
+      "bytes": 6577003,
+      "units": 430044
+    },
+    {
+      "date": "2025-04-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-04-20.zip",
+      "sha256": "189ff76bee0edff844ab0ad3bcf2941e0d5adc667614bc1e3851b278d94146b3",
+      "official_checksum_match": true,
+      "bytes": 66830
+    },
+    {
+      "date": "2025-05-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-05-05.zip",
+      "sha256": "46972b2c1b94d1756a4d81353b70da08a1060f6c03aae9ca5f8b744fe6baf6ce",
+      "official_checksum_match": true,
+      "bytes": 12195909,
+      "units": 817730
+    },
+    {
+      "date": "2025-05-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-05-05.zip",
+      "sha256": "c227c6679f6e3c2eca4b060b13575a87486a75d67df1eec51fbc8bfd341237de",
+      "official_checksum_match": true,
+      "bytes": 70199
+    },
+    {
+      "date": "2025-05-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-05-20.zip",
+      "sha256": "05eb0aecace256175039b5ab352ff2499d085a2b679a136614caafed68aa4b34",
+      "official_checksum_match": true,
+      "bytes": 16936158,
+      "units": 1142608
+    },
+    {
+      "date": "2025-05-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-05-20.zip",
+      "sha256": "79f7764f81631f5056c6d6bfe74784604eee2fdc74a6c0945789c3fb4547a504",
+      "official_checksum_match": true,
+      "bytes": 72401
+    },
+    {
+      "date": "2025-06-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-06-05.zip",
+      "sha256": "2ef4051bf2d2491dd880364cb2e2ff01041a31cf357ec3779aeffde109d9e57f",
+      "official_checksum_match": true,
+      "bytes": 17437012,
+      "units": 1176963
+    },
+    {
+      "date": "2025-06-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-06-05.zip",
+      "sha256": "9fbcc390867a7529734ac4d0eb49e80c83271389ec27aab42f8fb2507556acd7",
+      "official_checksum_match": true,
+      "bytes": 71123
+    },
+    {
+      "date": "2025-06-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-06-20.zip",
+      "sha256": "9b8054283c8a562618d5a67534080d6d4ada64678a0ff64241658f2c6347c66f",
+      "official_checksum_match": true,
+      "bytes": 14885355,
+      "units": 1031007
+    },
+    {
+      "date": "2025-06-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-06-20.zip",
+      "sha256": "4202aa8798d8a40a5be5f571a7842313f106157292df461b638b2ae835309dc3",
+      "official_checksum_match": true,
+      "bytes": 70370
+    },
+    {
+      "date": "2025-07-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-07-05.zip",
+      "sha256": "8f9592c14a9483f3ac65fa60323559ccf45fd502f472ee18045edec2423ae3a5",
+      "official_checksum_match": true,
+      "bytes": 4746294,
+      "units": 304786
+    },
+    {
+      "date": "2025-07-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-07-05.zip",
+      "sha256": "79af27176d17dd83e6c3c8f48f71290e1ea893692832b4abcce0f22234203905",
+      "official_checksum_match": true,
+      "bytes": 63044
+    },
+    {
+      "date": "2025-07-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-07-20.zip",
+      "sha256": "4cf52fab310a24ad3ab42c305e6237d64cb40978a7ce7f882575b7dca1622ed9",
+      "official_checksum_match": true,
+      "bytes": 10393252,
+      "units": 680992
+    },
+    {
+      "date": "2025-07-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-07-20.zip",
+      "sha256": "9dec191ff8c7b43624bdf7d963a2faa3d1a7d1aa23f7bb44016c43a5c7e04573",
+      "official_checksum_match": true,
+      "bytes": 68695
+    },
+    {
+      "date": "2025-08-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-08-05.zip",
+      "sha256": "9d9f4166f01bf9626c6030cf0fd81c6c6e8e906bd394f4be5fab5e8185b3d864",
+      "official_checksum_match": true,
+      "bytes": 10671899,
+      "units": 703850
+    },
+    {
+      "date": "2025-08-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-08-05.zip",
+      "sha256": "c2360f16d766bf3e8295d441a0c12b536fadff93ad528f8ca645aa62eebff961",
+      "official_checksum_match": true,
+      "bytes": 69632
+    },
+    {
+      "date": "2025-08-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-08-20.zip",
+      "sha256": "2d15a6a2d1dd5784067615c61113f57fe0c9b3d44e4b1a492fb4309759f892df",
+      "official_checksum_match": true,
+      "bytes": 12493407,
+      "units": 825991
+    },
+    {
+      "date": "2025-08-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-08-20.zip",
+      "sha256": "7a4fb7583dd0f53ddc5707ffd858e198c10eb05751a587813f4c6ed6a3be7261",
+      "official_checksum_match": true,
+      "bytes": 70468
+    },
+    {
+      "date": "2025-09-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-09-05.zip",
+      "sha256": "1624bf78c4cdd961cd3e87f99a592556f888205a2ca0cf1a0408f8b43b82c72b",
+      "official_checksum_match": true,
+      "bytes": 14585691,
+      "units": 990925
+    },
+    {
+      "date": "2025-09-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-09-05.zip",
+      "sha256": "18f4773964edb633174d86f373c3f8851f11c6ba5c6f6b54e68d9887795e56f1",
+      "official_checksum_match": true,
+      "bytes": 70593
+    },
+    {
+      "date": "2025-09-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-09-20.zip",
+      "sha256": "38af45f71c01570f85f6b599fbb56dc3fc0870b8df8a18c7367a3fbfed9fcbbb",
+      "official_checksum_match": true,
+      "bytes": 5133058,
+      "units": 328321
+    },
+    {
+      "date": "2025-09-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-09-20.zip",
+      "sha256": "cd923c7507e71335c865b10338e4fb12574b98c878fe466fa003d6acc0400328",
+      "official_checksum_match": true,
+      "bytes": 62634
+    },
+    {
+      "date": "2025-10-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-10-05.zip",
+      "sha256": "3f6037923e6b4d18e2765597f2475e46bdb0ec5fa189ebb8f24e05bc2b3fa8df",
+      "official_checksum_match": true,
+      "bytes": 15970630,
+      "units": 1082356
+    },
+    {
+      "date": "2025-10-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-10-05.zip",
+      "sha256": "51783ab9131b45d4daa398e3ad3b67761d44e037c7d9f705d98fbe634c23fb76",
+      "official_checksum_match": true,
+      "bytes": 70823
+    },
+    {
+      "date": "2025-10-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-10-20.zip",
+      "sha256": "d9f60509bb56a506036f170e0e64e320725b1c8bce3d9e6557d1d39b1b2ed749",
+      "official_checksum_match": true,
+      "bytes": 16286928,
+      "units": 1120949
+    },
+    {
+      "date": "2025-10-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-10-20.zip",
+      "sha256": "63a8a657c5352cd7536977da42c4de419b6065ab887f6889e67eced67232311e",
+      "official_checksum_match": true,
+      "bytes": 72950
+    },
+    {
+      "date": "2025-11-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-11-05.zip",
+      "sha256": "799443598b32edcbca8630bdf65fdf51b3c8e6c5fc6d8e6066e8dc7d30e32bb0",
+      "official_checksum_match": true,
+      "bytes": 24623400,
+      "units": 1661413
+    },
+    {
+      "date": "2025-11-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-11-05.zip",
+      "sha256": "cc3d8bc09513c7624410603010079aa545ceca0791447df0ef8b02417d29d9ec",
+      "official_checksum_match": true,
+      "bytes": 74585
+    },
+    {
+      "date": "2025-11-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-11-20.zip",
+      "sha256": "30e57d7ba9242315bf13faa35423b75cf2b950648b3f99a287adbb0d44ba091a",
+      "official_checksum_match": true,
+      "bytes": 29981758,
+      "units": 2019326
+    },
+    {
+      "date": "2025-11-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-11-20.zip",
+      "sha256": "27c63f51e4972fa3b88db8e9ee4e6ed292ad05f4348b8212c246bda843ebbdb7",
+      "official_checksum_match": true,
+      "bytes": 74360
+    },
+    {
+      "date": "2025-12-05",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-12-05.zip",
+      "sha256": "f4fa808c021948434ba0336e1f3ecd8b1b30fa4b5dd36b80c8b112f3492279fa",
+      "official_checksum_match": true,
+      "bytes": 19544263,
+      "units": 1352705
+    },
+    {
+      "date": "2025-12-05",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-12-05.zip",
+      "sha256": "7c2b58fa030ff46229e4addf34710691b43d6242408da641cbdbd075a90cc4db",
+      "official_checksum_match": true,
+      "bytes": 71960
+    },
+    {
+      "date": "2025-12-20",
+      "kind": "aggTrades",
+      "url": "https://data.binance.vision/data/spot/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2025-12-20.zip",
+      "sha256": "0097907b57da4940454a9d8f564c64dafb6b242f01298f1ea25a83cd39dd6143",
+      "official_checksum_match": true,
+      "bytes": 5262006,
+      "units": 341308
+    },
+    {
+      "date": "2025-12-20",
+      "kind": "klines_1m",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2025-12-20.zip",
+      "sha256": "9eafbc9f02a613f7f6e74b836fadc56d61f967f067e1fecd3d36b49b8a9e679d",
+      "official_checksum_match": true,
+      "bytes": 64443
+    }
+  ],
+  "checks": "All 26 dates have 1440 contiguous one-minute candles. Independent aggregate-trade quote volume, taker-buy quote volume and raw fill counts reconcile to official candle records. Large aggregate trade threshold: 100000 USDT."
+}

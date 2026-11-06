@@ -65,3 +65,9 @@ The market now defaults to four real seconds per tick (0.5×), with selectable 0
 The dedicated controlled-clock browser acceptance passes 37 checks, covering the exact four- and eight-second intervals, timer changes, concurrent trading, hidden-message paths, first-trade information timing, keyboard operation and 320/390/768/1440-pixel layouts. The 51-check full trading browser regression and site profile also pass. This revision changes interaction timing and information display; it does not change the scientific model or numerical research results.
 
 Run `node tests/test_trading_controls.cjs` with the same Playwright environment variables as the main browser test. Its source hashes and acceptance results are in `results/checks/trading_controls_v1.json`. Live deployment acceptance is recorded separately after publication.
+
+## Original market replay, revision 1.2
+
+The default workbench now replays nine original BTC/USDT excerpts; the synthetic engine is retained in the mechanism tab. The historical data package is studies/historical_replay_v1/. Its full 26-day pool is rebuilt from 52 checked official archives. All selected OHLC values exactly match raw Kline files, and every alert uses completed transactions and a lagged threshold. The selected primary movements are 2.09–6.52% over90minutes. This is retrospective teaching-case selection, not new evidence of predictive advantage.
+
+The pure replay/account tests pass4,395 assertions. Historical browser acceptance passes59 checks, including every excerpt, long/short execution, outcome concealment until completion, source switching, signal visibility and four screen widths. The51-check original model-tab browser regression and the site profile pass. Passive historical comparison uses the playable starting close and excludes warm-up bars. The full source pool and all selection artifacts reproduce byte-for-byte. Source checks, raw reproduction and browser evidence accompany the historical package.

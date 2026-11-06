@@ -81,19 +81,36 @@ The squared-size sum links microscopic coordination to aggregate fluctuations.
 [Model specification](docs/AB/model_spec.md) ·
 [Forecast protocol](docs/AB/forecast_contract.md)
 
+## Real-market trading replay
+
+The [trading workbench](https://safudarren.github.io/econophysics-risk-lab/trading.html)
+now starts with original one-minute BTC/USDT candles and observed large aggressive
+executions. Nine curated excerpts contain four buying-led and five selling-led
+moves of 2.09–6.52% over the following 90 minutes, with genuine pullbacks and
+competing signals. The date and selected outcome are revealed after the round.
+Large-execution signals use completed trades and past-only thresholds; they do
+not identify accounts opening long or short positions. These selected cases are
+for replay, rather than a strategy-performance estimate.
+
+The [data and selection record](studies/historical_replay_v1/README.md) includes
+52 checked official archives, the full 26-day derived pool, all 865 alerts,
+selection tables, exact OHLC checks and raw reproduction. The original mechanism
+market remains available in a separate tab. Both share the virtual long/short
+account, speed control, optional signal panel and costed review.
+
+[![Real historical trading workbench](web/assets/trading-preview.webp)](https://safudarren.github.io/econophysics-risk-lab/trading.html)
+
 ## Weighted collective dynamics and the model market
 
 The dynamic extension replaces equal-size counts with effective trading weights,
 allows directions to change on coupled fast and slow networks, and retains the
 cross-group and temporal covariance terms. A shared JavaScript engine generates
-the market in the [trading simulator](https://safudarren.github.io/econophysics-risk-lab/trading.html).
+the market in the mechanism tab of the [trading workbench](https://safudarren.github.io/econophysics-risk-lab/trading.html?source=model).
 Large-order intent, fragmented execution, changing alignment and price response
 produce reproducible synthetic scenarios. The virtual account supports long and
 short positions, partial exits, execution costs, scored review and trade markers.
 Playback ranges from 0.25× to 4×, starting at four seconds per tick. A separate
 large-order signal panel can be switched off without changing the market path.
-
-[![Synthetic trading workbench](web/assets/trading-preview.webp)](https://safudarren.github.io/econophysics-risk-lab/trading.html)
 
 The [mechanism specification](docs/COLLECTIVE_DYNAMICS_MODEL_v1.md) connects
 the weighted second-moment baseline to the implemented state rules.
