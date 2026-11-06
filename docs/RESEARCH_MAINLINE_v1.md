@@ -1,36 +1,47 @@
-# Research main line: collective trading, observability and risk
+# Research main line: macro observations, statistical structure and risk
 
-The project asks whether a small observable description of collective trading can support useful risk estimates. Its contribution is a conditional mathematical mechanism, explicit identification limits, market tests and a reproducible comparison protocol. The final low-information risk advantage remains unestablished.
+The central task is to extract a risk-relevant statistical description from a small set of market observables, then use that description to estimate future risk. Complex-systems models provide the link between observed moments, effective trading weights, directional dependence and temporal persistence.
 
-| Step | Role in the argument | Evidence and status |
+**Macro observations → statistical structure → risk prediction → evaluation and application.**
+
+## The forward argument
+
+| Stage | Question and output | Mathematical or empirical role |
 |---|---|---|
-| Short-horizon price formation | Model signed aggressor pressure and price response as a trading channel | Modelling premise. Long-run fundamental value is not in the state variables; no claim establishes that fundamentals are always secondary. |
-| Collective weights and second moments | Shared actions and cross terms link trading weights to flow fluctuations | Exact conditional identities; the independent-group square-weight result is a special case. See COLLECTIVE_DYNAMICS_MODEL_v1.md and mathematical foundations. |
-| Aggregate inversion | Determine which quantities price/volume moments can recover | Known-truth parameter recovery requires specified scales/model assumptions. Observational equivalence prevents unique microscopic-network recovery. Effective execution amplification needs a size baseline and an interpretation map. |
-| Market compatibility | Test the original mechanism rather than assuming its realism | Negative market Δ violates the original fixed mechanism's positive restriction. A conditional calculation producing a negative sign does not repair the full market joint law or establish forecasting success. |
-| Weighted and dynamic extension | Allow heterogeneous effective trading weight, memory, adaptation and cross-horizon influence | Implemented coupled fast/slow simulation and a separately fitted reduced pressure closure. They are related modelling constructions, not an empirically recovered real network or an exact graph reduction. Direction switching is possible; inevitable reversal or periodic collapse is not proved. |
-| Risk estimation and fair comparison | Map estimated flow structure through price response and evaluate usefulness | The baseline/amplification product has an exact same-window cancellation. Added value must come from successful dynamic restrictions, cheaper observables or matched-input accuracy. The current Bitcoin budget study finds no advantage. |
-| Application | Make the mechanism inspectable and usable as a research diagnostic | Historical trading now ends in source-labelled mechanism review; covariance applications and classroom tools are operational. Reliable low-information market-risk warning remains a research objective. |
+| Macro observations | What do returns, volume, counts and signed aggressor flow tell us? | Define the observation interface, units, sampling horizon and available information. Detailed execution records provide reference measurements for size concentration. |
+| Statistical structure | Which effective activity, weight/concentration and dependence quantities can be inferred? | Moment identities and controlled parameter recovery establish conditional inference routes. Weighted groups and fast/slow interactions explain the structure and persistence behind those moments; identification assumptions remain explicit. |
+| Risk prediction | How does that estimated structure enter future risk? | Price response transfers flow means and dispersion into a return second moment, with a separate residual term. Dynamics specifies how the state evolves beyond the observation window. |
+| Evaluation and application | Does the risk mapping provide useful estimates under a stated information budget? | Matched-input forecasting, direct-flow controls and risk calibration evaluate the method. Historical replay and covariance diagnostics make the statistical mechanism inspectable in concrete applications. |
 
-## What is now a coherent story
+## The statistical bridge
 
-Shared trading directions alter weighted second moments. We ask which effective quantities aggregate observations identify. Real-market tests expose restrictions of fixed sizes/actions and ambiguity from execution fragmentation. Weighted, state-dependent and dynamic extensions supply hypotheses to test. A risk map makes those hypotheses operational; fair controls decide whether they add useful predictive information. Historical replay lets a visitor inspect this chain, including mismatches.
+The primitive observations are r, V, K and signed aggressor flow F. Their moments support an effective description containing activity, size concentration, directional dispersion and persistence. A size baseline b separates independent-execution scale from conditional amplification G=Var(F)/b. Under specified response and residual assumptions, the risk mapping is
 
-The Δ failure is the transition to testing revised assumptions. It is not an abandoned result. The statistical HAR feature benchmark is a comparator and a separate forecasting result; it is not evidence that the network mechanism itself predicted risk successfully. Sector covariance/strategy overlap diagnostics apply the same second-moment perspective without claiming identification of trader networks.
+h=(α+βm_F)²+β²bG+σ²η.
 
-## What would close the intended empirical goal
+The microscopic model explains why shared decisions and trading weights enter these moments. The inferential task is risk-relevant effective structure; it need not recover every investor or edge. A same-window bG product is exactly direct flow variance, so predictive content must come from a useful dynamic restriction, measurement economy or information-matched accuracy. Those requirements guide evaluation.
 
-The target does not require recovering every investor or edge. It requires a stable effective collective statistic with a defensible measurement cost, followed by risk estimates that either match reliability using less information or improve accuracy at matched inputs. Existing conditional inversion and the new full-execution replay diagnostic do not establish those requirements. A compressed statistic is not automatically a cheaper observable.
+## Supporting assumption checks
 
-The teaching debrief uses directly measured aggregate-execution B to expose the mechanism. This richer-information diagnostic must remain separate from the macro-only inversion target. Its local risk map uses frozen pre-play response calibration and explicitly assumed persistence; it is not substituted for the daily matched-budget evaluation.
+Joint-moment compatibility, size distributions, fragmentation and state dependence check the assumptions used by the statistical bridge. Δ is one joint-moment diagnostic for the fixed reference interface. Its market result helps assess that interface and specify effective-weight/state extensions. It is not a separate research objective or the organising axis of the project.
+
+Weighted fast/slow interactions model persistence and possible direction switching. The observation/participant map and the distinction between a reduced closure and the full network remain explicit. These qualifications belong with the relevant inference or dynamic model.
+
+## Evidence and evaluation
+
+Known-truth simulations establish parameter-recovery performance under specified scales and model assumptions. Observational-equivalence results describe the level of structure those observations determine. Bitcoin forecast comparisons test the resulting restrictions at matched information/history budgets. The current budget study has not established additional accuracy or information saving. Its full scores, controls and uncertainty remain available.
+
+The target is reliable risk estimation with less information, or better accuracy at matched inputs. Input cost includes retained history and calibration as well as the number of output features. The replay uses directly measured execution B for explanation; macro-only estimation of that baseline retains its separate measurement and evaluation requirements.
+
+## Application in the historical replay
+
+The debrief follows the forward argument: inspect original observations, examine the effective amplification statistic, then compare the risk map and realized fluctuation. Response coefficients are calibrated before play and frozen. Labels distinguish observed data, model-conditioned estimates and post-hoc navigation. Its local time-scale mapping illustrates the theory while the daily forecasting study supplies the risk-performance evidence.
 
 ## Evidence map
 
-- Weighted identities, temporal covariance and simulation: COLLECTIVE_DYNAMICS_MODEL_v1.md and COLLECTIVE_SIMULATION_RESULTS_v1.md.
-- Known-truth inference/observation equivalence: theory/FOUNDATIONS.md; website methods#inverse and methods#identity.
-- Original market restriction: website methods#delta and findings#market; original report in web/downloads/research-report-en.pdf.
-- Matched information budgets and negative forecast result: studies/collective_dynamics_v1/README.md and tables/scores.csv within that study.
-- Historical source pool and selection: studies/historical_replay_v1/README.md.
-- Replay's mathematical and information boundary: REPLAY_THEORY_BRIDGE_v1.md; website methods#execution-risk-bridge.
-
-The homepage, README, mathematical bridge and debrief use this common main line. This narrative reconciliation does not change the scientific results or turn exploratory/conditional statements into validated prediction claims.
+- Observable moments, inference and identification: theory/FOUNDATIONS.md; website methods#inverse and methods#identity.
+- Weighted structure and temporal dynamics: COLLECTIVE_DYNAMICS_MODEL_v1.md and COLLECTIVE_SIMULATION_RESULTS_v1.md.
+- Risk mapping and replay information contract: REPLAY_THEORY_BRIDGE_v1.md; website methods#execution-risk-bridge.
+- Matched-budget forecast evaluation: studies/collective_dynamics_v1/README.md and tables/scores.csv.
+- Historical observations and selection: studies/historical_replay_v1/README.md.
+- Supporting joint-moment diagnostic: website methods#delta and findings#market.

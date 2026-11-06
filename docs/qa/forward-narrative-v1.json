@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "checks": 52,
+  "base": "local release candidate",
+  "errors": [],
+  "englishPreview": "web/assets/trading-preview-en.webp",
+  "scope": "English README workbench preview and forward macro-observation/statistical-structure/risk narrative; Delta remains a supporting assumption diagnostic. Numerical models and results unchanged.",
+  "source_sha256": {
+    "README.md": "ff5d872d50ca6b9b760e3075e65836e19267c3abd998827a64dc102405d39d67",
+    "docs/RESEARCH_MAINLINE_v1.md": "1a5f42c3b14d0ff1e0ae75d94288c386b5731bdf6a54ea021a427853099004be",
+    "scripts/build_research_bridge.py": "c4782f5e30e7985d9f5d9c94089491674a03ff70c2441c5bd68b083570475c60",
+    "web/index.html": "dfcd712693f66c1d1d8049b09c54ad98ad8290c5b220c028d15f3234637a4d16",
+    "web/methods.html": "649e289cffea34772b66ad929f3738a9edccd3e123b0cd5e06253e1eb473f145",
+    "web/findings.html": "7c71723041799efa3fdc34dbde1e0c8813e88846e4a223c1587993dcf4d223c5",
+    "web/assets/trading-preview-en.webp": "65412374556505b7bd65e287a055e8597e00f379ee04bfd322dcc5a0dd6f62f6"
+  }
+}

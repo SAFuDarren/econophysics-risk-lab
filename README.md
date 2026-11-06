@@ -1,12 +1,13 @@
 # Econophysics Risk Lab
 
-Finite-network herding models, price–volume inference and historical risk analysis.
+Macro market observations, collective statistical structure and risk modelling.
 
-We study how coordinated trading enters market fluctuations, which model
-parameters aggregate price and volume can identify, and whether the resulting
-restrictions are compatible with observed markets. The project combines exact
-moment calculations and finite random graphs with controlled simulations,
-Bitcoin observations and sector-ETF risk diagnostics.
+We develop and test a mechanism-based route from aggregate returns, trading
+volume, counts and signed flow to effective statistical structure and risk
+estimates. Complex-systems models connect these observations to trading weights,
+directional dependence and temporal persistence. Exact moment relations and
+controlled inference studies are complemented by Bitcoin forecast comparisons
+and sector-ETF risk applications.
 
 [Research website](https://safudarren.github.io/econophysics-risk-lab/) ·
 [Interactive experiments](https://safudarren.github.io/econophysics-risk-lab/lab.html) ·
@@ -22,22 +23,22 @@ Bitcoin observations and sector-ETF risk diagnostics.
 
 ## Research line
 
-Can a small observable description of collective trading support useful risk
-estimates? The project follows one chain: **shared actions and weighted moments
-→ observable/invertible quantities → market compatibility → revised dynamic
-hypotheses → information-matched risk evaluation**.
+**Macro observations → statistical structure → risk prediction → evaluation and
+application.** Price–volume moments provide the observable interface; the model
+specifies which effective quantities can be inferred and how they enter a risk
+map. Weighted interactions and fast/slow dynamics describe the structure and
+persistence behind those moments.
 
-The mathematical mechanism and identification bounds are established under
-specified assumptions. Negative market Δ motivates revisiting the fixed model.
-Weighted fast/slow dynamics supply testable extensions; the current Bitcoin
-comparison has not demonstrated better forecasts or lower information cost.
-The [main-line evidence map](docs/RESEARCH_MAINLINE_v1.md) records each step.
+Assumption checks support this route. Joint moments, execution sizes,
+fragmentation and state dependence help select an appropriate statistical
+model. The [main-line evidence map](docs/RESEARCH_MAINLINE_v1.md) records the
+inputs, inferred quantities, risk mapping and evaluation at each stage.
 
-Historical trading ends in a mechanism debrief: original price and executions,
-measured trade-size baseline, model-conditional amplification, and a past-data-only
-local risk mapping are shown on a shared timeline. The detailed execution data
-used in this explanation are counted explicitly; this is not presented as
-macro-only inversion or as forecast validation.
+Historical trading follows the same sequence in a shared-clock debrief:
+original market observations, measured execution-size baselines, conditional
+amplification and risk estimates. Observations and model-conditioned quantities
+are labelled separately; the detailed execution data used for this explanation
+are counted explicitly.
 
 ## Research results
 
@@ -52,10 +53,6 @@ macro-only inversion or as forecast validation.
   depends on connected-group sizes. A four-node chain and star have identical
   price–volume laws, making their internal edges indistinguishable through these
   observations. [Mathematical foundations](docs/theory/FOUNDATIONS.md).
-- **Bitcoin observations violate the fixed model’s joint-moment restriction.** The fixed group-action
-  model requires a positive statistic Δ. BTCUSDT 2025 H2 gives **−8.181**, with
-  an estimated 95% seven-day-block interval **[−11.998, −4.712]**.
-  [Market test](https://safudarren.github.io/econophysics-risk-lab/findings.html#market).
 - **A mechanism-derived risk comparison.** At a 240-day total-history budget,
   the reduced collective pressure model has QLIKE **0.260805**, versus
   **0.228191** for return-only HAR and **0.260792** for the same-map pressure
@@ -80,6 +77,24 @@ macro-only inversion or as forecast validation.
 simulation studies. Method comparisons are in the source table above; settings are in the [study configuration](configs/depth_study_v1.json).*
 
 ## Model and methods
+
+The observable inputs are log returns $r$, total volume $V$, trade counts $K$
+and signed aggressor flow $F$. The statistical description separates mean flow,
+flow dispersion, execution-size concentration and temporal persistence. With a
+specified size baseline $b$ and amplification $G=\mathrm{Var}(F)/b$, a linear
+response $r=\alpha+\beta F+\eta$ gives the conditional risk mapping
+
+$$
+h=(\alpha+\beta m_F)^2+\beta^2 bG+\sigma_\eta^2.
+$$
+
+Here $h$ is a return second moment, and $m_F$ is mean signed flow. Estimating $b$
+from macro inputs requires size/mapping assumptions or calibration; detailed
+executions provide a measurement reference. Dynamic restrictions specify how
+these estimated moments persist or change before forecasting future risk.
+Response and residual-moment assumptions are recorded alongside each model.
+
+### Microscopic foundation
 
 In the reference model, each observation period independently redraws a finite ER network of traders.
 Every connected group shares a buy, sell or inactive action, independently of
@@ -106,6 +121,15 @@ The squared-size sum links microscopic coordination to aggregate fluctuations.
 [Model specification](docs/AB/model_spec.md) ·
 [Forecast protocol](docs/AB/forecast_contract.md)
 
+## Assumption diagnostics
+
+Joint-moment, size-distribution, fragmentation and state checks assess the
+working observation model. One example is the reference model's positive-Δ
+restriction: BTCUSDT 2025 H2 gives **−8.181**, with an estimated 95%
+seven-day-block interval **[−11.998, −4.712]**. This is a compatibility diagnostic
+used alongside the other checks when specifying effective-weight and dynamic
+extensions. [Diagnostic and source evidence](https://safudarren.github.io/econophysics-risk-lab/findings.html#market).
+
 ## Real-market trading replay
 
 The [trading workbench](https://safudarren.github.io/econophysics-risk-lab/trading.html)
@@ -123,7 +147,7 @@ selection tables, exact OHLC checks and raw reproduction. The original mechanism
 market remains available in a separate tab. Both share the virtual long/short
 account, speed control, optional signal panel and costed review.
 
-[![Real historical trading workbench](web/assets/trading-preview.webp)](https://safudarren.github.io/econophysics-risk-lab/trading.html)
+[![Real historical trading workbench](web/assets/trading-preview-en.webp)](https://safudarren.github.io/econophysics-risk-lab/trading.html)
 
 ## Weighted collective dynamics and the model market
 
