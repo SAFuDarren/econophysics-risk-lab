@@ -45,7 +45,7 @@ def main():
   if not (WEB/'downloads'/p.name).exists():errors.append('Notebook download missing: '+p.name)
  required={'index.html','lab.html','findings.html','methods.html','reproduce.html','trading.html','advanced/index.html'}
  found={str(p.relative_to(WEB)) for p in pages}
- assert required <= found and found-required <= {'learn.html','risk-environment.html'}, ('Unexpected page set',found)
+ assert required <= found and found-required <= {'learn.html','risk-environment.html','strategy-ecology.html'}, ('Unexpected page set',found)
  report={'status':'pass' if not errors else 'fail','pages':len(pages),'local_links':links,'errors':errors}
  print(json.dumps(report,indent=2))
  if errors:raise SystemExit(1)

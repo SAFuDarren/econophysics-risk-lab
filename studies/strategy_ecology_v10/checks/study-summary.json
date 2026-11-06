@@ -1,0 +1,33 @@
+{
+  "release": "strategy_ecology_v10",
+  "evidence_type": "conditional model scenarios",
+  "short_cells": 56,
+  "interactive_main_grid": 45,
+  "interactive_clone_controls": 2,
+  "short_origins": 32,
+  "short_branches": 128,
+  "short_horizon_five_minute_bars": 12,
+  "allocation_cells": 8,
+  "allocation_origins": 32,
+  "allocation_branches": 8,
+  "allocation_horizon_five_minute_bars": 192,
+  "scale": "A=.5/1/2 multiplies network transaction size, not observed firm count; background remains unscaled",
+  "factors": "M=1/4/12 group input signals; c=0/.6/1 is shared innovation fraction; actors remain network dependent",
+  "capacity": "L=.75/1.3/1.75 jointly sets latent initial capacity and mean-reversion target, not measured market depth",
+  "findings": {
+    "independent_inputs": "At A2/L1.3, M12 c0 lowers expected one-hour RV9.95% versus one common factor.",
+    "cloned_labels": "M4/12 c1 at A1/L1.3 are pathwise identical to the one-factor reference.",
+    "shared_component": "At A2/M12/L1.3, c.6 versus0 raises risk7.65%.",
+    "capacity": "At A2/M12/c0, low.75 versushigh1.75 capacity raises risk57.40%.",
+    "volume_control": "At A2/M12/c0/L1.3, directional scale raises risk17.23% over the declared matched-volume control; V/K/pricing-noise paths match.",
+    "allocation": "Performance-driven allocation raises terminal groupHHI1.778%/4.207% at M4/M12, but16hRV increments are unestablished; all four primary risk intervals crosszero."
+  },
+  "boundaries": [
+    "Fixed nominal inherited parameters; uncertainty is over model origins, not market calibration.",
+    "Sparse positive group exposures; no identification of real quant investors.",
+    "Terminal HHI is after final allocation update for the next bar; prebar path is separate.",
+    "Allocation moves future trading capacity/influence, without a self-financing fund account, financing or immediate rebalancing orders.",
+    "Score identities permuted still uses own completed returns; not information-free."
+  ],
+  "verification": "Saved numerical reconstruction and provenance; full stochastic simulation regeneration is not bundled in this curated package."
+}

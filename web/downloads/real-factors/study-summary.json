@@ -1,0 +1,248 @@
+{
+  "status": "completed",
+  "data_scope": "observed research-factor portfolio returns; allocations and risks computed, no actual institutional flows or market-impact identification",
+  "sample": {
+    "first": "1990-01-02",
+    "last": "2026-09-30",
+    "daily_rows": 9254,
+    "months": 429,
+    "fit": 228,
+    "development": 120,
+    "evaluation": 81
+  },
+  "descriptive": {
+    "evaluation_months": 81,
+    "first_month": "2020-01",
+    "last_month": "2026-09",
+    "negative_cross_term_months": 36,
+    "positive_cross_term_months": 45,
+    "median_full_over_diagonal": 1.0207305683181578,
+    "min_full_over_diagonal": 0.355184895438945,
+    "max_full_over_diagonal": 2.3010608412707128,
+    "median_effective_corr_modes": 3.227876321221187,
+    "min_effective_corr_modes": 1.899898350278685,
+    "max_effective_corr_modes": 4.447722930808763,
+    "HHI_means": {
+      "Fixed": 0.18966772927100248,
+      "Performance": 0.20702428744501036,
+      "Permuted": 0.2298656281943234
+    },
+    "RV_means": {
+      "Fixed": 1.1915765105642515e-05,
+      "Performance": 1.606461713268129e-05,
+      "Permuted": 1.3223154256005325e-05
+    }
+  },
+  "forecast_scores": [
+    {
+      "model": "FullCov",
+      "n": 81,
+      "QLIKE": 0.24266442715050535,
+      "QLIKE_SD": 1.1524350999617488
+    },
+    {
+      "model": "Diagonal",
+      "n": 81,
+      "QLIKE": 0.3497365757951897,
+      "QLIKE_SD": 1.765327120267623
+    },
+    {
+      "model": "HAR-Portfolio",
+      "n": 81,
+      "QLIKE": 0.19340622591550283,
+      "QLIKE_SD": 0.6892443739017706
+    },
+    {
+      "model": "HAR-All",
+      "n": 81,
+      "QLIKE": 0.4884288214625597,
+      "QLIKE_SD": 1.9045689958619212
+    }
+  ],
+  "primary": [
+    {
+      "model": "FullCov",
+      "reference": "Diagonal",
+      "metric": "QLIKE",
+      "block_months": 3,
+      "n": 81,
+      "mean_difference": -0.10707214864468431,
+      "paired_SD": 0.628644582422694,
+      "CI_low": -0.2011043464800193,
+      "CI_high": 0.05595830074409508,
+      "relative_difference": -0.3061508462511715,
+      "paired_dz": -0.1703222323686393,
+      "p_raw": 0.0854,
+      "p_holm": 0.2562
+    },
+    {
+      "model": "FullCov",
+      "reference": "HAR-All",
+      "metric": "QLIKE",
+      "block_months": 3,
+      "n": 81,
+      "mean_difference": -0.24576439431205443,
+      "paired_SD": 0.798824189176705,
+      "CI_low": -0.38614253157770984,
+      "CI_high": -0.022985467192667253,
+      "relative_difference": -0.5031734072861083,
+      "paired_dz": -0.307657676923063,
+      "p_raw": 0.0162,
+      "p_holm": 0.08099999999999999
+    },
+    {
+      "model": "Performance",
+      "reference": "Fixed",
+      "metric": "realized_risk",
+      "block_months": 3,
+      "n": 81,
+      "mean_difference": 4.14885202703878e-06,
+      "paired_SD": 2.5836109073004817e-05,
+      "CI_low": -2.9295226880137852e-06,
+      "CI_high": 8.252213987483566e-06,
+      "relative_difference": 0.34818175671104484,
+      "paired_dz": 0.160583469256745,
+      "p_raw": 0.1136,
+      "p_holm": 0.2562
+    },
+    {
+      "model": "Performance",
+      "reference": "Fixed",
+      "metric": "held_HHI",
+      "block_months": 3,
+      "n": 81,
+      "mean_difference": 0.0173565581740079,
+      "paired_SD": 0.027725396308952953,
+      "CI_low": 0.007005618742195123,
+      "CI_high": 0.02713210200763334,
+      "relative_difference": 0.0915103388474081,
+      "paired_dz": 0.6260165943382098,
+      "p_raw": 0.0006,
+      "p_holm": 0.0036
+    },
+    {
+      "model": "Performance",
+      "reference": "Permuted",
+      "metric": "realized_risk",
+      "block_months": 3,
+      "n": 81,
+      "mean_difference": 2.8414628766759647e-06,
+      "paired_SD": 2.8812377089083694e-05,
+      "CI_low": -5.001515823905894e-06,
+      "CI_high": 7.494216040607122e-06,
+      "relative_difference": 0.2148854064366305,
+      "paired_dz": 0.09861952271034678,
+      "p_raw": 0.4844,
+      "p_holm": 0.4844
+    },
+    {
+      "model": "Performance",
+      "reference": "Permuted",
+      "metric": "held_HHI",
+      "block_months": 3,
+      "n": 81,
+      "mean_difference": -0.022841340749313054,
+      "paired_SD": 0.05945684360653018,
+      "CI_low": -0.04407122013872045,
+      "CI_high": -9.563640936930545e-05,
+      "relative_difference": -0.0993682305995026,
+      "paired_dz": -0.3841667226815985,
+      "p_raw": 0.0406,
+      "p_holm": 0.1624
+    }
+  ],
+  "sensitivity": [
+    {
+      "model": "FullCov",
+      "reference": "Diagonal",
+      "metric": "QLIKE",
+      "block_months": 6,
+      "n": 81,
+      "mean_difference": -0.10707214864468431,
+      "paired_SD": 0.628644582422694,
+      "CI_low": -0.202335684109636,
+      "CI_high": 0.05227556194695493,
+      "relative_difference": -0.3061508462511715,
+      "paired_dz": -0.1703222323686393,
+      "p_raw": 0.0772,
+      "p_holm": 0.3088
+    },
+    {
+      "model": "FullCov",
+      "reference": "HAR-All",
+      "metric": "QLIKE",
+      "block_months": 6,
+      "n": 81,
+      "mean_difference": -0.24576439431205443,
+      "paired_SD": 0.798824189176705,
+      "CI_low": -0.39471702583526375,
+      "CI_high": -0.029079284136484418,
+      "relative_difference": -0.5031734072861083,
+      "paired_dz": -0.307657676923063,
+      "p_raw": 0.017,
+      "p_holm": 0.085
+    },
+    {
+      "model": "Performance",
+      "reference": "Fixed",
+      "metric": "realized_risk",
+      "block_months": 6,
+      "n": 81,
+      "mean_difference": 4.14885202703878e-06,
+      "paired_SD": 2.5836109073004817e-05,
+      "CI_low": -2.5177240619399723e-06,
+      "CI_high": 8.181387537288721e-06,
+      "relative_difference": 0.34818175671104484,
+      "paired_dz": 0.160583469256745,
+      "p_raw": 0.1056,
+      "p_holm": 0.31679999999999997
+    },
+    {
+      "model": "Performance",
+      "reference": "Fixed",
+      "metric": "held_HHI",
+      "block_months": 6,
+      "n": 81,
+      "mean_difference": 0.0173565581740079,
+      "paired_SD": 0.027725396308952953,
+      "CI_low": 0.004407444397275112,
+      "CI_high": 0.02930044683975,
+      "relative_difference": 0.0915103388474081,
+      "paired_dz": 0.6260165943382098,
+      "p_raw": 0.009,
+      "p_holm": 0.05399999999999999
+    },
+    {
+      "model": "Performance",
+      "reference": "Permuted",
+      "metric": "realized_risk",
+      "block_months": 6,
+      "n": 81,
+      "mean_difference": 2.8414628766759647e-06,
+      "paired_SD": 2.8812377089083694e-05,
+      "CI_low": -4.699744190179761e-06,
+      "CI_high": 7.411203204439167e-06,
+      "relative_difference": 0.2148854064366305,
+      "paired_dz": 0.09861952271034678,
+      "p_raw": 0.4808,
+      "p_holm": 0.4808
+    },
+    {
+      "model": "Performance",
+      "reference": "Permuted",
+      "metric": "held_HHI",
+      "block_months": 6,
+      "n": 81,
+      "mean_difference": -0.022841340749313054,
+      "paired_SD": 0.05945684360653018,
+      "CI_low": -0.050004436746630236,
+      "CI_high": 0.008954720635813533,
+      "relative_difference": -0.0993682305995026,
+      "paired_dz": -0.3841667226815985,
+      "p_raw": 0.1242,
+      "p_holm": 0.31679999999999997
+    }
+  ],
+  "no_prospective_claim": true,
+  "no_actual_quant_attribution": true
+}

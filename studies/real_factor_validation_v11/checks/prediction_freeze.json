@@ -1,0 +1,19 @@
+{
+  "evaluation_truth_joined": false,
+  "files": {
+    "tables/predictions_before_truth.csv": "dc71baabda531e8321ef667e349e07b1956346dadcb27bc41bccb0acf7ac3d4f",
+    "tables/computed_allocations.csv": "00a194fcc14c2b75ce50c3ae9074b9346e325a2917be309de543a770d4640b8c",
+    "tables/past_features.npz": "a975ff3cabc57ee6a6aee68b2e4235081664f4b3b65018ef13684114eb994ecd",
+    "checks/fitted_models.json": "fc2ac0b86668867b6a59f4bf79a69f9185787d3967bb63465494ce0fa2823ebb"
+  },
+  "data_sha256": "92984312f1d2da2548e1806aa996b44bb3c01e8e305cf4e03fec6e385a226f06",
+  "sample": {
+    "first": "1990-01-02",
+    "last": "2026-09-30",
+    "daily_rows": 9254,
+    "months": 429,
+    "fit": 228,
+    "development": 120,
+    "evaluation": 81
+  }
+}

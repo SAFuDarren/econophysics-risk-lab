@@ -32,3 +32,5 @@ Current operational commands are organized in the repository guide.
 - [Research priorities and acceptance criteria](RESEARCH_NEXT_STEPS.md)
 
 - [Conditional coordination risk and effective-state diagnosis](../studies/state_environment_v9/README.md): response environments, precision, information and the internal Bitcoin comparison.
+- [Strategy ecology](../studies/strategy_ecology_v10/README.md): multi-factor inputs, effective transaction scale, capacity, matched-volume controls and allocation timing.
+- [Observed research-factor application](../studies/real_factor_validation_v11/README.md): signed covariance, computed allocation, monthly risk and equal-information HAR comparisons.

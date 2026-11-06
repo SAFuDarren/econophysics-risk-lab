@@ -6,8 +6,10 @@ We develop and test a mechanism-based route from aggregate returns, trading
 volume, counts and signed flow to effective statistical structure and risk
 estimates. Complex-systems models connect these observations to trading weights,
 directional dependence and temporal persistence. Exact moment relations and
-controlled inference studies are complemented by Bitcoin forecast comparisons
-and sector-ETF risk applications.
+controlled inference studies are complemented by Bitcoin forecast comparisons,
+sector-ETF applications and a signed-covariance study of six observed research
+factors. Multi-factor network experiments test how trading scale, strategy
+diversity and accommodation jointly affect risk.
 
 [Research website](https://safudarren.github.io/econophysics-risk-lab/) ·
 [Learning room](https://safudarren.github.io/econophysics-risk-lab/learn.html) ·
@@ -157,6 +159,42 @@ separate from the older next-day and eight-step studies above.
 [Open the interactive study](https://safudarren.github.io/econophysics-risk-lab/risk-environment.html)
 · [Saved data, scope and verification](studies/state_environment_v9/README.md)
 · [Download the evidence package](web/downloads/state-environment/study-data.zip)
+
+## Strategy ecology: scale, diversity and accommodation
+
+The [strategy-ecology instrument](https://safudarren.github.io/econophysics-risk-lab/strategy-ecology.html)
+extends the same herding and fast/slow network with multiple input factors and
+lagged allocation. Its saved model grid separates larger effective trading
+weight, genuinely diverse inputs, common components and the capacity to absorb
+pressure. At high scale and middle capacity, twelve independent group inputs
+lower expected one-hour risk by **9.95%** versus one common input. At that
+scale, low versus high capacity raises risk by **57.40%**. These are paired
+conditional model effects; scale is transaction weight and capacity is a latent
+response state. Neither is a measured count of quant firms or exchange depth.
+
+Performance-driven allocation raises model group concentration over a sixteen-hour
+window, but the primary price-risk increments remain unestablished. The display
+separates weights held during each bar from terminal weights for the next bar.
+The score-permuted control and matched-volume experiment remain visible.
+
+An additional application uses **official daily research-factor returns** from
+the Kenneth R. French Data Library, with 81 monthly evaluation origins in
+2020–September 2026. Six nominal factors have a median **3.23 effective correlation
+modes**. Their net covariance hedges risk in **36 months** and amplifies it in
+**45**. This observed signed-covariance structure extends the positive common-input
+scenario; it is not identification of institutional trading networks.
+
+Full covariance has QLIKE **0.24266**, versus **0.34974** for its diagonal
+counterfactual, **0.19341** for simple HAR-Portfolio and **0.48843** for HAR-All.
+Primary comparisons do not establish superiority after multiplicity correction;
+the simple HAR has the best point score. Computed performance allocation is
+more concentrated than fixed risk-budget allocation, but less concentrated than
+the permuted control. Its risk increment is also unestablished. These are computed
+factor-sleeve allocations, not observed fund flows or causal quant-market effects.
+
+[Model evidence and scope](studies/strategy_ecology_v10/README.md) ·
+[Real-factor protocol, tables and checks](studies/real_factor_validation_v11/README.md) ·
+[Open from Explore](https://safudarren.github.io/econophysics-risk-lab/lab.html#strategy-ecology)
 
 ## Model and methods
 

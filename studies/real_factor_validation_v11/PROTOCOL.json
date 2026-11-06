@@ -1,0 +1,53 @@
+{
+  "status": "locked_before_download_or_evaluation",
+  "date": "2026-11-06",
+  "question": "What do signed covariance, nominal factor diversity and lagged performance allocation imply for risk in observed research-factor returns?",
+  "official_sources": [
+    "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_daily_CSV.zip",
+    "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_daily_CSV.zip"
+  ],
+  "factor_order": ["MktRF", "SMB", "HML", "RMW", "CMA", "Mom"],
+  "start": "1990-01-01",
+  "end_cap": "2026-10-31",
+  "history_days": 252,
+  "fit_months": "1990-2009",
+  "development_months": "2010-2019",
+  "evaluation_months": "2020 through last mechanically complete available month",
+  "complete_month_rule": "month final available weekday date reaches calendar last weekday; incomplete trailing month excluded without viewing returns",
+  "origins": "month-end, future next-calendar-month nonoverlapping daily observations",
+  "scales": "each query uses its previous252 observed daily factor standard deviations; current inverse-volatility factor-sleeve coefficients sum to1",
+  "target": "mean squared next-month daily fixed-coefficient research-factor combination; not intraday RV or actual funded NAV",
+  "full_covariance": "previous63days centered covariance plus portfolio mean squared",
+  "diagonal": "same means and marginal variances, zero cross covariances",
+  "covariance_sign": "signed cross terms retained; net hedging allowed",
+  "allocation": {
+    "updates": "monthly after observed previous-month research returns",
+    "score": "previous calendar month cumulative factor return divided by current past252day scale times sqrt(number of completed month days), clipped[-2,2]",
+    "eta": 0.1,
+    "baseline_reinjection": 0.02,
+    "initial_risk_budget": "equal1/6",
+    "rule": "risk-budget softmax update then2%equal-budget reinjection; divide budget by current past volatility and normalize coefficient sum to1",
+    "control": "same completed scores with deterministic date-seeded permutation of factor identities",
+    "primary_concentration": "sum of squared actual held factor-sleeve coefficients",
+    "cost": "gross primary risk; record monthly coefficient turnover and descriptive1bp coefficient-turnover charge; unknown within-factor implementation cost not fabricated",
+    "scope": "computed allocation backtest on observed factor returns; not observed fund flows, self-financing institution account or endogenous market impact"
+  },
+  "HAR": {
+    "models": ["HAR-Portfolio", "HAR-All"],
+    "windows": [22,66,252],
+    "penalties": [0.1,10.0,1000.0],
+    "family": "positive Gamma log-mean ridge; fit1990-2009 only, penalty selected2010-2019 only, no evaluation refit",
+    "information": "both afforded same six-series past252days and same fit/development; representation and capacity differ",
+    "features_all": "portfolio HAR, six individual factor second moments each window,63day factor means and15pairwise correlations"
+  },
+  "primary_contrasts": [
+    ["FullCov", "Diagonal", "QLIKE"],
+    ["FullCov", "HAR-All", "QLIKE"],
+    ["Performance", "Fixed", "realized_risk"],
+    ["Performance", "Fixed", "held_HHI"],
+    ["Performance", "Permuted", "realized_risk"],
+    ["Performance", "Permuted", "held_HHI"]
+  ],
+  "bootstrap": {"replicates":4999,"primary_block_months":3,"sensitivity_block_months":6,"seed":11062026,"CI":"95%basic paired-block bootstrap","p":"two-sided centered paired-block null with add-one rule","multiplicity":"Holm6 separately at each block size; main block3"},
+  "scope": "historical protocol frozen before this dataset; no prospective or institutional-quant causation claim; no automatic macro-to-trader identification"
+}

@@ -1,0 +1,46 @@
+{
+  "source": "Kenneth R. French Data Library, Dartmouth Tuck",
+  "records": [
+    {
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_daily_CSV.zip",
+      "status": 200,
+      "bytes": 150489,
+      "sha256": "e58577223032aa45071a46686f7068900c371b516c9eb04e28e974c34264f84f",
+      "retrieved_utc": "2026-11-06T14:32:07.826285+00:00",
+      "headers": {
+        "content-type": "application/x-zip-compressed",
+        "last-modified": "Tue, 27 Oct 2026 15:18:47 GMT",
+        "accept-ranges": "bytes",
+        "etag": "\"61efb9762666dd1:0\"",
+        "server": "Microsoft-IIS/10.0",
+        "date": "Fri, 06 Nov 2026 14:32:04 GMT",
+        "content-length": "150489",
+        "connection": "close"
+      },
+      "archive_members": [
+        "F-F_Research_Data_5_Factors_2x3_daily.csv"
+      ]
+    },
+    {
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_daily_CSV.zip",
+      "status": 200,
+      "bytes": 85338,
+      "sha256": "e56d5bc845544e2993e77353b12c611cfce3149ef754f9b59fc67904ddadd369",
+      "retrieved_utc": "2026-11-06T14:32:09.757406+00:00",
+      "headers": {
+        "content-type": "application/x-zip-compressed",
+        "last-modified": "Tue, 27 Oct 2026 15:18:47 GMT",
+        "accept-ranges": "bytes",
+        "etag": "\"8c28d4762666dd1:0\"",
+        "server": "Microsoft-IIS/10.0",
+        "date": "Fri, 06 Nov 2026 14:32:08 GMT",
+        "content-length": "85338",
+        "connection": "close"
+      },
+      "archive_members": [
+        "F-F_Momentum_Factor_daily.csv"
+      ]
+    }
+  ],
+  "terms": "Original files retain author copyright; no new license over source data is granted. Research attribution and source URL retained."
+}

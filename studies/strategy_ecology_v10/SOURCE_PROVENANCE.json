@@ -1,0 +1,60 @@
+{
+  "sealed_source": "Collective_Risk_Strategy_Ecology_v10",
+  "files": [
+    {
+      "path": "factors/tables/cells.csv",
+      "sha256": "cac9e47653cdf48fd536edef262a79d35b7709a5ac22e3ef62bac91d4284eb33",
+      "evidence": "conditional simulated model"
+    },
+    {
+      "path": "factors/tables/primary_contrasts.csv",
+      "sha256": "8655ad721ce8caa0e36cffdeb2414631c407f96eb92eac1f4619025bc939926e",
+      "evidence": "conditional simulated model"
+    },
+    {
+      "path": "factors/tables/factor_paths.npz",
+      "sha256": "42f8dd80eb0b4b0e2123456b4752f19268cc76690db21cc0a0972db3c510ef43",
+      "evidence": "conditional simulated model"
+    },
+    {
+      "path": "scale/tables/scale_cells.csv",
+      "sha256": "04dae0cd16d5b3337a3e10cca1165abd95cc2fc962d004ca43b3ec7032709198",
+      "evidence": "conditional simulated model"
+    },
+    {
+      "path": "scale/tables/primary_contrasts.csv",
+      "sha256": "c4ee4604e343e03c92a8199ebaa2e6e75527bf3def911e7dac1b1203af211548",
+      "evidence": "conditional simulated model"
+    },
+    {
+      "path": "scale/tables/scale_paths.npz",
+      "sha256": "eab5406009a14897d5ef3560e516685ca9c587a4f5c5b048b3bcc574cf25c927",
+      "evidence": "conditional simulated model"
+    },
+    {
+      "path": "migration/tables/primary_contrasts.csv",
+      "sha256": "4c33e273696639bc263ba52d525065e3360e2a3b57fed89c0364ac3a1fc413c8",
+      "evidence": "conditional simulated allocation"
+    },
+    {
+      "path": "migration/tables/summary.csv",
+      "sha256": "a2e9694349e38abf4b08e75cb7a66f020c9bc694efc5e6123d5190fe2155c064",
+      "evidence": "conditional simulated allocation"
+    },
+    {
+      "path": "migration/tables/origin_metrics.csv",
+      "sha256": "8cbd86dd4c18b68193e5e6ad714bcd0fc45a99d6ea4069db00c6d884b56f065f",
+      "evidence": "conditional simulated allocation"
+    },
+    {
+      "path": "figures/Source_Data/F4_prebar_HHI_trajectories.csv",
+      "sha256": "8a2fcabd2d3dbe480e6abf2fe168fc17a05c3a2e18d886883b3f0604363a2a33",
+      "evidence": "conditional simulated allocation"
+    },
+    {
+      "path": "figures/Source_Data/S1_allocation_paths.csv",
+      "sha256": "0394d5931c387cbde61824d9b43b3dbf7f2c947d18cc91300fe7ba5839796291",
+      "evidence": "conditional simulated allocation"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "release": "strategy_ecology_v10",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3080,
+      "sha256": "ff9c0c8d78a1f4c491de150924f76dbe5338cc661ed571be6e987468891877a4"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 2272,
+      "sha256": "07ae2da7aa2ebe25cd041d626c468bbf8e420cea88e8f6d600760f056a36d4d0"
+    },
+    {
+      "path": "checks/study-summary.json",
+      "bytes": 2140,
+      "sha256": "23273f6d0c0fdec6a2805a6692c18f5049b584402224163ce2495d32f604a72e"
+    },
+    {
+      "path": "methods/LITERATURE_INTERFACE.md",
+      "bytes": 2153,
+      "sha256": "d5ed54f2418759d0cdaf38bf99262629025503d641d5f433506d096524117fbd"
+    },
+    {
+      "path": "methods/MULTIFACTOR_BRIDGE.md",
+      "bytes": 7339,
+      "sha256": "5e15205420a5be68601370333c6615dd6aa7548c52d2f83651b2b34a5179f075"
+    },
+    {
+      "path": "methods/ONE_EVENT_MONOTONICITY.md",
+      "bytes": 4038,
+      "sha256": "d7764c4708c22fc242b81d22313a621f75b1a9d3d5e35d65991e0a7b11e48cf4"
+    },
+    {
+      "path": "tables/allocation-all-paths.csv",
+      "bytes": 116046,
+      "sha256": "0394d5931c387cbde61824d9b43b3dbf7f2c947d18cc91300fe7ba5839796291"
+    },
+    {
+      "path": "tables/allocation-origin-metrics.csv",
+      "bytes": 247340,
+      "sha256": "8cbd86dd4c18b68193e5e6ad714bcd0fc45a99d6ea4069db00c6d884b56f065f"
+    },
+    {
+      "path": "tables/allocation-primary.csv",
+      "bytes": 1818,
+      "sha256": "4c33e273696639bc263ba52d525065e3360e2a3b57fed89c0364ac3a1fc413c8"
+    },
+    {
+      "path": "tables/allocation-summary.csv",
+      "bytes": 18371,
+      "sha256": "a2e9694349e38abf4b08e75cb7a66f020c9bc694efc5e6123d5190fe2155c064"
+    },
+    {
+      "path": "tables/allocation-trajectories.csv",
+      "bytes": 43328,
+      "sha256": "8a2fcabd2d3dbe480e6abf2fe168fc17a05c3a2e18d886883b3f0604363a2a33"
+    },
+    {
+      "path": "tables/model-cells.csv",
+      "bytes": 22337,
+      "sha256": "db35f8bb95aecb491b9ebf761e2d8eb5f8f9465c311826c67cbd2a2fea7350eb"
+    },
+    {
+      "path": "tables/model-contrasts.csv",
+      "bytes": 4301,
+      "sha256": "c95944dd11f0e53f6275cf1c48ba495e6130e45de97d4a3fd040c8029d4e004c"
+    },
+    {
+      "path": "tables/model-origin-means.csv",
+      "bytes": 448249,
+      "sha256": "40588debdd8dbaf686bea211829f1b6e376a062b38ee0373b8046620ed5152b1"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 3010,
+      "sha256": "66829e585a7a2d306902413c9ab2d8b800e854b7ab318a43d11884b4bb756dc8"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "release": "real_factor_validation_v11",
+  "files": [
+    {
+      "path": "DATA_DICTIONARY.md",
+      "bytes": 4755,
+      "sha256": "2d307351eacf453510e5d7828a15c2823c491a8d092f9e564e31722930efb5d6"
+    },
+    {
+      "path": "FIGURE_CAPTIONS.md",
+      "bytes": 3944,
+      "sha256": "3454aee202e1e2c38b4cae62a89cbadc58a5cf4da0d13a5a5427329e26aac472"
+    },
+    {
+      "path": "FIGURE_QA.md",
+      "bytes": 2822,
+      "sha256": "dcfb4ae205a6ef5570367e7f52651e9ff3f515d825f7764db560c62ef2b6b8f2"
+    },
+    {
+      "path": "PROTOCOL.json",
+      "bytes": 3760,
+      "sha256": "05ce86625ae8618c1b82d3329c41fae724b882ee21ccb83de0396dc635db5a59"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4868,
+      "sha256": "d958404b54973212c6a75cb8d2d283c301324a83042070816184b060407cdf25"
+    },
+    {
+      "path": "SOURCES_AND_TERMS.md",
+      "bytes": 2612,
+      "sha256": "098817debdbacae3e57bf06bfee5efd2e9727dd98cf90acbf3896a24d72b3021"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 4408,
+      "sha256": "1dbf6bd9fe861c9bae1031b03ac229e3333526f111fa49d3e8d734ad77b1e2ee"
+    },
+    {
+      "path": "STATISTICAL_APPENDIX.md",
+      "bytes": 3653,
+      "sha256": "becff417ae71fa8ce2801989a828330a6e12bc3cbec0bc69e7c8fdf31a621d76"
+    },
+    {
+      "path": "analysis-report.md",
+      "bytes": 10460,
+      "sha256": "4946153ac7767b368bbc1e9431ff5c08801d18b43c3f357f32bc7b83cdda8199"
+    },
+    {
+      "path": "checks/download_manifest.json",
+      "bytes": 1764,
+      "sha256": "5a54a66573634c581d65003a5a8b07552bb34aa3eb391f3972dd62a9afe7d732"
+    },
+    {
+      "path": "checks/fitted_models.json",
+      "bytes": 4571,
+      "sha256": "fc2ac0b86668867b6a59f4bf79a69f9185787d3967bb63465494ce0fa2823ebb"
+    },
+    {
+      "path": "checks/independent_recomputation_summary.json",
+      "bytes": 275,
+      "sha256": "44db03cbfe1e4cb6e5be6e9bc3f4dc6633d4e84b98400613bb982b59190fddc0"
+    },
+    {
+      "path": "checks/pre_download_freeze.json",
+      "bytes": 278,
+      "sha256": "f1eab7de254408869c5d016b2de0d86e69d997bd20d54717b586753e839627c0"
+    },
+    {
+      "path": "checks/prediction_freeze.json",
+      "bytes": 736,
+      "sha256": "4c1e4db8f60f427c668da5fa2fa77597e726404399c699b744934305fc93897d"
+    },
+    {
+      "path": "code/check_saved.py",
+      "bytes": 10756,
+      "sha256": "a95a5a4ad909b6eb4335196bda095ad500df87635ef7d331999f24712059ee5f"
+    },
+    {
+      "path": "code/figures.py",
+      "bytes": 6506,
+      "sha256": "25e211a210ab66792e40f34ec8d1794f56d853605e7cf4661a4af9aa0a09e29c"
+    },
+    {
+      "path": "code/study.py",
+      "bytes": 14046,
+      "sha256": "78a3ff2c1ef272d322223cf2d4560d428670fff05694e8530b38afb15fb963ab"
+    },
+    {
+      "path": "figures/RF1.collision-audit.pdf",
+      "bytes": 49240,
+      "sha256": "7ca801cb95dfe7d63a4dc238219f62766a43076c2214b3d32d54b58eabf0ef5e"
+    },
+    {
+      "path": "figures/RF1_signed_covariance_and_forecasts.pdf",
+      "bytes": 48968,
+      "sha256": "0cd80e2be70425980c3aedd9c78c849f416747152a31133de374fe2ec6175868"
+    },
+    {
+      "path": "figures/RF1_signed_covariance_and_forecasts.png",
+      "bytes": 197893,
+      "sha256": "02ea7d1b1170aa5b539259af7279f22a5311d452e472c941bcaa11ded3e31345"
+    },
+    {
+      "path": "figures/RF1_signed_covariance_and_forecasts.svg",
+      "bytes": 34504,
+      "sha256": "cd494f4014fc0e64502a2380c41c08ff6dce2cfdbc30348c40eab3c5cb3fc9b1"
+    },
+    {
+      "path": "figures/RF2_allocation_and_next_month_risk.pdf",
+      "bytes": 51109,
+      "sha256": "b912733ddb1fec815af9ef61d8761c296987dd029244c1eb926a0d130ea97b95"
+    },
+    {
+      "path": "figures/RF2_allocation_and_next_month_risk.png",
+      "bytes": 179887,
+      "sha256": "caa01f8468d0596cce96f2f9ed669e5b8c7df3f59780441ff4514d074b1a2187"
+    },
+    {
+      "path": "figures/RF2_allocation_and_next_month_risk.svg",
+      "bytes": 33857,
+      "sha256": "9017a860dd28ec00425d51d7a7fa02e75ae10a4ce43a580d5b909f01899a2c61"
+    },
+    {
+      "path": "results_summary.json",
+      "bytes": 7134,
+      "sha256": "14aaa2acc5ef4970ad121447a23e6f9df183dc8cb479fa91f1b878797872545f"
+    },
+    {
+      "path": "tables/computed_allocations.csv",
+      "bytes": 447320,
+      "sha256": "00a194fcc14c2b75ce50c3ae9074b9346e325a2917be309de543a770d4640b8c"
+    },
+    {
+      "path": "tables/development_grid.csv",
+      "bytes": 247,
+      "sha256": "3327ca1c075918967165cc65729ff1b6b8b3fa6b00bc6efaff5ab40e3c4b82b7"
+    },
+    {
+      "path": "tables/forecast_scores.csv",
+      "bytes": 227,
+      "sha256": "b9a3a01a9fae314e6f4b5764efa8928d5f472eb451a1ca68e5b00a3c51791bce"
+    },
+    {
+      "path": "tables/predictions_before_truth.csv",
+      "bytes": 77168,
+      "sha256": "dc71baabda531e8321ef667e349e07b1956346dadcb27bc41bccb0acf7ac3d4f"
+    },
+    {
+      "path": "tables/predictions_scored.csv",
+      "bytes": 105823,
+      "sha256": "3ea0375b11be15bf89b1e0698dc0b601a96931351751b4f73e81d0991b705340"
+    },
+    {
+      "path": "tables/primary_contrasts.csv",
+      "bytes": 2218,
+      "sha256": "5391d81d91709506ab9527b5b0df0757fd68528ca762b8c2d8718abe26afc249"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 4433,
+      "sha256": "f08337810bfd7228ab3fc0f1eedb42955292f19da5efc4dacac2e407b3acf884"
+    }
+  ]
+}

@@ -80,6 +80,43 @@ at a justified measurement cost.
 [Interactive study](https://safudarren.github.io/econophysics-risk-lab/risk-environment.html)
 · [Saved-table verification](../studies/state_environment_v9/verify.py)
 
+## Strategy diversity and the signed-covariance application
+
+The multi-factor extension stays within the same statistical bridge. Exposures
+map factor innovations into decisions; network dependence and lagged feedback
+map them into signed flow. Flow covariance, trading weight and the response
+environment then determine conditional price risk. Nominal factor count alone
+does not specify effective diversification. Perfectly cloned factor labels
+produce identical model paths, while independent group signals still interact
+through the original network.
+
+The [strategy-ecology study](../studies/strategy_ecology_v10/README.md) separates
+factor diversity, effective transaction-size scale and accommodation across 56
+model cells. A matched-volume control fixes volume, count and pricing-noise
+paths while changing directional pressure. The allocation extension acts on
+future trading capacity and influence after completed returns. It establishes
+concentration growth in the retained model configuration, without an established
+16-hour price-risk increment. Its terminal weights refer to the following bar;
+prebar trajectories show the within-window concentration change.
+
+The [real-factor application](../studies/real_factor_validation_v11/README.md)
+checks the covariance link using six official research-factor return series.
+It does not substitute those returns for observed trader flow. Net covariance
+hedges the computed fixed-coefficient portfolio in 36 of 81 evaluation months
+and amplifies risk in 45. This signed result qualifies the positive-exposure
+scenario: shared structure can increase or offset risk depending on exposures
+and the covariance matrix.
+
+Full covariance improves point loss over the diagonal counterfactual and HAR-All,
+but the prespecified multiplicity-adjusted comparisons do not establish a
+forecasting advantage; the simpler HAR-Portfolio has the best point score.
+Performance allocation is more concentrated than fixed risk-budget allocation,
+but less concentrated than the permuted control, and its risk increment is
+unestablished. Allocation is computed, not observed fund migration. The study
+therefore supplies a real signed-covariance application and a constraint on the
+mechanism, without completing institutional identification or market-impact
+causality.
+
 ## Supporting assumption checks
 
 Joint-moment compatibility, size distributions, fragmentation and state dependence check the assumptions used by the statistical bridge. Δ is one joint-moment diagnostic for the fixed reference interface. Its market result helps assess that interface and specify effective-weight/state extensions. It is not a separate research objective or the organising axis of the project.

@@ -55,3 +55,20 @@ The response surfaces, source-state tests and simulation-precision tables are
 original model results under LICENSE.md. The interactive instrument explicitly
 separates those model scenarios from market-derived observations and fitted
 estimates. A model capacity state is not observed exchange depth.
+
+## Research-factor return application
+
+`studies/real_factor_validation_v11/` and `web/downloads/real-factors/`
+contain derived monthly research results based on the Kenneth R. French Data
+Library five-factor and momentum daily files. The download URLs, current-vintage
+dates and SHA-256 hashes are retained in the study source manifest. Original
+daily archives and the daily return panel are excluded. Factor definitions and
+source data retain their original owners' rights; LICENSE.md does not relicense
+them. See the [official data library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html)
+and the study's `SOURCES_AND_TERMS.md`.
+
+The displayed factor returns are observations of constructed research
+portfolios. Allocation coefficients, covariance estimates and forecasts are
+project computations, separate from actual institutional orders or funds.
+The `strategy_ecology_v10` scenario tables and trajectories are original
+model-generated results under the project license.

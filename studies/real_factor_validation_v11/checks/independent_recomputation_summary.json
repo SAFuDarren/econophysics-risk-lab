@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "recomputation_checks": 12082,
+  "scope": "Independent implementation, same observed inputs; this is not independent data or independent error evidence.",
+  "hashes_unchanged": true,
+  "all_429_months_reconstructed": true,
+  "evaluation_months": 81
+}

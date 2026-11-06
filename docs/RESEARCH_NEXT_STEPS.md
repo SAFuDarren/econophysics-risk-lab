@@ -6,6 +6,23 @@ dependence and memory; the observation model must explain how those decisions
 appear as real executions and calendar-time risk. The published market benchmark
 has not established an accuracy or information-cost advantage.
 
+## After the strategy-ecology tests
+
+The strategy-ecology extension now separates scale, input diversity and capacity
+inside the same network. Its allocation experiment establishes concentration
+growth in the retained configuration, without an established 16-hour risk
+increment. The observed research-factor application likewise supports signed
+covariance but establishes neither a migration risk increment nor forecast
+superiority. Next steps must resolve this transmission and identification gap,
+not assume that more factors or more concentration universally raise risk.
+
+Keep signed exposures and covariance cancellation explicit. Add a funding or
+liquidity feedback only with an observable counterpart, then test it against the
+existing score-permuted and fixed allocation controls. Institutional positions,
+redemptions and execution impact are not observed in the factor-return data.
+A claim about actual quant-caused market risk needs those measurements or a
+defensible identification design; the current data cannot supply that claim.
+
 ## Use direct information where it is already visible
 
 Start with observed pressure F/V as a fast-direction measurement or proxy, with
