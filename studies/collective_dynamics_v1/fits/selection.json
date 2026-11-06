@@ -1,0 +1,161 @@
+{
+  "status": "Q1-only selection, locked before Apr-Sep score tables",
+  "budgets": {
+    "30": {
+      "Persistence": {
+        "penalty": 0.0,
+        "validation_qlike": 0.4411364530374842
+      },
+      "ReturnHAR": {
+        "penalty": 10.0,
+        "validation_qlike": 0.23665059062088017
+      },
+      "MacroStat": {
+        "penalty": 10.0,
+        "validation_qlike": 0.25183862888500114
+      },
+      "DirectFlow": {
+        "penalty": 0.0,
+        "validation_qlike": 0.25200538910482706
+      },
+      "MeanFieldFast": {
+        "penalty": 0.1,
+        "validation_qlike": 0.250293706502253
+      },
+      "MeanFieldMemory": {
+        "penalty": 0.1,
+        "validation_qlike": 0.25024614049325933
+      },
+      "MeanFieldCrossScale": {
+        "penalty": 0.1,
+        "validation_qlike": 0.25025822261699804
+      },
+      "PressureAR": {
+        "penalty": 10.0,
+        "validation_qlike": 0.2505196187937215
+      },
+      "MechanismSelected": {
+        "penalty": 0.1,
+        "validation_qlike": 0.25024614049325933,
+        "variant": "MeanFieldMemory"
+      }
+    },
+    "60": {
+      "Persistence": {
+        "penalty": 0.0,
+        "validation_qlike": 0.4411364530374842
+      },
+      "ReturnHAR": {
+        "penalty": 10.0,
+        "validation_qlike": 0.23973033336226332
+      },
+      "MacroStat": {
+        "penalty": 10.0,
+        "validation_qlike": 0.24086259894942033
+      },
+      "DirectFlow": {
+        "penalty": 0.0,
+        "validation_qlike": 0.26069991054995717
+      },
+      "MeanFieldFast": {
+        "penalty": 0.1,
+        "validation_qlike": 0.26033112187863233
+      },
+      "MeanFieldMemory": {
+        "penalty": 10.0,
+        "validation_qlike": 0.2604157540142325
+      },
+      "MeanFieldCrossScale": {
+        "penalty": 0.1,
+        "validation_qlike": 0.26029156306844026
+      },
+      "PressureAR": {
+        "penalty": 0.1,
+        "validation_qlike": 0.26033497247719917
+      },
+      "MechanismSelected": {
+        "penalty": 0.1,
+        "validation_qlike": 0.26029156306844026,
+        "variant": "MeanFieldCrossScale"
+      }
+    },
+    "120": {
+      "Persistence": {
+        "penalty": 0.0,
+        "validation_qlike": 0.4411364530374842
+      },
+      "ReturnHAR": {
+        "penalty": 0.1,
+        "validation_qlike": 0.23041955589847482
+      },
+      "MacroStat": {
+        "penalty": 10.0,
+        "validation_qlike": 0.2622894745536546
+      },
+      "DirectFlow": {
+        "penalty": 0.0,
+        "validation_qlike": 0.2519048314849868
+      },
+      "MeanFieldFast": {
+        "penalty": 0.1,
+        "validation_qlike": 0.2490184172457006
+      },
+      "MeanFieldMemory": {
+        "penalty": 10.0,
+        "validation_qlike": 0.24906643934075287
+      },
+      "MeanFieldCrossScale": {
+        "penalty": 0.1,
+        "validation_qlike": 0.2490250308487686
+      },
+      "PressureAR": {
+        "penalty": 0.1,
+        "validation_qlike": 0.24902729026869852
+      },
+      "MechanismSelected": {
+        "penalty": 0.1,
+        "validation_qlike": 0.2490184172457006,
+        "variant": "MeanFieldFast"
+      }
+    },
+    "240": {
+      "Persistence": {
+        "penalty": 0.0,
+        "validation_qlike": 0.4411364530374842
+      },
+      "ReturnHAR": {
+        "penalty": 10.0,
+        "validation_qlike": 0.22415042485956801
+      },
+      "MacroStat": {
+        "penalty": 10.0,
+        "validation_qlike": 0.24604454226264877
+      },
+      "DirectFlow": {
+        "penalty": 0.0,
+        "validation_qlike": 0.26371588267941376
+      },
+      "MeanFieldFast": {
+        "penalty": 0.1,
+        "validation_qlike": 0.25976330590924396
+      },
+      "MeanFieldMemory": {
+        "penalty": 0.1,
+        "validation_qlike": 0.2597001312430729
+      },
+      "MeanFieldCrossScale": {
+        "penalty": 0.1,
+        "validation_qlike": 0.25964081559568764
+      },
+      "PressureAR": {
+        "penalty": 0.1,
+        "validation_qlike": 0.25964728439543266
+      },
+      "MechanismSelected": {
+        "penalty": 0.1,
+        "validation_qlike": 0.25964081559568764,
+        "variant": "MeanFieldCrossScale"
+      }
+    }
+  }
+}

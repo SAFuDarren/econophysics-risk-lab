@@ -38,7 +38,8 @@ def main():
  for p in (ROOT/'notebooks').glob('*.ipynb'):
   n=json.loads(p.read_text());assert n['nbformat']==4
   if not (WEB/'downloads'/p.name).exists():errors.append('Notebook download missing: '+p.name)
- assert len(pages)==6
+ required={'index.html','lab.html','findings.html','methods.html','reproduce.html','trading.html','advanced/index.html'}
+ assert {str(p.relative_to(WEB)) for p in pages}==required
  report={'status':'pass' if not errors else 'fail','pages':len(pages),'local_links':links,'errors':errors}
  print(json.dumps(report,indent=2))
  if errors:raise SystemExit(1)

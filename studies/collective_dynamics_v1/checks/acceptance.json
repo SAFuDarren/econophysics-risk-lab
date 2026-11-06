@@ -1,0 +1,15 @@
+{
+  "status": "ready_for_independent_review",
+  "scope": "information-efficiency numerical workstream",
+  "protocol": "PROTOCOL.md",
+  "uncertainty_audit": "UNCERTAINTY_AUDIT_ADDENDUM.md",
+  "numerical_tables": 8,
+  "fresh_reproduction": "pass; zero differences",
+  "chronology": "pass",
+  "information_budget": "all fitting inside 30/60/120/240 days; zero microscopic prior",
+  "figures": "2 actual figures; font, alignment and collision QA pass",
+  "scientific_result": "no established information-efficiency or restriction-specific prediction advantage",
+  "full_game_network_empirically_validated": false,
+  "website_summary": "website-summary.json",
+  "parent_final_release_review": "required"
+}

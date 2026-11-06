@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "input_sha256": "cce6495777f943675097a8e9bdc65d50685f34fed31b5812a2efd9f6c6804c1e",
+  "protocol_sha256": "3fc54e6cba4d0b02c6fcda34e000f98cd3c0c01ed28b8bf45d6165079e004740",
+  "tables": 8,
+  "checks": [
+    {
+      "table": "contrasts.csv",
+      "rows": 192,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "table": "fit_diagnostics.csv",
+      "rows": 23840,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "table": "frozen_risk_accounting.csv",
+      "rows": 1192,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "table": "input_budget.csv",
+      "rows": 36,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "table": "predictions.csv",
+      "rows": 10728,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "table": "scores.csv",
+      "rows": 324,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "table": "selected_diagnostics.csv",
+      "rows": 32,
+      "maximum_absolute_difference": 0.0
+    },
+    {
+      "table": "validation_grid.csv",
+      "rows": 80,
+      "maximum_absolute_difference": 0.0
+    }
+  ],
+  "isolated_directory": "fresh temporary directory outside the study",
+  "raw_input_reaggregation": false,
+  "scope": "fresh numerical model reproduction from inherited derived five-minute input"
+}

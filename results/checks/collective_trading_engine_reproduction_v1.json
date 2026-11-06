@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "isolated_directory": "/var/folders/jj/x2nml6j52mz5v85jxkdrvkx00000gn/T/collective_engine_repro_gCI0zE",
+  "source_sha256": "0a3fe930f4c05c79680568bbbd978ad1de04523e4cacf9ba03276598e0c32a2a",
+  "tables": 4,
+  "results": [
+    {
+      "file": "results/tables/collective_trading_v1/simulation_runs.csv",
+      "sha256": "95160d7b149d7f9393b5a523ed187cc4a1e6225695d7fac81bd9861795f23439",
+      "exact_match": true
+    },
+    {
+      "file": "results/tables/collective_trading_v1/simulation_summary.csv",
+      "sha256": "5d570194ab9639aa9995707b4b14c8675ec575e78845a20aad80d8231bd2cae8",
+      "exact_match": true
+    },
+    {
+      "file": "results/tables/collective_trading_v1/simulation_paired_ablations.csv",
+      "sha256": "8135252b3397579918a7b5bcc8e3055d40b66bbf2908e592cfdf4a493a3edc34",
+      "exact_match": true
+    },
+    {
+      "file": "results/tables/collective_trading_v1/guided_demo_paths.csv",
+      "sha256": "347ad7714bea8d98b5e9f47a3ac32c4d53f26acd961f0ed17d7aaceb5ab4fcb8",
+      "exact_match": true
+    }
+  ]
+}

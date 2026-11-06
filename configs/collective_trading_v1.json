@@ -1,0 +1,88 @@
+{
+  "version": "1.0.0",
+  "defaults": {
+    "seed": 5253,
+    "scenario": "buy",
+    "mode": "guided",
+    "steps": 180,
+    "coupling": 0.55,
+    "memory": 0.75,
+    "weighting": "heterogeneous",
+    "externalOrders": true,
+    "nodes": 48,
+    "initialPrice": 100
+  },
+  "parameters": {
+    "fastInteraction": 0.72,
+    "slowInteraction": 0.65,
+    "fastInertia": 0.24,
+    "slowInertia": 0.32,
+    "slowUpdateProbability": 0.14,
+    "adaptationRate": 0.055,
+    "fastAdaptation": 0.95,
+    "slowAdaptation": 0.35,
+    "inverseTemperature": 1.5,
+    "activeProbability": 0.58,
+    "backgroundScale": 1200,
+    "residualSigma": 0.00115,
+    "impactBound": 0.009,
+    "impactScale": 0.34,
+    "liquidityRecovery": 0.075,
+    "liquidityFloor": 0.35,
+    "liquidityCeiling": 1.8,
+    "maximumAbsLogReturn": 0.018,
+    "minimumPrice": 0.01
+  },
+  "plans": {
+    "buy": [
+      {
+        "id": "buyer",
+        "announce": 18,
+        "start": 24,
+        "duration": 36,
+        "sign": 1,
+        "child": 650
+      }
+    ],
+    "sell": [
+      {
+        "id": "seller",
+        "announce": 18,
+        "start": 24,
+        "duration": 36,
+        "sign": -1,
+        "child": 650
+      }
+    ],
+    "split": [
+      {
+        "id": "split-buyer",
+        "announce": 18,
+        "start": 24,
+        "duration": 84,
+        "sign": 1,
+        "child": 225
+      }
+    ],
+    "turn": [
+      {
+        "id": "first-buyer",
+        "announce": 18,
+        "start": 24,
+        "duration": 36,
+        "sign": 1,
+        "child": 600
+      },
+      {
+        "id": "new-seller",
+        "announce": 75,
+        "start": 82,
+        "duration": 38,
+        "sign": -1,
+        "child": 750
+      }
+    ]
+  },
+  "evidence": "Synthetic educational mechanism, not fitted market parameters",
+  "pricing": "Bounded signed-flow response plus independent residual; player is a price taker"
+}

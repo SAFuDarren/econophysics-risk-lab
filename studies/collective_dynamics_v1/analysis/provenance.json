@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-06",
+  "scope": "historical reduced closure, not full game-network validation",
+  "input_sha256": "cce6495777f943675097a8e9bdc65d50685f34fed31b5812a2efd9f6c6804c1e",
+  "prior_macro_history_viewed": true,
+  "raw_trade_labels_used": 0,
+  "source": "Binance Vision derived five-minute BTCUSDT panel; source licensing inherited from the prior attributed input",
+  "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "table_sha256": {
+    "contrasts.csv": "e06c45bc5af5b38712ecbd31de06a195414008d5421451b6717abd2ada911862",
+    "fit_diagnostics.csv": "af13f490171f4520a31b33cbfcd83b1c34d9cc37c9d82307cccbfcf5fbd901cf",
+    "frozen_risk_accounting.csv": "2de11356e7f7b08506cb73df09b8d4401e9127c80eb9c37fcf007ecec9747b38",
+    "input_budget.csv": "7643adf4cadaa9a5117f6b013dff4d02002764c61df43794485251fbab703e1a",
+    "predictions.csv": "2c738482700a21cb5a4c4316c919a2c4452a7a1118211219d55c484be3daae74",
+    "scores.csv": "c2a534cc6b30a0551de560f3f6fac004ccdf6faf93e3d58b785e65a81e02075d",
+    "selected_diagnostics.csv": "d8c49cdff35ccd23ad932e913331a2036d4d49e8f67f622f971feb276414c30b",
+    "validation_grid.csv": "4e48235a9c82f3454cf6b6cfc5716fc9eb040fb370aecefa019c5911898532aa"
+  }
+}

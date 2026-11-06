@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "reviewer": "Mechanism workstream independently reviewing site and empirical integration",
+  "account_review": {
+    "status": "pass",
+    "stress_cases": 54,
+    "benchmark_checks": 2,
+    "ledger_max_error": 0,
+    "source_sha256": "e6139b688f775b832fde5749e6b70dd3e1afbca055a52057d3b42def89b9684b"
+  },
+  "site_review": {
+    "methods": "pass; weighted covariance and target distinction correct; heat-bath conditional on update attempt with slow .14 mixture explained",
+    "findings": "pass; all16tablevalues match accepted scores; no information-efficiency/real-network-validation claim; both interval inversions labelled",
+    "trading_rules": "pass; opening exposure versus market-moved exposure and25% automatic close correctly distinguished",
+    "home_lab_entries": "pass; clear synthetic/virtual market and existing evidence retained",
+    "study_copy": "pass; all50files byte-identical; two website plots byte-identical to accepted sources"
+  },
+  "findings": [
+    {
+      "id": "SCI-01",
+      "severity": "medium",
+      "status": "resolved_and_independently_rechecked",
+      "file": "web/methods.html#collective-dynamics",
+      "description": "Unconditional slow transition probability must include retain-state probability or heat-bath must be conditional on an update attempt."
+    },
+    {
+      "id": "STAT-01",
+      "severity": "presentation",
+      "status": "resolved_and_independently_rechecked",
+      "description": "Pointwise percentile intervals and centred-bootstrap null test are different inversions under high skew. Review added basic intervals before signoff."
+    },
+    {
+      "id": "SCI-02",
+      "severity": "wording",
+      "status": "resolved_and_independently_rechecked",
+      "file": "scripts/build_collective_pages.py and web/findings.html#information-efficiency",
+      "description": "Replace ambiguous Chinese wording implying simulator displays actual market network with explicit no empirical recovery/validation statement."
+    }
+  ],
+  "unchanged_owner_files": true,
+  "study_review": {
+    "status": "pass_original_and_copy",
+    "lookahead": "No held-target, future-return, extra-budget warmup or future phase-label dependence identified in window/model/run source",
+    "target": "sum of five-minute squared returns; no cross-time covariance incorrectly added to RV",
+    "contrasts_reviewed": 192,
+    "basic_interval_max_error": 0.0,
+    "holm_families": "independently recalculated; all match",
+    "pressure_ar_boundary_diagnostic": "corrected: not subject to sign constraints",
+    "sources_sha256": {
+      "code/model.py": "f120eba3e67c59e22a0d430503be8e3a761891da86b179c0ac8a0fc58d544774",
+      "code/run.py": "0e6951f6310c7e500be3f43030599816d9d7401ce61a9084fbdc7302fd8e01aa",
+      "code/evaluate.py": "2618ea21bb03be0aab0894a5944a29ca740a34cec0678cd25fd64f64c84ce7da",
+      "PROTOCOL.md": "3fc54e6cba4d0b02c6fcda34e000f98cd3c0c01ed28b8bf45d6165079e004740",
+      "tables/contrasts.csv": "e06c45bc5af5b38712ecbd31de06a195414008d5421451b6717abd2ada911862",
+      "analysis/stats-appendix.md": "68884bbdec6cbd083f67f9db95cc9f6c53dec54ac50d7b2f5880a734ca5af4b6"
+    }
+  },
+  "study_copy": {
+    "files_compared": 50,
+    "differences": [],
+    "source": "../Collective_Dynamics_Information_Study_v1",
+    "destination": "studies/collective_dynamics_v1"
+  },
+  "blocking_findings": 0,
+  "review_scope": "Independent scientific content, equation/API correspondence, mathematical target, empirical chronology/statistics, copied-study integrity, and accounting-core/benchmark review; browser visual QA recorded separately by root",
+  "reviewed_source_sha256": {
+    "web/methods.html": "ae06fcc8540641f756cdbd4700da0b3662f546c630877226eb3f990b05d24663",
+    "web/findings.html": "a661e3f26783fa7312063b61e0a9974d9a0ad0d42e03828a4c3a1593e9e1bd93",
+    "web/index.html": "1c4f64937d351fa112440e245831d54278bf6d26a715ffeadd51fda81f864b33",
+    "web/lab.html": "0cd97df5292793ac0476cf778027a1e43fe94be3f81a4378afb99bae0347fa09",
+    "web/trading.html": "c70a8ff90f6a59acfcfa4e11e2021cb603758df368a073aea7c02341313588f4",
+    "web/assets/trading-engine.js": "0a3fe930f4c05c79680568bbbd978ad1de04523e4cacf9ba03276598e0c32a2a",
+    "web/assets/trading-account.js": "e6139b688f775b832fde5749e6b70dd3e1afbca055a52057d3b42def89b9684b",
+    "scripts/build_collective_pages.py": "b816629bbc7a9039c9d58ee39029dc5bf2f2561731b6fd51be79d217a324d8d7"
+  },
+  "final_conclusion": "No unresolved blocking scientific/accounting findings. Candidate synthetic mechanism and retrospective reduced-closure risk evaluation remain accurately separated. No extra predictive or information-economy advantage claimed."
+}

@@ -1,0 +1,70 @@
+{
+  "status": "pass",
+  "checks": 22,
+  "pages": [
+    {
+      "route": "index.html",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "title": "Herding, inference and market risk | Econophysics Risk Lab"
+    },
+    {
+      "route": "lab.html",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "title": "Explore the research | Econophysics Risk Lab"
+    },
+    {
+      "route": "methods.html#collective-dynamics",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "title": "The mathematical foundations | Econophysics Risk Lab"
+    },
+    {
+      "route": "findings.html#information-efficiency",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "title": "Findings and evidence | Econophysics Risk Lab"
+    },
+    {
+      "route": "reproduce.html#collective-reproduction",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "title": "Reproduce the research | Econophysics Risk Lab"
+    },
+    {
+      "route": "advanced/index.html",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "title": "联动风险实验室 · Econophysics Risk Lab"
+    },
+    {
+      "route": "methods.html#collective-dynamics",
+      "mobile": true,
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0
+    },
+    {
+      "route": "findings.html#information-efficiency",
+      "mobile": true,
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0
+    },
+    {
+      "route": "reproduce.html#collective-reproduction",
+      "mobile": true,
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0
+    }
+  ],
+  "errors": []
+}

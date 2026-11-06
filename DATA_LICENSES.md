@@ -37,3 +37,8 @@ KaTeX 0.19.1 uses MIT. Source Sans 3 and Source Serif 4 use SIL OFL.
 The exact source URLs and hashes are in web/assets/vendor/sources.json; licenses
 are included beside the assets. The site makes no external runtime font or script
 requests.
+
+
+## Collective-dynamics information-budget study
+
+`studies/collective_dynamics_v1/inputs/macro_observables.npz` is the inherited derived BTCUSDT five-minute panel. Source hashes, attribution and the Binance Vision terms snapshot accompany the study. It contains market aggregates and no raw execution archive or participant identities. Dataset-derived tables and figures retain the source terms described in the study attribution. The new trading-market paths and interface preview are project-generated synthetic outputs and an actual screenshot; they are separate from observed-market evidence.

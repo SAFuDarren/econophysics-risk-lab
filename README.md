@@ -10,6 +10,7 @@ Bitcoin observations and sector-ETF risk diagnostics.
 
 [Research website](https://safudarren.github.io/econophysics-risk-lab/) ·
 [Interactive experiments](https://safudarren.github.io/econophysics-risk-lab/lab.html) ·
+[Trading simulator](https://safudarren.github.io/econophysics-risk-lab/trading.html) ·
 [Full research report](web/downloads/research-report-en.pdf)
 
 [![Research checks](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml)
@@ -55,7 +56,7 @@ simulation studies. Method comparisons are in the source table above; settings a
 
 ## Model and methods
 
-Each observation period independently redraws a finite ER network of traders.
+In the reference model, each observation period independently redraws a finite ER network of traders.
 Every connected group shares a buy, sell or inactive action, independently of
 other groups. The parameters satisfy $0<q<1$ and $\lambda>0$.
 For the displayed graph $H$,
@@ -79,6 +80,44 @@ The squared-size sum links microscopic coordination to aggregate fluctuations.
 [Full mathematical derivations](https://safudarren.github.io/econophysics-risk-lab/methods.html) ·
 [Model specification](docs/AB/model_spec.md) ·
 [Forecast protocol](docs/AB/forecast_contract.md)
+
+## Weighted collective dynamics and the model market
+
+The dynamic extension replaces equal-size counts with effective trading weights,
+allows directions to change on coupled fast and slow networks, and retains the
+cross-group and temporal covariance terms. A shared JavaScript engine generates
+the market in the [trading simulator](https://safudarren.github.io/econophysics-risk-lab/trading.html).
+Large-order intent, fragmented execution, changing alignment and price response
+produce reproducible synthetic scenarios. The virtual account supports long and
+short positions, partial exits, execution costs, scored review and trade markers.
+
+[![Synthetic trading workbench](web/assets/trading-preview.webp)](https://safudarren.github.io/econophysics-risk-lab/trading.html)
+
+The [mechanism specification](docs/COLLECTIVE_DYNAMICS_MODEL_v1.md) connects
+the weighted second-moment baseline to the implemented state rules.
+[Controlled simulations](docs/COLLECTIVE_SIMULATION_RESULTS_v1.md) retain
+384 paths over 32 seeds and declared ablations. Their role is to check this
+mechanism and the simulator, not to establish real-market forecast accuracy.
+
+The separate [information-budget study](studies/collective_dynamics_v1/README.md)
+tests a compact pressure closure using 30, 60, 120 and 240 past days, with every
+calibration included and no microscopic labels. On the 183 historical primary
+dates, the 240-day mechanism has QLIKE **0.260805**, versus **0.260792** for
+the equally informed unconstrained pressure control and **0.228191** for
+return-only HAR. This comparison establishes no information-efficiency or
+restriction-specific prediction advantage. All variants, budgets, uncertainty
+and input costs remain in the study; these previously viewed dates are historical
+development evidence.
+
+```bash
+node tests/test_trading_engine.cjs
+node tests/test_trading_account.cjs
+node scripts/reproduce_collective_trading_engine.cjs
+python studies/collective_dynamics_v1/reproduce.py
+```
+
+[Acceptance and independent review](docs/COLLECTIVE_TRADING_VALIDATION_v1.md)
+records the numerical, accounting, browser and integration checks.
 
 ## Code and reproduction
 

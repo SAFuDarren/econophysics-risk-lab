@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "seconds": 12.55105479201302,
+  "targets": 298,
+  "candidate_predictions": 23840,
+  "selected_predictions": 10728,
+  "input_sha256": "cce6495777f943675097a8e9bdc65d50685f34fed31b5812a2efd9f6c6804c1e"
+}

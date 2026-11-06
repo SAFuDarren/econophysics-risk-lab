@@ -1,0 +1,87 @@
+{
+  "status": "pass",
+  "checks": 51,
+  "url": "http://127.0.0.1:8876/trading.html (local pre-release acceptance)",
+  "errors": [],
+  "widthChecks": [
+    {
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "width": 1440,
+      "scroll": 1440
+    }
+  ],
+  "modalBounds": [
+    {
+      "width": 1440,
+      "top": 116.921875,
+      "bottom": 923.078125,
+      "left": 255,
+      "right": 1185,
+      "height": 1040,
+      "closeTop": 144.921875,
+      "closeBottom": 178.921875,
+      "scrollHeight": 806,
+      "clientHeight": 806
+    },
+    {
+      "width": 320,
+      "top": 11,
+      "bottom": 833,
+      "left": 20,
+      "right": 300,
+      "height": 844,
+      "closeTop": 32,
+      "closeBottom": 63,
+      "scrollHeight": 830,
+      "clientHeight": 822
+    },
+    {
+      "width": 390,
+      "top": 11,
+      "bottom": 824.125,
+      "left": 20,
+      "right": 370,
+      "height": 844,
+      "closeTop": 32,
+      "closeBottom": 63,
+      "scrollHeight": 813,
+      "clientHeight": 813
+    },
+    {
+      "width": 768,
+      "top": 49.921875,
+      "bottom": 794.078125,
+      "left": 21,
+      "right": 747,
+      "height": 844,
+      "closeTop": 77.921875,
+      "closeBottom": 111.921875,
+      "scrollHeight": 744,
+      "clientHeight": 744
+    },
+    {
+      "width": 1440,
+      "top": 147.921875,
+      "bottom": 892.078125,
+      "left": 255,
+      "right": 1185,
+      "height": 1040,
+      "closeTop": 175.921875,
+      "closeBottom": 209.921875,
+      "scrollHeight": 744,
+      "clientHeight": 744
+    }
+  ],
+  "screenshots": "docs/qa/ and local acceptance bundle"
+}

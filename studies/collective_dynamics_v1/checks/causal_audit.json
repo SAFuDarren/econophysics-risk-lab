@@ -1,0 +1,15 @@
+{
+  "predictions_positive_finite": true,
+  "target_after_all_inputs": true,
+  "budget_counts_correct": true,
+  "meanfield_max_normalized_projected_gradient": 3.0133803427998416e-06,
+  "date_budget_exact": true,
+  "future_return_forecast_max_difference": 0.0,
+  "prefix_forecast_max_difference": 0.0,
+  "all_return_pressure_max_difference": 0.0,
+  "loss_recalculation_max_difference": 0.0,
+  "cumulative_square_identity_max_difference": 5.204170427930421e-18,
+  "rv_equals_squared_daily_return": false,
+  "microscopic_calibration_labels": 0,
+  "warmup_days_outside_budget": 0
+}

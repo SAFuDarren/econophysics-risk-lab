@@ -1,0 +1,5 @@
+# Post-score uncertainty and diagnostic audit
+
+Independent review found that skewed paired-loss distributions make the percentile interval and centred-bootstrap test non-dual. The original percentile intervals are retained as descriptive resampling intervals. Added columns basic_ci_low/high are 2*observed additive mean−opposite bootstrap percentile. They are compatible with inversion of the centred additive null distribution. basic_pct_ci_low/high divide these additive bounds by the fixed observed reference mean and multiply100; they are not bootstrap random-denominator ratio intervals. I02 uses these basic bounds for clarity. Model selection, point predictions, primary metric and Holm families are unchanged.
+
+PressureAR is unconstrained. Its negative coefficients were initially counted by a generic <=1e−7 diagnostic as at-zero parameters. The diagnostic now reports zero boundary counts for this unconstrained control. Mean-field boundary counts retain their intended constrained interpretation. This change has no prediction or score effect. All numerical tables are regenerated and reproduced after these audit corrections.

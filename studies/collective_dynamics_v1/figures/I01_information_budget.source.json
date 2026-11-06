@@ -1,0 +1,8 @@
+{
+  "sources": [
+    "tables/scores.csv",
+    "tables/input_budget.csv",
+    "fits/selection.json"
+  ],
+  "caption": "All four historical data budgets with zero microscopic calibration. The selected reduced mechanism has no accuracy/history-budget advantage over retained statistical references."
+}

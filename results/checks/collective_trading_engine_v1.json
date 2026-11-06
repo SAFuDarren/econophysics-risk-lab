@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "version": "1.0.0",
+  "checks": 11,
+  "independent_seeds": 32,
+  "synthetic_runs": 384,
+  "seed_unit": "Independent full simulator run; paired ablations reuse innovation streams",
+  "control_laws": {
+    "independent_weights_variance": 30,
+    "coherent_block_variance": 100,
+    "split_parent_cumulative_variance": 10000,
+    "independent_children_cumulative_variance": 1000,
+    "squared_flow_sum_both": 1000
+  },
+  "causal_event_messages": true,
+  "prefix_invariance": true,
+  "completed_path_stable": true,
+  "parameters_fitted_to_market": false,
+  "automatic_periodic_cycle_claim": false,
+  "real_market_predictive_claim": false
+}

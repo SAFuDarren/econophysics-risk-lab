@@ -1,0 +1,88 @@
+[
+  {
+    "file": "I01_information_budget.pdf",
+    "tool": "audit_pdf_text.py",
+    "exit_code": 0,
+    "report": {
+      "pdf": "figures/I01_information_budget.pdf",
+      "auditable": true,
+      "minimum_required_pt": 5.0,
+      "minimum_found_pt": 8.1,
+      "text_run_count": 22,
+      "below_minimum_count": 0,
+      "below_minimum": [],
+      "warnings": []
+    }
+  },
+  {
+    "file": "I01_information_budget.pdf",
+    "tool": "audit_figure_collisions.py",
+    "exit_code": 0,
+    "report": {
+      "pdf": "figures/I01_information_budget.pdf",
+      "auditable": true,
+      "verdict": "PASS",
+      "page_count": 1,
+      "visible_text_box_count": 22,
+      "text_trace_count": 22,
+      "stroke_path_count": 81,
+      "filled_region_count": 60,
+      "image_region_count": 0,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 0,
+        "contained_image_overlays": 0
+      },
+      "thresholds": {
+        "text_inset_pt": 0.6,
+        "min_overlap_ratio": 0.05,
+        "clipping_tolerance_pt": 0.5
+      },
+      "findings": []
+    }
+  },
+  {
+    "file": "I02_paired_controls.pdf",
+    "tool": "audit_pdf_text.py",
+    "exit_code": 0,
+    "report": {
+      "pdf": "figures/I02_paired_controls.pdf",
+      "auditable": true,
+      "minimum_required_pt": 5.0,
+      "minimum_found_pt": 8.1,
+      "text_run_count": 34,
+      "below_minimum_count": 0,
+      "below_minimum": [],
+      "warnings": []
+    }
+  },
+  {
+    "file": "I02_paired_controls.pdf",
+    "tool": "audit_figure_collisions.py",
+    "exit_code": 0,
+    "report": {
+      "pdf": "figures/I02_paired_controls.pdf",
+      "auditable": true,
+      "verdict": "PASS",
+      "page_count": 1,
+      "visible_text_box_count": 31,
+      "text_trace_count": 34,
+      "stroke_path_count": 57,
+      "filled_region_count": 46,
+      "image_region_count": 0,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "contained_fill_overlays": 0,
+        "contained_image_overlays": 0
+      },
+      "thresholds": {
+        "text_inset_pt": 0.6,
+        "min_overlap_ratio": 0.05,
+        "clipping_tolerance_pt": 0.5
+      },
+      "findings": []
+    }
+  }
+]

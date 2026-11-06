@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "review": "independent ledger and capacity audit by mechanism workstream",
+  "cases": 54,
+  "configurations": "long/short × leverage(.5,1,2) × fees(0,5,100bp) × slippage(0,2,100bp);partialclose,reopen,finalsettlement",
+  "max_cash_identity_error": 7.639755494892597e-11,
+  "max_ledger_realized_error": 0,
+  "medium_finding": "Entry-fee double counting in per-trade ledger fixed and independently rechecked",
+  "source_sha256": "e6139b688f775b832fde5749e6b70dd3e1afbca055a52057d3b42def89b9684b"
+}

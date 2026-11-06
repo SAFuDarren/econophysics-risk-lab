@@ -1,0 +1,6 @@
+{
+  "sources": [
+    "tables/contrasts.csv"
+  ],
+  "caption": "All four budgets versus same-map unrestricted pressure and direct-flow controls. Basic95% additive intervals are scaled by the fixed observed reference mean; the12-comparison Holm family remains distinct."
+}

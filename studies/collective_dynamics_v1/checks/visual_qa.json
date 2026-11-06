@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "figures": 2,
+  "formats": [
+    "pdf",
+    "svg",
+    "600dpi png"
+  ],
+  "alignment": "pass",
+  "font_floor": "pass",
+  "collision_failures": 0,
+  "collision_warnings": 0,
+  "visual_review": "both final figures and every panel reviewed; original legend overlap fixed by placing legend above axes",
+  "source_warnings_accepted": [
+    "600dpi PNG supplied; journal TIFF not requested"
+  ],
+  "not_manuscript_finalization": true
+}
