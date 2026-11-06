@@ -42,3 +42,16 @@ requests.
 ## Collective-dynamics information-budget study
 
 `studies/collective_dynamics_v1/inputs/macro_observables.npz` is the inherited derived BTCUSDT five-minute panel. Source hashes, attribution and the Binance Vision terms snapshot accompany the study. It contains market aggregates and no raw execution archive or participant identities. Dataset-derived tables and figures retain the source terms described in the study attribution. The new trading-market paths and interface preview are project-generated synthetic outputs and an actual screenshot; they are separate from observed-market evidence.
+
+## State and response-environment diagnosis
+
+`studies/state_environment_v9/tables/market_*` and the corresponding files in
+`web/downloads/state-environment/` are derived BTCUSDT research results from
+Binance Vision. They retain the Binance attribution, CC BY-NC-SA 4.0 and source
+terms described above. These tables contain aggregate model predictions and
+realized-risk summaries, with no participant identities or full raw executions.
+
+The response surfaces, source-state tests and simulation-precision tables are
+original model results under LICENSE.md. The interactive instrument explicitly
+separates those model scenarios from market-derived observations and fitted
+estimates. A model capacity state is not observed exchange depth.

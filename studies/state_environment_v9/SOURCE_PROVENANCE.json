@@ -1,0 +1,105 @@
+{
+  "release": "Collective_Risk_State_Diagnosis_v9",
+  "files": [
+    {
+      "path": "tables/response_surface_cells.csv",
+      "sealed_source": "structure/tables/response_surface_cells.csv",
+      "source_sha256": "7b15a0dc0ce0357833b8329f3b4d746526e082ae48de6e41cc34a9b8ee8e25ff"
+    },
+    {
+      "path": "tables/covariance_effects_by_environment.csv",
+      "sealed_source": "structure/tables/covariance_effects_by_environment.csv",
+      "source_sha256": "10666f35f79b404797d5404785388ce718dde87d7c3d1466f9450dc67f658d45"
+    },
+    {
+      "path": "tables/paired_interactions.csv",
+      "sealed_source": "structure/tables/paired_interactions.csv",
+      "source_sha256": "f5eac1a1da13be4c0251d8cf0edeb8b5ba50f6e9ac071ae3984089ecb8fc5fce"
+    },
+    {
+      "path": "tables/precision_budget.csv",
+      "sealed_source": "precision/tables/precision_budget.csv",
+      "source_sha256": "36c43e23ed2b4b59970be513495b4578ee7a0aa510f55903ac9eb69363ba9964"
+    },
+    {
+      "path": "tables/precision_coordination_origins.csv",
+      "sealed_source": "precision/tables/DeltaC_origins.csv",
+      "source_sha256": "c0809dda5205ab778648e6bbf63355a153fc02b34a20e05d1fb5cad5f0f82c7c"
+    },
+    {
+      "path": "tables/precision_feedback_origins.csv",
+      "sealed_source": "precision/tables/DeltaF_origins.csv",
+      "source_sha256": "b79db7a5c09b62bc172413dfedd2f0e8faacc86e96fdac2f980b1a07baade48e"
+    },
+    {
+      "path": "tables/information_summary.csv",
+      "sealed_source": "information/tables/risk_summary.csv",
+      "source_sha256": "da3f6c0057c007b9432d72c2bdf037c43e32dda082a8026b861d5f1fc8f4ae20"
+    },
+    {
+      "path": "tables/information_contrasts.csv",
+      "sealed_source": "information/tables/risk_contrasts.csv",
+      "source_sha256": "e151475adada9e0640ae9c358910576a68b868d20cca0c11214e6f7d6f13657a"
+    },
+    {
+      "path": "tables/information_predictions.csv",
+      "sealed_source": "information/tables/risk_predictions_scored.csv",
+      "source_sha256": "6703b19829f8d913d989339c88ea82f84f373a0f57453418bfab985ef0a04453"
+    },
+    {
+      "path": "tables/functional_summary.csv",
+      "sealed_source": "information/tables/functional_summary.csv",
+      "source_sha256": "42e37e6952e75e6c094ff7b6ef1b671320fa12b0e5ddb79f5b38cf3c2aa625a2"
+    },
+    {
+      "path": "tables/market_score_summary.csv",
+      "sealed_source": "market/tables/score_summary.csv",
+      "source_sha256": "db48cfb5fb1a55ceac5837d29c22ed779be3cdeb79ca94f831dfc0a2161d8e3e"
+    },
+    {
+      "path": "tables/market_primary_contrasts.csv",
+      "sealed_source": "market/tables/primary_contrasts.csv",
+      "source_sha256": "6e71e8e8ee77569040670fd933ad3f08f067a08041f7a7cdc5b22d84d88603cc"
+    },
+    {
+      "path": "tables/market_predictions.csv",
+      "sealed_source": "market/tables/predictions_scored.csv",
+      "source_sha256": "6e94f0732355cb07b213e8f943fcd99afb18f8c6c33b86be7735fb28e8ae3bcb"
+    },
+    {
+      "path": "tables/market_controls_summary.csv",
+      "sealed_source": "market/controls/score_summary.csv",
+      "source_sha256": "191ceb566e73a96ad141fbd8eee00fe82883595e34c84ed9cb39e6183c8ddf95"
+    },
+    {
+      "path": "tables/market_controls_predictions.csv",
+      "sealed_source": "market/controls/predictions_scored.csv",
+      "source_sha256": "0484277103349732561a20ae7c9f057c691cec9fae3d6ab86befe9147f0419a4"
+    },
+    {
+      "path": "checks/precision_outcome.json",
+      "sealed_source": "precision/checks/precision_outcome.json",
+      "source_sha256": "efd7c70a352ab570ae91ffc2fdbb6fe606f3f788c4ba551325fcf43240108a41"
+    },
+    {
+      "path": "checks/information_outcome.json",
+      "sealed_source": "information/checks/outcome.json",
+      "source_sha256": "d13fd9e1e4c13a4f8ee95f6031df1ccd8139a2c479d50963e38e0ee80b07cfed"
+    },
+    {
+      "path": "checks/market_outcome.json",
+      "sealed_source": "market/checks/outcome.json",
+      "source_sha256": "329000c23b098bbb784176105207af55aa9d28b4a035afdd389591fba9d966bf"
+    },
+    {
+      "path": "checks/cancellation_identity.json",
+      "sealed_source": "market/controls/cancellation_identity.json",
+      "source_sha256": "706b0a044f431468f0f32adaccb6ded9647c749bcec606eda994cbd15ee87a3a"
+    },
+    {
+      "path": "checks/response_surface.json",
+      "sealed_source": "structure/tables/response_surface.json",
+      "source_sha256": "ff7022bcd050679ddfd9816d7ad93e54a99c92a82645a548c5a6bae22cc5e628"
+    }
+  ]
+}

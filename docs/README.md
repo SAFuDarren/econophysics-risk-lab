@@ -30,3 +30,5 @@ Current operational commands are organized in the repository guide.
 
 - [Learning-room content and illustrations](learning/README.md)
 - [Research priorities and acceptance criteria](RESEARCH_NEXT_STEPS.md)
+
+- [Conditional coordination risk and effective-state diagnosis](../studies/state_environment_v9/README.md): response environments, precision, information and the internal Bitcoin comparison.

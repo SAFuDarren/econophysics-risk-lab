@@ -1,0 +1,91 @@
+{
+  "status": "completed",
+  "origins": 256,
+  "branches": 512,
+  "signal_share": 0.40277397174583285,
+  "price_noise_share": 0.5972260282541669,
+  "full_risk_RB": 3.640089918458903e-05,
+  "full_risk_actual": 3.63929671283361e-05,
+  "unbiasedness_actual_minus_RB": {
+    "mean": -7.932056252924818e-09,
+    "ci_low": -1.608892603917246e-07,
+    "ci_high": 1.42020845289971e-07
+  },
+  "label_variation": {
+    "actual": {
+      "observed_between_variance": 9.350501967644597e-10,
+      "mean_MC_variance_of_mean": 2.7465925550123673e-12,
+      "noise_corrected_between_variance": 9.323036042094474e-10,
+      "crosshalf_covariance": 9.326308469338185e-10
+    },
+    "integrated": {
+      "observed_between_variance": 9.421581324095233e-10,
+      "mean_MC_variance_of_mean": 1.0167449856982853e-12,
+      "noise_corrected_between_variance": 9.41141387423825e-10,
+      "crosshalf_covariance": 9.411539797857072e-10
+    }
+  },
+  "effects": {
+    "DeltaC": {
+      "mean": 2.482961686047145e-06,
+      "ci_low": 2.2879186859000336e-06,
+      "ci_high": 2.6836262604491934e-06,
+      "relative_mean_effect": 0.06821154811193102,
+      "positive_origins": 256,
+      "mean_effect_square": 6.16509873437808e-12,
+      "corrected_SD_over_mean": 0.6536363625279771,
+      "variance": {
+        "observed_between_variance": 2.7528142756951232e-12,
+        "mean_MC_variance_of_mean": 1.188344442786823e-13,
+        "noise_corrected_between_variance": 2.6339798314164408e-12,
+        "crosshalf_covariance": 2.6239473000060144e-12
+      },
+      "crosshalf_covariance_CI": [
+        2.1912510937504427e-12,
+        3.0650334185502057e-12
+      ],
+      "raw_half_reliability_correlation": 0.7191848677495112,
+      "integrated_half_reliability_correlation": 0.9107142505393101,
+      "median_paired_MCSE_raw512": 4.1746274222561784e-07,
+      "median_paired_MCSE_RB512": 2.3277357684331134e-07,
+      "mean_conditional_variance_ratio_RB_over_raw": 0.29892454437812077
+    },
+    "DeltaF": {
+      "mean": 1.5640164373945054e-06,
+      "ci_low": 1.2895087328080275e-06,
+      "ci_high": 1.8201892439675698e-06,
+      "relative_mean_effect": 0.0429664231496968,
+      "positive_origins": 256,
+      "mean_effect_square": 2.4461474164402007e-12,
+      "corrected_SD_over_mean": 1.384284270549482,
+      "variance": {
+        "observed_between_variance": 4.769508301784298e-12,
+        "mean_MC_variance_of_mean": 8.209558069579431e-14,
+        "noise_corrected_between_variance": 4.687412721088503e-12,
+        "crosshalf_covariance": 4.702831386346886e-12
+      },
+      "crosshalf_covariance_CI": [
+        2.2341603854684077e-12,
+        6.7252704990012416e-12
+      ],
+      "raw_half_reliability_correlation": 0.8983937812946226,
+      "integrated_half_reliability_correlation": 0.9739041493543329,
+      "median_paired_MCSE_raw512": 2.470400393001328e-07,
+      "median_paired_MCSE_RB512": 1.4508908803185152e-07,
+      "mean_conditional_variance_ratio_RB_over_raw": 0.28313107739706544
+    }
+  },
+  "no_global_RB_variance_theorem_asserted": true,
+  "activity_normalized_effects": {
+    "DeltaC": {
+      "mean_effect_over_noise": 0.11026807320533849,
+      "crosshalf_covariance": 0.000760094908231257,
+      "crosshalf_correlation": 0.7021626069039475
+    },
+    "DeltaF": {
+      "mean_effect_over_noise": 0.05158334944847717,
+      "crosshalf_covariance": 0.00131073416857989,
+      "crosshalf_correlation": 0.9068984147348882
+    }
+  }
+}

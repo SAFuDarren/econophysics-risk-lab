@@ -1,0 +1,25 @@
+{
+  "release": "state_environment_v9",
+  "mainline": "Macro observations -> effective state and response environment -> conditional risk -> matched-input forecast evaluation",
+  "evidence_types": {
+    "model": "Fixed simulated response cells; 32 origins x 128 paired future branches per cell. Capacity is latent model capacity, not measured book depth.",
+    "source_diagnosis": "256 model origins, independent simulation replicates; 128/64/64 fit/tune/test. Hidden environment includes activity, sizes, capacity and weight concentration.",
+    "market": "Observed BTCUSDT-derived aggregates. 32 past five-minute bars of signed flow, volume, count and return; next 12 squared log returns at UTC noon. 401 previously seen internal evaluation dates; no external confirmation."
+  },
+  "findings": {
+    "capacity": "At feedback 0.15, common-innovation correlation 0.65 versus 0 adds 3.306, 2.230, 1.639e-6 to mean risk at normalized capacity 0.5, 1, 1.5; these increments are 7.44%, 6.42%, 5.42% of the respective common-signal-arm risk. These are simulated conditional effects.",
+    "interaction": "The tested common-signal/feedback interaction is subadditive; this grid does not establish universal saturation or safe feedback.",
+    "precision": "Same-law conditional moment integration reduces simulation noise. Remaining state variation in the intervention contrast is real, but intervention contrast is not incremental forecast information.",
+    "information": "The tested hidden environment block improves source-risk prediction. Tested additional direction/memory information does not establish incremental QLIKE improvement.",
+    "market": "Development-selected HAR+Components QLIKE 0.501501 versus HAR-All 0.532309: 5.79% point reduction, paired difference CI crosses zero, Holm p=0.33. Same fields/history/real calibration; structural priors and representations differ.",
+    "controls": "Post-run descriptive HAR+RV20 0.502745 and HAR+RawMoments20 0.499219 nearly reproduce or exceed the selected result. They did not replace the primary selection or receive a new primary significance claim.",
+    "identity": "Only the chi=1, constant local noise, activity-forecast-off, no-fallback limit equals 12*(alpha^2+mean20((r-alpha)^2)); this is not the full activity-forecast model."
+  },
+  "limitations": [
+    "No unique inversion of real coordinating participants or funds.",
+    "No accepted additional mechanism-specific forecast advantage.",
+    "No new unseen market validation.",
+    "No identification of observed book liquidity or a regulatory optimum."
+  ],
+  "verification": "verify.py reconstructs published saved-table effects and QLIKE scores and validates hashes. It does not regenerate simulation paths, source calibration or market fits."
+}

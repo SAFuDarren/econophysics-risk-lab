@@ -129,6 +129,35 @@ are counted explicitly.
 *Parameter-recovery benchmark (D01), generated from the project’s controlled
 simulation studies. Method comparisons are in the source table above; settings are in the [study configuration](configs/depth_study_v1.json).*
 
+## Coordination, accommodation and forecast information
+
+The [new Explore instrument](https://safudarren.github.io/econophysics-risk-lab/lab.html#risk-environment)
+connects the existing network to its response environment. At fixed return
+feedback, the simulated common-signal risk increment is **3.306, 2.230 and
+1.639 × 10⁻⁶** as normalized shock capacity increases from 0.5 to 1 to 1.5.
+These increments equal **7.44%, 6.42% and 5.42%** of the corresponding
+common-signal-arm risk. These are paired model scenarios; capacity is not measured
+Bitcoin depth and correlation is not a coordinating-investor fraction.
+
+A mean intervention effect compares model worlds. Forecast improvement requires
+state variation that can be recovered from past observations and adds information
+beyond the comparator. A same-law precision repair separates simulation noise
+from state heterogeneity; privileged source-state tests locate useful information
+in the tested activity, size, capacity and concentration block.
+
+For the same empirical fields and 32-bar history, the development-selected
+Bitcoin HAR+Components readout has QLIKE **0.501501**, versus **0.532309** for
+HAR-All on **401 previously seen internal dates**. The **5.79% point reduction**
+has an interval crossing zero (Holm p=0.33). Post-run descriptive 20-bar moment
+controls nearly reproduce or exceed that score. The study establishes a
+conditional mechanism and an interpretable closure, without an accepted
+mechanism-specific forecasting advantage. These one-hour results remain
+separate from the older next-day and eight-step studies above.
+
+[Open the interactive study](https://safudarren.github.io/econophysics-risk-lab/risk-environment.html)
+· [Saved data, scope and verification](studies/state_environment_v9/README.md)
+· [Download the evidence package](web/downloads/state-environment/study-data.zip)
+
 ## Model and methods
 
 The observable inputs are log returns $r$, total volume $V$, trade counts $K$
@@ -301,7 +330,9 @@ problem fit and a testable comparison with classical methods.
 
 The [research report](web/downloads/research-report-en.pdf) develops the model,
 parameter recovery, observational equivalence, market tests and temporal-state
-experiments, with 19 scientific figures, eight tables and subsequent controls.
+experiments, followed by conditional environment responses, effective-state
+diagnostics and matched-input Bitcoin risk comparisons. The versioned v3 report
+remains available in the [report archive](web/downloads/reports/README.md).
 The notation $c$ corresponds to `rho` in the Python implementation;
 activity $q$ equals twice the directional action probability `a`.
 

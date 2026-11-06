@@ -1,0 +1,7 @@
+{
+  "chi": 1.0,
+  "alpha": 5.13085497616278e-06,
+  "relative_error_max": 3.250549500158989e-15,
+  "identity": "12(alpha\u00b2+mean_last20(r-alpha)\u00b2)",
+  "interpretation": "observed secondmoment identity, not identifiedcoordinationrisk"
+}

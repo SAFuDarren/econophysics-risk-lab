@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "chosen": "HAR+Components",
+  "empirical": "RawHistoryGamma",
+  "seen_internal_dates": 401,
+  "primary_har_difference": {
+    "model": "HAR+Components",
+    "reference": "HAR-All",
+    "n": 401,
+    "block_days": 7,
+    "mean_difference": -0.030807583183515112,
+    "paired_SD": 0.4978626011012051,
+    "CI_low": -0.07847477714283808,
+    "CI_high": 0.01798190979030727,
+    "relative_improvement": 0.05787540642011513,
+    "relative_CI_low": -0.030676914007070705,
+    "relative_CI_high": 0.14860391837930745,
+    "p_raw": 0.11,
+    "p_holm": 0.33
+  },
+  "no_external_confirmation": true,
+  "all_queries_retained": true,
+  "runtime_seconds": 13.243505001068115
+}

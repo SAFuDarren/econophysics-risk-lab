@@ -1,0 +1,308 @@
+{
+  "status": "completed_source_diagnostic",
+  "source_hash": "f720587d909a5ed4d6d12e3a24320944139875ed866f276267715102b18c3643",
+  "independent_origins": 256,
+  "test_origins": 64,
+  "risk_summaries": [
+    {
+      "model": "ActivityMacro",
+      "test_QLIKE": 0.02813046515171672,
+      "test_QLIKE_sd": 0.03795730001590225,
+      "test_MSE": 6.374521178512521e-11,
+      "test_R2_vs_trainmean": 0.9317110280137094,
+      "meanprediction": 3.613361885679552e-05,
+      "meantarget": 3.552647097095344e-05
+    },
+    {
+      "model": "Full32Macro",
+      "test_QLIKE": 0.036879081425531056,
+      "test_QLIKE_sd": 0.0504869867090123,
+      "test_MSE": 1.1723006493613648e-10,
+      "test_R2_vs_trainmean": 0.8744137732672351,
+      "meanprediction": 3.5826975686470316e-05,
+      "meantarget": 3.552647097095344e-05
+    },
+    {
+      "model": "MacroHiddenActivity",
+      "test_QLIKE": 0.008412570248551424,
+      "test_QLIKE_sd": 0.01433944768987311,
+      "test_MSE": 4.202738632259716e-11,
+      "test_R2_vs_trainmean": 0.9549769005879974,
+      "meanprediction": 3.4559334358791175e-05,
+      "meantarget": 3.552647097095344e-05
+    },
+    {
+      "model": "MacroAllHidden",
+      "test_QLIKE": 0.00851893757451374,
+      "test_QLIKE_sd": 0.012707181825960949,
+      "test_MSE": 3.1452163846148135e-11,
+      "test_R2_vs_trainmean": 0.9663059251722649,
+      "meanprediction": 3.4203642184104495e-05,
+      "meantarget": 3.552647097095344e-05
+    }
+  ],
+  "risk_contrasts": [
+    {
+      "model": "Full32Macro",
+      "reference": "ActivityMacro",
+      "difference": 0.008748616273814335,
+      "sd": 0.045725424648363815,
+      "ci_low": -0.0025893752408512292,
+      "ci_high": 0.019195092287481955,
+      "relative_improvement": -0.3110014792371975,
+      "p_raw": 0.9358,
+      "n_origins": 64,
+      "p_holm": 1.0
+    },
+    {
+      "model": "MacroHiddenActivity",
+      "reference": "Full32Macro",
+      "difference": -0.02846651117697963,
+      "sd": 0.045102157698983285,
+      "ci_low": -0.03888895176733749,
+      "ci_high": -0.016976036394618775,
+      "relative_improvement": 0.7718877498199431,
+      "p_raw": 0.0002,
+      "n_origins": 64,
+      "p_holm": 0.0006000000000000001
+    },
+    {
+      "model": "MacroAllHidden",
+      "reference": "MacroHiddenActivity",
+      "difference": 0.00010636732596231552,
+      "sd": 0.012171679970275122,
+      "ci_low": -0.0026715639574435997,
+      "ci_high": 0.003155851335612648,
+      "relative_improvement": -0.012643855898930665,
+      "p_raw": 0.5118,
+      "n_origins": 64,
+      "p_holm": 1.0
+    }
+  ],
+  "secondary_components": [
+    {
+      "target": "RBsignal",
+      "model": "ActivityMacro",
+      "test_QLIKE": 0.06498797370060883,
+      "test_QLIKE_sd": 0.08301521818392905,
+      "test_MSE": 3.839595063934606e-11,
+      "test_R2_vs_trainmean": 0.8451002305075462
+    },
+    {
+      "target": "RBsignal",
+      "model": "Full32Macro",
+      "test_QLIKE": 0.10548322540715202,
+      "test_QLIKE_sd": 0.159335483277396,
+      "test_MSE": 3.935601547342059e-11,
+      "test_R2_vs_trainmean": 0.8412270663061223
+    },
+    {
+      "target": "RBsignal",
+      "model": "MacroHiddenActivity",
+      "test_QLIKE": 0.025813689048558113,
+      "test_QLIKE_sd": 0.0360572049634412,
+      "test_MSE": 1.909664409485388e-11,
+      "test_R2_vs_trainmean": 0.9229589131375476
+    },
+    {
+      "target": "RBsignal",
+      "model": "MacroAllHidden",
+      "test_QLIKE": 0.025753125777286612,
+      "test_QLIKE_sd": 0.03415522218285133,
+      "test_MSE": 1.1450797334359798e-11,
+      "test_R2_vs_trainmean": 0.9538043507697522
+    },
+    {
+      "target": "RBnoise",
+      "model": "ActivityMacro",
+      "test_QLIKE": 0.018485466529182926,
+      "test_QLIKE_sd": 0.025176760695818347,
+      "test_MSE": 1.4056113143594722e-11,
+      "test_R2_vs_trainmean": 0.9368922613312108
+    },
+    {
+      "target": "RBnoise",
+      "model": "Full32Macro",
+      "test_QLIKE": 0.021665709012314557,
+      "test_QLIKE_sd": 0.028675435468982696,
+      "test_MSE": 2.4761382834326784e-11,
+      "test_R2_vs_trainmean": 0.888828806297805
+    },
+    {
+      "target": "RBnoise",
+      "model": "MacroHiddenActivity",
+      "test_QLIKE": 0.004670932532271842,
+      "test_QLIKE_sd": 0.007138467284988614,
+      "test_MSE": 5.996794908366568e-12,
+      "test_R2_vs_trainmean": 0.9730761867052857
+    },
+    {
+      "target": "RBnoise",
+      "model": "MacroAllHidden",
+      "test_QLIKE": 0.004366434448709084,
+      "test_QLIKE_sd": 0.0063933372503409,
+      "test_MSE": 5.698878733456063e-12,
+      "test_R2_vs_trainmean": 0.9744137411144878
+    }
+  ],
+  "component_contrasts": [
+    {
+      "model": "Full32Macro",
+      "reference": "ActivityMacro",
+      "difference": 0.040495251706543216,
+      "sd": 0.1350315224279386,
+      "ci_low": 0.004783242348032679,
+      "ci_high": 0.06977376927167432,
+      "relative_improvement": -0.6231191619098573,
+      "p_raw": 0.9864,
+      "n_origins": 64,
+      "p_holm": 0.9864,
+      "target": "RBsignal"
+    },
+    {
+      "model": "MacroHiddenActivity",
+      "reference": "Full32Macro",
+      "difference": -0.07966953635859392,
+      "sd": 0.14480265222899752,
+      "ci_low": -0.11124758201337007,
+      "ci_high": -0.04262209934756686,
+      "relative_improvement": 0.7552815725067138,
+      "p_raw": 0.0002,
+      "n_origins": 64,
+      "p_holm": 0.0006000000000000001,
+      "target": "RBsignal"
+    },
+    {
+      "model": "MacroAllHidden",
+      "reference": "MacroHiddenActivity",
+      "difference": -6.0563271271504415e-05,
+      "sd": 0.03489937648282591,
+      "ci_low": -0.007760192447642809,
+      "ci_high": 0.008772358076559298,
+      "relative_improvement": 0.0023461687772553114,
+      "p_raw": 0.4768,
+      "n_origins": 64,
+      "p_holm": 0.9536,
+      "target": "RBsignal"
+    },
+    {
+      "model": "Full32Macro",
+      "reference": "ActivityMacro",
+      "difference": 0.0031802424831316334,
+      "sd": 0.026507613081803317,
+      "ci_low": -0.0035096299494729935,
+      "ci_high": 0.00942201337067923,
+      "relative_improvement": -0.1720401526307707,
+      "p_raw": 0.8374,
+      "n_origins": 64,
+      "p_holm": 0.8374,
+      "target": "RBnoise"
+    },
+    {
+      "model": "MacroHiddenActivity",
+      "reference": "Full32Macro",
+      "difference": -0.016994776480042714,
+      "sd": 0.02705786683638614,
+      "ci_low": -0.02294951139397705,
+      "ci_high": -0.0099418513125226,
+      "relative_improvement": 0.7844089695095168,
+      "p_raw": 0.0002,
+      "n_origins": 64,
+      "p_holm": 0.0006000000000000001,
+      "target": "RBnoise"
+    },
+    {
+      "model": "MacroAllHidden",
+      "reference": "MacroHiddenActivity",
+      "difference": -0.00030449808356275876,
+      "sd": 0.00536369496488778,
+      "ci_low": -0.0016315487306362538,
+      "ci_high": 0.001003863174261654,
+      "relative_improvement": 0.06518999824102734,
+      "p_raw": 0.324,
+      "n_origins": 64,
+      "p_holm": 0.648,
+      "target": "RBnoise"
+    }
+  ],
+  "noise_diagnostics": [
+    {
+      "target": "full_RB",
+      "crossreplicate_covariance": 9.411539797857072e-10,
+      "replicate_A_variance": 9.497480017216428e-10,
+      "replicate_B_variance": 9.365765683450363e-10,
+      "replicate_correlation": 0.9978949956805919,
+      "noise_of_256estimate": 2.0083052476322937e-12,
+      "crossreplicate_reliability": 0.9978706684104091
+    },
+    {
+      "target": "DeltaC",
+      "crossreplicate_covariance": 2.6239473000060144e-12,
+      "replicate_A_variance": 2.934500159962499e-12,
+      "replicate_B_variance": 2.828862342805964e-12,
+      "replicate_correlation": 0.9107142505393101,
+      "noise_of_256estimate": 2.577339513782169e-13,
+      "crossreplicate_reliability": 0.9105612561228231
+    },
+    {
+      "target": "DeltaF",
+      "crossreplicate_covariance": 4.702831386346886e-12,
+      "replicate_A_variance": 5.102552092412958e-12,
+      "replicate_B_variance": 4.5698183420304665e-12,
+      "replicate_correlation": 0.9739041493543329,
+      "noise_of_256estimate": 1.333538308748259e-13,
+      "crossreplicate_reliability": 0.9724258222369251
+    }
+  ],
+  "ambiguity": [
+    {
+      "target": "full_RB",
+      "representation": "ActivityMacro",
+      "sufficient_queries": 53,
+      "total_queries": 64,
+      "positive_crosscovariance": 53,
+      "median_untruncated_crosscovariance": 1.0139632846592566e-10
+    },
+    {
+      "target": "full_RB",
+      "representation": "Full32Macro",
+      "sufficient_queries": 59,
+      "total_queries": 64,
+      "positive_crosscovariance": 59,
+      "median_untruncated_crosscovariance": 1.8725142781118716e-10
+    },
+    {
+      "target": "DeltaC",
+      "representation": "ActivityMacro",
+      "sufficient_queries": 53,
+      "total_queries": 64,
+      "positive_crosscovariance": 53,
+      "median_untruncated_crosscovariance": 6.082454939795109e-13
+    },
+    {
+      "target": "DeltaC",
+      "representation": "Full32Macro",
+      "sufficient_queries": 59,
+      "total_queries": 64,
+      "positive_crosscovariance": 59,
+      "median_untruncated_crosscovariance": 1.0275394371915581e-12
+    },
+    {
+      "target": "DeltaF",
+      "representation": "ActivityMacro",
+      "sufficient_queries": 53,
+      "total_queries": 64,
+      "positive_crosscovariance": 53,
+      "median_untruncated_crosscovariance": 3.455835631155496e-13
+    },
+    {
+      "target": "DeltaF",
+      "representation": "Full32Macro",
+      "sufficient_queries": 59,
+      "total_queries": 64,
+      "positive_crosscovariance": 59,
+      "median_untruncated_crosscovariance": 6.087885306199828e-13
+    }
+  ],
+  "interpretation": "finite estimator comparison; hidden summary diagnostic not optimal oracle or impossibility theorem; no market forecast superiority implied"
+}

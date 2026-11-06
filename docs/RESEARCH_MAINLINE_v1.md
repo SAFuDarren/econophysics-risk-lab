@@ -37,16 +37,48 @@ cost and evaluation roles explicit. Diverse source states avoid static-ancestor
 collapse, while HHI coverage and paired risk comparisons separately assess
 inference quality and predictive value.
 
-An audit of 663 examined Bitcoin dates locates the market observation gap:
-directional persistence, activity variation, execution units and calendar time
-do not match the unchanged generator. The next observation layer separates
-effective decisions, parent orders, child executions and market arrival time.
-Independent market forecast evaluation follows calibration of that interface.
+The original direct-map audit of 663 examined Bitcoin dates locates a market
+observation gap in directional persistence, activity variation, execution units
+and calendar time. Subsequent work separates effective decisions, fragmented
+executions, calendar activity and price accommodation. A nominal calendar-time
+extension supports the conditional studies below; this does not identify a true
+Bitcoin network or complete a precise market calibration.
 
 The [continuation evidence snapshot](../studies/collective_risk_continuation_v3/README.md)
 contains the saved comparisons, definitions and numerical verification. Its
 limited table-recalculation operation is distinguished from full simulation
 regeneration.
+
+## Conditional environment and effective-state diagnosis
+
+The [state/environment study](../studies/state_environment_v9/README.md) follows
+this same network mechanism. A common-input intervention has a larger paired
+risk increment when simulated shock capacity is lower. Return feedback and
+predictable-impact recovery alter the transmission, so a single coordination
+multiplier does not describe all environments.
+
+The inverse task now has three separate checks:
+
+- **Precision:** independent future replications and conditional-moment labels
+  separate simulation error from state variation without changing the law.
+- **Information:** activity, size, latent capacity and weight concentration
+  jointly improve source-model expected-risk prediction when supplied directly.
+  The tested extra direction/memory block adds no established QLIKE gain.
+- **Market forecast:** a past-only innovation/response closure uses the same
+  F/V/K/r history as HAR. On 401 previously seen internal dates, the selected
+  component readout has a 5.79% QLIKE point reduction, with uncertainty crossing
+  zero. Post-run direct-moment controls nearly reproduce or exceed this score.
+
+A positive average intervention effect compares two possible model worlds.
+Additional forecast information requires observable within-world state variation
+beyond the comparator. The complete-recovery local-noise limit reduces exactly
+to a 20-bar return second moment; the full activity-forecast candidate is broader,
+but its mechanism-specific advantage is not established. These results locate
+the next inference problem: recovering useful response-environment information
+at a justified measurement cost.
+
+[Interactive study](https://safudarren.github.io/econophysics-risk-lab/risk-environment.html)
+· [Saved-table verification](../studies/state_environment_v9/verify.py)
 
 ## Supporting assumption checks
 
