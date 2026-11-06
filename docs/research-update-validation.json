@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-06",
+  "scope": "report and public-site integration; not a new market experiment",
+  "report": {
+    "public": {
+      "pages": 31,
+      "figures": 24,
+      "original_figures_retained": true,
+      "build_warnings": [],
+      "unresolved_references": []
+    },
+    "course": {
+      "pages": 31,
+      "figures": 24,
+      "original_figures_retained": true,
+      "build_warnings": [],
+      "unresolved_references": []
+    }
+  },
+  "public_pdf_sha256": "b898e78c45a9dd83485c50a1ed726911a34895f82672bbaf1cf9409942ba92d2",
+  "public_source_zip_sha256": "8dcde7ddb7ee38134ebdd323f2f2a04404eac82ced3f937d7dc4715bbcc413d8",
+  "independent_new_table_comparisons_per_edition": 44,
+  "source_evidence_checks": 7547,
+  "quick_profile": "pass",
+  "site_profile": "pass",
+  "browser": {
+    "status": "pass",
+    "updated_page_language_viewport_cases": 32,
+    "new_panel_language_viewport_cases": 32,
+    "deep_link_keyboard_and_source_case_checks": "pass",
+    "legacy_six_experiments": "pass",
+    "errors": []
+  },
+  "course_distribution": "local only",
+  "original_experimental_data_and_results_rewritten": false
+}

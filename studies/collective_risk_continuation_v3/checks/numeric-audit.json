@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "checks": 7547,
+  "source_tables": 27,
+  "independent_test_cases": 128,
+  "all_horizons": [
+    1,
+    8,
+    48
+  ],
+  "primary_horizon": 8,
+  "recalculated": [
+    "QLIKE from outcomes and forecasts",
+    "state RMSE and coverage",
+    "risk coverage and width",
+    "finite-sample calibration ranks",
+    "paired mean and SD contrasts",
+    "shared-signal seed means",
+    "flow moment and G identities"
+  ],
+  "scope": "Recalculation of saved evidence; not a fresh simulation or independent market validation."
+}

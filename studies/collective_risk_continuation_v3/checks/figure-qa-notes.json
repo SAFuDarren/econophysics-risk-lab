@@ -1,0 +1,13 @@
+{
+  "backend": "Python, reused from the existing source figure workflow",
+  "new_figure": "R_conditional_risk",
+  "single_panel_alignment": "not applicable; render-time gate recorded",
+  "minimum_rendered_text_pt": 8,
+  "collision_audit": "pass: zero failures and zero warnings",
+  "source_preflight": "pass: zero failures; PNG is a preview rather than a TIFF submission raster",
+  "visual_review": "Reviewed the final 183 mm forest plot: all four prespecified paired contrasts retained; labels, uncertainty bars, zero line and explanatory footer are readable and separated.",
+  "uncertainty": "95% paired basic-bootstrap intervals, 19999 draws; independent unit is a complete simulated test history, n=128",
+  "selection": "Primary horizon 8 fixed before outcomes; no omitted reference contrasts",
+  "existing_figures": "D_distribution_propagation, N_economic_channels and V_market_transport copied byte-for-byte from the prior audited source",
+  "new_data_or_fit": false
+}

@@ -1,0 +1,6 @@
+model,state,n_seeds,rmse,mae,scope
+AbsoluteLastPressure,coherence,64,0.12453581054782667,0.1006247252781229,secondaryuntunedobservablecontrol; hiddenlabelsvalidationonly
+LastObservedPressure,fast_direction,64,0.1327465244586224,0.10847839949942184,secondaryuntunedobservablecontrol; hiddenlabelsvalidationonly
+NetworkABC,coherence,64,0.1253600115536237,0.10002580500279329,secondaryuntunedobservablecontrol; hiddenlabelsvalidationonly
+NetworkABC,fast_direction,64,0.13324300001168665,0.10815408815886739,secondaryuntunedobservablecontrol; hiddenlabelsvalidationonly
+ZeroDirection,fast_direction,64,0.39779004851349054,0.342721325014323,secondaryuntunedobservablecontrol; hiddenlabelsvalidationonly

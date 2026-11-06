@@ -366,14 +366,14 @@
         }
       ],
       "project_connection": {
-        "en": "Our network generates internal effective decisions; exchange K counts executions. A calibrated observation layer must relate these two clocks and order splitting before synthetic steps can represent five-minute market risk. That layer is proposed, not yet validated.",
-        "zh": "网络生成内部有效决策，交易所K统计实际执行。需要校准的观测层把两种时钟与拆单联系起来，之后才能把合成步骤解释成五分钟市场风险；该层目前是修正方案，尚未验证。"
+        "en": "The Bitcoin audit finds stronger pressure persistence and weaker activity variation in the unchanged network. A proposed arrival/fragmentation layer must connect effective decisions to raw executions and calendar windows at several time scales.",
+        "zh": "Bitcoin审计发现，未改网络的压力持续性更强、活动变化更弱。拟议的到达与碎片化观测层需要在多个时间尺度上，把有效决策连接到原始执行和日历窗口。"
       },
       "misconception": {
         "en": "Choosing a playback speed or multiplying time by a constant does not identify an economic event clock. Higher event counts alone also do not identify more coordination.",
         "zh": "调节播放倍速或给时间乘常数，并未识别经济事件时钟；事件数增多也不能单独识别更强协调。"
       },
-      "try_href": "lab.html#memory",
+      "try_href": "lab.html#collective-risk",
       "sources": [
         {
           "title": "Russell & Engle (1998): Econometric Analysis of Discrete-Valued Irregularly-Spaced Financial Transactions Data Using a New Autoregressive Conditional Multinomial Model",
@@ -640,14 +640,14 @@
         }
       ],
       "project_connection": {
-        "en": "Our common-input experiment injects one shared signal into the same interdependent network. The 2007 quant event motivates the question; it does not validate our parameters or identify Bitcoin institutions.",
-        "zh": "共同输入实验把同一信号加入原来的相互依赖网络。2007年量化事件提供问题动机，但不能验证本模型参数或识别比特币机构。"
+        "en": "Our paired network experiment gives nodes a common signal or independent signals with the same single-node marginal distribution. It isolates shared-input covariance; positive and reverse price feedback then test how that dependence enters risk.",
+        "zh": "我们的配对网络实验让节点接收共同信号或单节点边际分布相同的独立信号，分离共同输入的协方差作用；再用正向与反向价格反馈检验这种依赖怎样进入风险。"
       },
       "misconception": {
         "en": "Algorithmic trading is not uniformly destabilizing: the NYSE study also documents a liquidity-improvement channel.",
         "zh": "算法交易并非一律破坏稳定，纽约交易所研究也发现了改善流动性的通道。"
       },
-      "try_href": "methods.html#collective-dynamics",
+      "try_href": "lab.html#collective-channels",
       "sources": [
         {
           "title": "Khandani & Lo: What Happened to the Quants in August 2007?",
@@ -731,14 +731,14 @@
         }
       ],
       "project_connection": {
-        "en": "Our price-feedback tests retain fast/slow decisions. The current shared activity throttle lowers participation; it has no inventory, forced-liquidation or strategic-exit rule.",
-        "zh": "价格反馈实验保留快慢决策。当前共同活动收缩规则只减少参与，没有持仓、强制平仓或战略退出规则。"
+        "en": "The retained network compares positive lagged feedback, reverse feedback and an activity-throttle rule. These are distinct mechanisms: reducing participation is not forced liquidation, and reversing feedback is not proof of a strategic crash.",
+        "zh": "原网络比较正向滞后反馈、反向反馈和活动收缩规则。三者机理不同：减少参与并不等于强制平仓，反向反馈也不等于证明战略性崩盘。"
       },
       "misconception": {
         "en": "A declining activity rate is not automatically a simulated liquidity crisis or an endogenous crash.",
         "zh": "活动率下降不能自动称为流动性危机或内生崩盘。"
       },
-      "try_href": "trading.html?source=model",
+      "try_href": "lab.html#collective-channels",
       "sources": [
         {
           "title": "Brunnermeier & Pedersen: Market Liquidity and Funding Liquidity",
@@ -1946,14 +1946,14 @@
         }
       ],
       "project_connection": {
-        "en": "The controlled extension propagates full stochastic paths, retaining fast/slow states, memory and accommodation.",
-        "zh": "受控扩展改为传播完整随机路径，保留快慢状态、记忆与承接。"
+        "en": "We compare deterministic mean iteration with full stochastic propagation against independent Monte Carlo references. Keeping the state distribution repairs the propagation calculation; estimating that distribution from macro observations is a separate test.",
+        "zh": "我们将确定性均值递推、完整随机传播与独立Monte Carlo参照比较。保留状态分布修复的是传播计算；从宏观观测估计该分布仍需单独检验。"
       },
       "misconception": {
         "en": "A correct one-step conditional mean need not remain correct after repeated mean substitution.",
         "zh": "正确的一步条件均值，不保证反复代入均值仍正确。"
       },
-      "try_href": "methods.html#collective-dynamics",
+      "try_href": "lab.html#collective-propagation",
       "sources": [
         {
           "title": "Econophysics Risk Lab: mathematical foundations",
@@ -2026,14 +2026,14 @@
         }
       ],
       "project_connection": {
-        "en": "D01 checks agreement of Monte Carlo means. Predictive interval coverage is evaluated in a separate experiment.",
-        "zh": "D01检验Monte Carlo均值是否吻合；预测区间覆盖率在另一项实验中评价。"
+        "en": "The propagation experiment compares ensemble flow means with independent larger reference ensembles. Its Monte Carlo mean-error intervals concern numerical precision. Future-outcome intervals and latent-state coverage are evaluated separately.",
+        "zh": "传播实验将集合流均值与独立的大样本参照比较；Monte Carlo均值误差区间描述数值精度。未来结果区间和潜在状态覆盖另行评价。"
       },
       "misconception": {
         "en": "A 95% numerical-mean interval is not a 95% future-outcome interval.",
         "zh": "95%数值均值区间，不是95%未来结果区间。"
       },
-      "try_href": "reproduce.html",
+      "try_href": "lab.html#collective-propagation",
       "sources": [
         {
           "title": "Econophysics Risk Lab: mathematical foundations",
@@ -2112,14 +2112,14 @@
         }
       ],
       "project_connection": {
-        "en": "Our revised risk interface uses the same future paths for F,r and residual cross moments.",
-        "zh": "修正后的风险接口用同一批未来路径计算F、r及残差交叉矩。"
+        "en": "Common nonnegative scenario weights generate flow, return and residual moments together. This keeps covariance coherent and lets the same future paths produce RV. Risk comparisons then test predictive value rather than accounting consistency alone.",
+        "zh": "共同非负情景权重一起生成流、收益与残差矩，保持协方差相容，并由同一批未来路径生成RV。随后风险比较检验预测价值，而非只检验计算恒等式。"
       },
       "misconception": {
         "en": "Clipping a negative risk estimate positive does not repair an incompatible covariance matrix.",
         "zh": "把负风险截成正数，不能修复不相容的协方差矩阵。"
       },
-      "try_href": "methods.html#execution-risk-bridge",
+      "try_href": "lab.html#collective-risk",
       "sources": [
         {
           "title": "Econophysics Risk Lab: mathematical foundations",
@@ -2198,14 +2198,14 @@
         }
       ],
       "project_connection": {
-        "en": "Teacher graphs and future outcomes are excluded from the estimator; the supplied model law still counts as information.",
-        "zh": "估计器不读取验证对象的图或未来；但提供的模型规律仍属于信息成本。"
+        "en": "Our observable-only estimators use past F, V, K and r. An earlier ABC filter collapsed static ancestry; the current simulation-bank mixture retains 128 distinct sources. It approximates conditioning, while HHI coverage and direct F/V controls test what was actually learned.",
+        "zh": "仅可见历史的估计器使用过去F、V、K、r。先前ABC滤波发生静态祖先坍缩；当前模拟库混合保留128个不同来源。它近似条件化，HHI覆盖及直接F/V对照继续检验究竟学到了什么。"
       },
       "misconception": {
         "en": "A particle cloud with one surviving static ancestor is not evidence of precise graph recovery.",
         "zh": "静态祖先只剩一个，不能解释为网络恢复得很精确。"
       },
-      "try_href": "lab.html#inference",
+      "try_href": "lab.html#collective-inference",
       "sources": [
         {
           "title": "Econophysics Risk Lab: mathematical foundations",
@@ -2278,14 +2278,14 @@
         }
       ],
       "project_connection": {
-        "en": "The project counts raw fields, history, offline labels, model priors and tuning. Old dates remain retrospective.",
-        "zh": "项目计入原始字段、历史、离线标签、模型先验和调参；已看过日期保持回顾性标记。"
+        "en": "The latest controlled comparison gives the conditional network and MacroGamma the same 13 visible features, simulation bank and future-risk labels. Its fixed primary horizon is 8; horizons 1 and 48 remain visible, with paired loss-difference intervals.",
+        "zh": "最新受控比较向条件网络和MacroGamma提供相同13个可见特征、模拟库和未来风险标签。固定主要期限为8步，1和48步也全部保留，并展示配对损失差区间。"
       },
       "misconception": {
         "en": "Better than persistence does not establish superiority over a strong HAR or equally informed prior.",
         "zh": "优于持续性基线，不代表优于强HAR或信息充分的先验参照。"
       },
-      "try_href": "findings.html#information-efficiency",
+      "try_href": "lab.html#collective-risk",
       "sources": [
         {
           "title": "Econophysics Risk Lab: mathematical foundations",

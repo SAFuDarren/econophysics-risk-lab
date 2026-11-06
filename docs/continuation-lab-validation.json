@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "viewportLanguageTabCases": 32,
+  "errors": [],
+  "numeric_view_checks": {
+    "pairedContrasts": 10,
+    "shockStates": 8,
+    "stateTargets": 6,
+    "testCases": 128,
+    "observedBarsPerCase": 32,
+    "samePointLossAfterCalibration": true
+  },
+  "files": [
+    "web/lab.html",
+    "web/assets/continuation-lab.js",
+    "web/assets/continuation-lab.css",
+    "tests/test_continuation_lab.cjs"
+  ]
+}

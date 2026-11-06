@@ -21,6 +21,33 @@ h=(α+βm_F)²+β²bG+σ²η.
 
 The microscopic model explains why shared decisions and trading weights enter these moments. The inferential task is risk-relevant effective structure; it need not recover every investor or edge. A same-window bG product is exactly direct flow variance, so predictive content must come from a useful dynamic restriction, measurement economy or information-matched accuracy. Those requirements guide evaluation.
 
+## Dynamic inference and joint future scenarios
+
+The retained weighted fast/slow network now supplies complete stochastic future
+paths. Propagating the full state distribution preserves nonlinear dynamics;
+deterministic mean iteration loses that distribution and its dependencies.
+Shared-input and lagged-feedback interventions test economic channels within
+this same generator. They are controlled mechanism evidence.
+
+The observable estimator conditions source-network trajectories on the past
+32 bars of F, V, K and r. Its common nonnegative path weights retain coherent
+joint flow, return and residual moments. A 2,048-trajectory source bank and
+separate 32/64/128 selection/calibration/test units make offline information
+cost and evaluation roles explicit. Diverse source states avoid static-ancestor
+collapse, while HHI coverage and paired risk comparisons separately assess
+inference quality and predictive value.
+
+An audit of 663 examined Bitcoin dates locates the market observation gap:
+directional persistence, activity variation, execution units and calendar time
+do not match the unchanged generator. The next observation layer separates
+effective decisions, parent orders, child executions and market arrival time.
+Independent market forecast evaluation follows calibration of that interface.
+
+The [continuation evidence snapshot](../studies/collective_risk_continuation_v3/README.md)
+contains the saved comparisons, definitions and numerical verification. Its
+limited table-recalculation operation is distinguished from full simulation
+regeneration.
+
 ## Supporting assumption checks
 
 Joint-moment compatibility, size distributions, fragmentation and state dependence check the assumptions used by the statistical bridge. Δ is one joint-moment diagnostic for the fixed reference interface. Its market result helps assess that interface and specify effective-weight/state extensions. It is not a separate research objective or the organising axis of the project.

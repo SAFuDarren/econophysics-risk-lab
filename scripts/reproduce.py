@@ -30,12 +30,14 @@ def main():
   run([sys.executable,'scripts/checks/check_historical_replays.py'])
   run([sys.executable,'scripts/checks/check_interactive_data.py'])
   run([sys.executable,'scripts/checks/check_research_depth.py'])
+  run([sys.executable,'studies/collective_risk_continuation_v3/code/check_evidence.py'])
   node=shutil.which('node')
   if not node:raise RuntimeError('Node.js is required for the site profile')
-  for script in ['web/assets/math.js','web/assets/learning-math.js','web/assets/learning.js','web/assets/site.js','web/assets/experiments.js','web/assets/research-math.js','web/assets/research-workbench.js','web/assets/trading-engine.js','web/assets/trading-account.js','web/assets/trading-history.js','web/assets/trading-debrief.js','web/assets/trading-debrief-ui.js','web/assets/trading-ui.js']:
+  for script in ['web/assets/math.js','web/assets/learning-math.js','web/assets/learning.js','web/assets/continuation-lab.js','web/assets/data/continuation-evidence.js','web/assets/site.js','web/assets/experiments.js','web/assets/research-math.js','web/assets/research-workbench.js','web/assets/trading-engine.js','web/assets/trading-account.js','web/assets/trading-history.js','web/assets/trading-debrief.js','web/assets/trading-debrief-ui.js','web/assets/trading-ui.js']:
    run([node,'--check',script])
   run([node,'tests/test_web_math.cjs']);run([node,'tests/test_interactive_math.cjs'])
   run([node,'tests/test_research_depth.cjs']);run([node,'tests/test_learning.cjs'])
+  run([node,'tests/test_continuation_lab.cjs'])
   run([node,'tests/test_trading_engine.cjs']);run([node,'tests/test_trading_account.cjs']);run([node,'tests/test_trading_history.cjs']);run([node,'tests/test_trading_debrief.cjs'])
  if a.profile=='forecast':
   dest=a.destination or out/'reconstructed-study'

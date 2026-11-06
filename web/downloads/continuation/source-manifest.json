@@ -1,0 +1,287 @@
+{
+  "date": "2026-11-06",
+  "sources": [
+    {
+      "id": "v2_n01_summary",
+      "url": "downloads/continuation/tables/v2_n01_summary.csv",
+      "path": "tables/v2_n01_summary.csv",
+      "sha256": "2d16c6568d4e954493a8686d9003da1b31ce0ab86e92f9dc2ed72f4c486161a0",
+      "bytes": 1491,
+      "rows": 12,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/n01_summary.csv"
+    },
+    {
+      "id": "v2_n01_contrasts",
+      "url": "downloads/continuation/tables/v2_n01_contrasts.csv",
+      "path": "tables/v2_n01_contrasts.csv",
+      "sha256": "588a012b397a7293d0e11f66a505697ca9a5c27f197992f35f56a56d7b9906db",
+      "bytes": 1700,
+      "rows": 10,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/n01_contrasts.csv"
+    },
+    {
+      "id": "v2_n01_seed_metrics",
+      "url": "downloads/continuation/tables/v2_n01_seed_metrics.csv",
+      "path": "tables/v2_n01_seed_metrics.csv",
+      "sha256": "0998e0523174bd260dba57ee52a6bf8b5e3f195c4421bfe74144427733a82f39",
+      "bytes": 94163,
+      "rows": 768,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/n01_seed_metrics.csv"
+    },
+    {
+      "id": "v2_n01_curves",
+      "url": "downloads/continuation/tables/v2_n01_curves.csv",
+      "path": "tables/v2_n01_curves.csv",
+      "sha256": "d75dc48dd75b4317c633478f958437b8fcf558580eda7494a74c226bc7f8b3b4",
+      "bytes": 102311,
+      "rows": 1440,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/n01_curves.csv"
+    },
+    {
+      "id": "v2_d01_ensemble_moments",
+      "url": "downloads/continuation/tables/v2_d01_ensemble_moments.csv",
+      "path": "tables/v2_d01_ensemble_moments.csv",
+      "sha256": "a0cee40aaecbd039a925ed608aad32287be54187733fe9b8f8dced53904b83a3",
+      "bytes": 1421799,
+      "rows": 16128,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/d01_ensemble_moments.csv"
+    },
+    {
+      "id": "v2_d01_mean_closure",
+      "url": "downloads/continuation/tables/v2_d01_mean_closure.csv",
+      "path": "tables/v2_d01_mean_closure.csv",
+      "sha256": "b4e6af7c27219284db7f63c348d8c138c3791ec0afb31f12318c66ca075ff764",
+      "bytes": 94855,
+      "rows": 1152,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/d01_mean_closure.csv"
+    },
+    {
+      "id": "v2_d01_ensemble_summary",
+      "url": "downloads/continuation/tables/v2_d01_ensemble_summary.csv",
+      "path": "tables/v2_d01_ensemble_summary.csv",
+      "sha256": "15651d7251ca5c56a979d17529f396c71d198c14bd6dd6277036ff320a8491a4",
+      "bytes": 118122,
+      "rows": 1008,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/d01_ensemble_summary.csv"
+    },
+    {
+      "id": "v1_w2_conditional_flow_moments",
+      "url": "downloads/continuation/tables/v1_w2_conditional_flow_moments.csv",
+      "path": "tables/v1_w2_conditional_flow_moments.csv",
+      "sha256": "2ef35966bccb57d7fc8a62cec7fc8934889a1bcb656fe2ec3c4940e755cf4e68",
+      "bytes": 2034,
+      "rows": 16,
+      "sourceStudy": "Collective_Risk_Continuation_v1",
+      "sourcePath": "tables/w2_conditional_flow_moments.csv"
+    },
+    {
+      "id": "v1_w2_response_curves",
+      "url": "downloads/continuation/tables/v1_w2_response_curves.csv",
+      "path": "tables/v1_w2_response_curves.csv",
+      "sha256": "b47eac3204b009e626e07d4c165c6964c98cab2afea2fa2ef8710132d54d8333",
+      "bytes": 650213,
+      "rows": 6144,
+      "sourceStudy": "Collective_Risk_Continuation_v1",
+      "sourcePath": "tables/w2_response_curves.csv"
+    },
+    {
+      "id": "v1_w2_primary_contrasts",
+      "url": "downloads/continuation/tables/v1_w2_primary_contrasts.csv",
+      "path": "tables/v1_w2_primary_contrasts.csv",
+      "sha256": "cb3e07cd7d3e77425ab05b88106aa1bf2d36662ab1cc63069310e55565e17e0f",
+      "bytes": 635,
+      "rows": 4,
+      "sourceStudy": "Collective_Risk_Continuation_v1",
+      "sourcePath": "tables/w2_primary_contrasts.csv"
+    },
+    {
+      "id": "v2_reference_state_summaries",
+      "url": "downloads/continuation/tables/v2_reference_state_summaries.csv",
+      "path": "tables/v2_reference_state_summaries.csv",
+      "sha256": "acb3faa3f1f58a7cc07d6c96412ddbbb4c17dda8461759e4c912004498be4e09",
+      "bytes": 1080,
+      "rows": 8,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/d01_reference_states.json",
+      "derivation": {
+        "source_sha256": "78ffc24660c7316641d0af8035f5b82104ce9eb8e2dc2589a0a9f9a23c4fc628",
+        "rule": "All eight states; weighted fast/slow/trace, absolute fast coherence, sum of squared normalized weights."
+      }
+    },
+    {
+      "id": "v3_state_estimates_before_truth",
+      "url": "downloads/continuation/tables/v3_state_estimates_before_truth.csv",
+      "path": "tables/v3_state_estimates_before_truth.csv",
+      "sha256": "c1b2178a020e81243ef1dc02681a001b0ffc844d30f967b161bf7361cc4c89ef",
+      "bytes": 215910,
+      "rows": 2304,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/state_estimates_before_truth.csv"
+    },
+    {
+      "id": "v3_conditioning_diagnostics",
+      "url": "downloads/continuation/tables/v3_conditioning_diagnostics.csv",
+      "path": "tables/v3_conditioning_diagnostics.csv",
+      "sha256": "8b49b094df4543eaa5863561655c41c749aede00af9d1a6940dfef0d110d6b47",
+      "bytes": 11417,
+      "rows": 192,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/conditioning_diagnostics.csv"
+    },
+    {
+      "id": "v3_state_scores",
+      "url": "downloads/continuation/tables/v3_state_scores.csv",
+      "path": "tables/v3_state_scores.csv",
+      "sha256": "523726d0de1efc5271e39e08424bf1e5f6d870fd11c663a64c82eb01ca2cd67c",
+      "bytes": 1367,
+      "rows": 14,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/state_scores.csv"
+    },
+    {
+      "id": "v3_effective_risk_state",
+      "url": "downloads/continuation/tables/v3_effective_risk_state.csv",
+      "path": "tables/v3_effective_risk_state.csv",
+      "sha256": "340c22345ebc008a27d376cfb9d0216cc73926bedf7a014f0457477a6ca7aa19",
+      "bytes": 42605,
+      "rows": 128,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/effective_risk_state.csv"
+    },
+    {
+      "id": "v2_i01_simple_state_controls",
+      "url": "downloads/continuation/tables/v2_i01_simple_state_controls.csv",
+      "path": "tables/v2_i01_simple_state_controls.csv",
+      "sha256": "399d0a3a45c4149f1532af0659040caacb6c04e01de966ed75f8152028b0f871",
+      "bytes": 698,
+      "rows": 5,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/i01_simple_state_controls.csv"
+    },
+    {
+      "id": "v3_state_truth_validation_only",
+      "url": "downloads/continuation/tables/v3_state_truth_validation_only.csv",
+      "path": "tables/v3_state_truth_validation_only.csv",
+      "sha256": "435e24a208285d6f6f7f0a370bde4ba3c5253f9c70e107b1e239ffc7ab7c82b1",
+      "bytes": 25726,
+      "rows": 768,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/test_hidden_validation_only.npz",
+      "derivation": {
+        "source_sha256": "47d883decaf926590feff282d6d0532824bfe8f6afa73cc1bf97e8d7fc357a45",
+        "rule": "All 128 independent test cases and all six latent projections; evaluation-only, not estimator inputs."
+      }
+    },
+    {
+      "id": "v3_observable_prefixes",
+      "url": "downloads/continuation/tables/v3_observable_prefixes.csv",
+      "path": "tables/v3_observable_prefixes.csv",
+      "sha256": "885211b7bd7a6d82768859d1143b6f667df680ea475033607a8947a2adb4df49",
+      "bytes": 381170,
+      "rows": 4096,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/test_observable_only.npz",
+      "derivation": {
+        "source_sha256": "7698a419d76d95669e46be31e20a5d48b242d3545be2dc0ea097f77ede7b5da7",
+        "rule": "All 128 cases, only the 32 observed ticks 65\u201396. Future ticks are excluded."
+      }
+    },
+    {
+      "id": "v3_predictions_scored",
+      "url": "downloads/continuation/tables/v3_predictions_scored.csv",
+      "path": "tables/v3_predictions_scored.csv",
+      "sha256": "10e752f8a4656aadd7d54bb19bde9ab4261ef94c7ea237aa75da87fb1824cd26",
+      "bytes": 437033,
+      "rows": 2880,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/predictions_scored.csv"
+    },
+    {
+      "id": "v3_risk_scores",
+      "url": "downloads/continuation/tables/v3_risk_scores.csv",
+      "path": "tables/v3_risk_scores.csv",
+      "sha256": "14a0e8f15dd3c27f144ef72a67e8ec3e43cb5317473f79cde297a621b5c56cf9",
+      "bytes": 4390,
+      "rows": 21,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/risk_scores.csv"
+    },
+    {
+      "id": "v3_risk_contrasts",
+      "url": "downloads/continuation/tables/v3_risk_contrasts.csv",
+      "path": "tables/v3_risk_contrasts.csv",
+      "sha256": "36596b7c2741010d482d28257cd7f78ef8cc76b5a7fe0a9e2f4a20f5d3a11dd0",
+      "bytes": 1737,
+      "rows": 12,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/risk_contrasts.csv"
+    },
+    {
+      "id": "v3_calibration_quantiles",
+      "url": "downloads/continuation/tables/v3_calibration_quantiles.csv",
+      "path": "tables/v3_calibration_quantiles.csv",
+      "sha256": "86593aa10a0c90e0eb3acea4f0a167f47aabeacd7ff36eb576e8d325d7285be9",
+      "bytes": 647,
+      "rows": 15,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/calibration_quantiles.csv"
+    },
+    {
+      "id": "v2_v01_feature_mismatch",
+      "url": "downloads/continuation/tables/v2_v01_feature_mismatch.csv",
+      "path": "tables/v2_v01_feature_mismatch.csv",
+      "sha256": "89678e0859c15e8a464288c95421b924a291283234d222b838983fd99938055e",
+      "bytes": 2056,
+      "rows": 8,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/v01_feature_mismatch.csv"
+    },
+    {
+      "id": "v1_w2_seed_effects",
+      "url": "downloads/continuation/tables/v1_w2_seed_effects.csv",
+      "path": "tables/v1_w2_seed_effects.csv",
+      "sha256": "63ad8a924f1d110153a7e922b20f133151454ce9e21a917d4fdc76bdf876fbbd",
+      "bytes": 196000,
+      "rows": 2048,
+      "sourceStudy": "Collective_Risk_Continuation_v1",
+      "sourcePath": "tables/w2_seed_effects.csv"
+    },
+    {
+      "id": "v2_n01_common_input_covariance_identity",
+      "url": "downloads/continuation/tables/v2_n01_common_input_covariance_identity.csv",
+      "path": "tables/v2_n01_common_input_covariance_identity.csv",
+      "sha256": "3be4dd95646d6a01151dda9275f01160f1dd66ba50d8afac8c41b3a4e7a70ae5",
+      "bytes": 2171,
+      "rows": 8,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/n01_common_input_covariance_identity.csv"
+    },
+    {
+      "id": "v2_d01_mean_closure_summary",
+      "url": "downloads/continuation/tables/v2_d01_mean_closure_summary.csv",
+      "path": "tables/v2_d01_mean_closure_summary.csv",
+      "sha256": "e7cb8350cf2e351b9c6bbeeed5ff692ee7f16d9593f9d8dae40d8a6ef19b3512",
+      "bytes": 9034,
+      "rows": 144,
+      "sourceStudy": "Collective_Risk_Continuation_v2",
+      "sourcePath": "tables/d01_mean_closure_summary.csv"
+    },
+    {
+      "id": "v3_tune_grid",
+      "url": "downloads/continuation/tables/v3_tune_grid.csv",
+      "path": "tables/v3_tune_grid.csv",
+      "sha256": "9cf7cb58e26f6c5a0db98aeb2b7bc4940733484f7c1ceedbdee15152a192d9de",
+      "bytes": 381,
+      "rows": 9,
+      "sourceStudy": "Collective_Risk_State_Remedy_v3",
+      "sourcePath": "tables/tune_grid.csv"
+    }
+  ]
+}

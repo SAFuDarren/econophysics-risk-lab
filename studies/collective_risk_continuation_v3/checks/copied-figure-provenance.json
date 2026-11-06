@@ -1,0 +1,65 @@
+[
+  {
+    "file": "D_distribution_propagation.svg",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/D_distribution_propagation.svg",
+    "sha256": "45139d45d1337d1be6095a62cb63192327da8c95162bc8bc2868db389c9a41d3",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  },
+  {
+    "file": "D_distribution_propagation.pdf",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/D_distribution_propagation.pdf",
+    "sha256": "3f116010b5638501e3cb5a4cf89e7479014851bc8c38ff9740d22133b4ca0d5e",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  },
+  {
+    "file": "D_distribution_propagation.png",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/D_distribution_propagation.png",
+    "sha256": "5db0fbf9db02779369b193a6405e04b6faee9804515ebba9c8dd7a6200b3d8fd",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  },
+  {
+    "file": "N_economic_channels.svg",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/N_economic_channels.svg",
+    "sha256": "868703633d69cf8f2587fd2915cb2b7b16cafbfa72043fcb7ac96fb83eead22a",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  },
+  {
+    "file": "N_economic_channels.pdf",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/N_economic_channels.pdf",
+    "sha256": "3f7eab52ca77dc3291cbae66f1fa4ee7873e2ccd49502e552c99d4e0bc5f08a6",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  },
+  {
+    "file": "N_economic_channels.png",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/N_economic_channels.png",
+    "sha256": "6a91c845ac968793073f39a31817c18f7b903985ea952867c08e1e0ad719a4cf",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  },
+  {
+    "file": "V_market_transport.svg",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/V_market_transport.svg",
+    "sha256": "58391279d20ead48787b2d8169bdc5be162e3c209b741877a0b6b6a87423433f",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  },
+  {
+    "file": "V_market_transport.pdf",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/V_market_transport.pdf",
+    "sha256": "a3c8eef4fdb1e524192fe402dfebf969319e02324be77cc692ae768113fd7ce0",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  },
+  {
+    "file": "V_market_transport.png",
+    "sourceStudy": "Collective_Risk_Continuation_v2",
+    "sourcePath": "figures/V_market_transport.png",
+    "sha256": "7e9cf6460b358dbd4d28797e46c2b8f2f5cc6d359147fcf591effaae858cb3d9",
+    "adaptation": "Unchanged source figure; no cropping, recolouring or numerical changes."
+  }
+]

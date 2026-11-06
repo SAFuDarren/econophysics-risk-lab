@@ -5,6 +5,8 @@
 - [Repository guide and command families](REPOSITORY_GUIDE.md)
 - [Main-line evidence map](RESEARCH_MAINLINE_v1.md)
 - [Interactive laboratory guide](INTERACTIVE_LAB.md)
+- [Collective-risk experiment workbench](CONTINUATION_LAB.md)
+- [Dynamic inference and risk source evidence](../studies/collective_risk_continuation_v3/README.md)
 - [Historical replay: observations, estimates and theory](REPLAY_THEORY_BRIDGE_v1.md)
 - [Validation record](VALIDATION.md)
 

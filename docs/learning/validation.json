@@ -33,6 +33,8 @@
   "full_site_profile": "pass",
   "existing_english_readme_previews_retained": true,
   "frozen_data_results_studies_rewritten": false,
-  "canonical_source_sha256": "d1c1e830cb806b814e1000a03881cf087c5d582aeda98c49b250908178ecf5ba",
-  "calibration_demo_sha256": "1f934651289b0990612da0ca52162a28ed3a7205e409243bc97676d22f80a59a"
+  "canonical_source_sha256": "d58960d74fc7fc5c0c25d66a947c12fcb25b6aef0458f61823925bedcb4b7090",
+  "calibration_demo_sha256": "1f934651289b0990612da0ca52162a28ed3a7205e409243bc97676d22f80a59a",
+  "project_connections_updated_for_collective_risk": 8,
+  "browser_rechecked_2026_11_06": "pass: all 216 lesson/language/width cases"
 }

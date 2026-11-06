@@ -15,6 +15,12 @@ and sector-ETF risk applications.
 [Trading simulator](https://safudarren.github.io/econophysics-risk-lab/trading.html) ·
 [Full research report](web/downloads/research-report-en.pdf)
 
+The [collective-risk workbench](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-bench)
+opens the experimental evidence behind the dynamic model: common signals and
+feedback, distribution-preserving propagation, observable state inference and
+matched-input risk comparisons. It uses saved source experiments, with separate
+labels for controlled networks and Bitcoin observations.
+
 [![Research checks](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml)
 [![Website deployment](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml)
 
@@ -84,6 +90,22 @@ are counted explicitly.
   depends on connected-group sizes. A four-node chain and star have identical
   price–volume laws, making their internal edges indistinguishable through these
   observations. [Mathematical foundations](docs/theory/FOUNDATIONS.md).
+- **Collective dynamics and economic channels.** A weighted fast/slow decision
+  network retains the group-covariance mechanism while adding inertia,
+  adaptation and interdependence. Across 128 paired seeds, shared input changes
+  mean RV by **+3.62%** relative to the fixed baseline; positive lagged price
+  feedback changes it by **+6.24%**, reverse feedback by **−3.99%**. These are
+  controlled interventions in the retained configuration.
+  [Experimental record](studies/collective_risk_continuation_v3/README.md).
+- **Observable inference and coherent risk scenarios.** Conditioning on the
+  past 32 bars of signed flow, volume, counts and returns keeps 128 distinct
+  source trajectories from a 2,048-path network bank. At the fixed primary
+  eight-step horizon, network QLIKE is **0.13412**, versus **0.13329** for the
+  same-feature, same-bank MacroGamma control; the paired difference interval
+  includes zero. Raw 90% weight-concentration intervals cover **83.59%**.
+  The experiments distinguish successful state propagation from reliable
+  inference and additional risk value.
+  [Inspect the comparisons](https://safudarren.github.io/econophysics-risk-lab/lab.html#collective-risk).
 - **A mechanism-derived risk comparison.** At a 240-day total-history budget,
   the reduced collective pressure model has QLIKE **0.260805**, versus
   **0.228191** for return-only HAR and **0.260792** for the same-map pressure

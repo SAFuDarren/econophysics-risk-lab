@@ -16,11 +16,17 @@ Do not credit information already contained in F/V to structural recovery.
 
 ## Preserve uncertainty over risk-relevant structure
 
-Static graph/weight parameters should not be repeatedly resampled without a
-correct uncertainty mechanism. Candidate routes include conditional ensembles
-drawn from the same full-network simulation law and properly accepted
-resample-move or particle-MCMC steps. Positive scenario weights preserve joint
-moments, but diverse samples alone do not establish a calibrated posterior.
+The conditional-ensemble experiment now retains 128 different source trajectories
+per estimate from the same 2,048-history full-network bank. It avoids the earlier
+static-ancestor collapse, while raw 90% HHI intervals cover 83.59% and the
+matched-feature risk contrast remains unresolved. See the
+[source evidence](../studies/collective_risk_continuation_v3/README.md) and
+[interactive comparisons](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-bench).
+
+Static graph/weight parameters require a valid uncertainty mechanism. The next
+routes are better conditional simulation or properly accepted resample-move or
+particle-MCMC steps. Positive scenario weights preserve joint moments, while
+coverage tests evaluate whether the resulting state uncertainty is reliable.
 Prefer a small identifiable risk state or partial bounds to recovering every edge.
 
 ## Separate the event clock, execution layer and direction network
