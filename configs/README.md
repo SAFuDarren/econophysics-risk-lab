@@ -1,7 +1,17 @@
-# 模型与实验配置
+# Study configurations
 
-AB 保存实际使用的参数、观测窗口、系统规模、种子／划分、特征、模型和调参约定。文件可用 JSON 或 YAML；选定后保持一致。
+Each named JSON file records parameters, observable windows, sizes, seeds, splits
+and tuning choices for one study. Preserve a frozen version and create a new
+name when changing an experiment.
 
-区分试跑与正式配置。`foundation_v1.json` 是已实跑的实现核验／说明图配置，`figure_backend.json` 是绘图选择；不是正式相变或推断实验。正式扫描在可行性试跑后冻结，改变时保留旧配置并说明原因。
+- `foundation_v1.json`: implementation checks and explanatory figures.
+- `simulation_study_v1.json`: executed primary simulation study.
+- `simulation_followup_v1.json`: independent post-primary scale and interpolation diagnostics.
+- `depth_study_v1.json`: finite-network recovery and identification.
+- `real_market_v1.json`, `forecast_v1.json`, `state_forecast_v2.json`: market analysis and forecast comparisons.
+- `us_equity_v1.json`, `tail_increment_v1.json`, `crowded_exit_v1.json`: portfolio, tail and capacity studies.
+- `collective_trading_v1.json`: weighted fast/slow simulator settings.
+- `figure_backend.json`: plotting conventions, not an experiment result.
 
-`simulation_study_v1.json` 已在计时检查后锁定并实跑；它是一次本地实验锁定，不声称外部预注册。`simulation_followup_v1.json` 是主结果后为解释尺度敏感与插值而追加的独立诊断配置，不修改原主比较。
+These are local versioned experiment locks, not claims of external preregistration.
+The [repository guide](../docs/REPOSITORY_GUIDE.md) lists commands by purpose.

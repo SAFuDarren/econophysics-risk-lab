@@ -10,6 +10,7 @@ controlled inference studies are complemented by Bitcoin forecast comparisons
 and sector-ETF risk applications.
 
 [Research website](https://safudarren.github.io/econophysics-risk-lab/) ·
+[Learning room](https://safudarren.github.io/econophysics-risk-lab/learn.html) ·
 [Interactive experiments](https://safudarren.github.io/econophysics-risk-lab/lab.html) ·
 [Trading simulator](https://safudarren.github.io/econophysics-risk-lab/trading.html) ·
 [Full research report](web/downloads/research-report-en.pdf)
@@ -20,6 +21,36 @@ and sector-ETF risk applications.
 [![Interactive research website preview](web/assets/social-preview.jpg)](https://safudarren.github.io/econophysics-risk-lab/)
 
 [**Explore the interactive research website →**](https://safudarren.github.io/econophysics-risk-lab/)
+
+## Repository navigation
+
+| To find | Start here |
+|---|---|
+| The question, methods and findings | The research line below and [documentation index](docs/README.md) |
+| Mathematical definitions and identification arguments | [Theory](docs/theory/FOUNDATIONS.md) |
+| Shared model and inference implementation | [Python library](src/econophysics/) |
+| Frozen packages, protocols and manifests | [Studies](studies/) |
+| Numerical evidence and figure sources | [Results tables](results/tables/) and [figures](figures/) |
+| Data, experiment, plot and check commands | [Repository guide](docs/REPOSITORY_GUIDE.md) |
+| Website and browser experiments | [Web source](web/) |
+| Economic concepts, mathematics and inference lessons | [Learning room](https://safudarren.github.io/econophysics-risk-lab/learn.html) and [content guide](docs/learning/README.md) |
+
+Run routine checks through `python scripts/reproduce.py --profile quick` or
+`--profile site`. Individual commands are grouped by purpose under `scripts/`;
+the [migration map](docs/repository-migration-map.json) records every relocated entry point.
+
+## Learn the ideas behind the research
+
+The [learning room](https://safudarren.github.io/econophysics-risk-lab/learn.html)
+connects **27 bilingual topics** across market economics, mathematical foundations
+and inference. Each topic pairs a question and intuition with its formula,
+assumptions, symbols, project connection, sources and a short reasoning check.
+Interactive explanations cover liquidity, aggressor flow, covariance, order
+splitting, temporal risk, state uncertainty and interval calibration. Related
+experiments remain one click away; learning marks stay on the reader's device.
+
+[Content and illustration provenance](docs/learning/README.md) ·
+[Research priorities](docs/RESEARCH_NEXT_STEPS.md)
 
 ## Research line
 
@@ -180,7 +211,7 @@ development evidence.
 ```bash
 node tests/test_trading_engine.cjs
 node tests/test_trading_account.cjs
-node scripts/reproduce_collective_trading_engine.cjs
+node scripts/research/reproduce_collective_trading_engine.cjs
 python studies/collective_dynamics_v1/reproduce.py
 ```
 

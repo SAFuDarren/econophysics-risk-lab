@@ -39,7 +39,7 @@ Five experiments have a local Explore / Research detail switch. The six experime
 
 The findings page adds a market-restriction workbench at `findings.html#market`: the primary BTC H2 estimate, both saved interval choices, twelve monthly estimates and three exclusion cases. Point-only cases retain that status. Five mathematical steps explain how the fixed-interface scales cancel from Delta. The positive envelope across finite N is shown separately from the tighter bound for a specified N.
 
-`scripts/build_research_payload.py` builds the shared research payload from the saved CSVs and extracts the remaining nine path payloads from the original compressed snapshot. It preserves the existing replication-0 payload. The shared JSON records each input table's SHA-256. SVG exports embed source metadata; JSON exports identify the research view and its selected settings.
+`scripts/site/build_research_payload.py` builds the shared research payload from the saved CSVs and extracts the remaining nine path payloads from the original compressed snapshot. It preserves the existing replication-0 payload. The shared JSON records each input table's SHA-256. SVG exports embed source metadata; JSON exports identify the research view and its selected settings.
 
 ## Validation
 

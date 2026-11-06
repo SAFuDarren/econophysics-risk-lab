@@ -1,0 +1,28 @@
+{
+  "date_utc": "2026-11-06",
+  "scope": "script-family reorganisation and active documentation navigation",
+  "moved_entrypoints": 71,
+  "root_python_files_before": 72,
+  "root_python_files_after": 2,
+  "families_of_moved_entrypoints": {
+    "data": 6,
+    "research": 32,
+    "figures": 10,
+    "site": 4,
+    "checks": 19
+  },
+  "stable_cli": "scripts/reproduce.py",
+  "quick_profile": "pass: layout/480 exact-theory/9 unittest/82 JS checks",
+  "site_profile": "pass: 8 pages, 258 local links, 49 frozen study files, 52 historical archives, learning and source-bound browser/math/replay checks",
+  "new_learning_page": "pass: 27 bilingual lessons; 216 viewport/language/topic cases; 117 KaTeX formula and symbol strings",
+  "strict_before_after_source_hash_map": "scripts/relocations.json",
+  "historical_source_records_under_data_results_studies": "not rewritten",
+  "arbitrary_changed_source_digest_test": "rejected as required",
+  "isolated_root_discovery": "pass: full scripts + src copied to a temporary root; 480 exact checks execute there",
+  "portable_command_imports": "pass: forecast/state/US reconstruction and forecast-plot --help",
+  "new_docs_local_link_check": "pass",
+  "english_site_preview_retained": true,
+  "known_preexisting_full_tail_bundle_requirement": "Preflight verified missing local historical.csv/confirmation.csv and unshipped audit_tail_analytic.py; historical decision record exists. Missing audit is not silently skipped.",
+  "raw_network_refetch_or_new_predictive_claim": false,
+  "isolated_browser_engine_reproduction": "pass:4 fixed tables rebuilt byte-for-byte; fresh audit retained locally and original historical record restored"
+}

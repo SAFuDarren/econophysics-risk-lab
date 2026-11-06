@@ -1,0 +1,2443 @@
+{
+  "schema_version": 1,
+  "title": "Learning room",
+  "categories": [
+    {
+      "id": "economics",
+      "en": "Markets & economics",
+      "zh": "市场与经济学"
+    },
+    {
+      "id": "mathematics",
+      "en": "Mathematical foundations",
+      "zh": "数学基础"
+    },
+    {
+      "id": "methods",
+      "en": "Inference & risk",
+      "zh": "推断与风险"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "price-and-value",
+      "group": "market",
+      "title": {
+        "en": "Price, information and value",
+        "zh": "价格、信息与价值"
+      },
+      "question": {
+        "en": "What does a traded price tell us?",
+        "zh": "成交价告诉了我们什么？"
+      },
+      "intuition": {
+        "en": "A price records a transaction between willing counterparties under current information and trading constraints. A cash-flow valuation is a separate model; neither is a vote in which everyone agrees.",
+        "zh": "成交价记录当前信息和交易约束下达成的一笔交易。现金流估值是另一套模型；价格并不表示每个人意见一致。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}P_t^*&=\\sum_{h=1}^{T}\\frac{E_t[CF_{t+h}]}{(1+d)^h}\\\\&\\quad+\\frac{E_t[P_{t+T}^*]}{(1+d)^T}\\end{aligned}",
+        "assumptions": {
+          "en": "Illustrative equity valuation with a fixed discount rate and terminal value; not a Bitcoin valuation model or a guaranteed reversion law.",
+          "zh": "示意性股票估值：固定折现率并保留终值。它不是比特币估值模型，也不保证价格必然回归。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "P_t^*",
+          "en": "reference equity value",
+          "zh": "参考股票价值",
+          "unit": "currency/share"
+        },
+        {
+          "symbol": "CF",
+          "en": "cash flow to the claim",
+          "zh": "该权益对应现金流",
+          "unit": "currency/share"
+        },
+        {
+          "symbol": "d",
+          "en": "per-period discount rate",
+          "zh": "每期折现率",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "T",
+          "en": "valuation horizon",
+          "zh": "估值期限",
+          "unit": "periods"
+        }
+      ],
+      "project_connection": {
+        "en": "The project studies short-horizon trading pressure and risk. It does not estimate intrinsic value; Bitcoin is not an equity claim on corporate dividends.",
+        "zh": "项目研究短期交易压力与风险，没有估计内在价值；比特币不是对公司股息的股权请求权。"
+      },
+      "misconception": {
+        "en": "Short-term price pressure does not prove that all prices are irrational or that every asset returns to a known fundamental value.",
+        "zh": "短期交易压力不能证明所有价格都不理性，也不能证明每种资产必然回到某个已知价值。"
+      },
+      "try_href": "trading.html",
+      "sources": [
+        {
+          "title": "SEC Investor.gov: Types of Orders",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+          "support": "Market and limit orders, execution-price uncertainty; basic market-order mechanism."
+        },
+        {
+          "title": "Shiller: Do Stock Prices Move Too Much? (NBER w0456; published 1981)",
+          "url": "https://www.nber.org/papers/w0456",
+          "support": "Dividend-discount valuation is an explicit model of equity value; prices and cash-flow news need model-specific analysis."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Does our flow model measure Bitcoin intrinsic value?",
+          "zh": "我们的成交流模型是否测出了比特币内在价值？"
+        },
+        "options": [
+          {
+            "en": "Yes, from the last price",
+            "zh": "是，根据最后成交价"
+          },
+          {
+            "en": "No, it models trading and risk",
+            "zh": "没有，它描述交易与风险"
+          },
+          {
+            "en": "Yes, whenever volume rises",
+            "zh": "是，只要成交量上升"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "A value model needs its own economic claims and assumptions. The current interface describes flow and return moments.",
+          "zh": "价值模型需要独立的经济对象与假设；当前接口描述成交流与收益矩。"
+        }
+      },
+      "category": "economics",
+      "lens": "none"
+    },
+    {
+      "id": "liquidity-and-orders",
+      "group": "market",
+      "title": {
+        "en": "Liquidity, spread and depth",
+        "zh": "流动性、价差与深度"
+      },
+      "question": {
+        "en": "Why can the same order receive different prices?",
+        "zh": "为什么同样大小的订单会有不同成交价？"
+      },
+      "intuition": {
+        "en": "The best bid and ask describe the nearest trading opportunity. Depth describes how much can be traded around those prices; a large immediate order may consume several levels.",
+        "zh": "最优买卖报价给出最近的交易机会，深度描述这些价格附近能成交多少。较大的即时订单可能吃掉多个价位。"
+      },
+      "formula": {
+        "latex": "s_t=a_t-b_t,\\qquad m_t=(a_t+b_t)/2",
+        "assumptions": {
+          "en": "Quoted spread and midpoint; actual execution also depends on order type, available size and subsequent book changes.",
+          "zh": "这里定义报价价差和中间价；实际成交还受订单类型、可用数量和后续盘口变化影响。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "a_t",
+          "en": "best ask",
+          "zh": "最优卖价",
+          "unit": "currency/unit"
+        },
+        {
+          "symbol": "b_t",
+          "en": "best bid",
+          "zh": "最优买价",
+          "unit": "currency/unit"
+        },
+        {
+          "symbol": "s_t",
+          "en": "quoted spread",
+          "zh": "报价价差",
+          "unit": "currency/unit"
+        },
+        {
+          "symbol": "m_t",
+          "en": "quote midpoint",
+          "zh": "报价中间价",
+          "unit": "currency/unit"
+        }
+      ],
+      "project_connection": {
+        "en": "Our synthetic accommodation state represents a price-response channel. It is not observed book depth; the replay uses genuine market candles.",
+        "zh": "模型中的承接状态表示价格响应通道，不是实际测到的盘口深度；行情回放使用真实蜡烛图。"
+      },
+      "misconception": {
+        "en": "High volume alone does not guarantee deep liquidity at the next instant.",
+        "zh": "成交量很高，不代表下一个时刻盘口一定很深。"
+      },
+      "try_href": "trading.html",
+      "sources": [
+        {
+          "title": "SEC Investor.gov: Types of Orders",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+          "support": "Market and limit orders, execution-price uncertainty; basic market-order mechanism."
+        },
+        {
+          "title": "Cont, Kukanov & Stoikov: The Price Impact of Order Book Events",
+          "url": "https://arxiv.org/abs/1011.6402",
+          "support": "Short-horizon order-book imbalance and depth; book OFI differs from executed-volume imbalance F."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "A wider quoted spread directly means what?",
+          "zh": "报价价差更宽，直接表示什么？"
+        },
+        "options": [
+          {
+            "en": "A larger gap between best bid and ask",
+            "zh": "最优买卖价之间的距离更大"
+          },
+          {
+            "en": "More investors are coordinated",
+            "zh": "协同投资者更多"
+          },
+          {
+            "en": "The next return must be negative",
+            "zh": "下一根收益必为负"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "en": "Spread describes available prices, not participant coordination or the sign of a forecast.",
+          "zh": "价差描述可用报价，不能直接识别协同参与者或预测方向。"
+        }
+      },
+      "category": "economics",
+      "lens": "book"
+    },
+    {
+      "id": "signed-flow",
+      "group": "market",
+      "title": {
+        "en": "Signed flow and execution counts",
+        "zh": "主动买卖流与成交笔数"
+      },
+      "question": {
+        "en": "How can buying pressure be positive if every trade has a seller?",
+        "zh": "每笔交易都有卖方，为什么还能说买入压力为正？"
+      },
+      "intuition": {
+        "en": "Aggressor signing distinguishes which side accepts the available quote. Positive flow means more buyer-initiated size than seller-initiated size, not unmatched buying or money entering without a seller.",
+        "zh": "主动方标记区分哪一方接受现有报价。正成交流表示主动买入量更多，不表示没有对手方的买入，也不是无人卖出的资金流入。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}F_t&=V_t^{\\mathrm{buy}}-V_t^{\\mathrm{sell}}\\\\V_t&=V_t^{\\mathrm{buy}}+V_t^{\\mathrm{sell}}\\\\p_t&=F_t/V_t\\end{aligned}",
+        "assumptions": {
+          "en": "Sizes use the same base unit and the same time interval; V must be positive. K counts executions under a declared exchange grouping rule.",
+          "zh": "买卖量采用相同基础单位和时间区间，且V为正；K按明确的交易所归并口径计数。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "F_t",
+          "en": "signed aggressive volume",
+          "zh": "主动买卖量之差",
+          "unit": "base asset"
+        },
+        {
+          "symbol": "V_t",
+          "en": "total executed volume",
+          "zh": "总成交量",
+          "unit": "base asset"
+        },
+        {
+          "symbol": "p_t",
+          "en": "normalized pressure",
+          "zh": "归一化压力",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "K_t",
+          "en": "execution count",
+          "zh": "成交笔数",
+          "unit": "executions"
+        }
+      ],
+      "project_connection": {
+        "en": "F,V,K are the macro interface. Our 48 effective nodes are modelling units; raw exchange K is not a headcount.",
+        "zh": "F、V、K构成宏观接口。模型中的48个有效节点是建模单元，交易所原始K不是人数。"
+      },
+      "misconception": {
+        "en": "A large aggressive buy is not proof that an account opened a new long; position changes and identities are not observed.",
+        "zh": "大额主动买入不能证明某账户新开了多仓；我们没有观测账户身份与持仓变化。"
+      },
+      "try_href": "methods.html#execution-risk-bridge",
+      "sources": [
+        {
+          "title": "SEC Investor.gov: Types of Orders",
+          "url": "https://www.investor.gov/introduction-investing/investing-basics/how-stock-markets-work/types-orders",
+          "support": "Market and limit orders, execution-price uncertainty; basic market-order mechanism."
+        },
+        {
+          "title": "Cont, Kukanov & Stoikov: The Price Impact of Order Book Events",
+          "url": "https://arxiv.org/abs/1011.6402",
+          "support": "Short-horizon order-book imbalance and depth; book OFI differs from executed-volume imbalance F."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "If F is positive, which conclusion is supported?",
+          "zh": "F为正时，哪一结论有依据？"
+        },
+        "options": [
+          {
+            "en": "Buyers outnumber sellers",
+            "zh": "买方人数多于卖方"
+          },
+          {
+            "en": "Buyer-initiated executed size is larger",
+            "zh": "主动买入成交量更大"
+          },
+          {
+            "en": "There are no sellers",
+            "zh": "没有卖方"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "The sign is about aggressive executed size, not people or the absence of counterparties.",
+          "zh": "符号针对主动成交量，不针对人数，也不表示没有对手方。"
+        }
+      },
+      "category": "economics",
+      "lens": "flow"
+    },
+    {
+      "id": "event-and-calendar-time",
+      "category": "economics",
+      "group": "market",
+      "title": {
+        "en": "Event time and market time",
+        "zh": "事件时间与日历时间"
+      },
+      "question": {
+        "en": "Does one internal network step equal one five-minute candle?",
+        "zh": "网络内部更新一步，就等于一根五分钟K线吗？"
+      },
+      "intuition": {
+        "en": "Trades arrive at irregular times. A calendar window may contain many or few events, and one decision may produce several executions. Directional dependence and the event clock are separate parts of a market model.",
+        "zh": "交易并非等间隔到达。同一个日历窗口可能包含很多或很少事件，一个决策也可能产生多笔执行。方向依赖与事件时钟是市场模型的不同部分。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}d_i&=\\tau_i-\\tau_{i-1}\\\\r_{[t,t+\\Delta]}&=\\sum_{i=N(t)+1}^{N(t+\\Delta)}x_i\\end{aligned}",
+        "assumptions": {
+          "en": "Here N counts the chosen market events and x is their log-price increment; the sum is an aggregation identity when all price changes in the window are included. No independent-arrival or independent-sign assumption is made.",
+          "zh": "这里N统计选定的市场事件，x是各事件的对数价格增量；窗口内价格变化全部计入时，该式为聚合恒等式。不假定到达事件或交易符号独立。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "\\tau_i",
+          "en": "calendar timestamp of event i",
+          "zh": "事件i的日历时间戳",
+          "unit": "time"
+        },
+        {
+          "symbol": "d_i",
+          "en": "time between consecutive events",
+          "zh": "相邻事件间隔",
+          "unit": "time"
+        },
+        {
+          "symbol": "N(t)",
+          "en": "number of chosen events up to t",
+          "zh": "截至t的选定事件数",
+          "unit": "events"
+        },
+        {
+          "symbol": "x_i",
+          "en": "event log-price increment",
+          "zh": "事件对数价格增量",
+          "unit": "return"
+        },
+        {
+          "symbol": "\\Delta",
+          "en": "calendar window length",
+          "zh": "日历窗口长度",
+          "unit": "time"
+        }
+      ],
+      "project_connection": {
+        "en": "Our network generates internal effective decisions; exchange K counts executions. A calibrated observation layer must relate these two clocks and order splitting before synthetic steps can represent five-minute market risk. That layer is proposed, not yet validated.",
+        "zh": "网络生成内部有效决策，交易所K统计实际执行。需要校准的观测层把两种时钟与拆单联系起来，之后才能把合成步骤解释成五分钟市场风险；该层目前是修正方案，尚未验证。"
+      },
+      "misconception": {
+        "en": "Choosing a playback speed or multiplying time by a constant does not identify an economic event clock. Higher event counts alone also do not identify more coordination.",
+        "zh": "调节播放倍速或给时间乘常数，并未识别经济事件时钟；事件数增多也不能单独识别更强协调。"
+      },
+      "try_href": "lab.html#memory",
+      "sources": [
+        {
+          "title": "Russell & Engle (1998): Econometric Analysis of Discrete-Valued Irregularly-Spaced Financial Transactions Data Using a New Autoregressive Conditional Multinomial Model",
+          "url": "https://escholarship.org/uc/item/00m2c5hk",
+          "support": "Original UCSD ACM working-paper record; views transactions as a marked point process and jointly considers price transition probabilities and arrival times. It discusses ACD for arrival times; it is not the separate Econometrica ACD article."
+        },
+        {
+          "title": "Russell & Engle (1998), author manuscript, UCSD Discussion Paper98-10",
+          "url": "https://eml.berkeley.edu/symposia/nsf98/engle_russell.pdf",
+          "support": "Primary author manuscript. Source of the marked-arrival modelling motivation, not validation of our proposed network observation layer."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What is needed before treating a model step as five market minutes?",
+          "zh": "把一个模型步骤解释为市场中的五分钟，需要什么？"
+        },
+        "options": [
+          {
+            "en": "Set the animation to run five times slower",
+            "zh": "把动画调慢五倍"
+          },
+          {
+            "en": "Calibrate event arrivals, execution grouping and aggregation against observed time windows",
+            "zh": "根据真实时间窗口校准事件到达、执行归并与聚合"
+          },
+          {
+            "en": "Rename the horizontal axis",
+            "zh": "更改横轴名称"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "The observation clock is an economic/data mapping; playback speed changes only the display.",
+          "zh": "观测时钟是经济与数据映射；播放倍速只改变显示速度。"
+        }
+      },
+      "lens": "none"
+    },
+    {
+      "id": "price-impact",
+      "group": "market",
+      "title": {
+        "en": "Price impact and residual risk",
+        "zh": "价格冲击与残差风险"
+      },
+      "question": {
+        "en": "Why does volume not determine the return on its own?",
+        "zh": "为什么成交量不能独自决定收益？"
+      },
+      "intuition": {
+        "en": "A signed order meets the available liquidity and other information. The local response can change with market state, while news, cancellations and unmeasured pressure remain outside a simple flow equation.",
+        "zh": "有方向的订单要面对可用流动性及其他信息。局部响应随市场状态变化；新闻、撤单与未测压力仍可能落在简单成交流方程之外。"
+      },
+      "formula": {
+        "latex": "r_t=\\alpha+\\beta F_t+\\eta_t",
+        "assumptions": {
+          "en": "A local working response model, not an exact causal law. Book OFI in Cont et al. includes order-book events and is richer than our executed-volume F.",
+          "zh": "局部工作模型，不是精确因果定律。Cont等文献的盘口OFI包括订单簿事件，比我们的已成交量F更丰富。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "r_t",
+          "en": "log return",
+          "zh": "对数收益",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "\\alpha",
+          "en": "local intercept",
+          "zh": "局部截距",
+          "unit": "return"
+        },
+        {
+          "symbol": "\\beta",
+          "en": "flow response",
+          "zh": "成交流响应",
+          "unit": "return/base asset"
+        },
+        {
+          "symbol": "\\eta_t",
+          "en": "unexplained return component",
+          "zh": "未解释的收益部分",
+          "unit": "return"
+        }
+      ],
+      "project_connection": {
+        "en": "Risk must retain response uncertainty and residual moments, not convert flow amplification directly into market volatility.",
+        "zh": "风险估计需要保留响应不确定性和残差矩，不能把流放大指标直接等同于市场波动率。"
+      },
+      "misconception": {
+        "en": "A fitted beta or a good scatter plot does not by itself establish a causal impact coefficient.",
+        "zh": "拟合出的beta或漂亮的散点关系，不能单独证明因果冲击系数。"
+      },
+      "try_href": "methods.html#execution-risk-bridge",
+      "sources": [
+        {
+          "title": "Cont, Kukanov & Stoikov: The Price Impact of Order Book Events",
+          "url": "https://arxiv.org/abs/1011.6402",
+          "support": "Short-horizon order-book imbalance and depth; book OFI differs from executed-volume imbalance F."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Which extra condition is needed before ignoring flow–residual cross terms?",
+          "zh": "忽略成交流与残差的交叉项前，需要什么条件？"
+        },
+        "options": [
+          {
+            "en": "A positive fitted beta",
+            "zh": "拟合beta为正"
+          },
+          {
+            "en": "Conditional orthogonality under the forecast information",
+            "zh": "在预测信息条件下二者正交"
+          },
+          {
+            "en": "A large sample of prices alone",
+            "zh": "只有大量价格样本"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "Full-window regression orthogonality need not persist in a new state or future interval.",
+          "zh": "全样本回归中的正交，不一定在新状态或未来区间继续成立。"
+        }
+      },
+      "category": "economics",
+      "lens": "book"
+    },
+    {
+      "id": "herding-and-splitting",
+      "group": "collective",
+      "title": {
+        "en": "Herding or order splitting?",
+        "zh": "羊群行为还是拆单？"
+      },
+      "question": {
+        "en": "Do repeated same-side trades identify a crowd?",
+        "zh": "连续同向成交能识别出一群跟风者吗？"
+      },
+      "intuition": {
+        "en": "Many investors can react together, but one parent decision can also be executed as many small same-side orders. Both can make order flow persistent while representing different economic mechanisms.",
+        "zh": "多人可以一起反应，一个母单决策也能拆成许多同向小单。两者都可能让成交流持续，却对应不同经济机制。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}\\text{Across units: }&\\operatorname{Cov}(\\xi_i,\\xi_j)>0\\\\\\text{Across time: }&\\operatorname{Cov}(\\epsilon_t,\\epsilon_{t+\\ell})>0\\end{aligned}",
+        "assumptions": {
+          "en": "The first relation concerns different decision units; the second concerns time-separated execution signs. Neither identity is inferred merely from five-minute bar correlation.",
+          "zh": "前者涉及不同决策单元，后者涉及不同时点的执行符号；仅靠五分钟柱相关不能识别这些身份。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "\\xi_i",
+          "en": "action of decision unit i",
+          "zh": "决策单元i的动作",
+          "unit": "signed action"
+        },
+        {
+          "symbol": "\\epsilon_t",
+          "en": "execution sign at event t",
+          "zh": "第t个执行事件的符号",
+          "unit": "±1"
+        },
+        {
+          "symbol": "\\ell",
+          "en": "event lag",
+          "zh": "事件滞后",
+          "unit": "executions"
+        }
+      ],
+      "project_connection": {
+        "en": "The project separates cross-unit coordination, parent execution and time covariance. Tóth et al. find splitting dominance at short scales in their labelled LSE sample, not in every market.",
+        "zh": "项目分别处理跨单元协调、母单执行与时间协方差。Tóth等在有身份标签的伦敦市场样本中发现短时拆单占主导，不能推广为所有市场定律。"
+      },
+      "misconception": {
+        "en": "More same-sign bars does not identify the number of followers or whole parent orders.",
+        "zh": "更多同向K线不能直接给出跟风人数或完整母单。"
+      },
+      "try_href": "trading.html?source=model",
+      "sources": [
+        {
+          "title": "Tóth et al.: Why is order flow so persistent?",
+          "url": "https://arxiv.org/abs/1108.1632",
+          "support": "Separates herding from order splitting using membership-labelled LSE data; its short-scale finding is not a universal market law."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What can separate herding from splitting empirically?",
+          "zh": "实证上什么信息有助于区分跟风和拆单？"
+        },
+        "options": [
+          {
+            "en": "The candle colour alone",
+            "zh": "只看K线颜色"
+          },
+          {
+            "en": "Participant or parent-execution labels with a stated model",
+            "zh": "参与者或母单执行标签及明确模型"
+          },
+          {
+            "en": "High traded volume alone",
+            "zh": "只看高成交量"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "Aggregate persistence is compatible with several underlying sources.",
+          "zh": "同一种聚合持续性可以来自多种微观来源。"
+        }
+      },
+      "category": "economics",
+      "lens": "memory"
+    },
+    {
+      "id": "common-factors",
+      "group": "collective",
+      "title": {
+        "en": "Common factors and crowded strategies",
+        "zh": "共同因子与拥挤策略"
+      },
+      "question": {
+        "en": "Why can different strategies take the same risk?",
+        "zh": "不同策略为什么可能承担同一种风险？"
+      },
+      "intuition": {
+        "en": "Different names and portfolios can still load on the same signal. Shared exposures can synchronize responses; separate holdings lists do not reveal the entire common risk.",
+        "zh": "名字和持仓不同的策略，仍可能加载同一个信号。共同暴露可能让反应同步，单看持仓清单不能揭示全部共同风险。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}R_i&=b_i f+e_i\\\\\\operatorname{Cov}(R_i,R_j)&=b_i b_j\\operatorname{Var}(f)\\end{aligned}",
+        "assumptions": {
+          "en": "The displayed covariance requires residuals uncorrelated with the factor and with one another. Opposite factor loadings can offset exposure.",
+          "zh": "该协方差式要求残差与因子、彼此均不相关；相反的因子加载可能抵消暴露。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "R_i",
+          "en": "strategy return",
+          "zh": "策略收益",
+          "unit": "return"
+        },
+        {
+          "symbol": "f",
+          "en": "common factor",
+          "zh": "共同因子",
+          "unit": "factor return"
+        },
+        {
+          "symbol": "b_i",
+          "en": "factor loading",
+          "zh": "因子加载",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "e_i",
+          "en": "idiosyncratic component",
+          "zh": "特有成分",
+          "unit": "return"
+        }
+      ],
+      "project_connection": {
+        "en": "Our common-input experiment injects one shared signal into the same interdependent network. The 2007 quant event motivates the question; it does not validate our parameters or identify Bitcoin institutions.",
+        "zh": "共同输入实验把同一信号加入原来的相互依赖网络。2007年量化事件提供问题动机，但不能验证本模型参数或识别比特币机构。"
+      },
+      "misconception": {
+        "en": "Algorithmic trading is not uniformly destabilizing: the NYSE study also documents a liquidity-improvement channel.",
+        "zh": "算法交易并非一律破坏稳定，纽约交易所研究也发现了改善流动性的通道。"
+      },
+      "try_href": "methods.html#collective-dynamics",
+      "sources": [
+        {
+          "title": "Khandani & Lo: What Happened to the Quants in August 2007?",
+          "url": "https://www.nber.org/papers/w14465",
+          "support": "Factor/transaction evidence consistent with portfolio deleveraging and temporary withdrawal of market-making capital."
+        },
+        {
+          "title": "Hendershott, Jones & Menkveld: Does Algorithmic Trading Improve Liquidity?",
+          "url": "https://doi.org/10.1111/j.1540-6261.2010.01624.x",
+          "support": "NYSE instrumental-variable study supports a liquidity-improvement channel; algorithms are not uniformly destabilizing."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "When can common-factor exposure cancel rather than reinforce?",
+          "zh": "共同因子暴露什么时候可能抵消？"
+        },
+        "options": [
+          {
+            "en": "When loadings have opposite signs",
+            "zh": "加载方向相反时"
+          },
+          {
+            "en": "Whenever strategies have different names",
+            "zh": "只要策略名称不同"
+          },
+          {
+            "en": "Whenever both strategies are automated",
+            "zh": "只要两者都自动化"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "en": "The sign and magnitude of exposure matter, not the strategy label alone.",
+          "zh": "关键是暴露的方向与大小，不只是策略标签。"
+        }
+      },
+      "category": "economics",
+      "lens": "weights"
+    },
+    {
+      "id": "feedback-and-liquidity",
+      "group": "collective",
+      "title": {
+        "en": "Feedback, leverage and liquidity spirals",
+        "zh": "反馈、杠杆与流动性螺旋"
+      },
+      "question": {
+        "en": "How can a small shock spread through risk rules?",
+        "zh": "一个小扰动怎样通过风控规则传播？"
+      },
+      "intuition": {
+        "en": "Losses can reduce funding capacity; constrained traders may cut positions, affecting liquidity and prices. Whether the feedback amplifies a shock depends on the actual funding, inventory and execution rules.",
+        "zh": "亏损可能削弱融资能力，受约束交易者可能减仓，进而影响流动性和价格。扰动是否放大，取决于真实融资、持仓和执行规则。"
+      },
+      "formula": {
+        "latex": "\\delta x_{t+1}\\approx J_t\\delta x_t",
+        "assumptions": {
+          "en": "A local response approximation around a specified reference path. For changing states, use successive Jacobians, not an arbitrary fixed power.",
+          "zh": "在指定参考轨迹附近的局部响应近似。状态变化时应使用连续的Jacobian，而非任意固定矩阵的幂。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "x_t",
+          "en": "dynamic state",
+          "zh": "动态状态",
+          "unit": "model-defined"
+        },
+        {
+          "symbol": "J_t",
+          "en": "local response Jacobian",
+          "zh": "局部响应Jacobian",
+          "unit": "state units/state units"
+        },
+        {
+          "symbol": "\\delta x_t",
+          "en": "small state perturbation",
+          "zh": "小状态扰动",
+          "unit": "state units"
+        }
+      ],
+      "project_connection": {
+        "en": "Our price-feedback tests retain fast/slow decisions. The current shared activity throttle lowers participation; it has no inventory, forced-liquidation or strategic-exit rule.",
+        "zh": "价格反馈实验保留快慢决策。当前共同活动收缩规则只减少参与，没有持仓、强制平仓或战略退出规则。"
+      },
+      "misconception": {
+        "en": "A declining activity rate is not automatically a simulated liquidity crisis or an endogenous crash.",
+        "zh": "活动率下降不能自动称为流动性危机或内生崩盘。"
+      },
+      "try_href": "trading.html?source=model",
+      "sources": [
+        {
+          "title": "Brunnermeier & Pedersen: Market Liquidity and Funding Liquidity",
+          "url": "https://www.nber.org/papers/w12939",
+          "support": "A theoretical model links funding constraints and market liquidity; destabilizing spirals occur under conditions."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What must be specified to claim a forced-exit mechanism?",
+          "zh": "要声称建立了强制退出机制，必须明确什么？"
+        },
+        "options": [
+          {
+            "en": "Only a dramatic price chart",
+            "zh": "只需要剧烈价格图"
+          },
+          {
+            "en": "Funding or margin constraints, positions and execution rules",
+            "zh": "融资或保证金约束、持仓和执行规则"
+          },
+          {
+            "en": "Only a large return variance",
+            "zh": "只需要较大收益方差"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "A liquidity-spiral explanation requires the economic feedback channel, not just a volatile path.",
+          "zh": "流动性螺旋解释需要经济反馈通道，不能只靠一条波动路径。"
+        }
+      },
+      "category": "economics",
+      "lens": "none"
+    },
+    {
+      "id": "volatility-and-rv",
+      "group": "risk",
+      "title": {
+        "en": "Volatility, realized variance and the horizon",
+        "zh": "波动率、实现方差与期限"
+      },
+      "question": {
+        "en": "Why is daily RV not the square of the daily return?",
+        "zh": "为什么日内RV不等于整日收益的平方？"
+      },
+      "intuition": {
+        "en": "Squared intraday moves accumulate even if up and down returns cancel in the daily total. The risk horizon and return aggregation define which quantity is being estimated. RV has squared-return units; its square root is a volatility scale for the same window.",
+        "zh": "即使涨跌在整日收益中抵消，日内平方波动仍会累积。风险期限与收益的聚合方式决定了所估计的对象。 RV以收益平方为单位；开方后得到同一期限的波动尺度。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}RV_d&=\\sum_{j=1}^{M}r_{d,j}^2\\\\\\left(\\sum_j r_{d,j}\\right)^2&=RV_d+2\\sum_{i<j}r_{d,i}r_{d,j}\\end{aligned}",
+        "assumptions": {
+          "en": "The same return intervals are used in both expressions. The second formula retains all cross-time terms; no independence is assumed.",
+          "zh": "两式使用相同收益区间。第二式保留全部跨时项，不假定独立。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "r_{d,j}",
+          "en": "intraday log return",
+          "zh": "日内对数收益",
+          "unit": "return"
+        },
+        {
+          "symbol": "M",
+          "en": "bars in the day",
+          "zh": "当日柱数",
+          "unit": "bars"
+        },
+        {
+          "symbol": "RV_d",
+          "en": "realized variance proxy",
+          "zh": "实现方差代理",
+          "unit": "return²"
+        }
+      ],
+      "project_connection": {
+        "en": "The Bitcoin target sums 288 five-minute squared returns. Synthetic steps have not been assigned a five-minute clock, so 48 synthetic steps are not a stated four-hour market forecast.",
+        "zh": "比特币目标累加288根五分钟平方收益。合成步骤尚未标定五分钟时钟，因此48步不能称为真实四小时预测。"
+      },
+      "misconception": {
+        "en": "Persistent order flow can change cumulative-return risk without necessarily increasing expected RV under a fixed linear response.",
+        "zh": "固定线性响应下，持续成交流可以改变累计收益风险，却不一定提高预期RV。"
+      },
+      "try_href": "lab.html#memory",
+      "sources": [
+        {
+          "title": "Corsi: A Simple Approximate Long-Memory Model of Realized Volatility",
+          "url": "https://doi.org/10.1093/jjfinec/nbp001",
+          "support": "HAR-RV combines volatility components at several horizons; a transparent statistical forecasting comparator."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "A +1% move followed by −1% has approximately what log-return RV?",
+          "zh": "对数收益先+1%再−1%，RV是多少？"
+        },
+        "options": [
+          {
+            "en": "Zero, because the returns sum to zero",
+            "zh": "零，因为收益和为零"
+          },
+          {
+            "en": "0.0002",
+            "zh": "0.0002"
+          },
+          {
+            "en": "−0.0001",
+            "zh": "−0.0001"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "0.01²+(-0.01)²=0.0002; squaring the sum would answer another question.",
+          "zh": "0.01²+(-0.01)²=0.0002；把收益和平方回答的是另一个问题。"
+        }
+      },
+      "category": "economics",
+      "lens": "memory"
+    },
+    {
+      "id": "tail-risk",
+      "group": "risk",
+      "title": {
+        "en": "Variance, drawdown, VaR and expected shortfall",
+        "zh": "方差、回撤、VaR与预期损失"
+      },
+      "question": {
+        "en": "Can one volatility number describe every loss?",
+        "zh": "一个波动率数字能描述所有亏损吗？"
+      },
+      "intuition": {
+        "en": "Variance describes dispersion. Drawdown describes a path from a running peak. VaR is a loss quantile, while expected shortfall summarizes the far-loss tail. Their units and horizons must match the question.",
+        "zh": "方差描述离散程度，回撤描述从历史峰值下跌的路径，VaR是损失分位点，预期损失概括更坏的尾部。它们的单位和期限必须对应问题。"
+      },
+      "formula": {
+        "latex": "\\operatorname{VaR}_{\\alpha}(L)=\\inf\\{\\ell:P(L\\le\\ell)\\ge\\alpha\\}",
+        "assumptions": {
+          "en": "L is loss over a specified horizon. VaR is a quantile, not a maximum possible loss. For continuous losses, ES is the mean beyond that quantile; atoms require a quantile-average definition.",
+          "zh": "L是指定期限的损失。VaR是分位点，不是最大可能损失。连续分布下ES是超过该分位点的平均损失；有原子时需用分位平均定义。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "L",
+          "en": "loss over the horizon",
+          "zh": "该期限内的损失",
+          "unit": "currency or return loss"
+        },
+        {
+          "symbol": "\\alpha",
+          "en": "confidence/quantile level",
+          "zh": "分位水平",
+          "unit": "probability"
+        },
+        {
+          "symbol": "\\ell",
+          "en": "candidate loss threshold",
+          "zh": "候选损失阈值",
+          "unit": "same as loss"
+        }
+      ],
+      "project_connection": {
+        "en": "Our primary forecast is future RV, not a calibrated VaR, ES or crash probability. Such applications require a validated loss distribution and tail sample support.",
+        "zh": "项目主要预测未来RV，尚不是校准的VaR、ES或崩盘概率。那些应用需要已验证的损失分布与尾部样本。"
+      },
+      "misconception": {
+        "en": "Two markets with the same variance can have different tail losses and drawdowns.",
+        "zh": "两个市场可以方差相同，但尾部损失和回撤不同。"
+      },
+      "try_href": "lab.html#risk",
+      "sources": [
+        {
+          "title": "Basel Committee: Minimum capital requirements for market risk (2019)",
+          "url": "https://www.bis.org/publications/201901-standards-minimum-capital-requirements-market-risk",
+          "support": "Market-risk framework uses expected shortfall; supplies context for distinguishing tail loss from variance."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Does 95% VaR bound every possible loss?",
+          "zh": "95% VaR是否限制了每一种可能损失？"
+        },
+        "options": [
+          {
+            "en": "Yes, it is the worst possible loss",
+            "zh": "是，它就是最坏损失"
+          },
+          {
+            "en": "No, losses beyond the quantile remain possible",
+            "zh": "不是，分位点之外仍可能发生更大损失"
+          },
+          {
+            "en": "Only if volatility is positive",
+            "zh": "只要波动率为正就可以"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "A quantile says how much probability lies below a threshold, not where the entire tail ends.",
+          "zh": "分位点描述阈值以下的概率，不表示整个尾部到此结束。"
+        }
+      },
+      "category": "economics",
+      "lens": "none"
+    },
+    {
+      "id": "diversification",
+      "group": "risk",
+      "title": {
+        "en": "Diversification and hidden common exposure",
+        "zh": "分散化与隐藏的共同暴露"
+      },
+      "question": {
+        "en": "Why can many holdings still move together?",
+        "zh": "为什么持仓很多，仍然可能一起涨跌？"
+      },
+      "intuition": {
+        "en": "Portfolio risk includes both individual variation and co-movement. Holding more labels does not remove a common factor shared across the holdings or strategies.",
+        "zh": "组合风险既包括各项自身变化，也包括共同变化。增加名称数量，不会消除持仓或策略共享的共同因子。"
+      },
+      "formula": {
+        "latex": "\\operatorname{Var}(R_p)=w^{\\mathsf T}\\Sigma w",
+        "assumptions": {
+          "en": "Weights and the covariance matrix use the same horizon; an estimated historical covariance is not a guaranteed future covariance.",
+          "zh": "权重与协方差矩阵使用相同期限；历史估计的协方差不保证未来不变。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "R_p",
+          "en": "portfolio return",
+          "zh": "组合收益",
+          "unit": "return"
+        },
+        {
+          "symbol": "w",
+          "en": "portfolio weights",
+          "zh": "组合权重",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "\\Sigma",
+          "en": "return covariance matrix",
+          "zh": "收益协方差矩阵",
+          "unit": "return²"
+        }
+      ],
+      "project_connection": {
+        "en": "The project compares full and diagonal covariance and audits strategy overlap. Ignoring off-diagonal terms removes measured shared variation, not the underlying exposure.",
+        "zh": "项目比较完整与对角协方差，并审计策略重叠。忽略非对角项只是在计算中删掉共同变化，并未消除真实暴露。"
+      },
+      "misconception": {
+        "en": "Several ETFs or different strategy names need not mean independent risks.",
+        "zh": "多个ETF或不同策略名称，不等于风险相互独立。"
+      },
+      "try_href": "methods.html#covariance",
+      "sources": [
+        {
+          "title": "SEC Investor.gov: Asset Allocation and Diversification",
+          "url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation",
+          "support": "Diversification depends on underlying exposures; several narrowly focused funds need not provide broad diversification."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What does a diagonal-only covariance approximation omit?",
+          "zh": "仅用对角协方差会忽略什么？"
+        },
+        "options": [
+          {
+            "en": "All individual variances",
+            "zh": "全部个体方差"
+          },
+          {
+            "en": "Cross-asset covariance terms",
+            "zh": "资产之间的协方差项"
+          },
+          {
+            "en": "The number of holdings",
+            "zh": "持仓数量"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "Those cross terms are the mathematical place where shared exposures enter portfolio variance.",
+          "zh": "共同暴露正是通过这些交叉项进入组合方差。"
+        }
+      },
+      "category": "economics",
+      "lens": "weights"
+    },
+    {
+      "id": "forecast-comparison",
+      "group": "inference",
+      "title": {
+        "en": "Forecasts, baselines and information budgets",
+        "zh": "预测、基线与信息预算"
+      },
+      "question": {
+        "en": "What would show that the mechanism adds predictive value?",
+        "zh": "怎样证明机理带来了额外预测价值？"
+      },
+      "intuition": {
+        "en": "Compare future outcomes after all model choices are frozen. A strong statistical baseline and a prior-only model reveal whether gains come from current observations, a supplied model law, extra calibration data or genuine dynamic restrictions.",
+        "zh": "应在冻结模型选择后比较未来结果。强统计基线和仅用先验的模型，可以区分收益来自当前观测、已给定模型规律、额外校准数据，还是动态约束。"
+      },
+      "formula": {
+        "latex": "\\mathrm{QLIKE}(y,h)=y/h-\\log(y/h)-1",
+        "assumptions": {
+          "en": "Positive realized variance y and positive forecast h, on matching horizons. Lower is better; paired losses and dependent-data uncertainty must use the correct evaluation units.",
+          "zh": "y为正的实现方差，h为正的同期限预测。越小越好；配对损失与依赖数据区间需采用正确评价单元。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "y",
+          "en": "realized risk target",
+          "zh": "实现风险目标",
+          "unit": "return²"
+        },
+        {
+          "symbol": "h",
+          "en": "risk forecast",
+          "zh": "风险预测",
+          "unit": "return²"
+        }
+      ],
+      "project_connection": {
+        "en": "HAR combines short, medium and longer volatility histories. Our 1/7/28-day choice is a project variant, not the original paper’s only specification; model priors and offline labels also count as information.",
+        "zh": "HAR结合短、中、长波动历史。项目使用的1/7/28日是具体变体，并非原文唯一设定；模型先验和离线标签也要计入信息成本。"
+      },
+      "misconception": {
+        "en": "Better fitting or a short feature vector does not establish an out-of-sample or low-information advantage.",
+        "zh": "拟合更好，或特征向量更短，都不能证明样本外优势或信息成本更低。"
+      },
+      "try_href": "methods.html#forecast",
+      "sources": [
+        {
+          "title": "Corsi: A Simple Approximate Long-Memory Model of Realized Volatility",
+          "url": "https://doi.org/10.1093/jjfinec/nbp001",
+          "support": "HAR-RV combines volatility components at several horizons; a transparent statistical forecasting comparator."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Which comparison isolates observable conditioning under a supplied law?",
+          "zh": "在已给定模型规律时，哪一对照能检验观测条件化的增量？"
+        },
+        "options": [
+          {
+            "en": "Network estimate versus the same prior without current observations",
+            "zh": "网络估计与不读取当前观测的相同模型先验"
+          },
+          {
+            "en": "A complex model versus yesterday’s price only",
+            "zh": "复杂模型与只有昨日价格的模型"
+          },
+          {
+            "en": "Training fit before versus after adding parameters",
+            "zh": "增加参数前后的训练拟合"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "en": "The prior-only control retains the mechanism knowledge and removes the new observation input.",
+          "zh": "仅用先验的对照保留机理知识，去掉新增观测输入。"
+        }
+      },
+      "category": "economics",
+      "lens": "none"
+    },
+    {
+      "id": "networks-and-identification",
+      "group": "inference",
+      "title": {
+        "en": "Networks, effective structure and identification",
+        "zh": "网络、有效结构与可识别性"
+      },
+      "question": {
+        "en": "Does a successful prediction reveal who follows whom?",
+        "zh": "预测成功是否就知道谁在跟随谁？"
+      },
+      "intuition": {
+        "en": "An interdependent network represents decisions at interacting layers or time scales. Aggregate data may constrain useful response or risk moments while leaving many internal graphs observationally equivalent.",
+        "zh": "相互依赖网络表示不同层或时间尺度之间的决策作用。聚合数据可能约束有用的响应和风险矩，同时让许多内部网络无法区分。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}F&=Q^{\\mathsf T}\\xi\\\\\\operatorname{Var}(F\\mid Q)&=Q^{\\mathsf T}\\Gamma Q\\end{aligned}",
+        "assumptions": {
+          "en": "Condition on fixed effective weights Q. Gamma is the conditional action covariance. Increasing positive covariance raises variance only while other relevant quantities are held fixed.",
+          "zh": "条件于固定有效交易权重Q；Gamma是动作的条件协方差。只有在其他相关量固定时，增加正协方差才给出相应的方差增加。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "Q",
+          "en": "effective trading weights",
+          "zh": "有效交易权重",
+          "unit": "base size/model units"
+        },
+        {
+          "symbol": "\\xi",
+          "en": "signed action vector",
+          "zh": "有符号动作向量",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "\\Gamma",
+          "en": "action covariance",
+          "zh": "动作协方差",
+          "unit": "action²"
+        }
+      ],
+      "project_connection": {
+        "en": "Finite-ER recovery is conditional on a model family and known scales. The dynamic student receives only macro histories; its collapsed weight posterior is a failure to retain uncertainty, not evidence of a uniquely found graph.",
+        "zh": "有限ER恢复依赖模型家族与已知尺度。动态估计器只读取宏观历史；权重后验塌陷意味着不确定性未被保留，不是唯一识别出网络。"
+      },
+      "misconception": {
+        "en": "Correlation, fitting and forecasting are different from causal identification or literal participant recovery.",
+        "zh": "相关、拟合和预测，与因果识别或真实参与者恢复是不同问题。"
+      },
+      "try_href": "lab.html#identity",
+      "sources": [
+        {
+          "title": "Alvarez-Zuzek et al.: Interacting Social Processes on Interconnected Networks",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0163593",
+          "support": "Interacting decision processes on interconnected layers; does not validate a financial-market identification model."
+        },
+        {
+          "title": "Angelopoulos & Bates: A Gentle Introduction to Conformal Prediction",
+          "url": "https://arxiv.org/abs/2107.07511",
+          "support": "Marginal coverage under exchangeability; does not by itself guarantee state-conditional or dependent-market coverage."
+        },
+        {
+          "title": "Project mathematical foundations: identification and observational equivalence",
+          "url": "methods.html#identity",
+          "support": "Project-specific finite-ER identification and equal-observation-law examples; conditional model claims, not market graph recovery."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "If two graphs have the same complete observation law, can those observations alone distinguish their edges?",
+          "zh": "两个图若有相同完整观测分布，仅用这些观测能区分其连边吗？"
+        },
+        "options": [
+          {
+            "en": "Yes, with enough repeated samples",
+            "zh": "可以，只要重复样本足够多"
+          },
+          {
+            "en": "No, additional assumptions or observables are needed",
+            "zh": "不能，需要额外假设或观测"
+          },
+          {
+            "en": "Yes, if a regression has enough parameters",
+            "zh": "可以，只要回归参数足够多"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "More samples estimate the same law more accurately; they do not break exact observational equivalence.",
+          "zh": "更多样本能更准确估计同一分布，却无法打破精确的观测等价。"
+        }
+      },
+      "category": "economics",
+      "lens": "none"
+    },
+    {
+      "id": "conditional-moments",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Conditional moments and hidden states",
+        "zh": "条件矩与隐藏状态"
+      },
+      "question": {
+        "en": "What does “given the state” change?",
+        "zh": "“给定状态”改变了什么？"
+      },
+      "intuition": {
+        "en": "An uncertain market state can change the average future flow. Total uncertainty includes randomness within each state and uncertainty about which state we are in.",
+        "zh": "不同市场状态会改变未来平均成交流。总不确定性既包括状态内部的随机性，也包括我们不知道当前是哪种状态。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}\\operatorname{Var}(F\\mid I)&=E[\\operatorname{Var}(F\\mid S,I)\\mid I]\\\\&\\quad+\\operatorname{Var}(E[F\\mid S,I]\\mid I)\\end{aligned}",
+        "assumptions": {
+          "en": "Finite second moments; S is a latent state and I is the available information.",
+          "zh": "要求二阶矩有限；S为潜在状态，I为已有信息。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "F",
+          "en": "signed flow",
+          "zh": "净主动成交流",
+          "unit": "quantity"
+        },
+        {
+          "symbol": "S",
+          "en": "latent state",
+          "zh": "潜在状态",
+          "unit": "state"
+        },
+        {
+          "symbol": "I",
+          "en": "observed history",
+          "zh": "可见历史",
+          "unit": "information"
+        }
+      ],
+      "project_connection": {
+        "en": "Our scenario method keeps both sources of uncertainty. Replacing every state by its mean drops a term.",
+        "zh": "项目的联合路径同时保留这两部分不确定性；只代入平均状态会漏掉一部分。"
+      },
+      "misconception": {
+        "en": "A conditional variance is not automatically the full predictive variance.",
+        "zh": "给定完整状态时的方差，不自动等于只有宏观观测时的预测方差。"
+      },
+      "try_href": "lab.html#inference",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#mechanism",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What can remain even if every state has zero transition noise?",
+          "zh": "即使每个状态内部没有噪声，还可能剩下什么？"
+        },
+        "options": [
+          {
+            "en": "No uncertainty",
+            "zh": "没有不确定性"
+          },
+          {
+            "en": "Uncertainty over the state means",
+            "zh": "不同状态均值带来的不确定性"
+          },
+          {
+            "en": "Only numerical rounding",
+            "zh": "只有数值舍入误差"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "Different possible state means can still produce predictive uncertainty.",
+          "zh": "可能的状态均值不同，仍然会产生预测不确定性。"
+        }
+      },
+      "lens": "uncertainty"
+    },
+    {
+      "id": "generating-functions",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Generating functions and group moments",
+        "zh": "生成函数与群体矩"
+      },
+      "question": {
+        "en": "How do independent groups combine?",
+        "zh": "独立群体怎样合成总成交量？"
+      },
+      "intuition": {
+        "en": "Independent contributions multiply their moment-generating functions. Differentiation at zero returns the moments that connect group sizes to aggregate observations.",
+        "zh": "独立贡献的矩生成函数相乘；在零点求导，就得到连接群体规模与宏观观测的矩。"
+      },
+      "formula": {
+        "latex": "M_V(t\\mid H)=\\prod_C\\left(1-q+q e^{tu s_C}\\right)",
+        "assumptions": {
+          "en": "Fixed grouping H, independent Bernoulli activity q and unit quantity u; finite conditional group sizes.",
+          "zh": "固定分组H，各群体以概率q独立活动，单位交易量u，条件群体规模有限。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "M_V",
+          "en": "moment-generating function",
+          "zh": "成交量的矩生成函数",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "s_C",
+          "en": "group size",
+          "zh": "群体规模",
+          "unit": "units"
+        },
+        {
+          "symbol": "u",
+          "en": "quantity per unit",
+          "zh": "单位交易量",
+          "unit": "quantity/unit"
+        },
+        {
+          "symbol": "q",
+          "en": "activity probability",
+          "zh": "活动概率",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "t",
+          "en": "MGF argument",
+          "zh": "矩生成函数自变量",
+          "unit": "1/quantity"
+        }
+      ],
+      "project_connection": {
+        "en": "The original derivation uses group-size sums S_k to recover conditional moments and test model assumptions. Example: group sizes 2 and 1, q = .5, u = 1 give mean volume 1.5 and variance 1.25.",
+        "zh": "原始推导通过群体规模和S_k得到条件矩，再检验模型假设。 例如群体规模为2和1、q=.5、u=1时，平均成交量为1.5，方差为1.25。"
+      },
+      "misconception": {
+        "en": "A factorized generating function assumes group independence; network labels alone do not supply it.",
+        "zh": "生成函数的乘积分解依赖群体独立，不能仅凭“有网络”就使用。"
+      },
+      "try_href": "methods.html#mechanism",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#mechanism",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Why is there a product across groups?",
+          "zh": "为什么群体之间使用乘积？"
+        },
+        "options": [
+          {
+            "en": "Because contributions are independent",
+            "zh": "因为群体贡献独立"
+          },
+          {
+            "en": "Because all trades are identical",
+            "zh": "因为所有交易相同"
+          },
+          {
+            "en": "Because the graph is large",
+            "zh": "因为图很大"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "en": "Independence factorizes the expectation of an exponential sum.",
+          "zh": "独立性使总和指数的期望可以因子分解。"
+        }
+      },
+      "lens": "none"
+    },
+    {
+      "id": "er-percolation",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Random graphs and percolation",
+        "zh": "随机图与渗流"
+      },
+      "question": {
+        "en": "Why can a few extra links change the scale of coordination?",
+        "zh": "为什么增加少量连边可能改变协调规模？"
+      },
+      "intuition": {
+        "en": "Connections merge small components into larger groups. In the large sparse ER limit, a giant component appears around mean degree one; finite samples have a gradual transition.",
+        "zh": "连边会把小连通分量合并成更大群体。大规模稀疏ER极限在平均度约为1时出现巨型分量；有限样本中的变化更平滑。"
+      },
+      "formula": {
+        "latex": "c=(N-1)p,\\qquad S_2=\\sum_C s_C^2",
+        "assumptions": {
+          "en": "ER independent undirected edges; the threshold statement concerns the large-N sparse limit.",
+          "zh": "ER模型的无向边独立；阈值结论针对大N稀疏极限。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "c",
+          "en": "mean degree",
+          "zh": "平均度",
+          "unit": "links/unit"
+        },
+        {
+          "symbol": "p",
+          "en": "edge probability",
+          "zh": "连边概率",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "N",
+          "en": "number of model units",
+          "zh": "模型单元数",
+          "unit": "units"
+        },
+        {
+          "symbol": "S_2",
+          "en": "squared-size sum",
+          "zh": "规模平方和",
+          "unit": "units²"
+        }
+      ],
+      "project_connection": {
+        "en": "The experiment shows component growth and its effect on weighted group fluctuations.",
+        "zh": "现有实验展示分量增长，以及它怎样改变群体波动。"
+      },
+      "misconception": {
+        "en": "Mean degree is not action correlation, and the ER threshold is not a universal market-crash threshold.",
+        "zh": "平均度不是动作相关系数，ER阈值也不是普遍的市场崩盘阈值。"
+      },
+      "try_href": "lab.html#network",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#mechanism",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Does c=1 identify a crash threshold in any market?",
+          "zh": "c=1是否能识别任意市场的崩盘阈值？"
+        },
+        "options": [
+          {
+            "en": "Yes, for every network",
+            "zh": "是，适用于所有网络"
+          },
+          {
+            "en": "Yes, if volume is high",
+            "zh": "是，只要成交量大"
+          },
+          {
+            "en": "No, it belongs to a specified graph limit",
+            "zh": "不能，它属于特定随机图极限"
+          }
+        ],
+        "correct": 2,
+        "explanation": {
+          "en": "The graph model and limit must match the system before using its threshold.",
+          "zh": "必须先确认系统与图模型及其极限相符。"
+        }
+      },
+      "lens": "none"
+    },
+    {
+      "id": "effective-weights",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Effective weights and covariance",
+        "zh": "有效权重与协方差"
+      },
+      "question": {
+        "en": "Why can a large coordinated position matter more than a headcount?",
+        "zh": "为什么大额协同仓位可能比人数更重要？"
+      },
+      "intuition": {
+        "en": "Flow adds trading weights times actions. Risk depends on both weight concentration and the dependence between actions.",
+        "zh": "成交流是交易权重与动作的加总；风险同时取决于权重集中度和动作之间的关联。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}F&=Q^{\\mathsf T}\\xi\\\\\\operatorname{Var}(F\\mid Q)&=Q^{\\mathsf T}\\Gamma Q\\end{aligned}",
+        "assumptions": {
+          "en": "Condition on fixed weights; Gamma is the covariance of actions with finite second moments. For the positive-covariance comparison use nonnegative or same-signed weights.",
+          "zh": "条件于固定权重；Gamma为动作协方差，二阶矩有限。 正协方差比较使用非负或同号权重。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "Q",
+          "en": "effective trading weights",
+          "zh": "有效交易权重",
+          "unit": "quantity"
+        },
+        {
+          "symbol": "\\xi",
+          "en": "actions",
+          "zh": "交易动作",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "\\Gamma",
+          "en": "action covariance",
+          "zh": "动作协方差",
+          "unit": "dimensionless"
+        }
+      ],
+      "project_connection": {
+        "en": "This is the bridge from group counts to large orders, common exposures and weighted network states.",
+        "zh": "它把群体人数模型扩展到大单、共同暴露和加权网络状态。"
+      },
+      "misconception": {
+        "en": "Higher positive covariance raises variance only while other terms are held fixed.",
+        "zh": "正协方差提高方差的比较，需要固定其他项。"
+      },
+      "try_href": "lab.html#mechanism",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#mechanism",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What must be held fixed to isolate the effect of covariance?",
+          "zh": "要单独判断协方差的影响，需要固定什么？"
+        },
+        "options": [
+          {
+            "en": "Nothing",
+            "zh": "不需要固定"
+          },
+          {
+            "en": "Weights and marginal action variances",
+            "zh": "权重与各动作边际方差"
+          },
+          {
+            "en": "The chart color",
+            "zh": "图表颜色"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "Changing participation or weights at the same time can change the result.",
+          "zh": "同时改变活动率或权重，会改变比较结论。"
+        }
+      },
+      "lens": "weights"
+    },
+    {
+      "id": "execution-baselines",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Execution baselines and amplification",
+        "zh": "执行基线与放大指标"
+      },
+      "question": {
+        "en": "Can splitting one order change the measured baseline?",
+        "zh": "拆分同一订单会改变测得的基线吗？"
+      },
+      "intuition": {
+        "en": "Total quantity can stay unchanged while the squared execution-size sum changes. Any amplification ratio therefore needs a declared execution unit.",
+        "zh": "总量不变时，执行大小平方和仍可能改变，因此放大比值必须声明执行单位。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}B&=\\sum_i v_i^2\\\\G_V&=\\operatorname{Var}(F)/\\bar B\\\\G_E&=E[F^2]/\\bar B\\end{aligned}",
+        "assumptions": {
+          "en": "B is the independent symmetric-sign baseline for fixed sizes. G_V is centered dispersion; G_E includes mean-flow energy. Execution aggregates do not identify whole parent orders.",
+          "zh": "固定执行大小下，B是独立对称符号的基线。G_V为中心化离散度，G_E还包含均值能量。交易所聚合执行不等于完整母单。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "v_i",
+          "en": "execution quantity",
+          "zh": "每笔执行量",
+          "unit": "quantity"
+        },
+        {
+          "symbol": "B",
+          "en": "squared-size baseline",
+          "zh": "大小平方和基线",
+          "unit": "quantity²"
+        },
+        {
+          "symbol": "\\bar B",
+          "en": "window mean baseline",
+          "zh": "窗口平均基线",
+          "unit": "quantity²"
+        },
+        {
+          "symbol": "G_V,G_E",
+          "en": "two amplification definitions",
+          "zh": "两种放大定义",
+          "unit": "dimensionless"
+        }
+      ],
+      "project_connection": {
+        "en": "The project separates raw and aggregate execution units, and audits the numerator cancellation in G relative errors.",
+        "zh": "项目分别检查原始执行与聚合执行口径，并核查G相对误差中分子抵消的问题。"
+      },
+      "misconception": {
+        "en": "A large G is not a measured percentage of followers. If actual and fitted G share the numerator, their relative error only tests B.",
+        "zh": "大的G不是测得的跟风人数比例；若实际与拟合G共用分子，相对误差只检验B。"
+      },
+      "try_href": "methods.html#execution-risk-bridge",
+      "lens": "fragmentation",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical interface",
+          "url": "methods.html#execution-risk-bridge",
+          "support": "Project model definitions, conditional moments and assumptions."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Does the same total volume determine B uniquely?",
+          "zh": "相同总成交量能唯一确定B吗？"
+        },
+        "options": [
+          {
+            "en": "Yes, because all sizes cancel",
+            "zh": "能，因为大小会抵消"
+          },
+          {
+            "en": "Only if price rises",
+            "zh": "只有价格上涨时可以"
+          },
+          {
+            "en": "No, the size distribution and grouping matter",
+            "zh": "不能，大小分布和分组口径都重要"
+          }
+        ],
+        "correct": 2,
+        "explanation": {
+          "en": "Squaring before summing depends on how quantity is partitioned.",
+          "zh": "先平方再求和，会受到交易量如何分割的影响。"
+        }
+      }
+    },
+    {
+      "id": "averaging-and-dependence",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Averaging, the CLT and dependence",
+        "zh": "平均、中心极限定理与关联"
+      },
+      "question": {
+        "en": "Why might many trades fail to average away?",
+        "zh": "为什么很多交易的波动仍不一定互相抵消？"
+      },
+      "intuition": {
+        "en": "For independent identically distributed finite-variance contributions, averaging reduces variance and the central limit theorem gives a normal limit after rescaling. Shared components can leave a variance floor.",
+        "zh": "对独立同分布且方差有限的贡献，平均会降低方差，中心极限定理在重标度后给出正态极限；共同成分则可能留下不能平均掉的波动。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}\\operatorname{Var}(\\bar X)&=\\sigma^2/N\\quad(\\mathrm{iid})\\\\\\operatorname{Var}(\\bar X)&=\\sigma^2[\\rho+(1-\\rho)/N]\\end{aligned}",
+        "assumptions": {
+          "en": "The second identity assumes equal marginal variances and common pairwise correlation. A CLT needs additional independence or dependence conditions; heavy tails or correlation require their own analysis.",
+          "zh": "第二个恒等式要求各变量边际方差相同、两两相关相同。中心极限定理需要相应独立或依赖条件；重尾和关联需要分别分析。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "\\bar X",
+          "en": "mean contribution",
+          "zh": "平均贡献",
+          "unit": "outcome"
+        },
+        {
+          "symbol": "N",
+          "en": "number of contributions",
+          "zh": "贡献个数",
+          "unit": "units"
+        },
+        {
+          "symbol": "\\sigma^2",
+          "en": "marginal variance",
+          "zh": "边际方差",
+          "unit": "outcome²"
+        },
+        {
+          "symbol": "\\rho",
+          "en": "pair correlation",
+          "zh": "两两相关",
+          "unit": "dimensionless"
+        }
+      ],
+      "project_connection": {
+        "en": "The common-factor network mechanism explains how non-cancelling covariance can survive aggregation.",
+        "zh": "共同因子网络机制解释了不能通过聚合抵消的协方差怎样保留下来。"
+      },
+      "misconception": {
+        "en": "Not every dependent process violates a CLT, and a normal-looking histogram does not establish independence.",
+        "zh": "并非所有依赖过程都不满足中心极限定理，直方图像正态也不能证明独立。"
+      },
+      "try_href": "methods.html#mechanism",
+      "lens": "weights",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical interface",
+          "url": "methods.html#mechanism",
+          "support": "Project model definitions, conditional moments and assumptions."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "With fixed positive common correlation, what can remain as N grows?",
+          "zh": "固定正共同相关时，N增大后什么可能仍存在？"
+        },
+        "options": [
+          {
+            "en": "A nonzero common variance component",
+            "zh": "非零的共同方差成分"
+          },
+          {
+            "en": "A guaranteed crash",
+            "zh": "必然崩盘"
+          },
+          {
+            "en": "Exactly zero variance",
+            "zh": "方差必然为零"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "en": "The common covariance term need not shrink like 1/N.",
+          "zh": "共同协方差项不一定像1/N那样缩小。"
+        }
+      }
+    },
+    {
+      "id": "time-and-rv",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Time dependence and risk aggregation",
+        "zh": "时间相关与风险聚合"
+      },
+      "question": {
+        "en": "Can persistence increase risk without increasing realized variance?",
+        "zh": "持续性会不会在不增加RV时改变风险？"
+      },
+      "intuition": {
+        "en": "Squared returns add in RV. Squaring a cumulative return also introduces cross-time products, so the two targets answer different questions.",
+        "zh": "RV直接相加每根收益的平方；累计收益再平方还包括跨时间乘积，因此两者回答不同问题。"
+      },
+      "formula": {
+        "latex": "\\left(\\sum_t r_t\\right)^2=\\sum_t r_t^2+2\\sum_{s<t}r_s r_t",
+        "assumptions": {
+          "en": "Exact path identity. Interpreting expected covariance requires a specified stochastic law.",
+          "zh": "这是逐条路径上的恒等式；解释期望协方差还需要随机模型。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "r_t",
+          "en": "bar log return",
+          "zh": "每根对数收益",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "RV",
+          "en": "sum of squared returns",
+          "zh": "已实现方差",
+          "unit": "return²"
+        }
+      ],
+      "project_connection": {
+        "en": "Our splitting controls can preserve per-bar second moments while increasing cumulative-flow variance.",
+        "zh": "项目中的拆单控制可以保持单根二阶矩不变，同时提高累计流方差。"
+      },
+      "misconception": {
+        "en": "A persistent series does not automatically imply a larger expected sum of squared returns.",
+        "zh": "序列有持续性，不自动意味着预期收益平方和更大。"
+      },
+      "try_href": "lab.html#memory",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#memory",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Which target includes cross-time terms?",
+          "zh": "哪个目标包含跨时间项？"
+        },
+        "options": [
+          {
+            "en": "RV only",
+            "zh": "只有RV"
+          },
+          {
+            "en": "Neither",
+            "zh": "都不包含"
+          },
+          {
+            "en": "Squared cumulative return",
+            "zh": "累计收益的平方"
+          }
+        ],
+        "correct": 2,
+        "explanation": {
+          "en": "Expanding the square produces the cross products.",
+          "zh": "展开累计收益的平方，就会出现跨期乘积。"
+        }
+      },
+      "lens": "memory"
+    },
+    {
+      "id": "observation-equivalence",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Observational equivalence",
+        "zh": "观测等价"
+      },
+      "question": {
+        "en": "Can perfect fitting reveal the hidden graph?",
+        "zh": "拟合得非常好，能否揭示隐藏网络？"
+      },
+      "intuition": {
+        "en": "Different hidden structures can produce the same observations. In the group-action model, a connected chain and star can share the complete price-volume law.",
+        "zh": "不同隐藏结构可能产生相同观测。在群体动作模型中，连通链和星形图可以共享完整量价分布。"
+      },
+      "formula": {
+        "latex": "\\begin{gathered}\\mathcal L(r,V\\mid H_1)=\\mathcal L(r,V\\mid H_2)\\\\\\not\\Rightarrow\\quad H_1=H_2\\end{gathered}",
+        "assumptions": {
+          "en": "The compared graphs induce the same group-size partition and obey the same group-action assumptions.",
+          "zh": "比较图具有相同群体规模分割，并满足同一群体动作假设。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "\\mathcal L",
+          "en": "observation law",
+          "zh": "观测分布",
+          "unit": "distribution"
+        },
+        {
+          "symbol": "H_1,H_2",
+          "en": "hidden graphs",
+          "zh": "隐藏网络",
+          "unit": "graph"
+        }
+      ],
+      "project_connection": {
+        "en": "The project distinguishes recovering risk-relevant statistics from recovering every edge or coordinating person.",
+        "zh": "项目区分恢复风险相关统计量，与恢复每条边或真实协同人数。"
+      },
+      "misconception": {
+        "en": "More precise measurements cannot resolve an exact equivalence within the same observable interface.",
+        "zh": "在同一观测接口下，提高精度不能消除精确的观测等价。"
+      },
+      "try_href": "lab.html#identity",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#mechanism",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What can remain identifiable when edges are not?",
+          "zh": "即使边不可识别，什么仍可能可识别？"
+        },
+        "options": [
+          {
+            "en": "A risk-relevant statistic",
+            "zh": "风险相关统计量"
+          },
+          {
+            "en": "Every participant identity",
+            "zh": "每位参与者身份"
+          },
+          {
+            "en": "Any causal narrative",
+            "zh": "任意因果故事"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "en": "The estimand can be a useful observable response rather than a unique graph.",
+          "zh": "估计目标可以是有用的可见响应，而不必是唯一网络。"
+        }
+      },
+      "lens": "none"
+    },
+    {
+      "id": "nonlinear-state",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Nonlinear dynamics and state distributions",
+        "zh": "非线性动力学与状态分布"
+      },
+      "question": {
+        "en": "Why did the original mean-state forecast drift?",
+        "zh": "原来的平均状态预测为什么会漂移？"
+      },
+      "intuition": {
+        "en": "A nonlinear update responds differently to different possible states. Applying it once to the average state loses those differences.",
+        "zh": "非线性更新对不同可能状态的响应不同，只对平均状态更新会丢失这些差异。"
+      },
+      "formula": {
+        "latex": "E[\\tanh(H)]\\not\\equiv\\tanh(E[H])",
+        "assumptions": {
+          "en": "The equality can hold in special cases; it is not a general moment-closure rule.",
+          "zh": "特殊情况下可能相等，但它不是通用矩闭合规则。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "H",
+          "en": "decision field",
+          "zh": "决策场",
+          "unit": "dimensionless"
+        }
+      ],
+      "project_connection": {
+        "en": "The controlled extension propagates full stochastic paths, retaining fast/slow states, memory and accommodation.",
+        "zh": "受控扩展改为传播完整随机路径，保留快慢状态、记忆与承接。"
+      },
+      "misconception": {
+        "en": "A correct one-step conditional mean need not remain correct after repeated mean substitution.",
+        "zh": "正确的一步条件均值，不保证反复代入均值仍正确。"
+      },
+      "try_href": "methods.html#collective-dynamics",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#mechanism",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What repairs the lost distribution in our current implementation?",
+          "zh": "当前实现怎样补回丢失的分布？"
+        },
+        "options": [
+          {
+            "en": "A smoother line",
+            "zh": "画更平滑的曲线"
+          },
+          {
+            "en": "Full stochastic state paths",
+            "zh": "传播完整随机状态路径"
+          },
+          {
+            "en": "A larger title",
+            "zh": "使用更大的标题"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "The path ensemble retains variation and dependence between possible states.",
+          "zh": "路径集合保留不同可能状态的差异和关联。"
+        }
+      },
+      "lens": "none"
+    },
+    {
+      "id": "monte-carlo",
+      "category": "mathematics",
+      "group": "mathematics",
+      "title": {
+        "en": "Monte Carlo error and predictive uncertainty",
+        "zh": "Monte Carlo误差与预测不确定性"
+      },
+      "question": {
+        "en": "Does a precise simulation mean imply a narrow future outcome?",
+        "zh": "模拟均值算得精确，未来结果就会很集中吗？"
+      },
+      "intuition": {
+        "en": "More simulation paths reduce numerical uncertainty in an estimated mean. They do not remove the randomness of a future market outcome.",
+        "zh": "增加模拟路径会降低均值估计的数值误差，但不会消除未来市场结果本身的随机性。"
+      },
+      "formula": {
+        "latex": "\\operatorname{SE}(\\bar X)\\approx s_X/\\sqrt{M}",
+        "assumptions": {
+          "en": "Independent simulation paths and finite variance; dependence changes the effective sample size.",
+          "zh": "模拟路径独立且方差有限；存在依赖时有效样本量会改变。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "M",
+          "en": "independent path count",
+          "zh": "独立路径数",
+          "unit": "paths"
+        },
+        {
+          "symbol": "s_X",
+          "en": "path outcome standard deviation",
+          "zh": "路径结果标准差",
+          "unit": "outcome units"
+        }
+      ],
+      "project_connection": {
+        "en": "D01 checks agreement of Monte Carlo means. Predictive interval coverage is evaluated in a separate experiment.",
+        "zh": "D01检验Monte Carlo均值是否吻合；预测区间覆盖率在另一项实验中评价。"
+      },
+      "misconception": {
+        "en": "A 95% numerical-mean interval is not a 95% future-outcome interval.",
+        "zh": "95%数值均值区间，不是95%未来结果区间。"
+      },
+      "try_href": "reproduce.html",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#mechanism",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What shrinks when only the number of simulation paths grows?",
+          "zh": "仅增加模拟路径数时，主要缩小的是什么？"
+        },
+        "options": [
+          {
+            "en": "Numerical error in the mean estimate",
+            "zh": "均值估计的数值误差"
+          },
+          {
+            "en": "All real-market volatility",
+            "zh": "全部真实市场波动"
+          },
+          {
+            "en": "The future time horizon",
+            "zh": "未来时间期限"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "en": "Computation improves numerical precision; predictive uncertainty remains a different object.",
+          "zh": "计算提高数值精度，预测不确定性仍是另一个对象。"
+        }
+      },
+      "lens": "none"
+    },
+    {
+      "id": "joint-risk",
+      "category": "methods",
+      "group": "methods",
+      "title": {
+        "en": "Joint moments and a coherent risk map",
+        "zh": "联合矩与相容风险映射"
+      },
+      "question": {
+        "en": "Why should flow and residuals be forecast together?",
+        "zh": "为什么成交流与残差要一起预测？"
+      },
+      "intuition": {
+        "en": "Separately estimated moments may not belong to any possible joint distribution. Common scenario weights keep their covariance consistent.",
+        "zh": "分别估计的矩可能不对应任何可能的联合分布；共同路径权重能使协方差相容。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}E[r^2]&=\\alpha^2+2\\alpha\\beta E[F]+\\beta^2E[F^2]\\\\&\\quad+E[\\eta^2]+2\\alpha E[\\eta]\\\\&\\quad+2\\beta E[F\\eta]\\end{aligned}",
+        "assumptions": {
+          "en": "Fixed alpha,beta conditional on prediction information; eta=r-alpha-betaF. The shorter formula needs extra orthogonality conditions.",
+          "zh": "给定预测信息时alpha、beta固定，eta定义为响应残差；简式需要额外正交条件。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "F",
+          "en": "future signed flow",
+          "zh": "未来净流",
+          "unit": "quantity"
+        },
+        {
+          "symbol": "\\alpha,\\beta",
+          "en": "response coefficients",
+          "zh": "响应系数",
+          "unit": "return, return/quantity"
+        },
+        {
+          "symbol": "\\eta",
+          "en": "response residual",
+          "zh": "响应残差",
+          "unit": "return"
+        }
+      ],
+      "project_connection": {
+        "en": "Our revised risk interface uses the same future paths for F,r and residual cross moments.",
+        "zh": "修正后的风险接口用同一批未来路径计算F、r及残差交叉矩。"
+      },
+      "misconception": {
+        "en": "Clipping a negative risk estimate positive does not repair an incompatible covariance matrix.",
+        "zh": "把负风险截成正数，不能修复不相容的协方差矩阵。"
+      },
+      "try_href": "methods.html#execution-risk-bridge",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#inverse",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "What must a valid covariance matrix satisfy?",
+          "zh": "有效协方差矩阵必须满足什么？"
+        },
+        "options": [
+          {
+            "en": "Every entry is positive",
+            "zh": "所有元素都为正"
+          },
+          {
+            "en": "It is diagonal",
+            "zh": "必须是对角矩阵"
+          },
+          {
+            "en": "It is positive semidefinite",
+            "zh": "必须半正定"
+          }
+        ],
+        "correct": 2,
+        "explanation": {
+          "en": "Negative covariances are allowed, but variance of every linear combination must be nonnegative.",
+          "zh": "允许负协方差，但任意线性组合的方差必须非负。"
+        }
+      },
+      "lens": "none"
+    },
+    {
+      "id": "state-inference",
+      "category": "methods",
+      "group": "methods",
+      "title": {
+        "en": "From a history to possible states",
+        "zh": "从可见历史到可能状态"
+      },
+      "question": {
+        "en": "What is an estimated collective state?",
+        "zh": "“估计的集体状态”是什么？"
+      },
+      "intuition": {
+        "en": "It is a model-conditioned distribution over states compatible with the observed history. Its accuracy depends on the observation rule and supplied priors.",
+        "zh": "它是在模型条件下，与可见历史相容的状态分布；准确性取决于观测规则与先验。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}\\pi_t(S)&\\propto L_\\varepsilon(y_t\\mid S)\\\\&\\quad\\times\\int P(S\\mid S^{\\prime})\\pi_{t-1}(S^{\\prime})\\,dS^{\\prime}\\end{aligned}",
+        "assumptions": {
+          "en": "Displayed filtering structure; our Gaussian ABC discrepancy is approximate for clean observations.",
+          "zh": "这是滤波结构示意；本项目对无噪观测使用的高斯ABC差异核是近似的。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "\\pi_t",
+          "en": "state distribution",
+          "zh": "状态分布",
+          "unit": "distribution"
+        },
+        {
+          "symbol": "y_t",
+          "en": "macro observation",
+          "zh": "宏观观测",
+          "unit": "F,V,K,r"
+        },
+        {
+          "symbol": "L_\\varepsilon",
+          "en": "approximate observation kernel",
+          "zh": "近似观测核",
+          "unit": "density/kernel"
+        }
+      ],
+      "project_connection": {
+        "en": "Teacher graphs and future outcomes are excluded from the estimator; the supplied model law still counts as information.",
+        "zh": "估计器不读取验证对象的图或未来；但提供的模型规律仍属于信息成本。"
+      },
+      "misconception": {
+        "en": "A particle cloud with one surviving static ancestor is not evidence of precise graph recovery.",
+        "zh": "静态祖先只剩一个，不能解释为网络恢复得很精确。"
+      },
+      "try_href": "lab.html#inference",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#inverse",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Can knowing the simulator law be ignored in the information budget?",
+          "zh": "已知模拟器规律能否不计入信息预算？"
+        },
+        "options": [
+          {
+            "en": "Yes, it is only code",
+            "zh": "可以，它只是代码"
+          },
+          {
+            "en": "No, it is supplied prior information",
+            "zh": "不能，它是提供的先验信息"
+          },
+          {
+            "en": "Only when the forecast is good",
+            "zh": "只要预测好就能忽略"
+          }
+        ],
+        "correct": 1,
+        "explanation": {
+          "en": "Model parameters, labels, history and calibration are all information inputs.",
+          "zh": "模型参数、标签、历史和校准都属于信息输入。"
+        }
+      },
+      "lens": "uncertainty"
+    },
+    {
+      "id": "forecast-evidence",
+      "category": "methods",
+      "group": "methods",
+      "title": {
+        "en": "What counts as forecast evidence?",
+        "zh": "什么才算预测证据？"
+      },
+      "question": {
+        "en": "What does a fair comparison hold constant?",
+        "zh": "公平比较需要固定什么？"
+      },
+      "intuition": {
+        "en": "Compare future targets using the same available information and an independently fixed selection rule. A compact feature vector can hide expensive calibration.",
+        "zh": "用相同可用信息和独立固定的选择规则比较未来目标；紧凑特征向量可能隐藏昂贵校准。"
+      },
+      "formula": {
+        "latex": "L_{\\mathrm{QLIKE}}(y,\\widehat h)=y/\\widehat h-\\log(y/\\widehat h)-1",
+        "assumptions": {
+          "en": "Positive realized risk y and forecast h; compare paired target dates or independent simulated units.",
+          "zh": "真实风险y与预测h为正；按相同目标日期或独立模拟单位配对比较。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "y",
+          "en": "realized risk target",
+          "zh": "已实现风险目标",
+          "unit": "return²"
+        },
+        {
+          "symbol": "\\widehat h",
+          "en": "risk forecast",
+          "zh": "风险预测",
+          "unit": "return²"
+        }
+      ],
+      "project_connection": {
+        "en": "The project counts raw fields, history, offline labels, model priors and tuning. Old dates remain retrospective.",
+        "zh": "项目计入原始字段、历史、离线标签、模型先验和调参；已看过日期保持回顾性标记。"
+      },
+      "misconception": {
+        "en": "Better than persistence does not establish superiority over a strong HAR or equally informed prior.",
+        "zh": "优于持续性基线，不代表优于强HAR或信息充分的先验参照。"
+      },
+      "try_href": "findings.html#information-efficiency",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#inverse",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "When should the final test period be used for model selection?",
+          "zh": "最终测试期应该在什么时候用于选模型？"
+        },
+        "options": [
+          {
+            "en": "Never; freeze selection first",
+            "zh": "不用于选模型，应先冻结选择"
+          },
+          {
+            "en": "After every small modification",
+            "zh": "每次修改后都用"
+          },
+          {
+            "en": "Whenever a p-value is large",
+            "zh": "p值大时就用"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "en": "Repeated selection on a final period turns it into development data.",
+          "zh": "反复用最终时期选模型，就把它变成开发数据。"
+        }
+      },
+      "lens": "none"
+    },
+    {
+      "id": "calibration",
+      "category": "methods",
+      "group": "methods",
+      "title": {
+        "en": "Predictive intervals and calibration",
+        "zh": "预测区间与校准"
+      },
+      "question": {
+        "en": "What does 90% coverage actually promise?",
+        "zh": "90%覆盖率究竟承诺了什么？"
+      },
+      "intuition": {
+        "en": "A calibrated interval is evaluated across a defined population of new outcomes. Marginal coverage does not guarantee coverage in every state or market regime.",
+        "zh": "校准区间针对明确总体中的新结果评价；边际覆盖不保证每个状态或市场阶段都达到同一覆盖率。"
+      },
+      "formula": {
+        "latex": "\\begin{aligned}k&=\\lceil(n+1)(1-\\alpha)\\rceil,\\quad q=s_{(k)}\\\\C(x)&=[\\widehat h(x)e^{-q},\\widehat h(x)e^q]\\end{aligned}",
+        "assumptions": {
+          "en": "Split conformal with independent exchangeable calibration/test units, fixed predictor, scores s=abs(log(y/h)); not a dependent-market guarantee. Require positive y and h; when k=n+1 define the order statistic as infinity. For n=64 and alpha=.1, k=59.",
+          "zh": "独立可交换校准与测试单位、固定预测器，分数为abs(log(y/h))；不是依赖市场序列的保证。 y与h为正；若k=n+1，将该次序统计量定义为正无穷。n=64、alpha=.1时k=59。"
+        }
+      },
+      "symbols": [
+        {
+          "symbol": "n",
+          "en": "calibration sample size",
+          "zh": "校准样本数",
+          "unit": "units"
+        },
+        {
+          "symbol": "\\alpha",
+          "en": "miscoverage level",
+          "zh": "未覆盖概率",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "q",
+          "en": "ordered calibration score",
+          "zh": "校准分数次序统计量",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "k",
+          "en": "finite-sample order rank",
+          "zh": "有限样本次序位置",
+          "unit": "integer"
+        },
+        {
+          "symbol": "s_i",
+          "en": "absolute log error on calibration case i",
+          "zh": "第i个校准案例的绝对对数误差",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "\\widehat h(x)",
+          "en": "positive point forecast given inputs x",
+          "zh": "给定输入x的正点预测",
+          "unit": "same as target y"
+        },
+        {
+          "symbol": "C(x)",
+          "en": "predictive interval for a new target y",
+          "zh": "新目标y的预测区间",
+          "unit": "same as target y"
+        }
+      ],
+      "project_connection": {
+        "en": "Our controlled test separates training, selection, calibration and new evaluation; it also reports width and proper interval scores.",
+        "zh": "受控测试区分训练、选择、校准和新评价，同时报告宽度与适当区间分数。"
+      },
+      "misconception": {
+        "en": "Making an interval wider can improve coverage while reducing usefulness.",
+        "zh": "加宽区间可能提高覆盖，同时降低实用性。"
+      },
+      "try_href": "methods.html#forecast",
+      "sources": [
+        {
+          "title": "Econophysics Risk Lab: mathematical foundations",
+          "url": "methods.html#inverse",
+          "support": "Project equations and explicit assumptions; model-conditioned statements."
+        },
+        {
+          "title": "Angelopoulos & Bates: conformal prediction tutorial",
+          "url": "https://arxiv.org/abs/2107.07511",
+          "support": "Split-conformal finite-sample marginal coverage under exchangeability."
+        }
+      ],
+      "self_test": {
+        "question": {
+          "en": "Is coverage alone enough to compare intervals?",
+          "zh": "只比较覆盖率够不够？"
+        },
+        "options": [
+          {
+            "en": "Yes, wider is always better",
+            "zh": "够，越宽越好"
+          },
+          {
+            "en": "Yes, if nominal is 90%",
+            "zh": "标称90%就够"
+          },
+          {
+            "en": "No, width and interval score matter too",
+            "zh": "不够，还要看宽度与区间分数"
+          }
+        ],
+        "correct": 2,
+        "explanation": {
+          "en": "Coverage and sharpness must be assessed together under the declared assumptions.",
+          "zh": "必须在明确假设下，同时评价覆盖与区间集中程度。"
+        }
+      },
+      "lens": "calibration"
+    }
+  ],
+  "model_notice": {
+    "en": "Interactive illustrations are explicit teaching models, not observed market data or trading signals.",
+    "zh": "交互图示是明确假设下的教学模型，不是真实行情或交易信号。"
+  }
+}

@@ -45,7 +45,7 @@ The `turn` scene explicitly introduces an announced opposing program. It is not 
 ```sh
 python scripts/reproduce.py --profile quick
 python scripts/reproduce.py --profile site
-node scripts/reproduce_collective_trading_engine.cjs
+node scripts/research/reproduce_collective_trading_engine.cjs
 python -m pip install -r studies/collective_dynamics_v1/requirements.txt
 python studies/collective_dynamics_v1/reproduce.py
 ```

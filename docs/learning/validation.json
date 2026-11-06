@@ -1,0 +1,38 @@
+{
+  "date_utc": "2026-11-06",
+  "scope": "learning content, mathematical illustrations, navigation and responsive browser interaction",
+  "lessons": 27,
+  "economics": 13,
+  "mathematics": 10,
+  "inference_and_risk": 4,
+  "teaching_models": 7,
+  "katex_formula_and_symbol_strings": 117,
+  "static_site": {
+    "pages": 8,
+    "local_links": 258,
+    "status": "pass"
+  },
+  "browser": {
+    "status": "pass",
+    "viewport_language_lesson_cases": 216,
+    "topics": 27,
+    "checks": [
+      "27 sourced lessons and one navigation entry",
+      "All27 lessons fit320/390/768/1440 widths in both languages, with labelled controls and rendered equations",
+      "Correlation keyboard control preserves focus; calibration uses correct finite-sample ranks and observed cases",
+      "Execution fragmentation, temporal covariance, state-mixture and signed-flow examples update correctly",
+      "Reasoning feedback, keyboard progress marks and local persistence work",
+      "Search, empty state and subject filtering work",
+      "All seven existing pages expose a single learning entry",
+      "Mobile deep links show the selected topic with a collapsed directory"
+    ],
+    "errors": []
+  },
+  "builder_idempotent": true,
+  "core_profile": "pass: 480 exact theory checks, 9 Python unit tests and 82 JS fixture checks",
+  "full_site_profile": "pass",
+  "existing_english_readme_previews_retained": true,
+  "frozen_data_results_studies_rewritten": false,
+  "canonical_source_sha256": "d1c1e830cb806b814e1000a03881cf087c5d582aeda98c49b250908178ecf5ba",
+  "calibration_demo_sha256": "1f934651289b0990612da0ca52162a28ed3a7205e409243bc97676d22f80a59a"
+}
