@@ -9,11 +9,15 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/trading.css">
+  <link rel="stylesheet" href="assets/trading.css?v=20261106-bridge1">
+  <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
+  <script defer src="assets/vendor/katex/katex.min.js"></script>
   <script defer src="assets/trading-engine.js"></script>
   <script defer src="assets/trading-account.js"></script>
-  <script defer src="assets/trading-history.js"></script>
-  <script defer src="assets/trading-ui.js"></script>
+  <script defer src="assets/trading-history.js?v=20261106-bridge1"></script>
+  <script defer src="assets/trading-debrief.js?v=20261106-bridge1"></script>
+  <script defer src="assets/trading-debrief-ui.js?v=20261106-bridge1"></script>
+  <script defer src="assets/trading-ui.js?v=20261106-bridge1"></script>
 </head>
 <body data-page="trading">
   <a class="skip" href="#main"><span data-en>Skip to market</span><span data-zh hidden>跳到交易区</span></a>
@@ -78,6 +82,6 @@
 
   <footer class="site-footer"><div><a href="index.html">Econophysics Risk Lab</a><p><span data-en>Mechanisms, observations and market risk.</span><span data-zh hidden>机制、观测与市场风险。</span></p></div><div><p id="trade-source-footer"></p></div><div><a href="lab.html"><span data-en>Other experiments</span><span data-zh hidden>其他交互实验</span></a><a href="reproduce.html"><span data-en>Code and methods</span><span data-zh hidden>代码与方法</span></a></div></footer>
 
-  <dialog id="trade-review-dialog" class="trade-review-dialog" aria-labelledby="trade-review-title"><div class="trade-review-heading"><div><p id="trade-review-progress"></p><h2 id="trade-review-title"><span data-en>Your round, reviewed</span><span data-zh hidden>回看你的这一轮</span></h2></div><button id="trade-review-close" type="button" aria-label="Close review">×</button></div><div id="trade-review-summary"></div><div class="trade-review-chart" id="trade-review-chart" role="img" aria-label="Price path with your trade points"></div><div id="trade-review-notes"></div><div id="trade-history-reveal" class="trade-history-reveal" hidden></div><div class="trade-review-actions"><button type="button" id="trade-review-resume" class="button primary"><span data-en>Back to market</span><span data-zh hidden>返回交易</span></button><button type="button" id="trade-review-retry" class="button secondary"><span data-en>Retry this market</span><span data-zh hidden>重试同一行情</span></button></div></dialog>
+  <dialog id="trade-review-dialog" class="trade-review-dialog" aria-labelledby="trade-review-title"><div class="trade-review-heading"><div><p id="trade-review-progress"></p><h2 id="trade-review-title"><span data-en>Your round, reviewed</span><span data-zh hidden>回看你的这一轮</span></h2></div><button id="trade-review-close" type="button" aria-label="Close review">×</button></div><div id="trade-review-summary"></div><section id="trade-theory-review" class="trade-theory-review" hidden></section><div class="trade-review-chart" id="trade-review-chart" role="img" aria-label="Price path with your trade points"></div><div id="trade-review-notes"></div><div id="trade-history-reveal" class="trade-history-reveal" hidden></div><div class="trade-review-actions"><button type="button" id="trade-review-resume" class="button primary"><span data-en>Back to market</span><span data-zh hidden>返回交易</span></button><button type="button" id="trade-review-retry" class="button secondary"><span data-en>Retry this market</span><span data-zh hidden>重试同一行情</span></button></div></dialog>
 </body>
 </html>

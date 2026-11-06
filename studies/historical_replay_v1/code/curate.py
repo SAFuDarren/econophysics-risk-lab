@@ -35,7 +35,7 @@ def run(input_path,output_dir):
   case_id=f'history-{j+1:02}';g=days[a['date']];start=a['minute']-20;first=start-40;end=start+120
   bars=[]
   for i in range(first,end+1):
-   r=g.iloc[i];bars.append(dict(tick=int(i-start),time=int(r.timestamp),open=float(r.open),high=float(r.high),low=float(r.low),close=float(r.close),volume=float(r.volume),quoteVolume=float(r.quoteVolume),buyQuote=float(r.buyQuote),sellQuote=float(r.sellQuote),largeBuyQuote=float(r.largeBuyQuote),largeSellQuote=float(r.largeSellQuote),maxBuyQuote=float(r.maxBuyQuote),maxSellQuote=float(r.maxSellQuote)))
+   r=g.iloc[i];bars.append(dict(tick=int(i-start),time=int(r.timestamp),open=float(r.open),high=float(r.high),low=float(r.low),close=float(r.close),volume=float(r.volume),quoteVolume=float(r.quoteVolume),buyQuote=float(r.buyQuote),sellQuote=float(r.sellQuote),largeBuyQuote=float(r.largeBuyQuote),largeSellQuote=float(r.largeSellQuote),maxBuyQuote=float(r.maxBuyQuote),maxSellQuote=float(r.maxSellQuote),flowBase=float(r.flowBase),squaredSizeBase=float(r.squaredSizeBase)))
   alerts=[{**x,'tick':x['minute']-start,'time':int(g.iloc[x['minute']].timestamp)+60000} for x in all_alerts if x['date']==a['date'] and start<x['minute']<=end]
   proof={**a,'primaryAlertTick':20,'signalCloseTime':int(g.iloc[a['minute']].timestamp)+60000,'peakCloseTime':int(g.iloc[a['minute']+a['minutesToPeak']].timestamp)+60000}
   cases.append(dict(id=case_id,label=f'Excerpt {chr(65+j)}',symbol='BTCUSDT',interval='1m',initialPrice=float(g.iloc[start].close),steps=120,startTime=int(g.iloc[start].timestamp)+60000,bars=bars,alerts=alerts,review=proof))

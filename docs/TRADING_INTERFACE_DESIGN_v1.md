@@ -55,3 +55,9 @@ Large-order signals have a separate bordered information area above the chart, w
 The scenario selector and mechanism view remain visible. This switch is an optional-information interaction, not a blinded experiment or an empirical estimate of the value of private information. The model, source code and chosen scenario are public.
 
 `tests/test_trading_controls.cjs` uses a controlled browser clock to verify real pacing, timer changes, signal visibility, pause behavior, state invariance, review information timing, keyboard use and the four responsive widths. It uses the same Playwright environment variables as the main browser acceptance test.
+
+## Evidence-labelled mechanism debrief
+
+The completed-round review uses one time cursor across actual close prices and fills, observed large executions, conditional execution amplification and the risk map. Original observations use teal source tags; model-conditioned quantities use restrained bronze `#8b632a`; the G=1 reference is grey. This is a true sequence, so the three reading columns correspond to trade weights, amplification and the response/risk map. Mobile stacks these readings and renders each SVG at its actual available width.
+
+RMS targets and information costs stay explicit. The observed curve summarizes already realized minute returns; model risk is a next-minute estimate at the selected origin, with coefficients fixed before play. Rich aggregate-execution B is identified as an observed input rather than hidden behind a macro-only claim. Theoretical details use locally rendered LaTeX, while checkpoints keep the first reading concrete. The dialog heading and close button remain reachable during long reviews.

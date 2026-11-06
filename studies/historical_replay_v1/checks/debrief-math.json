@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "checks": 8748,
+  "cases": 9,
+  "origins": 1089,
+  "scope": "Conditional risk-map identities, pre-play calibration, prefix invariance, withheld next returns and return-free inversion; not forecast validation"
+}

@@ -4,7 +4,7 @@
   "one_minute_bars": 37440,
   "official_source_archives": 52,
   "recorded_official_checksums": true,
-  "input_sha256": "8e1374dc0f45ed067f7c06fe6a57eb1774d96c5e0e10d7ca7b53b25babfb33b4",
+  "input_sha256": "6575172ed2a16a1273898981c779e0b2b11c336fe1e3e52140aa89e0f3dacecd",
   "checks": [
     {
       "id": "history-01",

@@ -50,3 +50,11 @@ Browser acceptance uses tests/test_historical_browser.cjs and the same Playwrigh
 - [Binance Spot market-data documentation](https://developers.binance.com/en/docs/catalog/core-trading-spot-trading/api/rest-api/market): aggregate execution and buyer-maker semantics.
 - Exact source URLs, sizes and exchange checksums: inputs/source-manifest.json.
 - Binance Vision terms snapshot: inputs/Binance_Vision_Terms_Snapshot.md. Derived data retain the source attribution and noncommercial share-alike scope described there. No exchange affiliation is implied.
+
+## Mechanism debrief, revision 1.3
+
+Completed rounds now expose observed signed base flow and the measured sum of squared aggregate base sizes, a centred 15-minute execution-amplification proxy, and a local conditional risk map. The source pool and per-candle payload include `flowBase` and `squaredSizeBase`. Signed base flow reconciles to official taker-buy base volume; squared sizes are reaggregated from the original executions. The nine case selections and original prices are unchanged.
+
+The shared timeline labels observed versus model-conditioned quantities, keeps the response calibration strictly before play, retains the exact same-window baseline/amplification cancellation, and compares model risk with a G=1 reference and already realized RMS. The complete view opens after play, including for hint-disabled rounds. It uses richer execution data than the macro-only research target and is not a new strategy or daily-risk validation result.
+
+See [the mathematical and information contract](../../docs/REPLAY_THEORY_BRIDGE_v1.md) and [the research main line](../../docs/RESEARCH_MAINLINE_v1.md). `node tests/test_trading_debrief.cjs` rebuilds all 1,089 conditional origins and tests chronology/invariance. `python studies/historical_replay_v1/verify_debrief.py` independently recalculates the numerical map. `reproduce.py` also rebuilds the debrief trace in a new directory and requires byte equality. Numerical, independent and browser checks are retained under checks/.

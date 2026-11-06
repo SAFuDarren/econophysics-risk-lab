@@ -1,10 +1,10 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "files": [
     {
       "path": "README.md",
-      "sha256": "1cc5ae6cbc8fe8345e9f8b13cf78caf5b332248520f82762e7905ec1ec962bb7",
-      "bytes": 5640
+      "sha256": "1efc208972f3d53046d3ade0a655c39c6cca836951ef0ddf3d184c4514c0aa6a",
+      "bytes": 7127
     },
     {
       "path": "checks/browser.json",
@@ -13,23 +13,38 @@
     },
     {
       "path": "checks/data-verification.json",
-      "sha256": "baeeb4999322f3e73cf7d5e40319b7ed307cf5e8f5486db25ade99ad626c376e",
+      "sha256": "6927876b3842da9b402fc44522a98f027f67ae39c1dd7eef5a60c81819542967",
       "bytes": 2841
     },
     {
+      "path": "checks/debrief-browser.json",
+      "sha256": "4eec3288c3f038ba2f056e5d35d60c05441c491ba9dc5a6172109e44a7bd9700",
+      "bytes": 685
+    },
+    {
+      "path": "checks/debrief-independent.json",
+      "sha256": "3be7c6cd266cfcfac0ab736f6143a3a0fcd547107c746fa4a006eb16878d2a3a",
+      "bytes": 713
+    },
+    {
+      "path": "checks/debrief-math.json",
+      "sha256": "648f5c45684b4827cba79d9df9bc7dfc929dcdb4421fea423cb84f29d8810666",
+      "bytes": 234
+    },
+    {
       "path": "checks/raw-reproduction.json",
-      "sha256": "1ee8f2f9b2b7c754444dcf6804840f97a7dbeebb78787782b7abdf4983ff1181",
-      "bytes": 474
+      "sha256": "50b981f34d7bc52365dcbd589710b8fddd5a61a37d2894c93f35ba2d64eebda5",
+      "bytes": 603
     },
     {
       "path": "code/acquire.py",
-      "sha256": "35e0dbaa9b534f156464839afaf099cf0a28ec86f5a24722329712aae0384925",
-      "bytes": 4002
+      "sha256": "f1ff421f86ce0e83d5c74000b0b414e485cc5b0eb4829ee736bd172ac8f42d0c",
+      "bytes": 4432
     },
     {
       "path": "code/curate.py",
-      "sha256": "3db44b42c8b45fbd2a8bb05da15d6a08702aa4e10e33f13d453ddd94535b81cd",
-      "bytes": 5316
+      "sha256": "3b133819623819dbb6cb3db5f53e9bacfe8b0ba91e022fc2d65d0c04b20b1d2f",
+      "bytes": 5384
     },
     {
       "path": "inputs/Binance_Vision_Terms_Snapshot.md",
@@ -38,8 +53,8 @@
     },
     {
       "path": "inputs/minute-observables.csv.gz",
-      "sha256": "8e1374dc0f45ed067f7c06fe6a57eb1774d96c5e0e10d7ca7b53b25babfb33b4",
-      "bytes": 2272971
+      "sha256": "6575172ed2a16a1273898981c779e0b2b11c336fe1e3e52140aa89e0f3dacecd",
+      "bytes": 2677890
     },
     {
       "path": "inputs/source-manifest.json",
@@ -48,13 +63,18 @@
     },
     {
       "path": "reproduce.py",
-      "sha256": "4769278422d17ce03bb96cdfbc0bfb576b55fabb58e29c3710764d8c78230365",
-      "bytes": 1064
+      "sha256": "34216c703a0995103b92c68d82b790c6b451a4b16dc9e69d73ca29c261fd5cff",
+      "bytes": 1361
     },
     {
       "path": "tables/all-alerts.csv",
       "sha256": "d8d330a9a5067e02ec8db15afc2ec620a5ab9a8bd6ba9e5a28b2192cad1a856c",
       "bytes": 60005
+    },
+    {
+      "path": "tables/debrief-traces.csv",
+      "sha256": "35aef1fdaff78f9ff2f29e5ca7138a4496fd8bafd7b4d1ab3840328efca605d5",
+      "bytes": 539151
     },
     {
       "path": "tables/eligible-candidates.csv",
@@ -68,10 +88,15 @@
     },
     {
       "path": "verify.py",
-      "sha256": "947a539d2faed4f6e4d730bb80c5618a41f016dcea9a874de98ed4601e7ee3f2",
-      "bytes": 3146
+      "sha256": "0b67012e0ab7b88f3028e1cfdc1c64908246be29110167e600c87a73b751bc77",
+      "bytes": 3175
+    },
+    {
+      "path": "verify_debrief.py",
+      "sha256": "c82fee5a6d745c49a18a0af1f125160430f5756953116a3504a1419be77f01f1",
+      "bytes": 1774
     }
   ],
-  "web_payload_sha256": "1030e090d2296c0f55670dfb0eb429d1e656caa02d89c47f0fe33faf0dd636c5",
-  "scope": "Official source provenance, complete derived pool and retrospective teaching-case selection; no strategy-performance inference."
+  "web_payload_sha256": "ec81147f6853947972988f8581184a17800604ca08c740075160471a69ad9ffc",
+  "scope": "Official source pool, retrospective teaching selection and observed execution baselines with conditional mechanism diagnostics; not macro-only or predictive validation."
 }

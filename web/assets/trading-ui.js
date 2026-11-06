@@ -73,7 +73,7 @@
     const choices=historyLibrary.cases.filter(c=>c.id!==exclude);const values=new Uint32Array(1);window.crypto.getRandomValues(values);return choices[values[0]%choices.length].id;
   }
   function loadHistory() {
-    if(!historyLoading)historyLoading=fetch('assets/data/historical-replays-v1.json').then(r=>{if(!r.ok)throw new Error('Historical data HTTP '+r.status);return r.json();}).then(data=>{window.TradingHistory.validate(data);historyLibrary=data;$('trade-replay').innerHTML=data.cases.map((c,i)=>`<option value="${esc(c.id)}" data-en-label="Excerpt ${String.fromCharCode(65+i)}" data-zh-label="片段 ${String.fromCharCode(65+i)}">${esc(t('Excerpt ','片段 ')+String.fromCharCode(65+i))}</option>`).join('');const requested=new URLSearchParams(location.search).get('case');state.replayId=data.cases.some(c=>c.id===requested)?requested:chooseExcerpt();$('trade-replay').value=state.replayId;return data;});
+    if(!historyLoading)historyLoading=fetch('assets/data/historical-replays-v1.json?v=20261106-bridge1').then(r=>{if(!r.ok)throw new Error('Historical data HTTP '+r.status);return r.json();}).then(data=>{window.TradingHistory.validate(data);historyLibrary=data;$('trade-replay').innerHTML=data.cases.map((c,i)=>`<option value="${esc(c.id)}" data-en-label="Excerpt ${String.fromCharCode(65+i)}" data-zh-label="片段 ${String.fromCharCode(65+i)}">${esc(t('Excerpt ','片段 ')+String.fromCharCode(65+i))}</option>`).join('');const requested=new URLSearchParams(location.search).get('case');state.replayId=data.cases.some(c=>c.id===requested)?requested:chooseExcerpt();$('trade-replay').value=state.replayId;return data;});
     return historyLoading;
   }
   function renderSource() {
@@ -88,7 +88,7 @@
   }
 
   function reset(options={}) {
-    stop();const request=++resetSerial;renderSource();
+    stop();if(window.TradingDebriefView)window.TradingDebriefView.reset();const request=++resetSerial;renderSource();
     if(state.source==='history'&&!historyLibrary){engine=null;account=null;snap=null;accountSnap=null;feedback(b('Loading verified historical candles…','正在加载已核验的历史行情…'));document.querySelectorAll('[data-order]').forEach(b=>{b.disabled=true;});renderPlayback();loadHistory().then(()=>{if(state.source==='history'&&request===resetSerial)reset(options);}).catch(error=>{if(state.source==='history'&&request===resetSerial)feedback(b('Historical data could not load. Reload or choose the mechanism model.','历史数据未能加载，请刷新或选择机理模拟。'),true);console.error(error);});return;}
     if ($('trade-review-dialog').open) $('trade-review-dialog').close();
     state.scenario = options.scenario || $('trade-scenario').value;
@@ -283,6 +283,8 @@
       const r=snap.historicalReview;
       reveal.innerHTML=r?`<h3>${esc(t('The real excerpt','真实片段揭晓'))}</h3><p>BTC / USDT · ${esc(new Date(r.startTime).toISOString().replace('T',' ').slice(0,16))}–${esc(new Date(r.endTime).toISOString().slice(11,16))} UTC</p><p>${esc(t('Primary observed-flow signal: ','主要成交信号：'))}${esc(r.direction>0?t('aggressive buying','主动买入'):t('aggressive selling','主动卖出'))} · ${esc(new Date(r.signalCloseTime).toISOString().slice(11,16))} UTC</p><p>${esc(t('Largest same-direction close-price move over the next 90 minutes: ','随后90分钟最大同向收盘价格变动：'))}${fmt(r.favorableMove*100)}%${esc(t('; adverse close-price move before that point: ','；到达该点前的反向收盘价格变动：'))}${fmt(r.adverseBeforePeak*100)}%。</p><p>${esc(t('This excerpt was selected after observing that move. Compare all earlier signals with your actual trades.','本片段按事后出现的波动筛选。请对照此前全部提示，检查自己的实际交易时机。'))}</p><a href="https://github.com/SAFuDarren/econophysics-risk-lab/tree/main/studies/historical_replay_v1">${esc(t('Original source and selection record','原始来源与筛选记录'))}</a>`:`<p>${esc(t('The original date and later move are revealed after the final candle.','原始日期和后续走势在最后一根K线结束后揭晓。'))}</p>`;
     }
+    $('trade-review-chart').hidden=state.source==='history'&&snap.done;
+    if(window.TradingDebriefView)window.TradingDebriefView.render({market:snap,account:accountSnap,language});
     drawMarket($('trade-review-chart'),true);
   }
 

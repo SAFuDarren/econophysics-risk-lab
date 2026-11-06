@@ -20,6 +20,25 @@ Bitcoin observations and sector-ETF risk diagnostics.
 
 [**Explore the interactive research website →**](https://safudarren.github.io/econophysics-risk-lab/)
 
+## Research line
+
+Can a small observable description of collective trading support useful risk
+estimates? The project follows one chain: **shared actions and weighted moments
+→ observable/invertible quantities → market compatibility → revised dynamic
+hypotheses → information-matched risk evaluation**.
+
+The mathematical mechanism and identification bounds are established under
+specified assumptions. Negative market Δ motivates revisiting the fixed model.
+Weighted fast/slow dynamics supply testable extensions; the current Bitcoin
+comparison has not demonstrated better forecasts or lower information cost.
+The [main-line evidence map](docs/RESEARCH_MAINLINE_v1.md) records each step.
+
+Historical trading ends in a mechanism debrief: original price and executions,
+measured trade-size baseline, model-conditional amplification, and a past-data-only
+local risk mapping are shown on a shared timeline. The detailed execution data
+used in this explanation are counted explicitly; this is not presented as
+macro-only inversion or as forecast validation.
+
 ## Research results
 
 - **Exact moment relations and parameter recovery.** In the finite Erdős–Rényi
@@ -37,10 +56,16 @@ Bitcoin observations and sector-ETF risk diagnostics.
   model requires a positive statistic Δ. BTCUSDT 2025 H2 gives **−8.181**, with
   an estimated 95% seven-day-block interval **[−11.998, −4.712]**.
   [Market test](https://safudarren.github.io/econophysics-risk-lab/findings.html#market).
-- **An explicit historical forecast benchmark.** On **183 held-out dates**,
+- **A mechanism-derived risk comparison.** At a 240-day total-history budget,
+  the reduced collective pressure model has QLIKE **0.260805**, versus
+  **0.228191** for return-only HAR and **0.260792** for the same-map pressure
+  control. The study establishes no incremental accuracy or information saving.
+  [Matched-budget study](studies/collective_dynamics_v1/README.md).
+- **A statistical forecasting comparator.** On **183 held-out dates**,
   HAR+All reduces log-MSE by **31.20%** relative to persistence. Its incremental
   reduction relative to HAR is **2.26%**, with an estimated 95% block interval
   **[−0.11%, 4.56%]**.
+  This statistical feature benchmark is separate from the mechanism-derived risk test.
   [Forecast results and comparisons](https://safudarren.github.io/econophysics-risk-lab/findings.html#forecast).
 - **Shared-risk and strategy-overlap diagnostics.** For the same nine-sector
   basket and 63-session window ending 31 March 2020, full and diagonal covariance

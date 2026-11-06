@@ -9,7 +9,7 @@ for c in data['cases']:
  g=df[df.date==c['review']['date']].reset_index(drop=True);start=c['review']['minute']-20;minute=c['review']['minute'];direction=c['review']['direction'];price=g.close.to_numpy()
  for b in c['bars']:
   r=g.iloc[start+b['tick']]
-  for name in ['open','high','low','close','volume','quoteVolume','buyQuote','sellQuote','largeBuyQuote','largeSellQuote','maxBuyQuote','maxSellQuote']:assert b[name]==float(r[name]),(c['id'],name)
+  for name in ['open','high','low','close','volume','quoteVolume','buyQuote','sellQuote','largeBuyQuote','largeSellQuote','maxBuyQuote','maxSellQuote','flowBase','squaredSizeBase']:assert b[name]==float(r[name]),(c['id'],name)
  for a in c['alerts']:
   i=start+a['tick'];B=g.largeBuyQuote.to_numpy();S=g.largeSellQuote.to_numpy();arr=B if a['direction']==1 else S;other=S if a['direction']==1 else B;side=arr[i-2:i+1].sum();opposite=other[i-2:i+1].sum();past=np.convolve(arr[:i],np.ones(3),'valid')[-120:];threshold=max(1000000,float(np.quantile(past,.9)))
   assert np.isclose(side,a['sideQuote'],rtol=1e-10,atol=1e-5) and np.isclose(threshold,a['pastThreshold'],rtol=1e-10,atol=1e-5)

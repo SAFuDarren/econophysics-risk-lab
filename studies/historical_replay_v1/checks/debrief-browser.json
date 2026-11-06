@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checks": 42,
+  "url": "trading.html / index.html#research-mainline / methods.html#execution-risk-bridge",
+  "errors": [],
+  "source_sha256": {
+    "web/trading.html": "00e47ea2dea4abbfddaa176d344df137fa4d0d78b6fa6943b560690a56326f03",
+    "web/assets/trading-debrief.js": "d41c798ad639b28443319c76b85357f5dbaf2279ee0afb13e31d8b9bf1399fb7",
+    "web/assets/trading-debrief-ui.js": "bb64fd370d68d3062169d9165922c9c37d6af725056b2ec610d2eb816dedd503",
+    "web/assets/trading-ui.js": "a36788532000e3a617c3861d9e1bc7a9ee3b02817ab081bbf5491d3c8b46fcec",
+    "scripts/build_research_bridge.py": "9836fa4a788f25aea2477a8d477d014b60c9aa27d0b8915b88c46af344758343"
+  }
+}
