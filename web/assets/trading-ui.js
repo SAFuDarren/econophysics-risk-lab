@@ -6,7 +6,7 @@
   const colors = { navy:'#173e60', up:'#197b70', down:'#b34e43', ink:'#243b4d', slate:'#667785', grid:'#dce5eb' };
   let language = 'en';
   try { language = localStorage.getItem('econo-language') === 'zh' ? 'zh' : 'en'; } catch (_) {}
-  const state = { playing:false, speed:1, fraction:.5, seed:20261106, scenario:'buy', mode:'guided', coupling:true, memory:true, settled:false, review:null };
+  const state = { playing:false, speed:.5, showSignals:true, seenEvents:{}, fraction:.5, seed:20261106, scenario:'buy', mode:'guided', coupling:true, memory:true, settled:false, review:null };
   let engine = null, account = null, snap = null, accountSnap = null, timer = null, resizeFrame = null;
   const t = (en, zh) => language === 'zh' ? zh : en;
   const b = (en, zh) => ({en,zh});
@@ -27,7 +27,7 @@
     $('language').textContent = language === 'zh' ? 'English' : '中文';
     $('language').setAttribute('aria-label', t('Switch to Chinese','切换到英文'));
     $('trade-step').setAttribute('aria-label', t('Advance one tick','向前推进一步'));
-    $('trade-speed').setAttribute('aria-label', t('Playback speed','播放速度'));
+    $('trade-speed').setAttribute('aria-label', t('Market speed','行情速度'));
     $('trade-review-close').setAttribute('aria-label', t('Close review','关闭复盘'));
     $('trade-chart').setAttribute('aria-label', t('Collective Index candle prices and trading volume','Collective Index 价格K线与成交量'));
     $('trade-review-chart').setAttribute('aria-label', t('Price path with your trade points','行情路径与本人的交易点位'));
@@ -52,7 +52,7 @@
     if (!engine || !snap || snap.done) return;
     if (timer !== null) window.clearInterval(timer);
     state.playing = true;
-    timer = window.setInterval(advanceOne, Math.max(50, 650 / state.speed));
+    timer = window.setInterval(advanceOne, 2000 / state.speed);
     renderPlayback();
   }
 
@@ -64,6 +64,7 @@
     $('trade-step').disabled = !engine || !!snap?.done;
     $('trade-market-status').textContent = snap?.done ? t('Closed','已收盘') : state.playing ? t('Running','运行中') : snap?.tick ? t('Paused','已暂停') : t('Ready','等待启动');
     $('trade-market-status').classList.toggle('live', state.playing);
+    $('trade-speed-note').textContent=t(`${2000/state.speed/1000} s / tick`,`每步 ${2000/state.speed/1000} 秒`);
   }
 
   function reset(options={}) {
@@ -76,7 +77,7 @@
     $('trade-seed').value = String(state.seed);
     state.coupling = $('trade-coupling').checked;
     state.memory = $('trade-memory').checked;
-    state.settled = false; state.review = null;state.capitalDepleted=false;
+    state.settled = false; state.review = null;state.capitalDepleted=false;state.seenEvents={};
     $('trade-current-event').dataset.eventKey='';
     if (!E || !A) {
       feedback(b('The market could not load. Reload this page to try again.','市场组件未能加载，请刷新页面重试。'), true);
@@ -104,7 +105,7 @@
     if (!engine || snap.done) { stop(); return; }
     const wasPlaying=state.playing;
     snap = engine.step();
-    if(wasPlaying&&state.mode==='guided'&&snap.events.some(e=>e.type==='intent'&&e.tick===snap.tick)){stop();feedback(b('Order intent arrived. Choose a position, then continue.','大单意向已出现，可以选择仓位后继续行情。'));}
+    if(wasPlaying&&state.showSignals&&state.mode==='guided'&&snap.events.some(e=>e.type==='intent'&&e.tick===snap.tick)){stop();feedback(b('Order intent arrived. Choose a position, then continue.','大单意向已出现，可以选择仓位后继续行情。'));}
     accountSnap = account.mark(snap.price,snap.tick);
     if (!accountSnap || !Number.isFinite(accountSnap.equity)) accountSnap = account.snapshot();
     if (accountSnap.insolvent&&!state.capitalDepleted) {
@@ -201,7 +202,7 @@
   function render() {
     if(!snap||!accountSnap)return;
     $('trade-progress').textContent=`${snap.tick} / ${snap.totalSteps}`;
-    $('trade-mode-description').textContent=state.mode==='guided'?t('Set teaching conditions. Watch the intent message before execution begins.','设定好的教学条件：先观察意向消息，再看订单开始执行。'):t('Current intent, evolving conditions. Choose a position without seeing the future path.','当前意向与演化中的市场：根据已知信息选择仓位。');
+    $('trade-mode-description').textContent=!state.showSignals?t('Signals are off. The market runs without order-message pauses.','大单提示已关闭；行情不会因大单消息自动暂停。'):state.mode==='guided'?t('Pauses when order intent arrives. Choose a position, then continue.','大单意向出现时自动暂停，选择仓位后再继续。'):t('Current intent, evolving conditions. Choose a position without seeing the future path.','当前意向与演化中的市场：根据已知信息选择仓位。');
     document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===state.mode)));
     document.querySelectorAll('[data-fraction]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.fraction)===state.fraction)));
     $('trade-price').textContent=fmt(snap.price);const change=100*(snap.price/100-1);$('trade-price-change').textContent=signed(change)+'%';$('trade-price-change').className=tone(change);
@@ -216,8 +217,13 @@
     $('trade-trade-count').textContent=String(accountSnap.trades.length);
     $('trade-history-empty').hidden=accountSnap.trades.length>0;
     $('trade-history-body').innerHTML=accountSnap.trades.slice(-30).reverse().map(tr=>`<tr><td>${tr.tick}</td><td class="${tr.side==='buy'||tr.side==='cover'?'trade-up':'trade-down'}">${esc(actionName(tr.side))}</td><td>${fmt(tr.price)}</td><td>${fmt(tr.quantity,2)}</td></tr>`).join('');
-    $('trade-events').innerHTML=snap.events.slice(-5).reverse().map(event=>`<li class="${event.type==='intent'?'event-intent':''}"><span class="event-time">${event.tick}</span><div><strong>${esc(local(event.title))}</strong><p>${esc(local(event.body))}</p></div></li>`).join('');
-    const current=snap.events.filter(e=>e.type==='intent'||e.type==='execution').at(-1);
+    const visibleEvents=snap.events.filter(e=>state.showSignals||!['intent','execution','completion'].includes(e.type));
+    for(const event of visibleEvents)if(!(event.id in state.seenEvents))state.seenEvents[event.id]={tick:snap.tick,beforeFirstTrade:accountSnap.trades.length===0};
+    $('trade-events').innerHTML=visibleEvents.slice(-5).reverse().map(event=>`<li class="${event.type==='intent'?'event-intent':''}"><span class="event-time">${event.tick}</span><div><strong>${esc(local(event.title))}</strong><p>${esc(local(event.body))}</p></div></li>`).join('');
+    const current=state.showSignals?snap.events.filter(e=>['intent','execution','completion'].includes(e.type)).at(-1):null;
+    $('trade-signal-empty').hidden=!!current;
+    $('trade-signal-empty').textContent=state.showSignals?t('Waiting for an announced order. Guided playback will pause when one arrives.','等待已公布的大单意向；引导体验会在提示出现时暂停。'):t('Signals are off. You can turn them on at any time.','提示已关闭，可随时重新打开。');
+    $('trade-signal-content').classList.toggle('signals-off',!state.showSignals);
     $('trade-current-event').hidden=!current;
     if(current&&$('trade-current-event').dataset.eventKey!==current.id+language){
       $('trade-current-event').dataset.eventKey=current.id+language;
@@ -233,12 +239,17 @@
     renderPlayback();
     drawMarket($('trade-chart'));
     drawNetwork();
-    const rules=account.review({bars:snap.bars,events:snap.events,done:snap.done}).rules;$('trade-score-rules').textContent=local(rules);
+    const rules=account.review({bars:snap.bars,events:seenEvents(),done:snap.done}).rules;$('trade-score-rules').textContent=local(rules);
+  }
+
+  // Record first visibility so enabling hints later cannot change earlier trade information.
+  function seenEvents() {
+    return snap.events.filter(e=>state.seenEvents[e.id]?.beforeFirstTrade).map(e=>({...e,tick:state.seenEvents[e.id].tick}));
   }
 
   function renderReview() {
     if(!account||!snap)return;
-    const review=account.review({bars:snap.bars,events:snap.events,done:snap.done});state.review=review;
+    const review=account.review({bars:snap.bars,events:seenEvents(),done:snap.done});state.review=review;
     $('trade-review-progress').textContent=snap.done?t(`Round complete · ${snap.totalSteps} ticks`,`本轮结束，共 ${snap.totalSteps} 个时点`):t(`Round in progress · tick ${snap.tick} of ${snap.totalSteps}`,`阶段复盘：第 ${snap.tick} / ${snap.totalSteps} 个时点`);
     $('trade-review-summary').innerHTML=`<div class="trade-review-score"><div><strong>${review.score}</strong><small> / 100</small></div><div><h3>${esc(local(review.grade))}</h3><p>${esc(t('A costed review of this virtual round.','根据本轮虚拟交易和成本计算。'))}</p></div></div><div class="trade-review-numbers"><div><span>${esc(t('Net return','净收益率'))}</span><strong class="${tone(review.metrics.returnPct)}">${signed(review.metrics.returnPct)}%</strong></div><div><span>${esc(t('Max drawdown','最大回撤'))}</span><strong>${fmt(review.metrics.maxDrawdownPct)}%</strong></div><div><span>${esc(t('Net value','账户净值'))}</span><strong>${fmt(review.metrics.equity)}</strong></div><div><span>${esc(t('Trading fees','累计手续费'))}</span><strong>${fmt(review.metrics.totalFees)}</strong></div></div>`;
     const notes=review.notes||[];
@@ -263,6 +274,7 @@
   $('trade-review-dialog').addEventListener('click',event=>{if(event.target===$('trade-review-dialog')){const r=event.target.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)event.target.close();}});
   $('trade-scenario').addEventListener('change',()=>reset());
   $('trade-speed').addEventListener('change',()=>{state.speed=Number($('trade-speed').value);if(state.playing)start();});
+  $('trade-signals').addEventListener('change',()=>{state.showSignals=$('trade-signals').checked;feedback(state.showSignals?b('Large-order signals are on.','大单提示已开启。'):b('Large-order signals are off. Market conditions are unchanged.','大单提示已关闭，市场设置保持原样。'));render();});
   $('trade-coupling').addEventListener('change',()=>reset());$('trade-memory').addEventListener('change',()=>reset());$('trade-seed').addEventListener('change',()=>reset());
   $('trade-new-seed').addEventListener('click',()=>{let seed;if(window.crypto?.getRandomValues){const a=new Uint32Array(1);window.crypto.getRandomValues(a);seed=a[0]||1;}else seed=(Date.now()%4294967294)+1;reset({seed});});
   document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{if(state.mode!==button.dataset.mode)reset({mode:button.dataset.mode});}));

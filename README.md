@@ -90,6 +90,8 @@ the market in the [trading simulator](https://safudarren.github.io/econophysics-
 Large-order intent, fragmented execution, changing alignment and price response
 produce reproducible synthetic scenarios. The virtual account supports long and
 short positions, partial exits, execution costs, scored review and trade markers.
+Playback ranges from 0.25× to 4×, starting at four seconds per tick. A separate
+large-order signal panel can be switched off without changing the market path.
 
 [![Synthetic trading workbench](web/assets/trading-preview.webp)](https://safudarren.github.io/econophysics-risk-lab/trading.html)
 

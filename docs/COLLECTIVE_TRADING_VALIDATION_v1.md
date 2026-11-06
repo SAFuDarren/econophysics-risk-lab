@@ -57,3 +57,11 @@ Machine-readable records are in results/checks/: collective_trading_engine_v1.js
 ![Actual mobile workbench](qa/trading-mobile.webp)
 
 ![Actual mobile review](qa/trading-review-mobile.webp)
+
+## Playback and signal controls, revision 1.1
+
+The market now defaults to four real seconds per tick (0.5×), with selectable 0.25×, 0.5×, 1×, 2× and 4×. A separate large-order signal panel has an accessible on/off switch. Hidden signals do not appear in the event tape or trigger guided pauses. Changing these controls preserves the generated price path and current account. Review counts only messages actually visible before the first trade, including when a switch is changed later on that same tick.
+
+The dedicated controlled-clock browser acceptance passes 37 checks, covering the exact four- and eight-second intervals, timer changes, concurrent trading, hidden-message paths, first-trade information timing, keyboard operation and 320/390/768/1440-pixel layouts. The 51-check full trading browser regression and site profile also pass. This revision changes interaction timing and information display; it does not change the scientific model or numerical research results.
+
+Run `node tests/test_trading_controls.cjs` with the same Playwright environment variables as the main browser test. Its source hashes and acceptance results are in `results/checks/trading_controls_v1.json`. Live deployment acceptance is recorded separately after publication.

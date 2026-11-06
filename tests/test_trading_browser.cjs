@@ -31,7 +31,7 @@ async function modalBounds(page){return page.evaluate(()=>{const d=document.getE
     await page.locator('#trade-step').click();check((await snapshot(page)).market.tick===1,'DOM step control');
     await advance(page,16);const prefix=(await snapshot(page)).market.bars.slice(0,12);
     await page.locator('#trade-play').click();
-    await page.waitForFunction(()=>TradingLab.snapshot().market.tick===18&&!TradingLab.snapshot().playing,null,{timeout:5000});
+    await page.waitForFunction(()=>TradingLab.snapshot().market.tick===18&&!TradingLab.snapshot().playing,null,{timeout:10000});
     check((await snapshot(page)).market.tick===18,'Guided playback pauses when intent arrives');
     check(await page.locator('#trade-current-event').isVisible(),'Intent ticker visible near chart');
     check((await page.locator('#trade-current-event-title').innerText()).includes('大额买入'),'Ticker shows actual current intent');

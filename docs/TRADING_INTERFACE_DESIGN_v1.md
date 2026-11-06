@@ -45,3 +45,13 @@ Keyboard focus, reduced motion, dialog dismissal, 390-pixel layout, bilingual st
 Real-engine desktop/mobile review identified three interaction issues: a narrow mobile title, order messages below the mobile fold and native-dialog positioning. The title now has a full-width line with the synthetic marker beside the back link; the latest intent/execution message is repeated inside the chart frame; and the modal uses explicit viewport positioning with internal scroll. Guided playback pauses when an intent arrives, giving visitors time to choose before continuing. Experiment playback does not pause automatically. The detailed event tape remains available for chronological review.
 
 The root acceptance run has already exercised long/short entry, partial exit, final settlement, mode/settings changes and language switching with no console or HTTP errors. Final visual screenshots and bounds are checked by root after the iteration; this note does not substitute for those exported QA records.
+
+## Human-paced playback and optional order signals
+
+The playback strip now exposes 0.25×, 0.5×, 1×, 2× and 4×. One-times speed means two real seconds per model tick; the default is 0.5×, or four seconds. The current seconds-per-tick value is visible in both languages. Changing speed preserves the current path, account and model state, and reschedules only the browser timer. Mobile uses one row for play, step and retry, followed by one full-width speed row.
+
+Large-order signals have a separate bordered information area above the chart, with an accessible switch. Turning signals off suppresses intent, execution and completion messages in both this area and the event tape; it also suppresses the revealing guided-mode intent pause and feedback. The market process is unchanged. Signal and speed choices survive retry and scenario resets within the page session. Review records when each message first became visible, so enabling signals later cannot retrospectively count that information at an earlier trade.
+
+The scenario selector and mechanism view remain visible. This switch is an optional-information interaction, not a blinded experiment or an empirical estimate of the value of private information. The model, source code and chosen scenario are public.
+
+`tests/test_trading_controls.cjs` uses a controlled browser clock to verify real pacing, timer changes, signal visibility, pause behavior, state invariance, review information timing, keyboard use and the four responsive widths. It uses the same Playwright environment variables as the main browser acceptance test.
