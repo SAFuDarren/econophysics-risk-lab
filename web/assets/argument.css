@@ -1,0 +1,159 @@
+.argument-route .route-intro {
+  max-width: 66ch;
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.argument-steps {
+  list-style: none;
+  margin: 1.8rem 0 0;
+  padding: 0;
+  max-width: 62rem;
+  border-top: 1px solid var(--line);
+}
+
+.argument-steps li,
+.argument-heading {
+  display: grid;
+  grid-template-columns: 2.8rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: .8rem;
+}
+
+.argument-steps li {
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 0;
+}
+
+.route-number {
+  font-variant-numeric: tabular-nums;
+  color: var(--teal);
+  font-weight: 650;
+  font-size: 1rem;
+}
+
+.route-title {
+  text-decoration-color: var(--line);
+}
+
+.argument-steps p,
+.argument-heading p,
+.argument-lab-heading p {
+  max-width: 70ch;
+  color: var(--muted);
+  margin-top: .35rem;
+}
+
+.argument-index,
+.argument-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .45rem 1.15rem;
+}
+
+.argument-index {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: .94rem;
+}
+
+.argument-heading {
+  border-top: 1px solid var(--line);
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+}
+
+.argument-stage {
+  margin-bottom: 2.25rem;
+}
+
+.argument-stage > .section {
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+.argument-stage > section h3 {
+  font-family: var(--serif);
+  font-size: clamp(24px, 2.4vw, 33px);
+  line-height: 1.19;
+  font-weight: 500;
+}
+
+.argument-stage h4 {
+  color: var(--navy);
+  margin: 0 0 .45rem;
+  font-size: 1.12rem;
+  line-height: 1.32;
+}
+
+.argument-evidence > p {
+  max-width: 75ch;
+}
+
+.argument-evidence h3 + p {
+  margin-top: .8rem;
+}
+
+.argument-source {
+  color: var(--teal);
+  font-size: .9rem;
+  font-weight: 650;
+  margin-bottom: .45rem;
+}
+
+.argument-links {
+  margin-top: .7rem;
+  font-size: .94rem;
+}
+
+.argument-detail {
+  margin-top: 1rem;
+  max-width: 52rem;
+}
+
+.argument-detail summary {
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.argument-detail figure {
+  margin-top: 1rem;
+}
+
+.argument-detail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.argument-detail figcaption {
+  margin-top: .45rem;
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+.argument-lab-heading {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.argument-next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem 1.15rem;
+  padding-top: .8rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 560px) {
+  .argument-steps li,
+  .argument-heading {
+    grid-template-columns: 1.65rem minmax(0, 1fr);
+    gap: .55rem;
+  }
+  .argument-steps h3 { font-size: 1.17rem; }
+  .argument-stage > .section { padding-top: 1.2rem; padding-bottom: 1.2rem; }
+}

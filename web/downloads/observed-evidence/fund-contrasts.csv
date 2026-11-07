@@ -1,0 +1,9 @@
+metric,control,comparison,mean_difference,CI_low,CI_high,p_two_sided,n_months,block_months,seed,relative_mean_loss_change,evidence_status,p_Holm4
+risk_QLIKE,static_fragility,network_dynamic minus static_fragility,0.001119295127659615,-0.025576371549697312,0.02479563045584525,0.9356,33,3,151807,0.002565429807783959,post-diagnostic retrospective/data-reused,1.0
+risk_QLIKE,common_dynamic,network_dynamic minus common_dynamic,7.554845321320202e-07,-3.6760921061404906e-09,1.238631931803557e-06,0.0258,33,3,151808,1.7271462937618054e-06,post-diagnostic retrospective/data-reused,0.1032
+operational_flow_MSE,static_fragility,network_dynamic minus static_fragility,-0.0004851686285074156,-0.001478239601051806,0.0004001965954277051,0.318,30,3,151809,-0.1454284775309952,post-diagnostic retrospective/data-reused,0.954
+operational_flow_MSE,common_dynamic,network_dynamic minus common_dynamic,1.4034742287844336e-09,-1.0018003943120843e-08,1.7504547584499894e-08,0.8554,30,3,151810,4.922809004881401e-07,post-diagnostic retrospective/data-reused,1.0
+risk_QLIKE,static_fragility,network_dynamic minus static_fragility,0.001119295127659615,-0.021128287643118776,0.022826498747040642,0.9272,33,6,152107,0.002565429807783959,post-diagnostic retrospective/data-reused,1.0
+risk_QLIKE,common_dynamic,network_dynamic minus common_dynamic,7.554845321320202e-07,6.670715331595171e-08,1.2123760670908664e-06,0.016,33,6,152108,1.7271462937618054e-06,post-diagnostic retrospective/data-reused,0.064
+operational_flow_MSE,static_fragility,network_dynamic minus static_fragility,-0.0004851686285074156,-0.0016070638084991168,0.00040662909215136557,0.3844,30,6,152109,-0.1454284775309952,post-diagnostic retrospective/data-reused,1.0
+operational_flow_MSE,common_dynamic,network_dynamic minus common_dynamic,1.4034742287844336e-09,-1.039704118794499e-08,1.9454631432878232e-08,0.8222,30,6,152110,4.922809004881401e-07,post-diagnostic retrospective/data-reused,1.0
