@@ -22,38 +22,45 @@
 
   const compactTrading = window.matchMedia('(max-width: 730px)');
   const mobileDock = $('trade-mobile-dock');
-  const dockControls = [
-    document.querySelector('.trade-playback'),
-    document.querySelector('.trade-order-controls'),
-    $('trade-feedback'),
-  ].map(control => {
-    const originalPosition = document.createComment('Original control position');
-    control.before(originalPosition);
-    return {control,originalPosition};
-  });
+  const mobileHeader = $('trade-mobile-header');
+  const mobileDialog = $('trade-mobile-dialog');
+  const mobilePanels = {
+    signals: {element:$('trade-mobile-signals'), label:['Large-order signals','大单提示']},
+    activity: {element:$('trade-mobile-activity'), label:['Account activity','账户与成交明细']},
+    settings: {element:$('trade-mobile-settings'), label:['Market settings','行情与交易设置']},
+  };
+  const mobileContent = [
+    [mobileHeader, '#language'],
+    [$('trade-mobile-progress'), '#trade-progress'],
+    [mobileDock, '.trade-playback', '.trade-order-controls', '#trade-feedback'],
+    [mobilePanels.signals.element, '#trade-signal-panel', '#trade-history-context'],
+    [mobilePanels.activity.element, '.trade-account-metrics', '#trade-position-detail', '.trade-event-panel', '.trade-history-panel'],
+    [mobilePanels.settings.element, '.trade-source-tabs', '.trade-setup', '.trade-session-note', '#trade-model-view', '.trade-quickstart', '.trade-order-help', '#trade-rules'],
+  ].flatMap(([destination,...selectors])=>selectors.map(selector=>{
+    const element=document.querySelector(selector);
+    const originalPosition=document.createComment('Original desktop position');
+    element.before(originalPosition);
+    return {element,destination,originalPosition};
+  }));
 
   function fitTradingControls() {
-    if(compactTrading.matches){
-      mobileDock.append(...dockControls.map(({control})=>control));
-      mobileDock.hidden=false;
-    }else{
-      for(const {control,originalPosition} of dockControls)originalPosition.after(control);
-      mobileDock.hidden=true;
+    const mobile=compactTrading.matches;
+    if(!mobile&&mobileDialog.open)mobileDialog.close();
+    for(const {element,destination,originalPosition} of mobileContent){
+      if(mobile)destination.append(element);
+      else originalPosition.after(element);
     }
-    reserveDockSpace();
+    document.body.classList.toggle('trade-terminal',mobile);
+    mobileHeader.hidden=mobileDock.hidden=!mobile;
   }
 
-  function reserveDockSpace() {
-    document.documentElement.style.setProperty('--trade-dock-height',mobileDock.offsetHeight+'px');
-  }
-
-  function showChartWhilePlaying() {
-    if(!compactTrading.matches)return;
-    const chart=$('trade-chart').getBoundingClientRect();
-    const availableBottom=mobileDock.getBoundingClientRect().top;
-    if(chart.top<0||chart.bottom>availableBottom){
-      $('trade-market').scrollIntoView({block:'start',behavior:'instant'});
-    }
+  function openMobilePanel(name) {
+    const panel=mobilePanels[name];
+    for(const {element} of Object.values(mobilePanels))element.hidden=element!==panel.element;
+    $('trade-mobile-dialog-title').textContent=t(...panel.label);
+    mobileDialog.showModal();
+    mobileDialog.scrollTop=0;
+    if(name==='settings'&&snap&&state.source==='model')drawNetwork();
   }
 
   function applyLanguage() {
@@ -64,6 +71,7 @@
     $('language').textContent = language === 'zh' ? 'English' : '中文';
     $('language').setAttribute('aria-label', t('Switch to Chinese','切换到英文'));
     mobileDock.setAttribute('aria-label', t('Quick trading controls','快捷交易操作'));
+    $('trade-mobile-dialog-close').setAttribute('aria-label',t('Close panel','关闭面板'));
     $('trade-step').setAttribute('aria-label', t('Advance one tick','向前推进一步'));
     $('trade-speed').setAttribute('aria-label', t('Market speed','行情速度'));
     $('trade-review-close').setAttribute('aria-label', t('Close review','关闭复盘'));
@@ -272,9 +280,6 @@
     $('trade-drawdown').textContent=fmt(accountSnap.maxDrawdownPct)+'%';$('trade-exposure').textContent=fmt(accountSnap.grossExposure*100,1)+'%';
     const q=accountSnap.quantity,hasPosition=Math.abs(q)>1e-8;
     $('trade-position-label').textContent=hasPosition?(q>0?t('Long position','多头持仓'):t('Short position','空头持仓')):t('No position','空仓');
-    $('trade-dock-quote').textContent=$('trade-price').textContent;
-    $('trade-dock-position').textContent=$('trade-position-label').textContent;
-    $('trade-dock-position').className=tone(q);
     $('trade-position-label').className='trade-position-label '+(hasPosition?(q>0?'trade-up':'trade-down'):'');
     $('trade-position-detail').textContent=hasPosition?t(`${fmt(Math.abs(q),2)} units · average entry ${fmt(accountSnap.averageEntry)}`,`${fmt(Math.abs(q),2)} 单位，持仓均价 ${fmt(accountSnap.averageEntry)}`):t('Initial capital 100,000 virtual units.','初始本金为 100,000 个虚拟单位。');
     document.querySelectorAll('[data-order]').forEach(b=>{const side=b.dataset.order;b.disabled=!!snap.done||!!accountSnap.insolvent||(side==='buy'&&q< -1e-8)||(side==='short'&&q>1e-8)||(side==='sell'&&q<=1e-8)||(side==='cover'&&q>=-1e-8)||(side==='close'&&!hasPosition);});
@@ -289,6 +294,7 @@
     $('trade-signal-empty').textContent=state.showSignals?(state.source==='history'?t('Watching completed trades for unusual large buying or selling.','正在根据已完成成交观察异常大额买卖。'):t('Waiting for an announced order. Guided playback will pause when one arrives.','等待已公布的大单意向；引导体验会在提示出现时暂停。')):t('Signals are off. You can turn them on at any time.','提示已关闭，可随时重新打开。');
     $('trade-signal-content').classList.toggle('signals-off',!state.showSignals);
     $('trade-current-event').hidden=!current;
+    mobileDock.querySelector('[data-trade-panel="signals"]').toggleAttribute('data-has-signal',!!current);
     if(current&&$('trade-current-event').dataset.eventKey!==current.id+language){
       $('trade-current-event').dataset.eventKey=current.id+language;
       $('trade-current-event').classList.toggle('execution',current.type==='execution');
@@ -333,16 +339,18 @@
 
   function openReview() {
     if(!account)return;stop();
+    if(mobileDialog.open)mobileDialog.close();
     const dialog=$('trade-review-dialog');if(!dialog.open)dialog.showModal();renderReview();
   }
 
   $('language').addEventListener('click',()=>{language=language==='en'?'zh':'en';try{localStorage.setItem('econo-language',language);}catch(_){}applyLanguage();});
   $('menu-toggle').addEventListener('click',()=>{const open=$('menu-toggle').getAttribute('aria-expanded')!=='true';$('menu-toggle').setAttribute('aria-expanded',String(open));$('main-nav').classList.toggle('open',open);});
-  $('trade-play').addEventListener('click',()=>{
-    if(state.playing){stop();return;}
-    showChartWhilePlaying();start();
+  $('trade-play').addEventListener('click',()=>state.playing?stop():start());
+  $('trade-step').addEventListener('click',()=>{stop();advanceOne();});
+  document.querySelectorAll('[data-trade-panel]').forEach(button=>{
+    button.addEventListener('click',()=>openMobilePanel(button.dataset.tradePanel));
   });
-  $('trade-step').addEventListener('click',()=>{showChartWhilePlaying();stop();advanceOne();});
+  $('trade-mobile-dialog-close').addEventListener('click',()=>mobileDialog.close());
   $('trade-reset').addEventListener('click',()=>reset());
   $('trade-review').addEventListener('click',openReview);
   $('trade-review-mechanism').addEventListener('click',()=>{
@@ -369,7 +377,6 @@
 
   window.TradingLab={state,get engine(){return engine;},get account(){return account;},snapshot:()=>({market:snap,account:accountSnap,playing:state.playing}),start,pause:stop,step:()=>{stop();advanceOne();},advance:n=>{stop();for(let i=0;i<n&&!snap?.done;i++)advanceOne();},reset,trade:placeOrder,review:openReview,render};
   compactTrading.addEventListener('change',fitTradingControls);
-  if(window.ResizeObserver)new ResizeObserver(reserveDockSpace).observe(mobileDock);
   fitTradingControls();
   applyLanguage();reset();
 })();

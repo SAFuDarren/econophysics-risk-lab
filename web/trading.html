@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/trading.css?v=20261107-mobile-dock">
+  <link rel="stylesheet" href="assets/trading.css?v=20261107-mobile-terminal">
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
   <script defer src="assets/vendor/katex/katex.min.js"></script>
   <script defer src="assets/trading-engine.js"></script>
@@ -17,7 +17,7 @@
   <script defer src="assets/trading-history.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-debrief.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-debrief-ui.js?v=20261107-walkthrough"></script>
-  <script defer src="assets/trading-ui.js?v=20261107-mobile-dock"></script>
+  <script defer src="assets/trading-ui.js?v=20261107-mobile-terminal"></script>
 <link rel="stylesheet" href="assets/argument.css?v=20261107-beginner"></head>
 <body data-page="trading">
   <a class="skip" href="#main"><span data-en>Skip to market</span><span data-zh hidden>跳到交易区</span></a>
@@ -29,6 +29,12 @@
   </header>
 
   <main id="main" class="trade-main">
+    <header class="trade-mobile-header" id="trade-mobile-header" hidden>
+      <a href="lab.html#research-mainline"><span data-en>‹ Explore</span><span data-zh hidden>‹ 实验室</span></a>
+      <span class="trade-mobile-heading">
+        <span data-en>Trading lab</span><span data-zh hidden>模拟交易</span>
+      </span>
+    </header>
     <div class="trade-heading">
       <div><a class="trade-back" href="lab.html"><span data-en>Explore the research</span><span data-zh hidden>返回交互实验</span></a><h1><span data-en>Trade the mechanism</span><span data-zh hidden>亲手交易，观察市场</span></h1><p><span data-en>Read the order flow. Choose your position. See what happens.</span><span data-zh hidden>观察真实成交与价格，选择仓位，再复盘进出场。</span></p></div>
       <span class="trade-synthetic"><i aria-hidden="true"></i><span id="trade-source-badge">Historical replay</span></span>
@@ -89,14 +95,25 @@
     <details class="trade-rules" id="trade-rules"><summary><span data-en>How the round works</span><span data-zh hidden>交易与评分规则</span></summary><div><p><span data-en>You begin with 100,000 virtual units. Opening gross exposure is capped at 1× equity; later price moves can change this ratio. A position closes automatically if equity falls to 25% of its gross exposure. Each fill includes a 5 bp fee and 2 bp slippage. Remaining positions close, with costs, on the final tick.</span><span data-zh hidden>初始资金为 100,000 个虚拟单位，开仓总敞口上限为净值的 1 倍；后续价格变化可能改变这一比例。净值降至总敞口的 25% 时自动平仓。每次成交计入 5 bp 费用与 2 bp 滑点，剩余持仓在最后一步按规则平仓。</span></p><p id="trade-source-rules"></p><p id="trade-score-rules"></p></div></details>
     <aside class="trade-mobile-dock" id="trade-mobile-dock" aria-label="Quick trading controls" hidden>
       <div class="trade-dock-meta">
-        <strong id="trade-dock-quote">—</strong>
-        <span id="trade-dock-position"></span>
-        <span class="trade-dock-links">
-          <a href="#trade-market"><span data-en>Chart</span><span data-zh hidden>行情</span></a>
-          <a href="#trade-signal-panel"><span data-en>Signals</span><span data-zh hidden>大单提示</span></a>
-        </span>
+        <div id="trade-mobile-progress"></div>
+        <div class="trade-dock-tools">
+          <button type="button" data-trade-panel="signals" aria-haspopup="dialog"><span data-en>Signals</span><span data-zh hidden>大单提示</span></button>
+          <button type="button" data-trade-panel="activity" aria-haspopup="dialog"><span data-en>Activity</span><span data-zh hidden>明细</span></button>
+          <button type="button" data-trade-panel="settings" aria-haspopup="dialog"><span data-en>Settings</span><span data-zh hidden>设置</span></button>
+        </div>
       </div>
     </aside>
+  <dialog class="trade-mobile-dialog" id="trade-mobile-dialog" aria-labelledby="trade-mobile-dialog-title">
+    <div class="trade-mobile-dialog-header">
+      <h2 id="trade-mobile-dialog-title"></h2>
+      <button type="button" id="trade-mobile-dialog-close" aria-label="Close" autofocus>×</button>
+    </div>
+    <div class="trade-mobile-dialog-body">
+      <section id="trade-mobile-signals" hidden></section>
+      <section id="trade-mobile-activity" hidden></section>
+      <section id="trade-mobile-settings" hidden></section>
+    </div>
+  </dialog>
   </main>
 
   <footer class="site-footer"><div><a href="index.html">Econophysics Risk Lab</a><p><span data-en>Mechanisms, observations and market risk.</span><span data-zh hidden>机制、观测与市场风险。</span></p></div><div><p id="trade-source-footer"></p></div><div><a href="lab.html"><span data-en>Other experiments</span><span data-zh hidden>其他交互实验</span></a><a href="reproduce.html"><span data-en>Code and methods</span><span data-zh hidden>代码与方法</span></a></div></footer>

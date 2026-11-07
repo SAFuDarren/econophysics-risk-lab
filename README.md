@@ -11,26 +11,15 @@ sector-ETF applications and a signed-covariance study of six observed research
 factors. Multi-factor network experiments test how trading scale, strategy
 diversity and accommodation jointly affect risk.
 
-[Research website](https://safudarren.github.io/econophysics-risk-lab/) ·
-[Mathematics](https://safudarren.github.io/econophysics-risk-lab/methods.html#contents) ·
-[Findings](https://safudarren.github.io/econophysics-risk-lab/findings.html#contents) ·
-[Explore the experiments](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-mainline) ·
-[Trading replay](https://safudarren.github.io/econophysics-risk-lab/trading.html#trade-market) ·
-[Learning room](https://safudarren.github.io/econophysics-risk-lab/learn.html) ·
-[Full research report](https://safudarren.github.io/econophysics-risk-lab/downloads/research-report-en.pdf)
-
-The [collective-risk workbench](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-bench)
-opens the experimental evidence behind the dynamic model: common signals and
-feedback, distribution-preserving propagation, observable state inference and
-matched-input risk comparisons. It uses saved source experiments, with separate
-labels for controlled networks and Bitcoin observations.
+[Website](https://safudarren.github.io/econophysics-risk-lab/) ·
+[Explore](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-mainline) ·
+[Trading replay](https://safudarren.github.io/econophysics-risk-lab/trading.html) ·
+[Research report](web/downloads/research-report-en.pdf)
 
 [![Research checks](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/checks.yml)
 [![Website deployment](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/SAFuDarren/econophysics-risk-lab/actions/workflows/pages.yml)
 
-[![Interactive research website preview](web/assets/social-preview.jpg)](https://safudarren.github.io/econophysics-risk-lab/)
-
-[**Explore the interactive research website →**](https://safudarren.github.io/econophysics-risk-lab/)
+![Econophysics Risk Lab homepage and model animation](web/assets/social-preview.jpg)
 
 ## Repository navigation
 
@@ -43,7 +32,7 @@ labels for controlled networks and Bitcoin observations.
 | Numerical evidence and figure sources | [Results tables](results/tables/) and [figures](figures/) |
 | Data, experiment, plot and check commands | [Repository guide](docs/REPOSITORY_GUIDE.md) |
 | Website and browser experiments | [Web source](web/) |
-| Economic concepts, mathematics and inference lessons | [Learning room](https://safudarren.github.io/econophysics-risk-lab/learn.html) and [content guide](docs/learning/README.md) |
+| Economic concepts, mathematics and inference lessons | [Learning content guide](docs/learning/README.md) |
 
 Run routine checks through `python scripts/reproduce.py --profile quick` or
 `--profile site`. Individual commands are grouped by purpose under `scripts/`;
@@ -51,8 +40,7 @@ the [migration map](docs/repository-migration-map.json) records every relocated 
 
 ## Learn the ideas behind the research
 
-The [learning room](https://safudarren.github.io/econophysics-risk-lab/learn.html)
-connects **27 bilingual topics** across market economics, mathematical foundations
+The website’s learning room connects **27 bilingual topics** across market economics, mathematical foundations
 and inference. Each topic pairs a question and intuition with its formula,
 assumptions, symbols, project connection, sources and a short reasoning check.
 Interactive explanations cover liquidity, aggressor flow, covariance, order
@@ -109,7 +97,7 @@ are counted explicitly.
   includes zero. Raw 90% weight-concentration intervals cover **83.59%**.
   The experiments distinguish successful state propagation from reliable
   inference and additional risk value.
-  [Inspect the comparisons](https://safudarren.github.io/econophysics-risk-lab/lab.html#collective-risk).
+  [Experimental comparisons](studies/collective_risk_continuation_v3/README.md).
 - **A mechanism-derived risk comparison.** At a 240-day total-history budget,
   the reduced collective pressure model has QLIKE **0.260805**, versus
   **0.228191** for return-only HAR and **0.260792** for the same-map pressure
@@ -120,13 +108,11 @@ are counted explicitly.
   reduction relative to HAR is **2.26%**, with an estimated 95% block interval
   **[−0.11%, 4.56%]**.
   This statistical feature benchmark is separate from the mechanism-derived risk test.
-  [Forecast results and comparisons](https://safudarren.github.io/econophysics-risk-lab/findings.html#stage-forecast).
 - **Shared-risk and strategy-overlap diagnostics.** For the same nine-sector
   basket and 63-session window ending 31 March 2020, full and diagonal covariance
   estimates give annualized volatility of **57.73%** and **20.62%**. Two
   low-volatility strategy variants have daily net P&L correlations of **0.921**
   in 2020–2025 and **0.795** in the 2026 confirmation period.
-  [Portfolio and strategy results](https://safudarren.github.io/econophysics-risk-lab/findings.html#stage-applications).
 
 ![Parameter recovery across ten independent studies](web/assets/figures/D01.svg)
 
@@ -135,7 +121,7 @@ simulation studies. Method comparisons are in the source table above; settings a
 
 ## Coordination, accommodation and forecast information
 
-The [risk environment instrument](https://safudarren.github.io/econophysics-risk-lab/risk-environment.html)
+The risk environment instrument in Explore
 connects the existing network to its response environment. At fixed return
 feedback, the simulated common-signal risk increment is **3.306, 2.230 and
 1.639 × 10⁻⁶** as normalized shock capacity increases from 0.5 to 1 to 1.5.
@@ -158,13 +144,12 @@ conditional mechanism and an interpretable closure, without an accepted
 mechanism-specific forecasting advantage. These one-hour results remain
 separate from the older next-day and eight-step studies above.
 
-[Open the interactive study](https://safudarren.github.io/econophysics-risk-lab/risk-environment.html)
-· [Saved data, scope and verification](studies/state_environment_v9/README.md)
-· [Download the evidence package](web/downloads/state-environment/study-data.zip)
+[Saved data, scope and verification](studies/state_environment_v9/README.md) ·
+[Download the evidence package](web/downloads/state-environment/study-data.zip)
 
 ## Strategy ecology: scale, diversity and accommodation
 
-The [strategy-ecology instrument](https://safudarren.github.io/econophysics-risk-lab/strategy-ecology.html)
+The strategy-ecology instrument in Explore
 extends the same herding and fast/slow network with multiple input factors and
 lagged allocation. Its saved model grid separates larger effective trading
 weight, genuinely diverse inputs, common components and the capacity to absorb
@@ -196,7 +181,6 @@ factor-sleeve allocations, not observed fund flows or causal quant-market effect
 
 [Model evidence and scope](studies/strategy_ecology_v10/README.md) ·
 [Real-factor protocol, tables and checks](studies/real_factor_validation_v11/README.md) ·
-[Open from Explore](https://safudarren.github.io/econophysics-risk-lab/lab.html#strategy-ecology)
 
 ## Model and methods
 
@@ -239,7 +223,6 @@ The squared-size sum links microscopic coordination to aggregate fluctuations.
 - **Market analysis:** price–volume compatibility tests, paired block comparisons
   for volatility forecasts, and matched-window covariance and daily P&L diagnostics.
 
-[Full mathematical derivations](https://safudarren.github.io/econophysics-risk-lab/methods.html#contents) ·
 [Model specification](docs/AB/model_spec.md) ·
 [Forecast protocol](docs/AB/forecast_contract.md)
 
@@ -250,12 +233,11 @@ working observation model. One example is the reference model's positive-Δ
 restriction: BTCUSDT 2025 H2 gives **−8.181**, with an estimated 95%
 seven-day-block interval **[−11.998, −4.712]**. This is a compatibility diagnostic
 used alongside the other checks when specifying effective-weight and dynamic
-extensions. [Diagnostic and source evidence](https://safudarren.github.io/econophysics-risk-lab/findings.html#market).
+extensions.
 
 ## Real-market trading replay
 
-The [trading workbench](https://safudarren.github.io/econophysics-risk-lab/trading.html)
-now starts with original one-minute BTC/USDT candles and observed large aggressive
+The trading replay starts with original one-minute BTC/USDT candles and observed large aggressive
 executions. Nine curated excerpts contain four buying-led and five selling-led
 moves of 2.09–6.52% over the following 90 minutes, with genuine pullbacks and
 competing signals. The date and selected outcome are revealed after the round.
@@ -267,18 +249,18 @@ The [data and selection record](studies/historical_replay_v1/README.md) includes
 52 checked official archives, the full 26-day derived pool, all 865 alerts,
 selection tables, exact OHLC checks and raw reproduction. The original mechanism
 market remains available in a separate tab. Both share the virtual long/short
-account, speed control, optional signal panel and costed review. On phones,
-playback and order controls stay at the bottom while the chart and market
-information remain in the page.
+account, speed control, optional signal panel and costed review. The phone
+workspace brings the chart, account and orders together. Settings, signals and
+trade history open in separate panels.
 
-[![Real historical trading workbench](web/assets/trading-preview-en.webp)](https://safudarren.github.io/econophysics-risk-lab/trading.html)
+![Historical BTC/USDT replay in the mobile trading workspace](web/assets/trading-preview-en.webp)
 
 ## Weighted collective dynamics and the model market
 
 The dynamic extension replaces equal-size counts with effective trading weights,
 allows directions to change on coupled fast and slow networks, and retains the
 cross-group and temporal covariance terms. A shared JavaScript engine generates
-the market in the mechanism tab of the [trading workbench](https://safudarren.github.io/econophysics-risk-lab/trading.html?source=model).
+the market in the mechanism mode of the trading workbench.
 Large-order intent, fragmented execution, changing alignment and price response
 produce reproducible synthetic scenarios. The virtual account supports long and
 short positions, partial exits, execution costs, scored review and trade markers.
@@ -319,8 +301,7 @@ The core model and exact theory checks use the Python standard library:
 python scripts/reproduce.py --profile quick
 ```
 
-The [interactive laboratory](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-mainline)
-groups the experiments into three routes: mechanism and inference, price
+Explore groups the experiments into three routes: mechanism and inference, price
 response and forecasts, and applications. The temporal experiment replays a
 complete saved 8,192-observation path and supports whole-pair shuffling. The
 individual experiments link their mathematics, implementation and source
