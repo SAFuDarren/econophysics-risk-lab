@@ -93,7 +93,7 @@
       fastGraph=topology(config.nodes,graphRng,'fast');slowGraph=topology(config.nodes,graphRng,'slow');
       plans=(config.externalOrders?PLANS[config.scenario]:[]).map(p=>Object.assign({},p,{executed:0,announced:false,started:false,completed:false}));
       const initial=nodes.reduce((sum,n)=>sum+n.weight*n.fast,0);previousAlignment=Math.abs(initial);
-      metrics={pressure:0,coherence:Math.abs(initial),liquidity:1,phase:'mixed',fastAlignment:initial,
+      metrics={pressure:0,programFlow:0,coherence:Math.abs(initial),liquidity:1,phase:'mixed',fastAlignment:initial,
         slowAlignment:nodes.reduce((sum,n)=>sum+n.weight*n.slow,0)};
       emit('session', 'session', {en:config.mode==='guided'?'Guided model market':'Model market experiment',zh:config.mode==='guided'?'引导式虚拟市场':'自主市场实验'},
         {en:config.mode==='guided'?'Teaching conditions are set. Large-order messages reveal intent, not a guaranteed price or profit.':
@@ -182,7 +182,7 @@
       const upper=.00025+.0007*wicksRng(),lower=.00025+.0007*wicksRng();
       const high=Math.max(open,price)*Math.exp(upper),low=Math.min(open,price)*Math.exp(-lower);
       bars.push({tick,open,high,low,close:price,volume,flow,pressure,phase});
-      metrics={pressure,coherence:clamp(alignment,0,1),liquidity,phase,fastAlignment:clamp(fastMean,-1,1),slowAlignment:clamp(slowMean,-1,1),
+      metrics={pressure,programFlow:order.signed,coherence:clamp(alignment,0,1),liquidity,phase,fastAlignment:clamp(fastMean,-1,1),slowAlignment:clamp(slowMean,-1,1),
         switching:clamp(flippedWeight,0,1),alignmentChange:change};
       if(phase==='fragmenting'&&metrics.coherence<.55&&previousAlignment>=.55&&
         !events.some(e=>e.id==='alignment-break'))emit('alignment-break','state',

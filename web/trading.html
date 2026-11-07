@@ -9,15 +9,15 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/trading.css?v=20261107-mobile-terminal">
+  <link rel="stylesheet" href="assets/trading.css?v=20261107-flow-lights">
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
   <script defer src="assets/vendor/katex/katex.min.js"></script>
-  <script defer src="assets/trading-engine.js"></script>
+  <script defer src="assets/trading-engine.js?v=20261107-flow-lights"></script>
   <script defer src="assets/trading-account.js"></script>
   <script defer src="assets/trading-history.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-debrief.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-debrief-ui.js?v=20261107-walkthrough"></script>
-  <script defer src="assets/trading-ui.js?v=20261107-mobile-terminal"></script>
+  <script defer src="assets/trading-ui.js?v=20261107-flow-lights"></script>
 <link rel="stylesheet" href="assets/argument.css?v=20261107-beginner"></head>
 <body data-page="trading">
   <a class="skip" href="#main"><span data-en>Skip to market</span><span data-zh hidden>跳到交易区</span></a>
@@ -55,8 +55,10 @@
     <div class="trade-session-note"><p id="trade-mode-description"></p><span id="trade-progress" aria-live="off">0 / 180</span></div>
 
     <section class="trade-signal-panel" id="trade-signal-panel" aria-labelledby="trade-signal-heading">
-      <div class="trade-signal-heading"><h2 id="trade-signal-heading"><span data-en>Large-order signals</span><span data-zh hidden>大单提示</span></h2><label class="trade-signal-toggle"><input type="checkbox" id="trade-signals" role="switch" aria-controls="trade-signal-content" checked><span data-en>Show signals</span><span data-zh hidden>显示提示</span></label></div>
+      <div class="trade-signal-heading"><h2 id="trade-signal-heading"><span data-en>Large-order signals</span><span data-zh hidden>大单提示</span><span class="trade-flow-lights" data-flow-lights aria-hidden="true"><span class="trade-flow-buy"></span><span class="trade-flow-sell"></span></span></h2><label class="trade-signal-toggle"><input type="checkbox" id="trade-signals" role="switch" aria-controls="trade-signal-content" checked><span data-en>Show signals</span><span data-zh hidden>显示提示</span></label></div>
+      <span class="sr-only" data-flow-state role="status"></span>
       <div id="trade-signal-content">
+        <p class="trade-flow-key"><span data-en>Green marks large buying. Red marks large selling. The lights show completed trades at the current step.</span><span data-zh hidden>绿点亮表示大额买入，红点亮表示大额卖出。指示灯对应当前一步已执行的成交。</span></p>
         <p id="trade-signal-reading" class="trade-signal-empty">
           <span data-en>A candle shows a minute’s opening, highest, lowest and closing prices. In the replay, an aggressive buy means the buyer initiated a trade against a standing sell order. A signal reports completed trades, and the next candle can move either way.</span>
           <span data-zh hidden>一根 K 线显示这一分钟的开盘、最高、最低和收盘价。回放里的「主动买入」指买方主动与已有的卖单成交。提示只汇报已完成的交易，下一根 K 线仍然可能上涨或下跌。</span>
@@ -97,7 +99,7 @@
       <div class="trade-dock-meta">
         <div id="trade-mobile-progress"></div>
         <div class="trade-dock-tools">
-          <button type="button" data-trade-panel="signals" aria-haspopup="dialog"><span data-en>Signals</span><span data-zh hidden>大单提示</span></button>
+          <button type="button" data-trade-panel="signals" aria-haspopup="dialog" aria-describedby="trade-dock-flow-state"><span data-en>Signals</span><span data-zh hidden>大单提示</span><span class="trade-flow-lights" data-flow-lights aria-hidden="true"><span class="trade-flow-buy"></span><span class="trade-flow-sell"></span></span></button><span class="sr-only" id="trade-dock-flow-state" data-flow-state role="status"></span>
           <button type="button" data-trade-panel="activity" aria-haspopup="dialog"><span data-en>Activity</span><span data-zh hidden>明细</span></button>
           <button type="button" data-trade-panel="settings" aria-haspopup="dialog"><span data-en>Settings</span><span data-zh hidden>设置</span></button>
         </div>

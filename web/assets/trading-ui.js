@@ -132,8 +132,35 @@
     $('trade-source-rules').textContent=h?t('Historical excerpts are retrospectively selected for a later large move. Signals use only already completed trades. Aggressive buying/selling does not identify an account opening a long/short position. Your virtual fills do not alter the original prices; passive comparison starts at the playable round, excluding the visible warm-up.','历史片段按后续出现大幅变动筛选；提示只使用已经完成的成交。主动买卖不等于已识别某个账户开多或开空。虚拟交易不改变原始价格；被动持仓基准从可交易起点计算，不包含热身图形。'):t('Guided rounds use set conditions; experiment rounds have stochastic execution. You act as a small price taker. Review includes costs and a same-path passive benchmark.','引导体验采用设定条件，自主实验中的订单执行带有随机性。你作为小额参与者接受当前价格；复盘包含成本与同路径被动持仓比较。');
   }
 
+  const flowLights=document.querySelectorAll('[data-flow-lights]');
+  const flowStatuses=document.querySelectorAll('[data-flow-state]');
+
+  function renderSignalLights(market) {
+    let buy=false,sell=false;
+    if(market&&state.showSignals){
+      if(market.source==='history'){
+        const alerts=market.events.filter(event=>event.type==='large-flow'&&event.tick===market.tick);
+        buy=alerts.some(event=>event.direction>0);
+        sell=alerts.some(event=>event.direction<0);
+      }else{
+        buy=market.metrics.programFlow>0;
+        sell=market.metrics.programFlow<0;
+      }
+    }
+    for(const lights of flowLights){
+      lights.toggleAttribute('data-buy-active',buy);
+      lights.toggleAttribute('data-sell-active',sell);
+    }
+    const message=!state.showSignals?t('Signals off','大单提示已关闭'):
+      buy&&sell?t('Large buying and selling this step','当前一步有大额买入和卖出'):
+      buy?t('Large buying this step','当前一步有大额买入'):
+      sell?t('Large selling this step','当前一步有大额卖出'):
+      t('No large-order signal this step','当前一步无大单信号');
+    for(const status of flowStatuses)if(status.textContent!==message)status.textContent=message;
+  }
+
   function reset(options={}) {
-    stop();if(window.TradingDebriefView)window.TradingDebriefView.reset();const request=++resetSerial;renderSource();
+    stop();renderSignalLights(null);if(window.TradingDebriefView)window.TradingDebriefView.reset();const request=++resetSerial;renderSource();
     if(state.source==='history'&&!historyLibrary){engine=null;account=null;snap=null;accountSnap=null;feedback(b('Loading verified historical candles…','正在加载已核验的历史行情…'));document.querySelectorAll('[data-order]').forEach(b=>{b.disabled=true;});renderPlayback();loadHistory().then(()=>{if(state.source==='history'&&request===resetSerial)reset(options);}).catch(error=>{if(state.source==='history'&&request===resetSerial)feedback(b('Historical data could not load. Reload or choose the mechanism model.','历史数据未能加载，请刷新或选择机理模拟。'),true);console.error(error);});return;}
     if ($('trade-review-dialog').open) $('trade-review-dialog').close();
     state.scenario = options.scenario || $('trade-scenario').value;
@@ -294,7 +321,7 @@
     $('trade-signal-empty').textContent=state.showSignals?(state.source==='history'?t('Watching completed trades for unusual large buying or selling.','正在根据已完成成交观察异常大额买卖。'):t('Waiting for an announced order. Guided playback will pause when one arrives.','等待已公布的大单意向；引导体验会在提示出现时暂停。')):t('Signals are off. You can turn them on at any time.','提示已关闭，可随时重新打开。');
     $('trade-signal-content').classList.toggle('signals-off',!state.showSignals);
     $('trade-current-event').hidden=!current;
-    mobileDock.querySelector('[data-trade-panel="signals"]').toggleAttribute('data-has-signal',!!current);
+    renderSignalLights(snap);
     if(current&&$('trade-current-event').dataset.eventKey!==current.id+language){
       $('trade-current-event').dataset.eventKey=current.id+language;
       $('trade-current-event').classList.toggle('execution',current.type==='execution');
