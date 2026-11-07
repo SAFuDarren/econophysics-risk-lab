@@ -22,22 +22,53 @@ document.querySelectorAll('[data-math]').forEach(el=>{if(window.katex)katex.rend
 function svgStart(w,h,title){return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}"><title>${esc(title)}</title>`;}
 function line(x1,y1,x2,y2,color,width=1,extra=''){return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${width}" ${extra}/>`;}
 function text(x,y,value,cls='',anchor='middle'){return `<text x="${x}" y="${y}" text-anchor="${anchor}" class="${cls}">${esc(value)}</text>`;}
-function hero(){
- if(!$('hero-network'))return;const coordinated=state.grouping==='coordinated';let out=svgStart(580,290,t('Model grouping of 100 traders','100名交易者的模型分组'));
- for(let g=0;g<(coordinated?10:1);g++){
-  const points=[];
-  for(let k=0;k<(coordinated?10:100);k++){
-   const x=coordinated?58+(g%5)*116+27*Math.cos(k*2*Math.PI/10):97+(k%10)*43;
-   const y=coordinated?75+Math.floor(g/5)*140+27*Math.sin(k*2*Math.PI/10):17+Math.floor(k/10)*28;
-   points.push([x,y]);
+const heroMoments={
+ independent:M.moments(Array(100).fill(1),.2),
+ coordinated:M.moments(Array(10).fill(10),.2)
+};
+
+function buildHeroNetwork(container){
+ const links=[];
+ const people=[];
+ for(let row=0;row<10;row++){
+  for(let column=0;column<10;column++){
+   const cx=42+79*Math.floor(column/2);
+   const cy=row<5?59:166;
+   const member=(row%5)*2+column%2;
+   const angle=2*Math.PI*(member-1)/9;
+   const x=member===0?cx:cx+20*Math.cos(angle);
+   const y=member===0?cy:cy+20*Math.sin(angle);
+   if(member===0)links.push(`<circle cx="${cx}" cy="${cy}" r="28" class="hero-group-boundary"/>`);
+   else links.push(line(cx,cy,x,y,colors.teal,1.15));
+   people.push(`<circle class="hero-person" r="3.7" style="--start-x:${28+38*column}px;--start-y:${16+21*row}px;--group-x:${x}px;--group-y:${y}px"/>`);
   }
-  if(coordinated)for(let i=1;i<points.length;i++)out+=line(...points[i-1],...points[i],colors.gray,1.2);
-  for(const [x,y] of points)out+=`<circle cx="${x}" cy="${y}" r="${coordinated?4.2:3.8}" fill="${coordinated?colors.teal:colors.navy}"/>`;
  }
- $('hero-network').innerHTML=out+'</svg>';
- const r=M.moments(coordinated?Array(10).fill(10):Array(100).fill(1),.2);
- $('hero-mean').textContent=fmt(r.meanV,0);$('hero-variance').textContent=fmt(r.varV,0);$('hero-s2').textContent=fmt(r.s2,0);
- $('hero-caption').textContent=t(coordinated?'Model calculation: ten groups of ten, the same mean volume, tenfold volume variance.':'Model calculation: 100 independent traders. Compare with ten coordinated groups.',coordinated?'模型计算：十个十人群体，平均成交量相同，成交量方差为十倍。':'模型计算：100名独立交易者。可与十个协调群体比较。');
+ container.innerHTML=svgStart(400,225,t('Model grouping of 100 traders','100名交易者的模型分组'))+
+  `<g class="hero-network-links" aria-hidden="true">${links.join('')}</g>${people.join('')}</svg>`;
+}
+
+function hero(){
+ const network=$('hero-network');
+ if(!network)return;
+ if(!network.firstElementChild)buildHeroNetwork(network);
+ const coordinated=state.grouping==='coordinated';
+ network.classList.toggle('is-grouped',coordinated);
+ const label=coordinated?t('Ten groups of ten traders, with shared actions inside each group','十个十人群体，群体内共享动作'):
+  t('One hundred independent traders','一百名独立行动的交易者');
+ network.firstElementChild.setAttribute('aria-label',label);
+ network.querySelector('title').textContent=label;
+ const current=heroMoments[state.grouping];
+ const relativeRisk=current.varR/heroMoments.independent.varR;
+ $('hero-risk-value').textContent=fmt(relativeRisk,0)+'×';
+ $('hero-risk-fill').style.transform=`scaleX(${current.varR/heroMoments.coordinated.varR})`;
+ $('hero-mean').textContent=fmt(current.meanV,0);
+ $('hero-variance').textContent=fmt(current.varV,0);
+ $('hero-s2').textContent=fmt(current.s2,0);
+ $('hero-caption').textContent=coordinated?
+  t('Shared actions move the dots together. At the same mean volume of 20, model return variance is ten times the independent case.',
+   '同组点代表一起行动。平均成交量仍为 20，模型收益方差变为独立情形的 10 倍。'):
+  t('Each dot is one trader. Switch to groups to see how shared actions change model risk.',
+   '每个点是一名交易者。切换到群组，看看共同动作怎样改变模型风险。');
  document.querySelectorAll('[data-grouping]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.grouping===state.grouping)));
 }
 document.querySelectorAll('[data-grouping]').forEach(b=>b.addEventListener('click',()=>{state.grouping=b.dataset.grouping;hero();}));

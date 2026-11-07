@@ -148,6 +148,146 @@
   font-weight: 600;
 }
 
+.beginner-bridge {
+  max-width: 68rem;
+  padding: 1.05rem 1.2rem;
+  background: var(--pale);
+  border-left: 3px solid var(--teal);
+}
+
+.argument-stage > .beginner-bridge {
+  width: calc(100% - 40px);
+  margin: .65rem auto 0;
+}
+
+.reading .beginner-bridge {
+  margin: 1rem 0 1.6rem;
+}
+
+.instrument-bridge {
+  margin: 1rem 0 1.35rem;
+}
+
+.beginner-bridge .beginner-title {
+  color: var(--navy);
+  font: 650 1.05rem/1.35 var(--sans);
+  margin: 0 0 .45rem;
+}
+
+.beginner-bridge p {
+  max-width: 76ch;
+  margin-top: .4rem;
+  font-size: .98rem;
+}
+
+.beginner-bridge .beginner-example {
+  margin-top: .6rem;
+  color: var(--navy);
+}
+
+.hero-demo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(7rem, .36fr);
+  align-items: center;
+  gap: .9rem;
+  margin: .75rem 0;
+}
+
+.hero-demo .hero-network {
+  height: auto;
+  aspect-ratio: 400 / 225;
+  margin: 0;
+}
+
+.hero-demo .hero-network svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-person {
+  fill: var(--navy);
+  transform: translate(var(--start-x), var(--start-y));
+  transition: transform 690ms cubic-bezier(.22,.72,.24,1), fill 500ms ease;
+}
+
+.is-grouped .hero-person {
+  fill: var(--teal);
+  transform: translate(var(--group-x), var(--group-y));
+}
+
+.hero-network-links {
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.is-grouped .hero-network-links {
+  opacity: 1;
+  transition: opacity 260ms ease 415ms;
+}
+
+.hero-group-boundary {
+  fill: #e6edef;
+  stroke: var(--line);
+}
+
+.hero-risk {
+  padding-left: .85rem;
+  border-left: 1px solid var(--line);
+  color: var(--navy);
+}
+
+.hero-risk-label,
+.hero-risk-scale {
+  display: block;
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.38;
+}
+
+.hero-risk output {
+  display: block;
+  font: 600 clamp(1.8rem, 3.3vw, 2.7rem)/1.15 var(--serif);
+  margin: .3rem 0 .55rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-risk-track {
+  height: .45rem;
+  background: var(--line);
+  border-radius: 1rem;
+  margin-bottom: .45rem;
+  overflow: hidden;
+}
+
+.hero-risk-track span {
+  display: block;
+  height: 100%;
+  background: var(--teal);
+  transform: scaleX(.1);
+  transform-origin: left;
+  transition: transform 690ms cubic-bezier(.22,.72,.24,1);
+}
+
+.hero-play-entry {
+  margin-top: 1rem;
+}
+
+.hero-play-entry small {
+  display: block;
+  margin-top: .45rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.trade-quickstart {
+  max-width: 82ch;
+  margin: 0 0 1rem;
+  padding: .7rem .9rem;
+  border-left: 3px solid var(--teal);
+  background: var(--pale);
+}
+
 @media (max-width: 560px) {
   .argument-steps li,
   .argument-heading {
@@ -156,4 +296,14 @@
   }
   .argument-steps h3 { font-size: 1.17rem; }
   .argument-stage > .section { padding-top: 1.2rem; padding-bottom: 1.2rem; }
+  .beginner-bridge { padding: .8rem .9rem; }
+  .hero-demo { grid-template-columns: minmax(0, 1fr) 5.65rem; gap: .55rem; }
+  .hero-risk { padding-left: .55rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-person,
+  .hero-network-links,
+  .is-grouped .hero-network-links,
+  .hero-risk-track span { transition: none; }
 }

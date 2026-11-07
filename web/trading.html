@@ -18,7 +18,7 @@
   <script defer src="assets/trading-debrief.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-debrief-ui.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-ui.js?v=20261106-bridge1"></script>
-</head>
+<link rel="stylesheet" href="assets/argument.css?v=20261107-beginner"></head>
 <body data-page="trading">
   <a class="skip" href="#main"><span data-en>Skip to market</span><span data-zh hidden>跳到交易区</span></a>
   <header class="site-header">
@@ -33,6 +33,8 @@
       <div><a class="trade-back" href="lab.html"><span data-en>Explore the research</span><span data-zh hidden>返回交互实验</span></a><h1><span data-en>Trade the mechanism</span><span data-zh hidden>亲手交易，观察市场</span></h1><p><span data-en>Read the order flow. Choose your position. See what happens.</span><span data-zh hidden>观察真实成交与价格，选择仓位，再复盘进出场。</span></p></div>
       <span class="trade-synthetic"><i aria-hidden="true"></i><span id="trade-source-badge">Historical replay</span></span>
     </div>
+
+    <p class="trade-quickstart"><span data-en>Press Start market and choose a position in the virtual account. A long position benefits when the price rises, while a short position benefits when it falls, before trading costs. Use the round review to compare your decisions with the observed trades.</span><span data-zh hidden>按「启动市场」开始，在虚拟账户里选择买入或做空。做多随价格上涨获益，做空随价格下跌获益，成交费用另计。结束后打开复盘，对照自己的决策和真实成交。</span></p>
 
     <div class="trade-source-tabs" role="group" aria-label="Market source"><button type="button" data-source="history" aria-pressed="true"><span data-en>Real market replay</span><span data-zh hidden>真实行情回放</span></button><button type="button" data-source="model" aria-pressed="false"><span data-en>Mechanism model</span><span data-zh hidden>机理模拟</span></button><p id="trade-source-description"></p></div>
     <section class="trade-setup" aria-label="Market setup">
