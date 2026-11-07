@@ -34,3 +34,35 @@
 .trade-theory-review{margin-top:24px;border-top:2px solid var(--navy);padding-top:20px}.trade-theory-review>h3,.debrief-heading h3{font-size:23px}.trade-theory-review p{font-size:13px;line-height:1.6;color:var(--slate)}.debrief-heading p{margin-top:8px}.debrief-checkpoints{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 12px}.debrief-checkpoints button{font-size:12px;border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--navy);padding:7px 9px;min-height:34px}.debrief-checkpoints button:hover{background:#edf3f6}.debrief-slider{display:grid;grid-template-columns:auto minmax(70px,1fr) auto;align-items:center;gap:12px;font-size:12px;color:var(--slate);padding:10px 0 16px}.debrief-slider input{width:100%;accent-color:var(--navy)}.debrief-slider output{font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--navy)}.debrief-source{display:inline-block;font-size:10px;line-height:1.4;font-weight:500;padding:3px 6px;border:1px solid #b9d6d0;border-radius:3px;color:#176457;background:#f0f7f5;margin-right:9px;white-space:nowrap}.debrief-source.estimated{border-color:#d8c9af;color:#73501c;background:#faf6ee}.debrief-plot{border-top:1px solid #e0e8ee;padding:12px 0 8px}.debrief-plot>div{display:flex;align-items:center;gap:0;flex-wrap:wrap}.debrief-plot strong{font-size:13px;font-weight:600;color:var(--navy)}.debrief-plot svg{width:100%;height:auto;display:block;min-height:105px}.debrief-plot svg text{font:10px var(--sans);fill:var(--slate)}.debrief-plot>p{font-size:11px;margin:0;padding-left:7px}.risk-model{color:#8b632a}.risk-g1{color:#7b8790}.risk-observed{color:#197b70}.debrief-chain{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:18px 0 12px}.debrief-chain>div{padding:14px 12px;border-right:1px solid var(--line)}.debrief-chain>div:first-child{padding-left:0}.debrief-chain>div:last-child{border-right:0}.debrief-chain dt{font-size:12px;color:var(--navy);line-height:1.5}.debrief-chain dt .debrief-source{display:table;margin-bottom:6px}.debrief-chain dd{margin:6px 0 0;font-size:12px;color:var(--slate)}.debrief-chain dd strong{display:block;font-size:21px;color:var(--navy);margin:5px 0;font-weight:500;line-height:1.3}.debrief-chain dd span{display:block;margin:5px 0}.debrief-reading>p{margin-top:10px}.debrief-information{border-left:2px solid #aebfc9;padding-left:11px;margin-top:14px}.debrief-math{margin-top:17px;font-size:13px}.debrief-math summary{color:var(--navy);cursor:pointer}.debrief-math p{margin-top:12px}.debrief-equations>div{margin:16px 0;padding-bottom:10px;border-bottom:1px solid #e4ebef}.debrief-equation{display:block;max-width:100%;overflow-x:auto;color:var(--navy);font-size:13px}.debrief-equation .katex-display{margin:8px 0;text-align:left}.debrief-next{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:19px;font-size:13px}.debrief-next a{color:var(--navy)}
 @media(max-width:730px){.trade-theory-review{padding-top:17px}.debrief-heading h3{font-size:21px}.debrief-slider{grid-template-columns:auto 1fr;gap:7px}.debrief-slider output{grid-column:1/-1;text-align:right}.debrief-chain{grid-template-columns:1fr}.debrief-chain>div{padding:12px 0;border-right:0;border-bottom:1px solid var(--line)}.debrief-chain>div:last-child{border-bottom:0}.debrief-chain dd strong{font-size:20px}.debrief-plot svg{min-height:88px}.debrief-plot strong{font-size:12px}.debrief-source{font-size:9px;margin-right:6px}.debrief-checkpoints button{font-size:11px;padding:7px}.debrief-next{font-size:12px}.debrief-equation{font-size:11px}}
 .trade-review-heading{position:sticky;top:0;z-index:4;background:#fff;padding-bottom:12px;box-shadow:0 1px 0 #dce5eb}
+
+#trade-theory-review { scroll-margin-top: 5.75rem; }
+#trade-review-mechanism { margin: 1rem 0 0; }
+.debrief-guide {
+  margin: 1rem 0;
+  padding: .65rem .85rem;
+  border-left: 2px solid #8eacb6;
+  background: #f5f8fa;
+}
+.debrief-guide p { margin: .35rem 0; }
+.debrief-guide strong { color: var(--navy); }
+.debrief-source.mixed, .debrief-source.virtual {
+  border-color: #bfceda;
+  color: #173e60;
+  background: #f2f6f9;
+}
+.debrief-source.calculated {
+  border-color: #d8c9af;
+  color: #73501c;
+  background: #faf6ee;
+}
+.debrief-plot > p .debrief-source {
+  margin: .25rem .35rem .25rem 0;
+}
+.debrief-checkpoints button[aria-pressed="true"] {
+  background: #edf3f6;
+  border-color: #8eacb6;
+}
+.debrief-chain dd .debrief-next-return .debrief-source { display: inline-block; }
+.debrief-check { margin: 1rem 0; font-size: 13px; }
+.debrief-check summary { color: var(--navy); cursor: pointer; }
+.debrief-check p { margin-top: .45rem; }

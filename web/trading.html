@@ -9,15 +9,15 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/trading.css?v=20261106-bridge1">
+  <link rel="stylesheet" href="assets/trading.css?v=20261107-walkthrough">
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
   <script defer src="assets/vendor/katex/katex.min.js"></script>
   <script defer src="assets/trading-engine.js"></script>
   <script defer src="assets/trading-account.js"></script>
   <script defer src="assets/trading-history.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-debrief.js?v=20261106-bridge1"></script>
-  <script defer src="assets/trading-debrief-ui.js?v=20261106-bridge1"></script>
-  <script defer src="assets/trading-ui.js?v=20261106-bridge1"></script>
+  <script defer src="assets/trading-debrief-ui.js?v=20261107-walkthrough"></script>
+  <script defer src="assets/trading-ui.js?v=20261107-walkthrough"></script>
 <link rel="stylesheet" href="assets/argument.css?v=20261107-beginner"></head>
 <body data-page="trading">
   <a class="skip" href="#main"><span data-en>Skip to market</span><span data-zh hidden>跳到交易区</span></a>
@@ -34,7 +34,10 @@
       <span class="trade-synthetic"><i aria-hidden="true"></i><span id="trade-source-badge">Historical replay</span></span>
     </div>
 
-    <p class="trade-quickstart"><span data-en>Press Start market and choose a position in the virtual account. A long position benefits when the price rises, while a short position benefits when it falls, before trading costs. Use the round review to compare your decisions with the observed trades.</span><span data-zh hidden>按「启动市场」开始，在虚拟账户里选择买入或做空。做多随价格上涨获益，做空随价格下跌获益，成交费用另计。结束后打开复盘，对照自己的决策和真实成交。</span></p>
+    <p class="trade-quickstart">
+      <span data-en>Start the market or step through one minute at a time. Buying opens a long position that benefits if prices rise. Opening a short position benefits if prices fall. Close position ends that bet and puts you back in cash. When the round ends, the review connects your virtual trades to the market data.</span>
+      <span data-zh hidden>点「启动市场」连续播放，也可以逐分钟推进。买入就是做多，价格上涨时获益。做空则在价格下跌时获益。「全部平仓」结束这笔交易，回到现金。走完整轮后，复盘会把你的虚拟交易和行情对起来。</span>
+    </p>
 
     <div class="trade-source-tabs" role="group" aria-label="Market source"><button type="button" data-source="history" aria-pressed="true"><span data-en>Real market replay</span><span data-zh hidden>真实行情回放</span></button><button type="button" data-source="model" aria-pressed="false"><span data-en>Mechanism model</span><span data-zh hidden>机理模拟</span></button><p id="trade-source-description"></p></div>
     <section class="trade-setup" aria-label="Market setup">
@@ -48,6 +51,10 @@
     <section class="trade-signal-panel" aria-labelledby="trade-signal-heading">
       <div class="trade-signal-heading"><h2 id="trade-signal-heading"><span data-en>Large-order signals</span><span data-zh hidden>大单提示</span></h2><label class="trade-signal-toggle"><input type="checkbox" id="trade-signals" role="switch" aria-controls="trade-signal-content" checked><span data-en>Show signals</span><span data-zh hidden>显示提示</span></label></div>
       <div id="trade-signal-content">
+        <p id="trade-signal-reading" class="trade-signal-empty">
+          <span data-en>A candle shows a minute’s opening, highest, lowest and closing prices. In the replay, an aggressive buy means the buyer initiated a trade against a standing sell order. A signal reports completed trades, and the next candle can move either way.</span>
+          <span data-zh hidden>一根 K 线显示这一分钟的开盘、最高、最低和收盘价。回放里的「主动买入」指买方主动与已有的卖单成交。提示只汇报已完成的交易，下一根 K 线仍然可能上涨或下跌。</span>
+        </p>
         <p id="trade-signal-empty" class="trade-signal-empty"></p>
         <div id="trade-current-event" class="trade-current-event" role="status" aria-live="polite" hidden><span id="trade-current-event-time"></span><div><strong id="trade-current-event-title"></strong><p id="trade-current-event-body"></p></div></div>
       </div>
@@ -66,7 +73,7 @@
         <div class="trade-equity"><span data-en>Net value</span><span data-zh hidden>账户净值</span><strong id="trade-equity">100,000.00</strong><span id="trade-account-return">0.00%</span></div>
         <dl class="trade-account-metrics"><div><dt><span data-en>Cash</span><span data-zh hidden>现金</span></dt><dd id="trade-cash">100,000.00</dd></div><div><dt><span data-en>Open P&amp;L</span><span data-zh hidden>持仓盈亏</span></dt><dd id="trade-unrealized">0.00</dd></div><div><dt><span data-en>Max drawdown</span><span data-zh hidden>最大回撤</span></dt><dd id="trade-drawdown">0.00%</dd></div><div><dt><span data-en>Exposure</span><span data-zh hidden>仓位暴露</span></dt><dd id="trade-exposure">0.0%</dd></div></dl>
         <div class="trade-order-controls"><fieldset class="trade-size"><legend><span data-en>Order size</span><span data-zh hidden>交易比例</span></legend><div class="trade-segmented"><button type="button" data-fraction="0.25" aria-pressed="false">25%</button><button type="button" data-fraction="0.5" aria-pressed="true">50%</button><button type="button" data-fraction="1" aria-pressed="false">100%</button></div></fieldset><div class="trade-order-grid"><button type="button" data-order="buy" class="trade-buy"><span data-en>Buy / add long</span><span data-zh hidden>买入 / 加多</span></button><button type="button" data-order="short" class="trade-short"><span data-en>Open / add short</span><span data-zh hidden>做空 / 加空</span></button><button type="button" data-order="sell" class="trade-neutral"><span data-en>Sell long</span><span data-zh hidden>卖出多仓</span></button><button type="button" data-order="cover" class="trade-neutral"><span data-en>Cover short</span><span data-zh hidden>买回空仓</span></button></div><button type="button" data-order="close" class="trade-close"><span data-en>Close position</span><span data-zh hidden>全部平仓</span></button></div>
-        <p class="trade-order-help"><span data-en>Percentages use available capacity when opening, and your position when closing. Costs: 5 bp fee + 2 bp slippage per fill.</span><span data-zh hidden>开仓比例按剩余可用额度计算，减仓比例按已有持仓计算。每次成交收取 5 bp 费用与 2 bp 滑点。</span></p>
+        <p class="trade-order-help"><span data-en>Percentages use available capacity when opening, and your position when closing. Costs: 0.05% fee plus a 0.02% simulated execution-price adjustment against you per fill.</span><span data-zh hidden>开仓比例按剩余可用额度计算，减仓比例按已有持仓计算。每次成交收取 0.05% 手续费，模拟成交价另按 0.02% 向不利方向调整。</span></p>
         <p id="trade-feedback" class="trade-feedback" role="status" aria-live="polite"></p>
         <div class="trade-position-detail" id="trade-position-detail"></div>
       </aside>
@@ -84,6 +91,6 @@
 
   <footer class="site-footer"><div><a href="index.html">Econophysics Risk Lab</a><p><span data-en>Mechanisms, observations and market risk.</span><span data-zh hidden>机制、观测与市场风险。</span></p></div><div><p id="trade-source-footer"></p></div><div><a href="lab.html"><span data-en>Other experiments</span><span data-zh hidden>其他交互实验</span></a><a href="reproduce.html"><span data-en>Code and methods</span><span data-zh hidden>代码与方法</span></a></div></footer>
 
-  <dialog id="trade-review-dialog" class="trade-review-dialog" aria-labelledby="trade-review-title"><div class="trade-review-heading"><div><p id="trade-review-progress"></p><h2 id="trade-review-title"><span data-en>Your round, reviewed</span><span data-zh hidden>回看你的这一轮</span></h2></div><button id="trade-review-close" type="button" aria-label="Close review">×</button></div><div id="trade-review-summary"></div><section id="trade-theory-review" class="trade-theory-review" hidden></section><div class="trade-review-chart" id="trade-review-chart" role="img" aria-label="Price path with your trade points"></div><div id="trade-review-notes"></div><div id="trade-history-reveal" class="trade-history-reveal" hidden></div><div class="trade-review-actions"><button type="button" id="trade-review-resume" class="button primary"><span data-en>Back to market</span><span data-zh hidden>返回交易</span></button><button type="button" id="trade-review-retry" class="button secondary"><span data-en>Retry this market</span><span data-zh hidden>重试同一行情</span></button></div></dialog>
+  <dialog id="trade-review-dialog" class="trade-review-dialog" aria-labelledby="trade-review-title"><div class="trade-review-heading"><div><p id="trade-review-progress"></p><h2 id="trade-review-title"><span data-en>Your round, reviewed</span><span data-zh hidden>回看你的这一轮</span></h2></div><button id="trade-review-close" type="button" aria-label="Close review">×</button></div><div id="trade-review-summary"></div><button type="button" id="trade-review-mechanism" class="button secondary" hidden><span data-en>Read the market and risk together</span><span data-zh hidden>对照行情与风险</span></button><section id="trade-theory-review" class="trade-theory-review" tabindex="-1" hidden></section><div class="trade-review-chart" id="trade-review-chart" role="img" aria-label="Price path with your trade points"></div><div id="trade-review-notes"></div><div id="trade-history-reveal" class="trade-history-reveal" hidden></div><div class="trade-review-actions"><button type="button" id="trade-review-resume" class="button primary"><span data-en>Back to market</span><span data-zh hidden>返回交易</span></button><button type="button" id="trade-review-retry" class="button secondary"><span data-en>Retry this market</span><span data-zh hidden>重试同一行情</span></button></div></dialog>
 </body>
 </html>

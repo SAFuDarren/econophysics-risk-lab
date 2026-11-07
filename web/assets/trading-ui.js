@@ -225,6 +225,7 @@
     if(!snap||!accountSnap)return;
     $('trade-progress').textContent=`${snap.tick} / ${snap.totalSteps}`;
     $('trade-mode-description').textContent=!state.showSignals?t('Signals are off. The market runs without order-message pauses.','大单提示已关闭；行情不会因大单消息自动暂停。'):state.mode==='guided'?t('Pauses when order intent arrives. Choose a position, then continue.','大单意向出现时自动暂停，选择仓位后再继续。'):t('Current intent, evolving conditions. Choose a position without seeing the future path.','当前意向与演化中的市场：根据已知信息选择仓位。');
+    $('trade-signal-reading').hidden=state.source!=='history';
     if(state.source==='history')$('trade-mode-description').textContent=!state.showSignals?t('Signals off. Read the original price and volume path.','提示已关闭，可自行观察原始量价变化。'):state.mode==='guided'?t('Pauses on observed large flow. The next candles are still hidden.','检测到大额成交时暂停，后续K线仍未揭晓。'):t('Continuous historical replay with current observed flow.','连续回放真实行情，显示当前已发生的大额成交。');
     document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===state.mode)));
     document.querySelectorAll('[data-fraction]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.fraction)===state.fraction)));
@@ -275,7 +276,7 @@
     if(!account||!snap)return;
     const review=account.review({bars:snap.bars,events:seenEvents(),done:snap.done,initialPrice:snap.initialPrice||100});state.review=review;
     $('trade-review-progress').textContent=snap.done?t(`Round complete · ${snap.totalSteps} ticks`,`本轮结束，共 ${snap.totalSteps} 个时点`):t(`Round in progress · tick ${snap.tick} of ${snap.totalSteps}`,`阶段复盘：第 ${snap.tick} / ${snap.totalSteps} 个时点`);
-    $('trade-review-summary').innerHTML=`<div class="trade-review-score"><div><strong>${review.score}</strong><small> / 100</small></div><div><h3>${esc(local(review.grade))}</h3><p>${esc(t('A costed review of this virtual round.','根据本轮虚拟交易和成本计算。'))}</p></div></div><div class="trade-review-numbers"><div><span>${esc(t('Net return','净收益率'))}</span><strong class="${tone(review.metrics.returnPct)}">${signed(review.metrics.returnPct)}%</strong></div><div><span>${esc(t('Max drawdown','最大回撤'))}</span><strong>${fmt(review.metrics.maxDrawdownPct)}%</strong></div><div><span>${esc(t('Net value','账户净值'))}</span><strong>${fmt(review.metrics.equity)}</strong></div><div><span>${esc(t('Trading fees','累计手续费'))}</span><strong>${fmt(review.metrics.totalFees)}</strong></div></div>`;
+    $('trade-review-summary').innerHTML=`<div class="trade-review-score"><div><strong>${review.score}</strong><small> / 100</small></div><div><h3>${esc(local(review.grade))}</h3><p>${esc(t('The score describes this virtual round. Drawdown is the largest drop from a previous account high.','得分反映本轮虚拟交易。最大回撤指账户净值相对先前高点的最大跌幅。'))}</p></div></div><div class="trade-review-numbers"><div><span>${esc(t('Net return','净收益率'))}</span><strong class="${tone(review.metrics.returnPct)}">${signed(review.metrics.returnPct)}%</strong></div><div><span>${esc(t('Max drawdown','最大回撤'))}</span><strong>${fmt(review.metrics.maxDrawdownPct)}%</strong></div><div><span>${esc(t('Net value','账户净值'))}</span><strong>${fmt(review.metrics.equity)}</strong></div><div><span>${esc(t('Trading fees','累计手续费'))}</span><strong>${fmt(review.metrics.totalFees)}</strong></div></div>`;
     const notes=review.notes||[];
     $('trade-review-notes').innerHTML=`<div class="trade-review-benchmarks"><span>${esc(t('Cash','持有现金'))}<strong>${fmt(review.benchmark.cashReturnPct)}%</strong></span><span>${esc(t('Passive long, with costs','被动做多，含成本'))}<strong>${signed(review.benchmark.passiveReturnPct)}%</strong></span><span>${esc(t('Your return minus passive','相对被动收益'))}<strong>${signed(review.benchmark.edgePct)} ${esc(t('pp','个百分点'))}</strong></span></div><ul class="trade-review-notes">${notes.map(note=>`<li>${esc(local(note))}</li>`).join('')}</ul>`;
     const reveal=$('trade-history-reveal');reveal.hidden=state.source!=='history';
@@ -283,7 +284,9 @@
       const r=snap.historicalReview;
       reveal.innerHTML=r?`<h3>${esc(t('The real excerpt','真实片段揭晓'))}</h3><p>BTC / USDT · ${esc(new Date(r.startTime).toISOString().replace('T',' ').slice(0,16))}–${esc(new Date(r.endTime).toISOString().slice(11,16))} UTC</p><p>${esc(t('Primary observed-flow signal: ','主要成交信号：'))}${esc(r.direction>0?t('aggressive buying','主动买入'):t('aggressive selling','主动卖出'))} · ${esc(new Date(r.signalCloseTime).toISOString().slice(11,16))} UTC</p><p>${esc(t('Largest same-direction close-price move over the next 90 minutes: ','随后90分钟最大同向收盘价格变动：'))}${fmt(r.favorableMove*100)}%${esc(t('; adverse close-price move before that point: ','；到达该点前的反向收盘价格变动：'))}${fmt(r.adverseBeforePeak*100)}%。</p><p>${esc(t('This excerpt was selected after observing that move. Compare all earlier signals with your actual trades.','本片段按事后出现的波动筛选。请对照此前全部提示，检查自己的实际交易时机。'))}</p><a href="https://github.com/SAFuDarren/econophysics-risk-lab/tree/main/studies/historical_replay_v1">${esc(t('Original source and selection record','原始来源与筛选记录'))}</a>`:`<p>${esc(t('The original date and later move are revealed after the final candle.','原始日期和后续走势在最后一根K线结束后揭晓。'))}</p>`;
     }
-    $('trade-review-chart').hidden=state.source==='history'&&snap.done;
+    const completedReplay=state.source==='history'&&snap.done;
+    $('trade-review-chart').hidden=completedReplay;
+    $('trade-review-mechanism').hidden=!completedReplay;
     if(window.TradingDebriefView)window.TradingDebriefView.render({market:snap,account:accountSnap,language});
     drawMarket($('trade-review-chart'),true);
   }
@@ -299,6 +302,10 @@
   $('trade-step').addEventListener('click',()=>{stop();advanceOne();});
   $('trade-reset').addEventListener('click',()=>reset());
   $('trade-review').addEventListener('click',openReview);
+  $('trade-review-mechanism').addEventListener('click',()=>{
+    $('trade-theory-review').focus();
+    $('trade-theory-review').scrollIntoView({block:'start'});
+  });
   $('trade-review-close').addEventListener('click',()=>$('trade-review-dialog').close());
   $('trade-review-resume').addEventListener('click',()=>$('trade-review-dialog').close());
   $('trade-review-retry').addEventListener('click',()=>reset());
