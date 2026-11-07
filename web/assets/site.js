@@ -3,7 +3,7 @@
 const M=window.EconoMath,D=window.ResearchData,$=id=>document.getElementById(id);
 const colors={navy:'#173e60',teal:'#416b73',gray:'#a9b6be',line:'#d4dce2',ink:'#242b33',blue:'#2675a0',gold:'#9d7841',red:'#92505c'};
 let language='en';try{language=localStorage.getItem('econo-language')==='zh'?'zh':'en';}catch(e){}
-const state={grouping:'independent',lab:'mechanism',seed:20261027,actionSeed:15,selectedGroup:0,actions:null,topology:'chain',inferSeed:20261028,forecastIndex:0,visible:new Set(['HAR','HAR+All'])};
+const state={lab:'mechanism',seed:20261027,actionSeed:15,selectedGroup:0,actions:null,topology:'chain',inferSeed:20261028,forecastIndex:0,visible:new Set(['HAR','HAR+All'])};
 const t=(en,zh)=>language==='zh'?zh:en;
 const fmt=(x,d=2)=>Number.isFinite(x)?x.toLocaleString(language==='zh'?'zh-CN':'en-US',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
 const esc=s=>String(s).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
@@ -22,56 +22,94 @@ document.querySelectorAll('[data-math]').forEach(el=>{if(window.katex)katex.rend
 function svgStart(w,h,title){return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(title)}"><title>${esc(title)}</title>`;}
 function line(x1,y1,x2,y2,color,width=1,extra=''){return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${width}" ${extra}/>`;}
 function text(x,y,value,cls='',anchor='middle'){return `<text x="${x}" y="${y}" text-anchor="${anchor}" class="${cls}">${esc(value)}</text>`;}
-const heroMoments={
- independent:M.moments(Array(100).fill(1),.2),
- coordinated:M.moments(Array(10).fill(10),.2)
-};
+const heroNetwork=$('hero-network');
+const heroPlayback=$('hero-playback');
+const heroGroupCount=10;
+const heroGroupSize=10;
+let formedGroups=0;
+let heroTimer;
 
-function buildHeroNetwork(container){
- const links=[];
- const people=[];
- for(let row=0;row<10;row++){
-  for(let column=0;column<10;column++){
-   const cx=42+79*Math.floor(column/2);
-   const cy=row<5?59:166;
-   const member=(row%5)*2+column%2;
+function buildHeroNetwork(){
+ const groups=[];
+ for(let group=0;group<heroGroupCount;group++){
+  const cx=42+79*(group%5);
+  const cy=group<5?59:166;
+  const links=[`<circle cx="${cx}" cy="${cy}" r="28" class="hero-group-boundary"/>`];
+  const people=[];
+  for(let member=0;member<heroGroupSize;member++){
+   const row=(group<5?0:5)+Math.floor(member/2);
+   const column=2*(group%5)+member%2;
    const angle=2*Math.PI*(member-1)/9;
    const x=member===0?cx:cx+20*Math.cos(angle);
    const y=member===0?cy:cy+20*Math.sin(angle);
-   if(member===0)links.push(`<circle cx="${cx}" cy="${cy}" r="28" class="hero-group-boundary"/>`);
-   else links.push(line(cx,cy,x,y,colors.teal,1.15));
+   if(member>0)links.push(line(cx,cy,x,y,colors.teal,1.15));
    people.push(`<circle class="hero-person" r="3.7" style="--start-x:${28+38*column}px;--start-y:${16+21*row}px;--group-x:${x}px;--group-y:${y}px"/>`);
   }
+  groups.push(`<g class="hero-cluster"><g class="hero-network-links" aria-hidden="true">${links.join('')}</g>${people.join('')}</g>`);
  }
- container.innerHTML=svgStart(400,225,t('Model grouping of 100 traders','100名交易者的模型分组'))+
-  `<g class="hero-network-links" aria-hidden="true">${links.join('')}</g>${people.join('')}</svg>`;
+ heroNetwork.innerHTML=svgStart(400,225,t('Model grouping of 100 traders','100 名交易者的模型分组'))+groups.join('')+'</svg>';
 }
 
 function hero(){
- const network=$('hero-network');
- if(!network)return;
- if(!network.firstElementChild)buildHeroNetwork(network);
- const coordinated=state.grouping==='coordinated';
- network.classList.toggle('is-grouped',coordinated);
- const label=coordinated?t('Ten groups of ten traders, with shared actions inside each group','十个十人群体，群体内共享动作'):
-  t('One hundred independent traders','一百名独立行动的交易者');
- network.firstElementChild.setAttribute('aria-label',label);
- network.querySelector('title').textContent=label;
- const current=heroMoments[state.grouping];
- const relativeRisk=current.varR/heroMoments.independent.varR;
- $('hero-risk-value').textContent=fmt(relativeRisk,0)+'×';
- $('hero-risk-fill').style.transform=`scaleX(${current.varR/heroMoments.coordinated.varR})`;
+ if(!heroNetwork)return;
+ if(!heroNetwork.firstElementChild)buildHeroNetwork();
+ const independent=heroGroupSize*(heroGroupCount-formedGroups);
+ const label=formedGroups===0
+  ?t('100 independent traders','100 人各自行动')
+  :t(`${formedGroups} of 10 groups formed${independent?` · ${independent} still independent`:''}`,
+     `已形成 ${formedGroups} 个群组${independent?` · 还有 ${independent} 人各自行动`:''}`);
+ heroNetwork.firstElementChild.setAttribute('aria-label',label);
+ heroNetwork.querySelector('title').textContent=label;
+ heroNetwork.querySelectorAll('.hero-cluster').forEach((group,i)=>group.classList.toggle('is-grouped',i<formedGroups));
+ const sizes=[...Array(formedGroups).fill(heroGroupSize),...Array(independent).fill(1)];
+ const current=M.moments(sizes,.2);
+ const baseline=M.moments(Array(heroGroupCount*heroGroupSize).fill(1),.2);
+ const relativeRisk=current.varR/baseline.varR;
+ const shownRisk=Number(relativeRisk.toFixed(1));
+ $('hero-risk-value').textContent=fmt(shownRisk,Number.isInteger(shownRisk)?0:1)+'×';
+ $('hero-risk-fill').style.transform=`scaleX(${relativeRisk/heroGroupSize})`;
  $('hero-mean').textContent=fmt(current.meanV,0);
- $('hero-variance').textContent=fmt(current.varV,0);
+ $('hero-variance').textContent=fmt(current.varV,1).replace(/\.0$/,'');
  $('hero-s2').textContent=fmt(current.s2,0);
- $('hero-caption').textContent=coordinated?
-  t('Shared actions move the dots together. At the same mean volume of 20, model return variance is ten times the independent case.',
-   '同组点代表一起行动。平均成交量仍为 20，模型收益方差变为独立情形的 10 倍。'):
-  t('Each dot is one trader. Switch to groups to see how shared actions change model risk.',
-   '每个点是一名交易者。切换到群组，看看共同动作怎样改变模型风险。');
- document.querySelectorAll('[data-grouping]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.grouping===state.grouping)));
+ $('hero-caption').textContent=label;
+ heroPlayback.textContent=heroTimer?t('Pause','暂停'):formedGroups===heroGroupCount?t('Replay','重播'):t('Play','播放');
 }
-document.querySelectorAll('[data-grouping]').forEach(b=>b.addEventListener('click',()=>{state.grouping=b.dataset.grouping;hero();}));
+
+function scheduleHero(delay){
+ heroTimer=window.setTimeout(()=>{
+  heroTimer=undefined;
+  formedGroups++;
+  if(formedGroups<heroGroupCount)scheduleHero(460);
+  else hero();
+ },delay);
+ hero();
+}
+
+if(heroNetwork){
+ const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+ if(reducedMotion.matches)formedGroups=heroGroupCount;
+ else{
+  heroPlayback.hidden=false;
+  heroPlayback.addEventListener('click',()=>{
+   if(heroTimer){
+    window.clearTimeout(heroTimer);
+    heroTimer=undefined;
+    hero();
+   }else{
+    if(formedGroups===heroGroupCount)formedGroups=0;
+    scheduleHero(850);
+   }
+  });
+  if('IntersectionObserver' in window){
+   const observer=new IntersectionObserver(entries=>{
+    if(!entries[0].isIntersecting)return;
+    observer.disconnect();
+    if(!heroTimer&&formedGroups===0)scheduleHero(850);
+   },{threshold:.4});
+   observer.observe(heroNetwork);
+  }else scheduleHero(850);
+ }
+}
 function packedNetwork(g,container,selected,actions,onSelect){
  const width=680,height=390,placed=[],positions={},golden=Math.PI*(3-Math.sqrt(5));
  g.groups.forEach((group,k)=>{
