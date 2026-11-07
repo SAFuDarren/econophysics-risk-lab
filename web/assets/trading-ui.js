@@ -20,6 +20,42 @@
   const phaseName = phase => ({forming:t('Forming alignment','一致形成'),holding:t('Holding alignment','一致维持'),fragmenting:t('Losing alignment','一致瓦解'),mixed:t('Mixed directions','方向分歧')}[phase] || t('Mixed directions','方向分歧'));
   const phaseCopy = phase => ({forming:t('The fast group is moving toward a shared direction.','快速群体正趋向共同方向。'),holding:t('A common direction is persisting in the fast group.','快速群体保持较强的共同方向。'),fragmenting:t('The fast group is moving away from its recent alignment.','快速群体正在偏离近期的一致方向。'),mixed:t('The group has no strong common direction at this tick.','当前群体没有明显一致的方向。')}[phase] || '');
 
+  const compactTrading = window.matchMedia('(max-width: 730px)');
+  const mobileDock = $('trade-mobile-dock');
+  const dockControls = [
+    document.querySelector('.trade-playback'),
+    document.querySelector('.trade-order-controls'),
+    $('trade-feedback'),
+  ].map(control => {
+    const originalPosition = document.createComment('Original control position');
+    control.before(originalPosition);
+    return {control,originalPosition};
+  });
+
+  function fitTradingControls() {
+    if(compactTrading.matches){
+      mobileDock.append(...dockControls.map(({control})=>control));
+      mobileDock.hidden=false;
+    }else{
+      for(const {control,originalPosition} of dockControls)originalPosition.after(control);
+      mobileDock.hidden=true;
+    }
+    reserveDockSpace();
+  }
+
+  function reserveDockSpace() {
+    document.documentElement.style.setProperty('--trade-dock-height',mobileDock.offsetHeight+'px');
+  }
+
+  function showChartWhilePlaying() {
+    if(!compactTrading.matches)return;
+    const chart=$('trade-chart').getBoundingClientRect();
+    const availableBottom=mobileDock.getBoundingClientRect().top;
+    if(chart.top<0||chart.bottom>availableBottom){
+      $('trade-market').scrollIntoView({block:'start',behavior:'instant'});
+    }
+  }
+
   function applyLanguage() {
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
     document.querySelectorAll('[data-en]').forEach(el => { el.hidden = language !== 'en'; });
@@ -27,6 +63,7 @@
     document.querySelectorAll('option[data-en-label]').forEach(el => { el.textContent = language === 'zh' ? el.dataset.zhLabel : el.dataset.enLabel; });
     $('language').textContent = language === 'zh' ? 'English' : '中文';
     $('language').setAttribute('aria-label', t('Switch to Chinese','切换到英文'));
+    mobileDock.setAttribute('aria-label', t('Quick trading controls','快捷交易操作'));
     $('trade-step').setAttribute('aria-label', t('Advance one tick','向前推进一步'));
     $('trade-speed').setAttribute('aria-label', t('Market speed','行情速度'));
     $('trade-review-close').setAttribute('aria-label', t('Close review','关闭复盘'));
@@ -235,6 +272,9 @@
     $('trade-drawdown').textContent=fmt(accountSnap.maxDrawdownPct)+'%';$('trade-exposure').textContent=fmt(accountSnap.grossExposure*100,1)+'%';
     const q=accountSnap.quantity,hasPosition=Math.abs(q)>1e-8;
     $('trade-position-label').textContent=hasPosition?(q>0?t('Long position','多头持仓'):t('Short position','空头持仓')):t('No position','空仓');
+    $('trade-dock-quote').textContent=$('trade-price').textContent;
+    $('trade-dock-position').textContent=$('trade-position-label').textContent;
+    $('trade-dock-position').className=tone(q);
     $('trade-position-label').className='trade-position-label '+(hasPosition?(q>0?'trade-up':'trade-down'):'');
     $('trade-position-detail').textContent=hasPosition?t(`${fmt(Math.abs(q),2)} units · average entry ${fmt(accountSnap.averageEntry)}`,`${fmt(Math.abs(q),2)} 单位，持仓均价 ${fmt(accountSnap.averageEntry)}`):t('Initial capital 100,000 virtual units.','初始本金为 100,000 个虚拟单位。');
     document.querySelectorAll('[data-order]').forEach(b=>{const side=b.dataset.order;b.disabled=!!snap.done||!!accountSnap.insolvent||(side==='buy'&&q< -1e-8)||(side==='short'&&q>1e-8)||(side==='sell'&&q<=1e-8)||(side==='cover'&&q>=-1e-8)||(side==='close'&&!hasPosition);});
@@ -298,8 +338,11 @@
 
   $('language').addEventListener('click',()=>{language=language==='en'?'zh':'en';try{localStorage.setItem('econo-language',language);}catch(_){}applyLanguage();});
   $('menu-toggle').addEventListener('click',()=>{const open=$('menu-toggle').getAttribute('aria-expanded')!=='true';$('menu-toggle').setAttribute('aria-expanded',String(open));$('main-nav').classList.toggle('open',open);});
-  $('trade-play').addEventListener('click',()=>state.playing?stop():start());
-  $('trade-step').addEventListener('click',()=>{stop();advanceOne();});
+  $('trade-play').addEventListener('click',()=>{
+    if(state.playing){stop();return;}
+    showChartWhilePlaying();start();
+  });
+  $('trade-step').addEventListener('click',()=>{showChartWhilePlaying();stop();advanceOne();});
   $('trade-reset').addEventListener('click',()=>reset());
   $('trade-review').addEventListener('click',openReview);
   $('trade-review-mechanism').addEventListener('click',()=>{
@@ -325,5 +368,8 @@
   document.addEventListener('visibilitychange',()=>{if(document.hidden&&state.playing)stop();});
 
   window.TradingLab={state,get engine(){return engine;},get account(){return account;},snapshot:()=>({market:snap,account:accountSnap,playing:state.playing}),start,pause:stop,step:()=>{stop();advanceOne();},advance:n=>{stop();for(let i=0;i<n&&!snap?.done;i++)advanceOne();},reset,trade:placeOrder,review:openReview,render};
+  compactTrading.addEventListener('change',fitTradingControls);
+  if(window.ResizeObserver)new ResizeObserver(reserveDockSpace).observe(mobileDock);
+  fitTradingControls();
   applyLanguage();reset();
 })();

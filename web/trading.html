@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/trading.css?v=20261107-walkthrough">
+  <link rel="stylesheet" href="assets/trading.css?v=20261107-mobile-dock">
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
   <script defer src="assets/vendor/katex/katex.min.js"></script>
   <script defer src="assets/trading-engine.js"></script>
@@ -17,7 +17,7 @@
   <script defer src="assets/trading-history.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-debrief.js?v=20261106-bridge1"></script>
   <script defer src="assets/trading-debrief-ui.js?v=20261107-walkthrough"></script>
-  <script defer src="assets/trading-ui.js?v=20261107-walkthrough"></script>
+  <script defer src="assets/trading-ui.js?v=20261107-mobile-dock"></script>
 <link rel="stylesheet" href="assets/argument.css?v=20261107-beginner"></head>
 <body data-page="trading">
   <a class="skip" href="#main"><span data-en>Skip to market</span><span data-zh hidden>跳到交易区</span></a>
@@ -48,7 +48,7 @@
     </section>
     <div class="trade-session-note"><p id="trade-mode-description"></p><span id="trade-progress" aria-live="off">0 / 180</span></div>
 
-    <section class="trade-signal-panel" aria-labelledby="trade-signal-heading">
+    <section class="trade-signal-panel" id="trade-signal-panel" aria-labelledby="trade-signal-heading">
       <div class="trade-signal-heading"><h2 id="trade-signal-heading"><span data-en>Large-order signals</span><span data-zh hidden>大单提示</span></h2><label class="trade-signal-toggle"><input type="checkbox" id="trade-signals" role="switch" aria-controls="trade-signal-content" checked><span data-en>Show signals</span><span data-zh hidden>显示提示</span></label></div>
       <div id="trade-signal-content">
         <p id="trade-signal-reading" class="trade-signal-empty">
@@ -61,7 +61,7 @@
     </section>
 
     <div class="trade-workspace">
-      <section class="trade-market" aria-label="Collective Index market">
+      <section class="trade-market" id="trade-market" aria-label="Collective Index market">
         <div class="trade-market-header"><div class="trade-instrument"><span class="trade-instrument-icon" aria-hidden="true">C</span><div><h2 id="trade-instrument-title">BTC / USDT</h2><span id="trade-instrument-description">1-minute historical candles</span></div></div><div class="trade-quote"><strong id="trade-price">100.00</strong><span id="trade-price-change">0.00%</span></div></div>
         <div class="trade-chart-toolbar"><div class="trade-chart-legend"><span><i class="legend-up"></i><span data-en>Rising</span><span data-zh hidden>上涨</span></span><span><i class="legend-down"></i><span data-en>Falling</span><span data-zh hidden>下跌</span></span><span><i class="legend-entry"></i><span data-en>Your trades</span><span data-zh hidden>你的交易</span></span></div><span id="trade-market-status" class="trade-market-status">Ready</span></div>
         <div class="trade-chart" id="trade-chart" role="img" aria-label="Candle price chart and traded volume"><div id="trade-chart-empty" class="trade-chart-empty"><span data-en>Start the market or advance one tick.</span><span data-zh hidden>启动市场，或向前推进一步。</span></div></div>
@@ -72,7 +72,7 @@
         <div class="trade-account-heading"><h2><span data-en>Your account</span><span data-zh hidden>虚拟账户</span></h2><span id="trade-position-label" class="trade-position-label">No position</span></div>
         <div class="trade-equity"><span data-en>Net value</span><span data-zh hidden>账户净值</span><strong id="trade-equity">100,000.00</strong><span id="trade-account-return">0.00%</span></div>
         <dl class="trade-account-metrics"><div><dt><span data-en>Cash</span><span data-zh hidden>现金</span></dt><dd id="trade-cash">100,000.00</dd></div><div><dt><span data-en>Open P&amp;L</span><span data-zh hidden>持仓盈亏</span></dt><dd id="trade-unrealized">0.00</dd></div><div><dt><span data-en>Max drawdown</span><span data-zh hidden>最大回撤</span></dt><dd id="trade-drawdown">0.00%</dd></div><div><dt><span data-en>Exposure</span><span data-zh hidden>仓位暴露</span></dt><dd id="trade-exposure">0.0%</dd></div></dl>
-        <div class="trade-order-controls"><fieldset class="trade-size"><legend><span data-en>Order size</span><span data-zh hidden>交易比例</span></legend><div class="trade-segmented"><button type="button" data-fraction="0.25" aria-pressed="false">25%</button><button type="button" data-fraction="0.5" aria-pressed="true">50%</button><button type="button" data-fraction="1" aria-pressed="false">100%</button></div></fieldset><div class="trade-order-grid"><button type="button" data-order="buy" class="trade-buy"><span data-en>Buy / add long</span><span data-zh hidden>买入 / 加多</span></button><button type="button" data-order="short" class="trade-short"><span data-en>Open / add short</span><span data-zh hidden>做空 / 加空</span></button><button type="button" data-order="sell" class="trade-neutral"><span data-en>Sell long</span><span data-zh hidden>卖出多仓</span></button><button type="button" data-order="cover" class="trade-neutral"><span data-en>Cover short</span><span data-zh hidden>买回空仓</span></button></div><button type="button" data-order="close" class="trade-close"><span data-en>Close position</span><span data-zh hidden>全部平仓</span></button></div>
+        <div class="trade-order-controls"><fieldset class="trade-size"><legend><span data-en>Order size</span><span data-zh hidden>交易比例</span></legend><div class="trade-segmented"><button type="button" data-fraction="0.25" aria-pressed="false">25%</button><button type="button" data-fraction="0.5" aria-pressed="true">50%</button><button type="button" data-fraction="1" aria-pressed="false">100%</button></div></fieldset><div class="trade-order-grid"><button type="button" data-order="buy" class="trade-buy"><span class="trade-desktop-label"><span data-en>Buy / add long</span><span data-zh hidden>买入 / 加多</span></span><span class="trade-mobile-label"><span data-en>Long</span><span data-zh hidden>做多</span></span></button><button type="button" data-order="short" class="trade-short"><span class="trade-desktop-label"><span data-en>Open / add short</span><span data-zh hidden>做空 / 加空</span></span><span class="trade-mobile-label"><span data-en>Short</span><span data-zh hidden>做空</span></span></button><button type="button" data-order="sell" class="trade-neutral"><span class="trade-desktop-label"><span data-en>Sell long</span><span data-zh hidden>卖出多仓</span></span><span class="trade-mobile-label"><span data-en>Trim long</span><span data-zh hidden>减多</span></span></button><button type="button" data-order="cover" class="trade-neutral"><span class="trade-desktop-label"><span data-en>Cover short</span><span data-zh hidden>买回空仓</span></span><span class="trade-mobile-label"><span data-en>Trim short</span><span data-zh hidden>减空</span></span></button></div><button type="button" data-order="close" class="trade-close"><span class="trade-desktop-label"><span data-en>Close position</span><span data-zh hidden>全部平仓</span></span><span class="trade-mobile-label"><span data-en>Close</span><span data-zh hidden>平仓</span></span></button></div>
         <p class="trade-order-help"><span data-en>Percentages use available capacity when opening, and your position when closing. Costs: 0.05% fee plus a 0.02% simulated execution-price adjustment against you per fill.</span><span data-zh hidden>开仓比例按剩余可用额度计算，减仓比例按已有持仓计算。每次成交收取 0.05% 手续费，模拟成交价另按 0.02% 向不利方向调整。</span></p>
         <p id="trade-feedback" class="trade-feedback" role="status" aria-live="polite"></p>
         <div class="trade-position-detail" id="trade-position-detail"></div>
@@ -87,6 +87,16 @@
     <section class="trade-history-context" id="trade-history-context"><div><h2><span data-en>What the signal measures</span><span data-zh hidden>提示来自什么</span></h2><p><span data-en>Large executions are aggregate trades of at least 100,000 USDT. A signal appears after three completed minutes of unusually one-sided large executions, compared with the preceding two hours.</span><span data-zh hidden>大额成交指单笔不少于10万USDT的聚合成交。连续3个已完成分钟的大额主动买卖明显偏向一侧、并超过此前两小时的阈值时，才会出现提示。</span></p><p><span data-en>These excerpts were selected after observing a later move. Timing, pullbacks and competing signals still matter. The signals describe executed buying or selling, not identified accounts or known future orders.</span><span data-zh hidden>这些片段按后续出现明显波动筛选，入场时机、回撤和相反信号仍会影响成绩。提示记录已成交的主动买卖，不代表已识别某个账户或知道其未来订单。</span></p></div><div class="trade-observed-flow"><h3><span data-en>Last 3 completed minutes</span><span data-zh hidden>最近3个已完成分钟</span></h3><div><span><span data-en>Aggressive buy volume</span><span data-zh hidden>主动买入成交额</span></span><strong id="trade-observed-buy"></strong></div><div><span><span data-en>Aggressive sell volume</span><span data-zh hidden>主动卖出成交额</span></span><strong id="trade-observed-sell"></strong></div><p><span data-en>Original prices and volume. One replay step advances one real minute.</span><span data-zh hidden>保留原始价格与成交量；回放每步推进真实1分钟。</span></p><a class="text-link" href="https://github.com/SAFuDarren/econophysics-risk-lab/tree/main/studies/historical_replay_v1"><span data-en>Data, selection and verification</span><span data-zh hidden>数据来源与筛选核验</span></a></div></section>
 
     <details class="trade-rules" id="trade-rules"><summary><span data-en>How the round works</span><span data-zh hidden>交易与评分规则</span></summary><div><p><span data-en>You begin with 100,000 virtual units. Opening gross exposure is capped at 1× equity; later price moves can change this ratio. A position closes automatically if equity falls to 25% of its gross exposure. Each fill includes a 5 bp fee and 2 bp slippage. Remaining positions close, with costs, on the final tick.</span><span data-zh hidden>初始资金为 100,000 个虚拟单位，开仓总敞口上限为净值的 1 倍；后续价格变化可能改变这一比例。净值降至总敞口的 25% 时自动平仓。每次成交计入 5 bp 费用与 2 bp 滑点，剩余持仓在最后一步按规则平仓。</span></p><p id="trade-source-rules"></p><p id="trade-score-rules"></p></div></details>
+    <aside class="trade-mobile-dock" id="trade-mobile-dock" aria-label="Quick trading controls" hidden>
+      <div class="trade-dock-meta">
+        <strong id="trade-dock-quote">—</strong>
+        <span id="trade-dock-position"></span>
+        <span class="trade-dock-links">
+          <a href="#trade-market"><span data-en>Chart</span><span data-zh hidden>行情</span></a>
+          <a href="#trade-signal-panel"><span data-en>Signals</span><span data-zh hidden>大单提示</span></a>
+        </span>
+      </div>
+    </aside>
   </main>
 
   <footer class="site-footer"><div><a href="index.html">Econophysics Risk Lab</a><p><span data-en>Mechanisms, observations and market risk.</span><span data-zh hidden>机制、观测与市场风险。</span></p></div><div><p id="trade-source-footer"></p></div><div><a href="lab.html"><span data-en>Other experiments</span><span data-zh hidden>其他交互实验</span></a><a href="reproduce.html"><span data-en>Code and methods</span><span data-zh hidden>代码与方法</span></a></div></footer>

@@ -12,10 +12,12 @@ factors. Multi-factor network experiments test how trading scale, strategy
 diversity and accommodation jointly affect risk.
 
 [Research website](https://safudarren.github.io/econophysics-risk-lab/) ·
+[Mathematics](https://safudarren.github.io/econophysics-risk-lab/methods.html#contents) ·
+[Findings](https://safudarren.github.io/econophysics-risk-lab/findings.html#contents) ·
+[Explore the experiments](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-mainline) ·
+[Trading replay](https://safudarren.github.io/econophysics-risk-lab/trading.html#trade-market) ·
 [Learning room](https://safudarren.github.io/econophysics-risk-lab/learn.html) ·
-[Interactive experiments](https://safudarren.github.io/econophysics-risk-lab/lab.html) ·
-[Trading simulator](https://safudarren.github.io/econophysics-risk-lab/trading.html) ·
-[Full research report](web/downloads/research-report-en.pdf)
+[Full research report](https://safudarren.github.io/econophysics-risk-lab/downloads/research-report-en.pdf)
 
 The [collective-risk workbench](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-bench)
 opens the experimental evidence behind the dynamic model: common signals and
@@ -118,13 +120,13 @@ are counted explicitly.
   reduction relative to HAR is **2.26%**, with an estimated 95% block interval
   **[−0.11%, 4.56%]**.
   This statistical feature benchmark is separate from the mechanism-derived risk test.
-  [Forecast results and comparisons](https://safudarren.github.io/econophysics-risk-lab/findings.html#forecast).
+  [Forecast results and comparisons](https://safudarren.github.io/econophysics-risk-lab/findings.html#stage-forecast).
 - **Shared-risk and strategy-overlap diagnostics.** For the same nine-sector
   basket and 63-session window ending 31 March 2020, full and diagonal covariance
   estimates give annualized volatility of **57.73%** and **20.62%**. Two
   low-volatility strategy variants have daily net P&L correlations of **0.921**
   in 2020–2025 and **0.795** in the 2026 confirmation period.
-  [Portfolio and strategy results](https://safudarren.github.io/econophysics-risk-lab/findings.html#applications).
+  [Portfolio and strategy results](https://safudarren.github.io/econophysics-risk-lab/findings.html#stage-applications).
 
 ![Parameter recovery across ten independent studies](web/assets/figures/D01.svg)
 
@@ -133,7 +135,7 @@ simulation studies. Method comparisons are in the source table above; settings a
 
 ## Coordination, accommodation and forecast information
 
-The [new Explore instrument](https://safudarren.github.io/econophysics-risk-lab/lab.html#risk-environment)
+The [risk environment instrument](https://safudarren.github.io/econophysics-risk-lab/risk-environment.html)
 connects the existing network to its response environment. At fixed return
 feedback, the simulated common-signal risk increment is **3.306, 2.230 and
 1.639 × 10⁻⁶** as normalized shock capacity increases from 0.5 to 1 to 1.5.
@@ -237,7 +239,7 @@ The squared-size sum links microscopic coordination to aggregate fluctuations.
 - **Market analysis:** price–volume compatibility tests, paired block comparisons
   for volatility forecasts, and matched-window covariance and daily P&L diagnostics.
 
-[Full mathematical derivations](https://safudarren.github.io/econophysics-risk-lab/methods.html) ·
+[Full mathematical derivations](https://safudarren.github.io/econophysics-risk-lab/methods.html#contents) ·
 [Model specification](docs/AB/model_spec.md) ·
 [Forecast protocol](docs/AB/forecast_contract.md)
 
@@ -265,7 +267,9 @@ The [data and selection record](studies/historical_replay_v1/README.md) includes
 52 checked official archives, the full 26-day derived pool, all 865 alerts,
 selection tables, exact OHLC checks and raw reproduction. The original mechanism
 market remains available in a separate tab. Both share the virtual long/short
-account, speed control, optional signal panel and costed review.
+account, speed control, optional signal panel and costed review. On phones,
+playback and order controls stay at the bottom while the chart and market
+information remain in the page.
 
 [![Real historical trading workbench](web/assets/trading-preview-en.webp)](https://safudarren.github.io/econophysics-risk-lab/trading.html)
 
@@ -315,7 +319,12 @@ The core model and exact theory checks use the Python standard library:
 python scripts/reproduce.py --profile quick
 ```
 
-The [interactive laboratory](https://safudarren.github.io/econophysics-risk-lab/lab.html) connects six experiments: group moments, finite networks, parameter recovery, exact observation laws, temporal memory and shared portfolio risk. The temporal experiment replays a complete saved 8,192-observation path and supports whole-pair shuffling. Every experiment links its mathematics, implementation and source results.
+The [interactive laboratory](https://safudarren.github.io/econophysics-risk-lab/lab.html#research-mainline)
+groups the experiments into three routes: mechanism and inference, price
+response and forecasts, and applications. The temporal experiment replays a
+complete saved 8,192-observation path and supports whole-pair shuffling. The
+individual experiments link their mathematics, implementation and source
+results.
 
 The local **Research detail** views expose finite-graph recurrences, all 64 four-node graphs, the ten-study scale controls, all ten saved temporal paths, two distinct permutations and covariance-matched tail comparisons. The findings page connects the Bitcoin model restriction to the saved monthly and exclusion checks. The [laboratory guide](docs/INTERACTIVE_LAB.md) describes the calculations, source payloads and exports.
 
