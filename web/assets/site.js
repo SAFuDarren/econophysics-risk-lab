@@ -3,7 +3,7 @@
 const M=window.EconoMath,D=window.ResearchData,$=id=>document.getElementById(id);
 const colors={navy:'#173e60',teal:'#416b73',gray:'#a9b6be',line:'#d4dce2',ink:'#242b33',blue:'#2675a0',gold:'#9d7841',red:'#92505c'};
 let language='en';try{language=localStorage.getItem('econo-language')==='zh'?'zh':'en';}catch(e){}
-const state={lab:'mechanism',seed:20261027,actionSeed:15,selectedGroup:0,actions:null,topology:'chain',inferSeed:20261028,forecastIndex:0,visible:new Set(['HAR','HAR+All'])};
+const state={seed:20261027,actionSeed:15,selectedGroup:0,actions:null,topology:'chain',inferSeed:20261028,forecastIndex:0,visible:new Set(['HAR','HAR+All'])};
 const t=(en,zh)=>language==='zh'?zh:en;
 const fmt=(x,d=2)=>Number.isFinite(x)?x.toLocaleString(language==='zh'?'zh-CN':'en-US',{minimumFractionDigits:d,maximumFractionDigits:d}):'—';
 const esc=s=>String(s).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
@@ -192,11 +192,12 @@ function renderRisk(){
  $('risk-detail').textContent=t(`Co-movement contributes ${fmt(result.collectiveShare*100,1)}% of the retained covariance variance estimate.`, `当前保留联动的估计中，联动项占组合方差的${fmt(result.collectiveShare*100,1)}%。`);
  if(window.LabModules)window.LabModules.risk();
 }
-function showLab(name){
- if(!['mechanism','network','inference','identity','memory','risk'].includes(name))name='mechanism';state.lab=name;
- document.querySelectorAll('[data-lab]').forEach(b=>{const selected=b.dataset.lab===name;b.setAttribute('aria-selected',selected);b.tabIndex=selected?0:-1;});
- ['mechanism','network','inference','identity','memory','risk'].forEach(k=>$(k).hidden=k!==name);
- if(name==='mechanism')renderPhysics();if(name==='inference')renderInference();if(name==='identity')renderIdentity();if(name==='risk')renderRisk();if(window.LabModules)window.LabModules.render(name);
+function renderLab(name){
+ if(name==='mechanism')renderPhysics();
+ if(name==='inference')renderInference();
+ if(name==='identity')renderIdentity();
+ if(name==='risk')renderRisk();
+ window.LabModules?.render(name);
 }
 if($('physics-network')){
  $('physics-group').addEventListener('change',()=>{state.selectedGroup=+$('physics-group').value;renderPhysics();});
@@ -206,9 +207,7 @@ if($('physics-network')){
  ['infer-c','infer-q','infer-mode'].forEach(id=>$(id).addEventListener('input',renderInference));
  $('infer-resample').addEventListener('click',()=>{if($('infer-mode').value==='population')$('infer-mode').value='256';state.inferSeed++;renderInference();});
  document.querySelectorAll('[data-topology]').forEach(b=>b.addEventListener('click',()=>{state.topology=b.dataset.topology;renderIdentity();}));
- document.querySelectorAll('[data-lab]').forEach((b,i)=>{b.addEventListener('click',()=>{location.hash=b.dataset.lab;showLab(b.dataset.lab);});b.addEventListener('keydown',e=>{if(['ArrowRight','ArrowLeft','ArrowDown','ArrowUp','Home','End'].includes(e.key)){e.preventDefault();const all=[...document.querySelectorAll('[data-lab]')],j=e.key==='Home'?0:e.key==='End'?all.length-1:(i+(['ArrowRight','ArrowDown'].includes(e.key)?1:-1)+all.length)%all.length;all[j].click();all[j].focus();}});});
- window.addEventListener('hashchange',()=>showLab(location.hash.slice(1)));initRisk();showLab(location.hash.slice(1)||'mechanism');
- $('export-experiment').addEventListener('click',()=>{if(window.LabModules)window.LabModules.exportExperiment();});
+ initRisk();
 }
 function forecastSelection(){
  if(!$('forecast-chart'))return;const d=D.forecast,i=state.forecastIndex,e=$('forecast-chart'),svg=e.querySelector('svg');
@@ -232,8 +231,15 @@ function renderForecast(){
 }
 document.querySelectorAll('[data-series]').forEach(b=>b.addEventListener('click',()=>{const key=b.dataset.series;if(state.visible.has(key))state.visible.delete(key);else state.visible.add(key);b.setAttribute('aria-pressed',String(state.visible.has(key)));renderForecast();}));
 if($('forecast-date'))$('forecast-date').addEventListener('input',()=>{state.forecastIndex=+$('forecast-date').value;forecastSelection();});
-const redraw=()=>{hero();if($('physics-network'))showLab(state.lab);renderForecast();};
+const labExperiments=[...document.querySelectorAll('[data-lab-experiment]')];
+const redraw=()=>{
+ hero();
+ for(const experiment of labExperiments){
+  if(!experiment.closest('[hidden]'))renderLab(experiment.id);
+ }
+ renderForecast();
+};
 document.addEventListener('languagechange',redraw);applyLanguage();
 if(window.ResizeObserver){let width=0;new ResizeObserver(entries=>{const now=entries[0].contentRect.width;if(Math.abs(now-width)>2){width=now;redraw();}}).observe(document.body);}
-window.EconoApp={state,redraw,showLab,renderPhysics,renderInference,renderRisk,drawNetwork:packedNetwork,getLanguage:()=>language};
+window.EconoApp={state,redraw,renderPhysics,renderInference,renderRisk,drawNetwork:packedNetwork,getLanguage:()=>language};
 })();

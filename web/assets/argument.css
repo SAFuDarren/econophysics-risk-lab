@@ -522,3 +522,25 @@
 @media (max-width: 340px) {
   .reader-body .method-basics .equation { font-size: .84rem; }
 }
+
+.reader-body .argument-heading { display: block; }
+.reader-body .argument-stage + .argument-stage {
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.reader-bridge {
+  margin: 1.35rem 0 1rem;
+  padding: .65rem .85rem;
+  border-left: 2px solid var(--teal);
+  color: var(--muted);
+}
+.lab-reader-title {
+  margin: 1.5rem 0 .85rem;
+  font-size: clamp(1.6rem, 2.7vw, 2.3rem);
+}
+.lab-reader .lab-export {
+  margin: 1.4rem 0 .65rem;
+  padding-top: .65rem;
+}
+.lab-reader .lab-export p:empty { display: none; }

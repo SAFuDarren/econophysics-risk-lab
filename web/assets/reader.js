@@ -15,6 +15,7 @@
   const target=document.getElementById(id);
   const selectedGroup=target?.closest('[data-reader-group]')||groups[0];
   const section=target?.closest('[data-reader-panel]')||selectedGroup.querySelector('[data-reader-panel]');
+  const topicHash=topics.some(topic=>topic.hash==='#'+id)?'#'+id:'#'+section?.id;
   const key=selectedGroup.dataset.readerGroup;
   for(const group of groups)group.hidden=group!==selectedGroup;
   for(const chapter of chapters){
@@ -22,7 +23,7 @@
    else chapter.removeAttribute('aria-current');
   }
   for(const topic of topics){
-   if(topic.hash==='#'+section.id)topic.setAttribute('aria-current','location');
+   if(topic.hash===topicHash)topic.setAttribute('aria-current','location');
    else topic.removeAttribute('aria-current');
   }
   if(activeGroup!==selectedGroup){

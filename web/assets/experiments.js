@@ -6,8 +6,6 @@ const t=(en,zh)=>A.getLanguage()==='zh'?zh:en;
 const fmt=(v,n=2)=>Number.isFinite(v)?v.toLocaleString(A.getLanguage()==='zh'?'zh-CN':'en-US',{minimumFractionDigits:n,maximumFractionDigits:n}):'—';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const C={navy:'#173e60',teal:'#416b73',gray:'#a9b6be',line:'#d4dce2',red:'#92505c',ink:'#242b33'};
-const keys=['mechanism','network','inference','identity','memory','risk'];
-const names=[['Group actions & moments','共同动作与矩'],['Finite networks','有限规模网络'],['Parameter recovery','参数恢复'],['Identification limits','识别边界'],['Temporal memory','时间记忆'],['Shared portfolio risk','组合共同风险']];
 const state={networkSeed:20261105,networkGroup:0,history:[],historyKey:'',edges:[[0,1],[1,2],[2,3]],topology:'chain',memory:null,memoryReplication:0,memoryCache:new Map(),memoryPromises:new Map(),memoryPairKey:null,memoryArm:'PersistentActivity',pairs:null,shuffled:false,shuffleSeed:20261105,shuffleCount:0,networkResult:null,identityResult:null,memoryResult:null};
 const repo='https://github.com/SAFuDarren/econophysics-risk-lab/blob/main/';
 function math(el,tex){if(!el)return;if(window.katex)window.katex.render(tex,el,{displayMode:true,throwOnError:true});else el.textContent=tex;}
@@ -131,7 +129,7 @@ async function memory(){
  const requestedRep=state.memoryReplication,requestedArm=$('memory-arm').value;
  $('memory-status').textContent=state.memory?t(`Saved simulation replay · path ${state.memoryReplication+1} of 10 · N = 128, c = 1 · 8,192 observations`,`已保存模拟回放 · 第${state.memoryReplication+1}条路径，共10条 · N=128、c=1 · 8,192个观测`):t('Loading the saved research path…','正在加载已保存的研究路径…');
  try{await loadMemory(requestedRep);}catch(e){$('memory-status').innerHTML=esc(t('The saved path could not load. ','保存路径加载失败。'))+'<button class="button secondary" id="memory-retry">'+esc(t('Try again','重试'))+'</button>';$('memory-retry').addEventListener('click',memory);return;}
- if(A.state.lab!=='memory'||requestedRep!==state.memoryReplication||requestedArm!==$('memory-arm').value)return;
+ if($('memory').closest('[hidden]')||requestedRep!==state.memoryReplication||requestedArm!==$('memory-arm').value)return;
  const arm=$('memory-arm').value,pairKey=state.memoryReplication+'|'+arm;if(state.memoryPairKey!==pairKey||!state.pairs){state.memoryPairKey=pairKey;state.memoryArm=arm;state.pairs=state.memory.arms[arm];state.shuffled=false;state.shuffleCount=0;}
  const original=state.memory.arms[arm],current=state.pairs,before=M.pathStats(original),after=M.pathStats(current);
  $('memory-status').textContent=t(`Saved simulation replay · path ${state.memoryReplication+1} of 10 · N = 128, c = 1 · 8,192 observations`,`已保存模拟回放 · 第${state.memoryReplication+1}条路径，共10条 · N=128、c=1 · 8,192个观测`);
@@ -154,21 +152,18 @@ function risk(){
  e.querySelectorAll('[data-pair]').forEach(el=>el.addEventListener('click',()=>{const[x,y]=el.dataset.pair.split(',');a.value=x;b.value=y;risk();}));
 }
 function render(name){
- const i=keys.indexOf(name);$('experiment-select').value=name;
- $('experiment-location').textContent=t(i<2?'Mathematical foundations':i<5?'Inference & discoveries':'Applications',i<2?'数学基础':i<5?'反演与发现':'实际应用')+' / '+t(...names[i]);
- $('experiment-progress').textContent=(i+1)+' / '+keys.length;$('experiment-prev').disabled=i===0;$('experiment-next').disabled=i===keys.length-1;
  if(name==='network')network();if(name==='memory')memory();
 }
-function exportExperiment(){
- const k=A.state.lab;let result,scope,sources;
+function exportExperiment(k,status){
+ let result,scope,sources;
  if(k==='mechanism'){result=A.state.physicsResult;scope='Conditional model calculation or one-period model simulation';sources=['src/econophysics/model.py'];}
  if(k==='network'){result=state.networkResult;scope='Live structural graph draw and saved ensemble comparison';sources=[D.sources.phase];}
  if(k==='inference'){result={...A.state.inferenceResult,sampledWindows:state.history};scope='Finite-ER curve interpolation or live model-window simulation';sources=[D.sources.curve,'results/tables/depth_study_v1/summary_metrics.csv'];}
  if(k==='identity'){result=state.identityResult;scope='Exact enumeration of the complete one-period observation law';sources=['docs/theory/FOUNDATIONS.md'];}
  if(k==='memory'){result=state.memoryResult?{...state.memoryResult,currentPairs:state.pairs}:null;scope='Replay of one saved controlled-simulation path, with whole-pair permutation';sources=['scripts/run_state_mechanism_v2.py','results/tables/state_mechanism_v2/summary.csv'];}
  if(k==='risk'){result=A.state.riskResult;scope='Matched-window historical covariance calculation';sources=[D.sources.risk];}
- if(!result){$('export-status').textContent=t('Complete a valid experiment first.','请先完成一个有效实验。');return;}
- const record={experiment:k,recordedAt:new Date().toISOString(),scope,result,sources:sources.map(s=>repo+s)},url=URL.createObjectURL(new Blob([JSON.stringify(record,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='econophysics-'+k+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);$('export-status').textContent=t('Experiment record saved, including settings and sources.','已保存含参数设置与来源的实验记录。');
+ if(!result){status.textContent=t('Complete a valid experiment first.','请先完成一个有效实验。');return;}
+ const record={experiment:k,recordedAt:new Date().toISOString(),scope,result,sources:sources.map(s=>repo+s)},url=URL.createObjectURL(new Blob([JSON.stringify(record,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='econophysics-'+k+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);status.textContent=t('Experiment record saved, including settings and sources.','已保存含参数设置与来源的实验记录。');
 }
 function researchMap(){
  if(!$('research-map-detail'))return;
@@ -185,8 +180,10 @@ function researchMap(){
 researchMap();
 if(!$('physics-network'))return;
 window.LabModules={render,physics,inference,identity,risk,memory,loadMemory,changeMemoryPath,exportExperiment,state};
-$('experiment-select').addEventListener('change',e=>{location.hash=e.target.value;A.showLab(e.target.value);});
-for(const[button,direction]of [['experiment-prev',-1],['experiment-next',1]])$(button).addEventListener('click',()=>{const i=keys.indexOf(A.state.lab)+direction;if(i>=0&&i<keys.length){location.hash=keys[i];A.showLab(keys[i]);$('experiment-location').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}});
+document.querySelectorAll('[data-save-experiment]').forEach(button=>button.addEventListener('click',()=>{
+ const experiment=button.closest('[data-lab-experiment]');
+ window.LabModules.exportExperiment(experiment.id,experiment.querySelector('[data-export-status]'));
+}));
 $('physics-layout').addEventListener('change',()=>{A.state.actions=null;A.state.selectedGroup=0;$('one-action-result').textContent='';A.renderPhysics();});
 ['network-n','network-c'].forEach(id=>$(id).addEventListener('input',()=>{state.networkGroup=0;network();}));$('network-redraw').addEventListener('click',()=>{state.networkSeed++;state.networkGroup=0;network();});
 $('infer-batch').addEventListener('click',async()=>{const b=$('infer-batch');b.disabled=true;if($('infer-mode').value==='population')$('infer-mode').value='256';state.history=[];try{for(let i=0;i<5;i++){A.state.inferSeed++;A.renderInference();await new Promise(requestAnimationFrame);}}finally{b.disabled=false;}});

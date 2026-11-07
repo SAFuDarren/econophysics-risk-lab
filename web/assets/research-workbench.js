@@ -160,19 +160,19 @@ function market(){
  state.records.market={scope:'Saved BTC fixed-interface compatibility checks',case:selected,dayBlockLength:selected.ci?+block:null,step:state.marketStep,allCases:cases,sources:sources.market};
 }
 async function renderDepth(name){
- if(!state.views[name]||state.views[name]!=='research'||A.state.lab!==name)return;
+ if(!state.views[name]||state.views[name]!=='research'||$(name).closest('[hidden]'))return;
  const token=state.renderToken[name]=(state.renderToken[name]||0)+1,requestedRep=name==='memory'?L.state.memoryReplication:null,requestedArm=name==='memory'?$('memory-arm').value:null;
  if(name==='network'){recurrence();return;}if(name==='identity'){graphAtlas();return;}
  status(name,t('Loading saved research results…','正在加载保存的研究结果…'));state.records[name]=null;
  try{
   if(name==='memory')await Promise.all([data(),L.loadMemory()]);else await data();
-  if(state.renderToken[name]!==token||state.views[name]!=='research'||A.state.lab!==name)return;
+  if(state.renderToken[name]!==token||state.views[name]!=='research'||$(name).closest('[hidden]'))return;
   if(name==='memory'&&(requestedRep!==L.state.memoryReplication||requestedArm!==$('memory-arm').value||L.state.memory?.replication!==requestedRep))return;
   status(name,'');if(name==='inference')scales();if(name==='memory')repetitions();if(name==='risk')tails();
  }catch(error){status(name,t('Saved results could not load. Reopen Research detail to retry.','保存结果未能加载，请重新打开“深入研究”重试。'));}
 }
 function synchronizeURL(name){
- const url=new URL(location.href);if(state.views[name]==='research')url.searchParams.set('view','research');else url.searchParams.delete('view');
+ const url=new URL(location.href);url.hash=name;if(state.views[name]==='research')url.searchParams.set('view','research');else url.searchParams.delete('view');
  if(url.href!==location.href)history.replaceState(null,'',url);
 }
 function switchView(name,view,updateURL=true){
@@ -181,15 +181,15 @@ function switchView(name,view,updateURL=true){
  document.querySelectorAll('[data-depth-view][data-experiment="'+name+'"]').forEach(button=>{const active=button.dataset.depthView===view;button.setAttribute('aria-selected',String(active));button.tabIndex=active?0:-1;});
  if(updateURL)synchronizeURL(name);if(view==='research')renderDepth(name);
 }
-function exportResearch(){
- const name=A.state.lab,result=state.records[name];if(!result){$('export-status').textContent=t('Wait for the selected research result to load.','请等待所选研究结果加载完成。');return;}
+function exportResearch(name,status){
+ const result=state.records[name];if(!result){status.textContent=t('Wait for the selected research result to load.','请等待所选研究结果加载完成。');return;}
  download(JSON.stringify({experiment:name,view:'research',recordedAt:new Date().toISOString(),...result,sources:result.sources.map(path=>repo+path)},null,2),'econophysics-'+name+'-research.json','application/json');
- $('export-status').textContent=t('Research comparison saved with its settings and source evidence.','已保存包含设置与原始依据的研究对照。');
+ status.textContent=t('Research comparison saved with its settings and source evidence.','已保存包含设置与原始依据的研究对照。');
 }
 document.querySelectorAll('[data-export-svg]').forEach(button=>button.addEventListener('click',()=>{
  const target=$(button.dataset.exportSvg),original=target?.querySelector('svg');if(!original)return;
  const clone=original.cloneNode(true),namespace='http://www.w3.org/2000/svg';clone.setAttribute('xmlns',namespace);const style=document.createElementNS(namespace,'style');style.textContent='text{font-family:Arial,sans-serif;font-size:12px;fill:#58636d}.axis-title{font-size:13px;fill:#242b33}.data-label{font-size:15px;fill:#173e60}';clone.prepend(style);
- const metadata=document.createElementNS(namespace,'metadata');metadata.textContent=JSON.stringify({project:'Econophysics Risk Lab',figure:button.dataset.exportSvg,recordedAt:new Date().toISOString(),evidence:state.records[A.state.lab]||state.records.market});clone.append(metadata);
+ const metadata=document.createElementNS(namespace,'metadata');metadata.textContent=JSON.stringify({project:'Econophysics Risk Lab',figure:button.dataset.exportSvg,recordedAt:new Date().toISOString(),evidence:state.records[button.closest('[data-lab-experiment]')?.id]||state.records.market});clone.append(metadata);
  download(new XMLSerializer().serializeToString(clone),'econophysics-'+button.dataset.exportSvg+'.svg','image/svg+xml;charset=utf-8');
 }));
 window.ResearchWorkbench={state,switchView,renderDepth,recurrence,scales,graphAtlas,repetitions,tails,market,data};
@@ -223,10 +223,25 @@ document.querySelectorAll('[data-depth-view]').forEach(button=>{
  button.addEventListener('click',()=>switchView(button.dataset.experiment,button.dataset.depthView));
  button.addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const view=event.key==='Home'?'explore':event.key==='End'?'research':button.dataset.depthView==='explore'?'research':'explore';switchView(button.dataset.experiment,view);$('view-'+button.dataset.experiment+'-'+view).focus();}});
 });
-const originalRender=L.render;L.render=name=>{originalRender(name);if(Object.hasOwn(state.views,name))switchView(name,state.views[name]);};
-const originalExport=L.exportExperiment;L.exportExperiment=()=>state.views[A.state.lab]==='research'?exportResearch():originalExport();
-document.addEventListener('memorychange',()=>{syncMemorySelectors();if(A.state.lab==='memory'&&state.views.memory==='research')renderDepth('memory');});
-if(new URL(location.href).searchParams.get('view')==='research'&&Object.hasOwn(state.views,A.state.lab))state.views[A.state.lab]='research';
-if(window.ResizeObserver){let prior=0;new ResizeObserver(entries=>{const now=entries[0].contentRect.width;if(Math.abs(now-prior)>1){prior=now;if(state.views[A.state.lab]==='research')renderDepth(A.state.lab);}}).observe(document.querySelector('.experiment-content'));}
-if(Object.hasOwn(state.views,A.state.lab))switchView(A.state.lab,state.views[A.state.lab]);
+const originalRender=L.render;L.render=name=>{originalRender(name);if(Object.hasOwn(state.views,name))switchView(name,state.views[name],false);};
+const originalExport=L.exportExperiment;
+L.exportExperiment=(name,status)=>state.views[name]==='research'?exportResearch(name,status):originalExport(name,status);
+document.addEventListener('memorychange',()=>{
+ syncMemorySelectors();
+ if(state.views.memory==='research')renderDepth('memory');
+});
+const initialURL=new URL(location.href);
+const initialExperiment=$(initialURL.hash.slice(1))?.closest('[data-lab-experiment]')?.id||'mechanism';
+if(initialURL.searchParams.get('view')==='research'&&Object.hasOwn(state.views,initialExperiment)){
+ switchView(initialExperiment,'research',false);
+}
+if(window.ResizeObserver){
+ let prior=0;
+ new ResizeObserver(entries=>{
+  const now=entries[0].contentRect.width;
+  if(Math.abs(now-prior)<=1)return;
+  prior=now;
+  for(const name of Object.keys(state.views))renderDepth(name);
+ }).observe(document.querySelector('.experiment-content'));
+}
 })();
